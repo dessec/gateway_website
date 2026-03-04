@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gateway Metal Detectors â€” Southern Ontario</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/design-system.css" />
+  <link rel="stylesheet" href="css/decraft.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+</head>
+
+<body class="decraft-layout">
+
+  <!-- 1. Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__logo">
+        <span class="logo-text">GATEWAY</span>
+      </div>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="index.html#products">Detectors</a>
+        <a href="contact.html">Contact</a>
+        <a href="discovery-map.html">Discovery Map</a>
+      </nav>
+      <div class="header__contact">
+        <span class="phone-link">(905) 870-8689</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero-section" id="home">
+    <img src="website/screenshots/hero-image.png" alt="Hero Background" class="hero__bg" />
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow">HAMILTON'S METAL DETECTING EXPERTS</p>
+      <h1 class="hero__title">UNCOVERING THE PAST</h1>
+      <p class="hero__desc">With the right gear, every signal in Southern Ontario tells a story.</p>
+      <a href="#products" class="btn btn--primary">Start Your Hunt</a>
+    </div>
+  </section>
+
+  <!-- 3. Overlap Info Box -->
+  <div class="container overlap-container">
+    <div class="overlap-box">
+      <div class="overlap__left">
+        <h2 class="overlap__h2">12+</h2>
+        <h3 class="overlap__h3">Years of<br>Experience</h3>
+        <p>We have been dealing in Metal detectors since 2012.</p>
+        <a href="#about" class="btn btn--ghost">Read More â†’</a>
+      </div>
+      <div class="overlap__right">
+        <div class="feature-item">
+          <div class="f-icon">ðŸ” </div>
+          <h4>Gateway Find-ID AI</h4>
+          <p>Snap it. Know it. Upload a photo of your find and let our AI system instantly evaluate its shape, material,
+            and markings. Get immediate answers on historical periods, rarity, proper cleaning advice, and estimated CAD
+            value. Less guessing, more discovering.</p>
+          <a href="identifier.html" class="ghost-link">Identify My Find</a>
+        </div>
+        <div class="feature-item">
+          <div class="f-icon">ðŸ—ºï¸ </div>
+          <h4>Gateway Discovery Map</h4>
+          <p>Turn your weekend into a hunt. Explore a live, community-driven 3D map of real Southern Ontario finds.
+            Browse discovery pins, spot emerging local hotspots, and uncover history through shared discoveries.
+            Planning your next treasure hunt has never been easier.</p>
+          <a href="discovery-map.html" class="ghost-link">Explore the Map</a>
+        </div>
+        <div class="feature-item">
+          <div class="f-icon">ðŸ¤ </div>
+          <h4>Community & Clubs</h4>
+          <p>We believe detecting is more than a hobbyâ€”it's a community. Connect with Southern Ontario's best metal
+            detecting clubs, join group hunts, and get access to shared regional knowledge. Stay updated on sponsored
+            events, meetups, and exclusive local giveaways.</p>
+          <a href="community-clubs.html" class="ghost-link">Join the Community</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. About Us -->
+  <section class="section about-section" id="about">
+    <div class="container grid-2-col">
+      <div class="about-content">
+        <p class="section-eyebrow">About Us</p>
+        <h2 class="section-title">ELEVATE YOUR HUNT, ELEVATE YOUR FINDS</h2>
+        <p class="section-desc">We have been dealing in Metal detectors since 2012. We offer metal detectors at our
+          Hamilton location: Hagglers Flea Market. Also serving St. Catharines.</p>
+        <p class="section-desc">We offer a range of metal detectors for use on land or water and some with an advanced
+          detection feature to find rare metals including gold. Gateway metal detectors is known for quality detectors
+          in the Hamilton and Niagara region.</p>
+
+        <ul class="about-list">
+          <li>âœ“ Minelab Authorized Dealer</li>
+          <li>âœ“ Nokta Authorized Dealer</li>
+          <li>âœ“ Garrett Authorized Dealer</li>
+          <li>âœ“ Expert Local Knowledge</li>
+        </ul>
+
+        <button class="btn btn--secondary mt-4">Read More</button>
+      </div>
+      <div class="about-image">
+        <img src="website/screenshots/about-us.jpg" alt="About Gateway" class="img-fluid rounded" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Shop by Brand (Interactive) -->
+  <section class="section bg-secondary text-center" id="products">
+    <div class="container">
+      <p class="section-eyebrow">Curated Arsenal</p>
+      <h2 class="section-title">SHOP BY BRAND</h2>
+      <p class="section-desc mx-auto mb-8">Stop by and see us or call 7 days a week to place your order. We will help
+        you find the metal detector you were looking for.</p>
+
+      <div class="products-grid-3">
+        <!-- Minelab Card -->
+        <div class="brand-interactive-card">
+          <a href="minelab-products.html" class="brand-card-link-overlay" aria-label="View Minelab Products"></a>
+          <img src="website/brands/minelab.png" alt="Minelab Detectors" class="brand-card-bg" />
+          <div class="brand-card-content">
+            <h3>Minelab</h3>
+            <div style="display: flex; gap: 10px; position:relative; z-index:3;">
+              <a href="minelab-products.html" class="btn btn--secondary">Explore</a>
+              <button class="btn btn--primary btn--contact-modal" data-product="Minelab">Contact to Order</button>
+            </div>
+          </div>
+        </div>
+        <!-- Nokta Card -->
+        <div class="brand-interactive-card">
+          <a href="nokta-products.html" class="brand-card-link-overlay" aria-label="View Nokta Products"></a>
+          <img src="website/brands/nokta.png" alt="Nokta Detectors" class="brand-card-bg" />
+          <div class="brand-card-content">
+            <h3>Nokta</h3>
+            <div style="display: flex; gap: 10px; position:relative; z-index:3;">
+              <a href="nokta-products.html" class="btn btn--secondary">Explore</a>
+              <button class="btn btn--primary btn--contact-modal" data-product="Nokta">Contact to Order</button>
+            </div>
+          </div>
+        </div>
+        <!-- Garrett Card -->
+        <div class="brand-interactive-card">
+          <a href="garrett-products.html" class="brand-card-link-overlay" aria-label="View Garrett Products"></a>
+          <img src="website/brands/garrett.png" alt="Garrett Detectors" class="brand-card-bg" />
+          <div class="brand-card-content">
+            <h3>Garrett</h3>
+            <div style="display: flex; gap: 10px; position:relative; z-index:3;">
+              <a href="garrett-products.html" class="btn btn--secondary">Explore</a>
+              <button class="btn btn--primary btn--contact-modal" data-product="Garrett">Contact to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 6-Icon Grid & Text -->
+  <section class="section">
+    <div class="container grid-2-col align-start">
+      <div class="icon-grid-6">
+        <div class="icon-block">
+          <div class="ib-icon">ðŸ”</div>
+          <h5>Target ID</h5>
+          <p>Know what you're digging before your shovel hits the dirt.</p>
+        </div>
+        <div class="icon-block">
+          <div class="ib-icon">ðŸ’¦</div>
+          <h5>Waterproof</h5>
+          <p>Detect rivers, creeks, and shorelines with confidence.</p>
+        </div>
+        <div class="icon-block">
+          <div class="ib-icon">ðŸŽ›ï¸</div>
+          <h5>Multi-Freq</h5>
+          <p>Simultaneous signals for maximum depth and accuracy.</p>
+        </div>
+        <div class="icon-block">
+          <div class="ib-icon">ðŸŽ§</div>
+          <h5>Wireless Audio</h5>
+          <p>No tangled cords while swinging through heavy brush.</p>
+        </div>
+        <div class="icon-block">
+          <div class="ib-icon">ðŸª¨</div>
+          <h5>Iron Bias</h5>
+          <p>See through the rusty nails to the silver coins below.</p>
+        </div>
+        <div class="icon-block">
+          <div class="ib-icon">âš–ï¸</div>
+          <h5>Lightweight</h5>
+          <p>Hunt for hours without shoulder fatigue or strain.</p>
+        </div>
+      </div>
+
+      <div class="icon-grid-text">
+        <p class="section-eyebrow">Why Upgrade?</p>
+        <h2 class="section-title">TRANSFORMING HUNTS, RECOVERING HISTORY</h2>
+        <p class="section-desc">There is a profound difference between aimless wandering and precise recovery. Modern
+          multi-frequency technology allows you to punch deeper into heavily mineralized Ontario clay while ignoring
+          rusty iron.</p>
+        <p class="section-desc">We carry the gear that works locally. Come ask Rick what frequencies hit best on Lake
+          Erie beaches.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Video Section -->
+  <div class="video-section">
+    <img src="website/screenshots/gallery.jpg" alt="Video Placeholder" class="video-bg" />
+    <div class="play-btn">
+      <span>â–¶</span>
+    </div>
+  </div>
+
+  <!-- 8. FAQ & Contact Box -->
+  <section class="section">
+    <div class="container grid-2-col contact-layout">
+      <!-- Left: FAQ -->
+      <div class="faq-content">
+        <p class="section-eyebrow">Our Expertise</p>
+        <h2 class="section-title">YOUR SIGNALS, OUR EXPERTISE!</h2>
+        <p class="section-desc">Whether you are digging your first zinc penny or your hundredth silver quarter, having
+          the right local guidance matters.</p>
+
+        <div class="accordion">
+          <div class="acc-item">
+            <button class="acc-btn">Where are you located? <span>+</span></button>
+            <div class="acc-panel">
+              <p>We are located at Hagglers Flea Market, 1565 Barton St. E, Hamilton ON. L8H2Y3.</p>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn">What are your hours? <span>+</span></button>
+            <div class="acc-panel">
+              <p>We are open Sunday from 10am to 5pm. You can call 7 days a week to place an order!</p>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn">What payments do you accept? <span>+</span></button>
+            <div class="acc-panel">
+              <p>We accept Visa, MasterCard, Discovery Card, and Amex. Interac E-Transfer is Preferred.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-row mt-8">
+          <div class="stat-bl">
+            <h3 class="stat-num">5.7K+</h3>
+            <p>Relics Saved</p>
+          </div>
+          <div class="stat-bl">
+            <h3 class="stat-num">1.9K</h3>
+            <p>Local Hunters</p>
+          </div>
+          <div class="stat-bl">
+            <h3 class="stat-num">3+</h3>
+            <p>Major Brands</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dark Contact Box -->
+      <div class="dark-contact-box">
+        <h3>GEAR UP FOR<br>THE HUNT.</h3>
+        <p class="box-desc">Call 7 days a week to place your order or visit us on Sunday.</p>
+
+        <div class="box-info">
+          <p><strong>ðŸ“ Location:</strong><br>Hagglers Flea Market<br>1565 Barton St. E. Hamilton ON. L8H2Y3</p>
+          <p><strong>ðŸ“ž Hamilton:</strong> (905) 870-8689</p>
+          <p><strong>ðŸ“ž St. Catharines:</strong> (905) 931-8866</p>
+          <p><strong>âœ‰ï¸ Email:</strong> gatewaydetecting@hotmail.com</p>
+        </div>
+        <button class="btn btn--primary mt-6 btn--contact-modal" style="width: 100%;">Contact to Order â†’</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Testimonials -->
+  <section class="section bg-secondary text-center">
+    <div class="container">
+      <p class="section-eyebrow">Happy Hunters</p>
+      <h2 class="section-title">SEE WHAT OUR CLIENTS SAY</h2>
+
+      <div class="testimonials-grid mt-8">
+        <div class="testimonial-card text-left"
+          style="background:var(--color-bg-elevated); border:1px solid var(--color-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm);">
+          <p class="quote">"I had the pleasure of buying my Nokta Legend from Rick. His local knowledge of Southern
+            Ontario soil types helped me dial in my settings immediately. Exceeded all expectations!"</p>
+          <div class="t-author mt-4">
+            <div class="t-avatar"></div>
+            <div>
+              <strong>Dave Smith</strong>
+              <span>Relic Hunter</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card text-left"
+          style="background:var(--color-bg-elevated); border:1px solid var(--color-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm);">
+          <p class="quote">"As someone new to the hobby, I needed to trust my dealer. Gateway's honest approach and
+            availability 7 days a week to answer phone calls sets them apart from online big-box stores."</p>
+          <div class="t-author mt-4">
+            <div class="t-avatar"></div>
+            <div>
+              <strong>Emily Fowler</strong>
+              <span>Beach Detectorist</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card text-left"
+          style="background:var(--color-bg-elevated); border:1px solid var(--color-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm);">
+          <p class="quote">"Choosing Gateway to outfit our club was the best decision. The level of after-sales support
+            and the clear 'In Stock' updates made the whole process seamless."</p>
+          <div class="t-author mt-4">
+            <div class="t-avatar"></div>
+            <div>
+              <strong>John Davis</strong>
+              <span>Club President</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. News/Blog -->
+  <section class="section">
+    <div class="container pb-12">
+      <div class="grid-2-col">
+        <!-- Main post -->
+        <div class="main-post">
+          <img src="website/screenshots/blog.jpg" alt="Blog Main" class="img-fluid rounded" />
+          <div class="post-content mt-4">
+            <p class="post-meta">DATE â€¢ TIPS</p>
+            <h3 class="post-title">10 TIPS FOR HUNTING ONTARIO FARMSTEADS</h3>
+            <p class="post-desc">Learn how to read the landscape and historical maps to pinpoint exactly where the old
+              settlements were located.</p>
+            <a href="#" class="btn btn--ghost mt-2">Read More â†’</a>
+          </div>
+        </div>
+        <!-- Small posts stack -->
+        <div class="small-posts-stack">
+          <div class="small-post">
+            <img src="website/screenshots/faq.jpg" alt="Post thumb" />
+            <div class="sp-content">
+              <p class="post-meta">NEWS â€¢ GEAR</p>
+              <h4>UNCOVERING DEPTH: MULTI-FREQ VS SINGLE</h4>
+              <a href="#" class="ghost-link">Read More</a>
+            </div>
+          </div>
+          <div class="small-post">
+            <img src="website/screenshots/contact.jpg" alt="Post thumb" />
+            <div class="sp-content">
+              <p class="post-meta">TUTORIAL â€¢ CLEANING</p>
+              <h4>THE ART OF CLEANING YOUR FIRST FOUND COIN</h4>
+              <a href="#" class="ghost-link">Read More</a>
+            </div>
+          </div>
+          <div class="small-post">
+            <img src="website/screenshots/about-us.jpg" alt="Post thumb" />
+            <div class="sp-content">
+              <p class="post-meta">LOCAL â€¢ LAWS</p>
+              <h4>UNDERSTANDING ONTARIO BEACH DETECTING RULES</h4>
+              <a href="#" class="ghost-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Footer -->
+  <footer class="decraft-footer" id="contact">
+    <div class="container footer-grid-4">
+      <div class="f-col brand-col">
+        <h3 class="logo-text">GATEWAY</h3>
+        <p>Southern Ontario's authorized dealer for Minelab, Garrett, and Nokta metal detectors since 2012.</p>
+        <div class="f-socials mt-4">
+          <span>FB</span> <span>IG</span> <span>YT</span>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="index.html#products">Detectors</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Hagglers Flea Market<br>1565 Barton St. E, Hamilton ON</li>
+          <li>Ham: (905) 870-8689</li>
+          <li>St. Catharines: (905) 931-8866</li>
+          <li>gatewaydetecting@hotmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>Copyright Â© 2026 Gateway Metal Detectors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Contact Modal Pop-up -->
+  <dialog id="contact-modal" class="modal glass-card" aria-label="Contact to Order">
+    <div class="modal__inner">
+      <button class="modal__close" aria-label="Close modal">Ã—</button>
+      <h3 class="modal__title">Contact to Order</h3>
+      <p class="modal__desc">Reach out to secure your detector. We will help you find exactly what you were looking for.
+      </p>
+
+      <div class="modal__contact-methods">
+        <p><strong>Hamilton:</strong> (905) 870-8689</p>
+        <p><strong>St. Catharines:</strong> (905) 931-8866</p>
+        <p><strong>Email:</strong> <a href="mailto:gatewaydetecting@hotmail.com">gatewaydetecting@hotmail.com</a></p>
+      </div>
+
+      <div class="modal__payment-info">
+        <p><strong>We accept:</strong> Visa, MasterCard, Discovery Card, Amex.</p>
+        <p class="modal__highlight">Interac E-Transfer is Preferred.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/decraft.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+{
+    "version": "0.4",
+    "title": "404 Page",
+    "type": "section",
+    "metadata": {
+        "template_type": "single-404",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "id": "332cd7f7",
+            "settings": {
+                "flex_direction": "column",
+                "min_height": {
+                    "unit": "vh",
+                    "size": 100,
+                    "sizes": []
+                },
+                "min_height_tablet": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "min_height_mobile": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "flex_justify_content": "center",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_image": {
+                    "url": "http:\/\/dkkit.rometheme.pro\/decraft\/wp-content\/uploads\/sites\/101\/2024\/04\/PTMRKGR.jpg",
+                    "id": 542,
+                    "size": "",
+                    "alt": "",
+                    "source": "library"
+                },
+                "background_position": "center center",
+                "background_repeat": "no-repeat",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_opacity": {
+                    "unit": "px",
+                    "size": 0.75,
+                    "sizes": []
+                },
+                "__globals__": {
+                    "background_overlay_color": "globals\/colors?id=secondary"
+                }
+            },
+            "elements": [
+                {
+                    "id": "1eb15a91",
+                    "settings": {
+                        "title": "404",
+                        "header_size": "div",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                            "unit": "rem",
+                            "size": 8,
+                            "sizes": []
+                        },
+                        "typography_font_size_tablet": {
+                            "unit": "rem",
+                            "size": 3.2,
+                            "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                            "unit": "rem",
+                            "size": 2.4,
+                            "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_line_height": {
+                            "unit": "em",
+                            "size": "",
+                            "sizes": []
+                        },
+                        "typography_line_height_tablet": {
+                            "unit": "em",
+                            "size": 1,
+                            "sizes": []
+                        },
+                        "typography_line_height_mobile": {
+                            "unit": "em",
+                            "size": 1,
+                            "sizes": []
+                        },
+                        "__globals__": {
+                            "title_color": "globals\/colors?id=primary",
+                            "typography_typography": ""
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "heading",
+                    "elType": "widget"
+                },
+                {
+                    "id": "6e3f0d6",
+                    "settings": {
+                        "title": "Oops! Space Not Found",
+                        "__globals__": {
+                            "title_color": "globals\/colors?id=primary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "heading",
+                    "elType": "widget"
+                },
+                {
+                    "id": "7aec0cab",
+                    "settings": {
+                        "align": "center",
+                        "__globals__": {
+                            "text_color": "globals\/colors?id=primary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "text-editor",
+                    "elType": "widget"
+                },
+                {
+                    "id": "5ba50eaf",
+                    "settings": {
+                        "text": "back to Home",
+                        "link": {
+                            "url": "https:\/\/dkkit.rometheme.pro\/decraft\/",
+                            "is_external": "",
+                            "nofollow": "",
+                            "custom_attributes": ""
+                        },
+                        "button_hover_transition_duration": {
+                            "unit": "s",
+                            "size": 0.5,
+                            "sizes": []
+                        },
+                        "hover_animation": "shrink",
+                        "border_border": "solid",
+                        "border_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "__globals__": {
+                            "button_text_color": "globals\/colors?id=primary",
+                            "border_color": "globals\/colors?id=primary",
+                            "button_background_hover_color": "globals\/colors?id=primary",
+                            "button_hover_border_color": "globals\/colors?id=primary",
+                            "hover_color": "globals\/colors?id=secondary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "button",
+                    "elType": "widget"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        }
+    ],
+    "page_settings": {
+        "hide_title": "yes",
+        "template": "elementor_canvas"
+    }
+}

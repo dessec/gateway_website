@@ -1,0 +1,607 @@
+{
+    "version": "0.4",
+    "title": "Contact RomethemeForm",
+    "type": "section",
+    "metadata": {
+        "template_type": "section-contact",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "id": "28dac5d8",
+            "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "flex_gap": {
+                    "column": "20",
+                    "row": "20",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 20
+                }
+            },
+            "elements": [
+                {
+                    "id": "771b9c56",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_gap": {
+                            "column": "20",
+                            "row": "20",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 20
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "21ef382d",
+                            "settings": {
+                                "show_label": "",
+                                "label_text": "Text",
+                                "name_input": "rform-text",
+                                "placeholder_input": "Your Name",
+                                "warning_message": "This field is required",
+                                "input_padding": {
+                                    "unit": "px",
+                                    "top": "12",
+                                    "right": "12",
+                                    "bottom": "12",
+                                    "left": "12",
+                                    "isLinked": true
+                                },
+                                "input_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_border_radius": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_background_normal_background": "classic",
+                                "input_border_normal_border": "solid",
+                                "input_border_normal_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_hover_background": "classic",
+                                "input_border_hover_border": "solid",
+                                "input_border_hover_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_focus_background": "classic",
+                                "input_border_focus_border": "solid",
+                                "input_border_focus_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_warning_background": "classic",
+                                "input_border_warning_border": "solid",
+                                "input_border_warning_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_flex_size": "grow",
+                                "__globals__": {
+                                    "input_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_background_normal_color": "globals\/colors?id=a580a2d",
+                                    "input_color_normal": "globals\/colors?id=text",
+                                    "placeholder_color": "globals\/colors?id=text",
+                                    "placeholder_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_border_normal_color": "globals\/colors?id=text",
+                                    "input_color_hover": "globals\/colors?id=secondary",
+                                    "input_background_hover_color": "globals\/colors?id=a580a2d",
+                                    "input_border_hover_color": "globals\/colors?id=secondary",
+                                    "input_color_focus": "globals\/colors?id=secondary",
+                                    "input_background_focus_color": "globals\/colors?id=a580a2d",
+                                    "input_border_focus_color": "globals\/colors?id=secondary",
+                                    "input_color_warning": "globals\/colors?id=secondary",
+                                    "input_background_warning_color": "globals\/colors?id=a580a2d",
+                                    "input_border_warning_color": "globals\/colors?id=secondary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "ff04f68",
+                            "settings": {
+                                "show_label": "",
+                                "label_text": "Email",
+                                "name_input": "rform-email",
+                                "placeholder_input": "Your Email",
+                                "warning_message": "This field is required",
+                                "input_padding": {
+                                    "unit": "px",
+                                    "top": "12",
+                                    "right": "12",
+                                    "bottom": "12",
+                                    "left": "12",
+                                    "isLinked": true
+                                },
+                                "input_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_border_radius": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_background_normal_background": "classic",
+                                "input_border_normal_border": "solid",
+                                "input_border_normal_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_hover_background": "classic",
+                                "input_border_hover_border": "solid",
+                                "input_border_hover_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_focus_background": "classic",
+                                "input_border_focus_border": "solid",
+                                "input_border_focus_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_warning_background": "classic",
+                                "input_border_warning_border": "solid",
+                                "input_border_warning_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_flex_size": "grow",
+                                "__globals__": {
+                                    "input_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_background_normal_color": "globals\/colors?id=a580a2d",
+                                    "input_color_normal": "globals\/colors?id=text",
+                                    "placeholder_color": "globals\/colors?id=text",
+                                    "placeholder_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_border_normal_color": "globals\/colors?id=text",
+                                    "input_color_hover": "globals\/colors?id=secondary",
+                                    "input_background_hover_color": "globals\/colors?id=a580a2d",
+                                    "input_border_hover_color": "globals\/colors?id=secondary",
+                                    "input_color_focus": "globals\/colors?id=secondary",
+                                    "input_background_focus_color": "globals\/colors?id=a580a2d",
+                                    "input_border_focus_color": "globals\/colors?id=secondary",
+                                    "input_color_warning": "globals\/colors?id=secondary",
+                                    "input_background_warning_color": "globals\/colors?id=a580a2d",
+                                    "input_border_warning_color": "globals\/colors?id=secondary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "email",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "57322b70",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_gap": {
+                            "column": "20",
+                            "row": "20",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 20
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "36dc1e4a",
+                            "settings": {
+                                "show_label": "",
+                                "label_text": "Phone Number",
+                                "name_input": "rform-phone",
+                                "placeholder_input": "Your Number",
+                                "warning_message": "This field is required",
+                                "input_padding": {
+                                    "unit": "px",
+                                    "top": "12",
+                                    "right": "12",
+                                    "bottom": "12",
+                                    "left": "12",
+                                    "isLinked": true
+                                },
+                                "input_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_border_radius": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_background_normal_background": "classic",
+                                "input_border_normal_border": "solid",
+                                "input_border_normal_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_hover_background": "classic",
+                                "input_border_hover_border": "solid",
+                                "input_border_hover_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_focus_background": "classic",
+                                "input_border_focus_border": "solid",
+                                "input_border_focus_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_warning_background": "classic",
+                                "input_border_warning_border": "solid",
+                                "input_border_warning_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 50,
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "input_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_background_normal_color": "globals\/colors?id=a580a2d",
+                                    "input_color_normal": "globals\/colors?id=text",
+                                    "placeholder_color": "globals\/colors?id=text",
+                                    "placeholder_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_border_normal_color": "globals\/colors?id=text",
+                                    "input_color_hover": "globals\/colors?id=secondary",
+                                    "input_background_hover_color": "globals\/colors?id=a580a2d",
+                                    "input_border_hover_color": "globals\/colors?id=secondary",
+                                    "input_color_focus": "globals\/colors?id=secondary",
+                                    "input_background_focus_color": "globals\/colors?id=a580a2d",
+                                    "input_border_focus_color": "globals\/colors?id=secondary",
+                                    "input_color_warning": "globals\/colors?id=secondary",
+                                    "input_background_warning_color": "globals\/colors?id=a580a2d",
+                                    "input_border_warning_color": "globals\/colors?id=secondary"
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "rform_phone",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "7932f536",
+                            "settings": {
+                                "show_label": "",
+                                "label_text": "Text",
+                                "name_input": "rform-text",
+                                "placeholder_input": "Your Subject",
+                                "warning_message": "This field is required",
+                                "input_padding": {
+                                    "unit": "px",
+                                    "top": "12",
+                                    "right": "12",
+                                    "bottom": "12",
+                                    "left": "12",
+                                    "isLinked": true
+                                },
+                                "input_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_border_radius": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "input_background_normal_background": "classic",
+                                "input_border_normal_border": "solid",
+                                "input_border_normal_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_hover_background": "classic",
+                                "input_border_hover_border": "solid",
+                                "input_border_hover_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_focus_background": "classic",
+                                "input_border_focus_border": "solid",
+                                "input_border_focus_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "input_background_warning_background": "classic",
+                                "input_border_warning_border": "solid",
+                                "input_border_warning_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 50,
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "input_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_background_normal_color": "globals\/colors?id=a580a2d",
+                                    "input_color_normal": "globals\/colors?id=text",
+                                    "placeholder_color": "globals\/colors?id=text",
+                                    "placeholder_typography_typography": "globals\/typography?id=6f6c7bb",
+                                    "input_border_normal_color": "globals\/colors?id=text",
+                                    "input_color_hover": "globals\/colors?id=secondary",
+                                    "input_background_hover_color": "globals\/colors?id=a580a2d",
+                                    "input_border_hover_color": "globals\/colors?id=secondary",
+                                    "input_color_focus": "globals\/colors?id=secondary",
+                                    "input_background_focus_color": "globals\/colors?id=a580a2d",
+                                    "input_border_focus_color": "globals\/colors?id=secondary",
+                                    "input_color_warning": "globals\/colors?id=secondary",
+                                    "input_background_warning_color": "globals\/colors?id=a580a2d",
+                                    "input_border_warning_color": "globals\/colors?id=secondary"
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "3c6bb0c2",
+                    "settings": {
+                        "show_label": "",
+                        "label_text": "Message",
+                        "name_input": "rform-message ",
+                        "placeholder_input": "Write Message Here",
+                        "warning_message": "This field is required",
+                        "input_height": {
+                            "unit": "px",
+                            "size": 215,
+                            "sizes": []
+                        },
+                        "input_padding": {
+                            "unit": "px",
+                            "top": "12",
+                            "right": "12",
+                            "bottom": "12",
+                            "left": "12",
+                            "isLinked": true
+                        },
+                        "input_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "input_border_radius": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false,
+                            "size": 0
+                        },
+                        "input_border_radius_tablet": {
+                            "unit": "px",
+                            "top": "",
+                            "right": "",
+                            "bottom": "",
+                            "left": "",
+                            "isLinked": true
+                        },
+                        "input_border_radius_mobile": {
+                            "unit": "px",
+                            "top": "",
+                            "right": "",
+                            "bottom": "",
+                            "left": "",
+                            "isLinked": true
+                        },
+                        "input_background_normal_background": "classic",
+                        "input_border_normal_border": "solid",
+                        "input_border_normal_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "input_background_hover_background": "classic",
+                        "input_border_hover_border": "solid",
+                        "input_border_hover_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "input_background_focus_background": "classic",
+                        "input_border_focus_border": "solid",
+                        "input_border_focus_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "input_background_warning_background": "classic",
+                        "input_border_warning_border": "solid",
+                        "input_border_warning_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "_flex_size": "grow",
+                        "__globals__": {
+                            "input_typography_typography": "globals\/typography?id=6f6c7bb",
+                            "input_background_normal_color": "globals\/colors?id=a580a2d",
+                            "input_color_normal": "globals\/colors?id=text",
+                            "placeholder_color": "globals\/colors?id=text",
+                            "placeholder_typography_typography": "globals\/typography?id=6f6c7bb",
+                            "input_border_normal_color": "globals\/colors?id=text",
+                            "input_color_hover": "globals\/colors?id=secondary",
+                            "input_background_hover_color": "globals\/colors?id=a580a2d",
+                            "input_border_hover_color": "globals\/colors?id=secondary",
+                            "input_color_focus": "globals\/colors?id=secondary",
+                            "input_background_focus_color": "globals\/colors?id=a580a2d",
+                            "input_border_focus_color": "globals\/colors?id=secondary",
+                            "input_color_warning": "globals\/colors?id=secondary",
+                            "input_background_warning_color": "globals\/colors?id=a580a2d",
+                            "input_border_warning_color": "globals\/colors?id=secondary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "text-area",
+                    "elType": "widget"
+                },
+                {
+                    "id": "7f357d0",
+                    "settings": {
+                        "button_text": "Send Your Message",
+                        "btn_background_normal_background": "classic",
+                        "btn_background_hover_background": "classic",
+                        "__globals__": {
+                            "btn_background_normal_color": "globals\/colors?id=secondary",
+                            "btn_color_normal": "globals\/colors?id=primary",
+                            "btn_color_hover": "globals\/colors?id=secondary",
+                            "btn_background_hover_color": "globals\/colors?id=a580a2d"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "rform_button_submit",
+                    "elType": "widget"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        }
+    ]
+}

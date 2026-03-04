@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Services â€” Gateway Metal Detectors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/decraft.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+</head>
+
+<body class="decraft-layout">
+
+    <!-- 1. Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="logo-text">GATEWAY</span>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#products">Detectors</a>
+                <a href="services.html" style="color: var(--color-accent-primary);">Contact & Services</a>
+                <a href="discovery-map.html">Discovery Map</a>
+            </nav>
+            <div class="header__contact">
+                <span class="phone-link">(905) 870-8689</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Services Hero Section -->
+    <section class="services-hero">
+        <img src="website/screenshots/hero-bg.jpg" alt="Services Background" class="hero__bg"
+            style="opacity:0.4; filter: contrast(1.2) grayscale(0.5);" />
+        <div class="hero__overlay" style="background: rgba(10, 14, 26, 0.75);"></div>
+        <div class="hero__content text-center" style="position: relative; z-index: 2; padding: 120px 0;">
+            <h1 class="hero__title" style="font-size: 3.5rem; margin-bottom: 8px;">SERVICES</h1>
+            <p
+                style="color: var(--color-text-muted); font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.15em;">
+                HOME â€” SERVICES</p>
+        </div>
+    </section>
+
+    <!-- 3. Services Layout (Left Card + Right Grid) -->
+    <section class="section">
+        <div class="container services-main-layout">
+
+            <!-- Left Feature Card -->
+            <div class="services-left-card glass-card">
+                <img src="website/screenshots/services.jpg" alt="12 Years" class="s-card-bg" />
+                <div class="s-card-overlay"></div>
+                <div class="s-card-content">
+                    <h2 class="overlap__h2">12+</h2>
+                    <h3 class="overlap__h3" style="color:#fff;">Years of<br>Experience</h3>
+                    <p class="mb-8" style="color: var(--color-text-secondary); line-height: 1.6; font-size: 0.95rem;">
+                        Serving Southern Ontario since 2012. We are known for quality detectors in the Hamilton and
+                        Niagara region.
+                    </p>
+                    <button class="btn btn--secondary btn--contact-modal"
+                        style="width: 100%; border-color: rgba(200,151,42,0.4);" data-product="General Inquiry">CONTACT
+                        US</button>
+                </div>
+            </div>
+
+            <!-- Right Service Grid -->
+            <div class="services-right-grid">
+
+                <!-- Service 1 -->
+                <div class="service-item">
+                    <div class="s-icon">ðŸ•ï¸</div>
+                    <h4>Valuable Recovery<br>(Lost & Found)</h4>
+                    <p>Lost a wedding band, jewelry, or keys? We offer professional metal detecting recovery services.
+                        We can search yards, parks, beaches, and shallow water (wading depthâ€”no deep scuba diving
+                        required). Let us help reunite you with your lost keepsakes.</p>
+                    <button class="ghost-link btn--contact-modal"
+                        style="background:none; border:none; padding:0; cursor:pointer; font-family:inherit; margin-top: 8px; border-bottom: 2px solid var(--color-accent-primary); color: var(--color-text-primary); text-transform:uppercase; letter-spacing:0.05em; font-size:0.8rem;"
+                        data-product="Recovery Assistance">Request Assistance</button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-item">
+                    <div class="s-icon">ðŸŽ¯</div>
+                    <h4>Expert Equipment<br>Matchmaking</h4>
+                    <p>As an authorized dealer for Minelab, Nokta, and Garrett, we don't just sell boxes. Tell us how
+                        you want to hunt, and we will match you with the perfect machine for the Southern Ontario
+                        terrain.</p>
+                    <button class="ghost-link btn--contact-modal"
+                        style="background:none; border:none; padding:0; cursor:pointer; font-family:inherit; margin-top: 8px; border-bottom: 2px solid var(--color-accent-primary); color: var(--color-text-primary); text-transform:uppercase; letter-spacing:0.05em; font-size:0.8rem;"
+                        data-product="Equipment Matchmaking">Contact to Order</button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-item">
+                    <div class="s-icon">ðŸ§­</div>
+                    <h4>Beginner Training &<br>Orientation</h4>
+                    <p>New to the hobby? We offer basic orientation with your purchase. We will show you how to properly
+                        swing, understand tones, and dig clean plugs so you can start finding treasure immediately.</p>
+                    <button class="ghost-link btn--contact-modal"
+                        style="background:none; border:none; padding:0; cursor:pointer; font-family:inherit; margin-top: 8px; border-bottom: 2px solid var(--color-accent-primary); color: var(--color-text-primary); text-transform:uppercase; letter-spacing:0.05em; font-size:0.8rem;"
+                        data-product="Training Request">Contact to Order</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Video Section -->
+    <div class="video-section">
+        <img src="website/screenshots/gallery.jpg" alt="Video Placeholder" class="video-bg" />
+        <div class="play-btn">
+            <span>â–¶</span>
+        </div>
+    </div>
+
+    <!-- 5. FAQ & Contact Box (From Index) -->
+    <section class="section">
+        <div class="container grid-2-col contact-layout">
+            <!-- Left: FAQ -->
+            <div class="faq-content">
+                <p class="section-eyebrow">Our Expertise</p>
+                <h2 class="section-title">YOUR SIGNALS, OUR EXPERTISE!</h2>
+                <p class="section-desc">Whether you are digging your first zinc penny or your hundredth silver quarter,
+                    having
+                    the right local guidance matters.</p>
+
+                <div class="accordion">
+                    <div class="acc-item">
+                        <button class="acc-btn">Where are you located? <span>+</span></button>
+                        <div class="acc-panel">
+                            <p>We are located at Hagglers Flea Market, 1565 Barton St. E, Hamilton ON. L8H2Y3.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-btn">What are your hours? <span>+</span></button>
+                        <div class="acc-panel">
+                            <p>We are open Sunday from 10am to 5pm. You can call 7 days a week to place an order!</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-btn">What payments do you accept? <span>+</span></button>
+                        <div class="acc-panel">
+                            <p>We accept Visa, MasterCard, Discovery Card, and Amex. Interac E-Transfer is Preferred.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-row mt-8">
+                    <div class="stat-bl">
+                        <h3 class="stat-num">5.7K+</h3>
+                        <p>Relics Saved</p>
+                    </div>
+                    <div class="stat-bl">
+                        <h3 class="stat-num">1.9K</h3>
+                        <p>Local Hunters</p>
+                    </div>
+                    <div class="stat-bl">
+                        <h3 class="stat-num">3+</h3>
+                        <p>Major Brands</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Dark Contact Box -->
+            <div class="dark-contact-box">
+                <h3>GEAR UP FOR<br>THE HUNT.</h3>
+                <p class="box-desc">Call 7 days a week to place your order or visit us on Sunday.</p>
+
+                <div class="box-info">
+                    <p><strong>ðŸ“ Location:</strong><br>Hagglers Flea Market<br>1565 Barton St. E. Hamilton ON. L8H2Y3
+                    </p>
+                    <p><strong>ðŸ“ž Hamilton:</strong> (905) 870-8689</p>
+                    <p><strong>ðŸ“ž St. Catharines:</strong> (905) 931-8866</p>
+                    <p><strong>âœ‰ï¸ Email:</strong> gatewaydetecting@hotmail.com</p>
+                </div>
+                <button class="btn btn--primary mt-6 btn--contact-modal" style="width: 100%;">Contact Us â†’</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Testimonials -->
+    <section class="section bg-secondary text-center">
+        <div class="container">
+            <p class="section-eyebrow">Happy Hunters</p>
+            <h2 class="section-title">SEE WHAT OUR CLIENTS SAY</h2>
+
+            <div class="testimonials-grid mt-8">
+                <div class="testimonial-card glass-card text-left">
+                    <p class="quote">"Gateway Metal Detectors recovered my lost wedding band from the shallow surf at
+                        Crystal Beach in under 45 minutes! Absolute lifesavers and extremely professional."</p>
+                    <div class="t-author mt-4">
+                        <div class="t-avatar"></div>
+                        <div>
+                            <strong>Dave Smith</strong>
+                            <span>Recovery Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card text-left">
+                    <p class="quote">"As someone new to the hobby, I needed to trust my dealer. Gateway's honest
+                        approach and
+                        availability 7 days a week to answer phone calls sets them apart from online big-box stores."
+                    </p>
+                    <div class="t-author mt-4">
+                        <div class="t-avatar"></div>
+                        <div>
+                            <strong>Emily Fowler</strong>
+                            <span>Beach Detectorist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card text-left">
+                    <p class="quote">"Choosing Gateway to outfit our club was the best decision. The level of
+                        after-sales support
+                        and the clear 'In Stock' updates made the whole process seamless."</p>
+                    <div class="t-author mt-4">
+                        <div class="t-avatar"></div>
+                        <div>
+                            <strong>John Davis</strong>
+                            <span>Club President</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer class="decraft-footer" id="contact">
+        <div class="container footer-grid-4">
+            <div class="f-col brand-col">
+                <h3 class="logo-text">GATEWAY</h3>
+                <p>Southern Ontario's authorized dealer for Minelab, Garrett, and Nokta metal detectors since 2012.</p>
+                <div class="f-socials mt-4">
+                    <span>FB</span> <span>IG</span> <span>YT</span>
+                </div>
+            </div>
+            <div class="f-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#products">Detectors</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Hagglers Flea Market<br>1565 Barton St. E, Hamilton ON</li>
+                    <li>Ham: (905) 870-8689</li>
+                    <li>St. Catharines: (905) 931-8866</li>
+                    <li>gatewaydetecting@hotmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>Copyright Â© 2026 Gateway Metal Detectors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal Pop-up -->
+    <dialog id="contact-modal" class="modal glass-card" aria-label="Contact to Order">
+        <div class="modal__inner">
+            <button class="modal__close" aria-label="Close modal">Ã—</button>
+            <h3 class="modal__title">Contact to Order</h3>
+            <p class="modal__desc">Reach out to secure your detector or request recovery assistance. We will help you
+                find exactly what you were looking for.
+            </p>
+
+            <div class="modal__contact-methods">
+                <p><strong>Hamilton:</strong> (905) 870-8689</p>
+                <p><strong>St. Catharines:</strong> (905) 931-8866</p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:gatewaydetecting@hotmail.com">gatewaydetecting@hotmail.com</a></p>
+            </div>
+
+            <div class="modal__payment-info">
+                <p><strong>We accept:</strong> Visa, MasterCard, Discovery Card, Amex.</p>
+                <p class="modal__highlight">Interac E-Transfer is Preferred.</p>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="js/decraft.js"></script>
+</body>
+
+</html>
