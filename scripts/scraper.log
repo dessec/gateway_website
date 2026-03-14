@@ -1,0 +1,14 @@
+2026-03-13 20:55:47,350 - INFO - Starting live stock sync...
+2026-03-13 20:55:47,372 - INFO - Targeting Minelab API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BMinelab%5D%5Bkey%5D=Minelab&termsFilters%5BMinelab%5D%5Bname%5D=manufacturer
+2026-03-13 20:55:53,153 - INFO - Targeting Garrett API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BGarrett%5D%5Bkey%5D=Garrett&termsFilters%5BGarrett%5D%5Bname%5D=manufacturer
+2026-03-13 20:55:59,589 - INFO - Targeting Nokta API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BNokta%5D%5Bkey%5D=Nokta&termsFilters%5BNokta%5D%5Bname%5D=manufacturer
+2026-03-13 20:56:05,553 - INFO - Targeting XP Metal Detectors API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BXP+Metal+Detectors%5D%5Bkey%5D=XP+Metal+Detectors&termsFilters%5BXP+Metal+Detectors%5D%5Bname%5D=manufacturer
+2026-03-13 20:56:05,826 - WARNING - No products found for XP Metal Detectors via API.
+2026-03-13 20:56:09,337 - INFO - Successfully synced 300 products to C:\Projects\Gateway_Final\scripts\live_inventory.json
+2026-03-13 21:05:11,205 - INFO - Starting live stock sync...
+2026-03-13 21:05:11,228 - INFO - Targeting Minelab API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BMinelab%5D%5Bkey%5D=Minelab&termsFilters%5BMinelab%5D%5Bname%5D=manufacturer
+2026-03-13 21:05:18,481 - INFO - Targeting Garrett API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BGarrett%5D%5Bkey%5D=Garrett&termsFilters%5BGarrett%5D%5Bname%5D=manufacturer
+2026-03-13 21:05:25,666 - INFO - Targeting Nokta API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BNokta%5D%5Bkey%5D=Nokta&termsFilters%5BNokta%5D%5Bname%5D=manufacturer
+2026-03-13 21:05:31,555 - INFO - Targeting XP Metal Detectors API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BXP+Metal+Detectors%5D%5Bkey%5D=XP+Metal+Detectors&termsFilters%5BXP+Metal+Detectors%5D%5Bname%5D=manufacturer
+2026-03-13 21:05:31,818 - WARNING - No products found for XP Metal Detectors via API.
+2026-03-13 21:05:35,170 - INFO - Successfully synced 300 products to C:\Projects\Gateway_Final\scripts\live_inventory.json

@@ -1,0 +1,10 @@
+https://ui.aceternity.com/blocks/testimonials/testimonials-marquee-grid
+https://ui.aceternity.com/components/sticky-banner
+https://ui.aceternity.com/components/focus-cards
+https://ui.aceternity.com/components/draggable-card
+https://ui.aceternity.com/components/file-upload
+https://ui.aceternity.com/blocks/testimonials
+https://ui.aceternity.com/blocks/navbars/navbar-underline
+https://ui.aceternity.com/blocks/contact-sections
+https://ui.aceternity.com/blocks/login-and-signup-sections
+https://ui.aceternity.com/components/placeholders-and-vanish-input

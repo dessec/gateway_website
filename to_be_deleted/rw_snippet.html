@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="custom">
+    <head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+(window,'GTM-P8TTHNK','google_tags_first_party');</script><script>(function(w,d,s,l){w[l]=w[l]||[];(function(){w[l].push(arguments);})('set', 'developer_id.dY2E1Nz', true);
+		var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s);j.async=true;j.src='/dvkz/';
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer');</script>
+        
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function buildItem(partNum, shortDescription, manufacturer, defaultCategory, price, quantity) {
+            return {
+                item_id: partNum,
+                item_name: shortDescription,
+                item_brand: manufacturer,
+                item_category: defaultCategory,
+                price: price,
+                currency: "CAD",
+                quantity: quantity,
+            };
+        }
+
+        
+        function dataLayerAddToCartEvent(message)
+        {
+            if (_.isEmpty(message)) {
+                return;
+            }
+
+            $.each(message, function (index, item) {
+                if (item.success) {
+                    window.dataLayer.push({
+                        event: "add_to_cart",
+                        ecommerce: {
+                            items: [
+                                buildItem(
+                                    item.part_num,
+                                    item.title,
+                                    item.manufacturer,
+                                    item.defaultCategory,
+                                    parseFloat(item.price).toFixed(2),
+                                    item.qty,
+                                )
+                            ]
+                        }
+                    });
+                }
+            });
+        }
+
+        function dataLayerRemoveFromCartEvent(message)
+        {
+            if (_.isEmpty(message)) {
+                return;
+            }
+
+            var removedItems = [];
+            var position = 0;
+            var totalValue = 0;
+
+            $.each(message, function (index, item) {
+                if (!item.hasOwnProperty('price')) {
+                    return;
+                }
+
+                if (item.success) {
+                    totalValue += item.price;
+
+                    removedItems.push(
+                        buildItem(
+                            item.part_num,
+                            item.title,
+                            item.manufacturer,
+                            item.defaultCategory,
+                            parseFloat(item.price).toFixed(2),
+                            item.qty,
+                        )
+                    );
+                }
+            });
+
+            if (removedItems.length) {
+                window.dataLayer.push({
+                    event: "remove_from_cart",
+                    ecommerce: {
+                        items: removedItems
+                    }
+                });
+            }
+        }
+
+        
+            </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P8TTHNK');</script>
+    <!-- End Google Tag Manager -->
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+                
+        
+        <link rel="icon" href="https://www.radioworld.ca/favicon.ico" type="image/x-icon" />
+
+                                    <style type="text/css">@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/latin/100/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/greek/100/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/100/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/100/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/100/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/100/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/100/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/latin/300/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/greek/300/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/300/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/300/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/300/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/300/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/300/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/500/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/greek/500/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/500/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/500/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/500/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/500/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/latin/500/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/700/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/greek/700/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/700/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/700/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/900/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/900/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/900/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/900/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/latin/900/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/900/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/greek/900/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}</style>
+                                        <style type="text/css">@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/latin/100/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/100/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/100/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/100/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/100/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/100/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:100;src:url(/cf-fonts/s/roboto/5.0.11/greek/100/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/300/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/300/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/greek/300/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/latin/300/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/300/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/300/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/300/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/greek/500/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/500/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/500/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/500/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/latin/500/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/500/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/500/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/700/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/700/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/700/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/greek/700/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/900/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/900/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/greek/900/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/900/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/latin/900/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/900/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:900;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/900/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+                    
+        <title>Metal Detectors - Radioworld</title>
+        <meta name="description" content="Metal Detectors" />
+        <meta name="keywords" content="Metal Detectors" />
+
+                            
+        
+        <script type="text/javascript">var base_index_url = "https://www.radioworld.ca/";</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.0/lodash.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jQuery.print@1.5.1/jQuery.print.min.js"></script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.radioworld.ca/application/modules/core/assets/js/Core.js?v=200355"></script>
+<script type="text/javascript" src="https://www.radioworld.ca/application/modules/core/assets/js/zsAjaxCart.js?v=200355"></script>
+
+
+<script type="text/javascript" src="https://www.radioworld.ca/application/modules/core/assets/mdb/js/popper.min.js?v=200355"></script>
+<script type="text/javascript" src="https://www.radioworld.ca/application/modules/core/assets/mdb/js/bootstrap.min.js?v=200355"></script>
+<script type="text/javascript" src="https://www.radioworld.ca/application/modules/core/assets/mdb/js/modules/sideNav.js?v=200355"></script>
+
+<link type="text/css" rel="stylesheet" media="screen, print" href="https://www.radioworld.ca/bower_components/animate.css/animate.min.css?v=200355">
+<link type="text/css" rel="stylesheet" media="screen, print" href="https://www.radioworld.ca/application/modules/core/assets/mdb/css/bootstrap.css?v=200355">
+<link type="text/css" rel="stylesheet" media="screen, print" href="https://www.radioworld.ca/application/modules/core/assets/mdb/css/mdb.min.css?v=200355">
+
+<link type="text/css" rel="stylesheet" media="screen" href="https://www.radioworld.ca/application/modules/core/assets/styles/global.css?v=200355">
+
+
+<script type="text/javascript">
+    window.payloads = {};
+
+    window.isMobile = '' ? true : false;
+    window.hidePartNumber = 0;
+    window.isIe11 = 0
+
+    window.Quote = {};
+    window.Quote.quoteCartEnabled = false;
+    window.Quote.showAddToCartForQuotableProducts = false;
+
+    var onlyDisplayAlternates = "0";
+    var displayAlternateField = "";
+    var maximumQuantityLimitForCart = 100;
+    var fullStarImage = base_index_url + 'images/uploads/image/star.png';
+    var halfStarImage = base_index_url + 'images/uploads/image/star-half.png';
+    var emptyStarImage = base_index_url + 'images/uploads/image/star-empty.png';
+</script>
+
+<link type="text/css" rel="stylesheet" media="screen, print" href="https://www.radioworld.ca/application/glue/themes/radioworld/css/Custom.css?v=200355">
+
+
+
+        <script>
+    $(document).ready(function( ) {
+        new WOW().init();
+
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if (scroll > 0) {
+                $("body").addClass("scrolled");
+            } else {
+                $("body").removeClass("scrolled");
+            }
+        });
+
+        adjustWidth();
+
+        $(window).resize(
+            function() {
+                adjustWidth();
+            }
+        );
+
+        function adjustWidth() {
+            $("#section-before-main").width($("#wrapper").width());
+        }
+
+        $(".button-collapse").sideNav();
+    });
+</script>
+
+
+                        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K153HYF1C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        
+        gtag('js', new Date());
+
+        gtag('set', {
+            currency: 'CAD',
+        });
+
+        gtag('config', 'G-7K153HYF1C');
+
+        
+        function buildItem(partNum, shortDescription, position, manufacturer, defaultCategory, price, quantity) {
+            return {
+                item_id: partNum,
+                item_name: shortDescription,
+                index: position,
+                item_brand: manufacturer,
+                item_category: defaultCategory,
+                price: price,
+                quantity: quantity,
+            };
+        }
+
+        function analyticsAddToCartEvent(message)
+        {
+            if (_.isEmpty(message)) {
+                return;
+            }
+
+            var position = 0;
+            $.each(message, function (index, item) {
+                if (item.success) {
+                    var price = parseFloat(item.price).toFixed(2);
+
+                    gtag('event', 'add_to_cart', {
+                        value: price,
+                        items: [
+                            buildItem(
+                                item.part_num,
+                                item.title,
+                                position,
+                                item.manufacturer,
+                                item.defaultCategory,
+                                price,
+                                item.qty,
+                            )
+                        ]
+                    });
+
+                    position++;
+                }
+            });
+        }
+
+        function analyticsRemoveFromCartEvent(message)
+        {
+            if (_.isEmpty(message)) {
+                return;
+            }
+
+            var removedItems = [];
+            var position = 0;
+            var totalValue = 0;
+
+            $.each(message, function (index, item) {
+                if (!item.hasOwnProperty('price')) {
+                    return;
+                }
+
+                if (item.success) {
+                    totalValue += item.price;
+
+                    removedItems.push(
+                        buildItem(
+                            item.part_num,
+                            item.title,
+                            position,
+                            item.manufacturer,
+                            item.defaultCategory,
+                            parseFloat(item.price).toFixed(2),
+                            item.qty,
+                        )
+                    );
+
+                    position++;
+                }
+            });
+
+            gtag('event', 'remove_from_cart', {
+                value: parseFloat(totalValue).toFixed(2),
+                items: removedItems
+            });
+        }
+
+        
+            </script>
+
+    
+        
+
+
+
+        <base href="https://www.radioworld.ca/metal-detectors/z-md-md">
+
+                    <style>
+            body {
+            font-family: "Roboto" !important;
+        }
+    
+            h1, h2, h3, h4, h5 {
+            font-family: "Roboto" !important;
+        }
+    
+            .primary-color, .stepper li.active a .circle, .stepper li.completed a .circle, .btn-primary {
+            background-color: #0c4d9c !important;
+        }
+    
+            .primary-color-dark {
+            background-color: #0c4d9c !important;
+        }
+    
+     
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #0c4d9c !important;
+        }
+    
+            .default-color, .btn-default {
+            background-color: #0c4d9c !important;
+        }
+    
+    
+            .btn-default:hover, .btn-default:focus {
+            background-color: #0c4d9c !important;
+        }
+    
+    
+    
+            .btn-secondary:hover, .btn-secondary:focus {
+            background-color: #222222 !important;
+        }
+    
+        
+    
+        .alert-danger {
+                                            }
+
+    
+    
+        .alert-warning {
+                                            }
+
+    
+    
+        .alert-success {
+                                            }
+
+    
+    
+        .alert-info {
+                                            }
+    </style>
+
+        
+        
+                    <style>
+                /* Bug Fixes */
+.desktop .banner {
+    height: unset !important;
+}
+button#search-button {
+    display: none;
+}
+
+.desktop .Product-Categories .card {
+    margin: 0 15px !important;
+}
+.Product-Categories {
+    min-height: unset;
+}
+
+/* Crisp Client */
+.crisp-client {
+    z-index: auto !important;
+}
+.crisp-client #crisp-chatbox.cc-yv368 .cc-1j24d .cc-1o31k {
+    /*Header Background Deprecated*/
+    background-color: #222 !important;
+}
+.crisp-client #crisp-chatbox.cc-yv368 .cc-nb9p2--operator .cc-iw847.cc-1plpv.cc-rzz1b {
+    /*Operator Chat Bubble*/
+    background-color: #f0f3f5 !important;
+    color: #0a4f9d !important;
+}
+.crisp-client #crisp-chatbox.cc-yv368 .cc-nb9p2--visitor .cc-iw847.cc-1plpv.cc-rzz1b {
+    /*visitor Chat Bubble*/
+    background-color: #f0f3f5 !important;
+    color: #222 !important;
+}
+/* Crisp Help Centre Article Info Boxes */
+.csh-markdown.csh-markdown-emphasis[data-type="|"] {
+    color: #0c5460;
+    background-color: #d1ecf1 !important;
+    border: 1px solid #d1ecf1 !important;
+}
+.csh-markdown.csh-markdown-emphasis[data-type="||"] {
+    color: #856404;
+    background-color: #fcfcd7 !important;
+    border: 1px solid #fcfcd7 !important;
+}
+.csh-markdown.csh-markdown-emphasis[data-type="|||"] {
+    color: #721c24;
+    background-color: #f8d7da !important;
+    border: 1px solid #f8d7da !important;
+}
+
+/* Constant Contact Sign Up Page */
+#constant_contact_signup button.ctct-form-button {
+    max-width: fit-content;
+}
+#constant_contact_signup input.ctct-form-checkbox {
+    opacity: unset;
+    position: unset;
+    pointer-events: unset;
+}
+
+/* RW Branding */
+.rw-p1 {
+    color: #0a4f9d;
+}
+.rw-bg-p1 {
+    background-color: #0a4f9d;
+}
+.rw-7a {
+    color: #7a96b8;
+}
+.bg-light {
+    background: #f0f3f5 !important;
+}
+.border-1 {
+    border: 1px solid #bcc6d0;
+}
+.max-width-2260 {
+    max-width: 2260px;
+}
+.card[class*="border"] {
+    border: 1px solid #bcc6d0;
+}
+
+.status-badge-1 /* New */,
+    .status-badge-94 /* Coming Soon */,
+    .status-badge-100 /* Special Offer */ {
+    display: inline;
+    background-color: #f0f3f5 !important;
+    color: #0a4f9d !important;
+}
+.status-badge-93 /* Exclusive Bundle */ {
+    display: inline;
+    background-color: #0a4f9d !important;
+    font-weight: 500 !important;
+}
+.status-badge-97 /* Bundle Offer */,
+    .status-badge-106 /* Show Price Available */,
+    .status-badge-109 /* Coupon Available */ {
+    display: inline;
+    background-color: #9d180a !important;
+    font-weight: 500 !important;
+}
+.status-badge-96 /* Free Gift */,
+    .status-badge-107 /* Newly Overhauled */ {
+    display: inline;
+    background-color: #007e33 !important;
+    font-weight: 500 !important;
+}
+.status-badge-98 /* Store Pickup Only */ {
+    display: inline;
+    background-color: #f0f3f5 !important;
+    color: #222 !important;
+}
+.status-badge-99 /* Lower Price */ {
+    display: inline;
+    background-color: #fb3 !important;
+    color: #222 !important;
+}
+.status-badge-117 /* Open Box Available */ {
+    display: inline;
+    background-color: #bcc6d0 !important;
+    color: #222 !important;
+    font-weight: 500;
+}
+
+/* Wrapper - no Max width DEPRECATED WITH NEW fullwidthtest */
+div#wrapper:has([id^="black-friday"]),
+.precision-marine-installations #wrapper,
+.edge-program #wrapper,
+.partnership-program #wrapper {
+    max-width: none;
+}
+
+.precision-marine-installations #content > .row,
+.edge-program #content > .row,
+.partnership-program #content > .row,
+.dm-test #content > .row,
+.about-us #content > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* H1 - H6 */
+#About-Us,
+#EDGE,
+#PMI,
+#Partnership {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 900;
+    }
+}
+
+/* Black Friday Pages */
+div#wrapper:has([id^="black-friday"]) #BannerSection img {
+    height: 150px;
+    object-fit: cover;
+}
+div#wrapper:has([id^="black-friday"]) #BannerSection .ci-image-wrapper.ci-with-preview-image {
+    height: 150px !important;
+}
+div#wrapper:has([id^="black-friday"]) div#search,
+div#black-friday.sales-page {
+    max-width: 2230px;
+    margin: auto;
+}
+.desktop #black-friday .card-deck {
+    padding: 0 32px;
+}
+#black-friday .card:hover {
+    opacity: 95%;
+}
+.desktop #black-friday .homepage-logo img {
+    max-height: 60px;
+}
+.desktop #black-friday.sales-page .row > .content {
+    padding-left: 3rem;
+}
+
+/* Partnership */
+body.desktop.partnership-program #content {
+    padding: 0 !important;
+    max-width: none;
+    margin-top: -3.8rem;
+}
+body.partnership-program #BannerSection .ci-image-wrapper.ci-with-preview-image {
+    background: #f0f3f5 !important;
+}
+body.partnership-program h1 {
+    max-width: 1180px;
+    margin: auto;
+    background: white;
+    padding: 1rem 2rem 0 2rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+#Partnership #ProStaff #Pro-Staff .card {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+/* About Us & Timeline */
+body.desktop.dm-test #content,
+body.desktop.about-us #content {
+    padding: 0 !important;
+    max-width: none;
+    margin-top: -3.8rem;
+}
+body.desktop.dm-test h1,
+body.desktop.about-us h1 {
+    max-width: 1180px;
+    margin: auto;
+    background: white;
+    padding: 1rem 2rem 0 2rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+#Staff p.card-subtitle {
+    line-height: 1rem;
+}
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+    position: relative;
+}
+/* The actual timeline (the vertical ruler) */
+.main-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dotted #bcc6d0;
+}
+.timeline-item p {
+    margin-bottom: 0;
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 0 2.5rem;
+    left: 0;
+    margin: 2rem 0;
+}
+.timeline-item:nth-of-type(even):not(.timeline-item-left) {
+    left: 50%;
+}
+/* Timeline Arrows*/
+.timeline-item::before {
+    content: " ";
+    position: absolute;
+    top: 1.5rem;
+    z-index: 1;
+    border-style: solid;
+}
+.timeline-item:nth-of-type(odd):not(.timeline-item-right)::before {
+    right: 1.5rem;
+    border-width: 0.5rem 0 0.5rem 0.5rem;
+    border-color: transparent transparent transparent #bcc6d0;
+}
+.timeline-item:nth-of-type(even):not(.timeline-item-left)::before {
+    left: 1.5rem;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
+    border-color: transparent #bcc6d0 transparent transparent;
+}
+/* Timeline Icons*/
+.timeline-item .timeline-icon {
+    position: absolute;
+    top: 1rem;
+    background: #f0f3f5;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.timeline-item:nth-of-type(odd):not(.timeline-item-right) .timeline-icon {
+    right: -17px;
+}
+.timeline-item:nth-of-type(even):not(.timeline-item-left) .timeline-icon {
+    left: -15px;
+}
+/* Timeline Dates*/
+.timeline-date {
+    position: absolute;
+    white-space: nowrap;
+    margin: 0 2rem;
+    top: 1.5rem;
+}
+.timeline-item:nth-of-type(odd):not(.timeline-item-right) .timeline-date {
+    left: 100%;
+}
+.timeline-item:nth-of-type(even):not(.timeline-item-left) .timeline-date {
+    right: 100%;
+}
+/* Timeline Media queries - Responsive timeline on screens less than 768px wide */
+@media screen and (max-width: 768px) {
+    /* Place the timelime to the left */
+    .main-timeline::before {
+        left: 0;
+    }
+    /* Full-width containers */
+    .timeline-item,
+    .timeline-item:nth-of-type(odd):not(.timeline-item-right),
+    .timeline-item:nth-of-type(even):not(.timeline-item-left) {
+        width: 100%;
+        left: 0;
+        transform-origin: top left;
+    }
+    /* Odd Arrows point left */
+    .timeline-item:nth-of-type(odd):not(.timeline-item-right)::before {
+        left: 1.5rem;
+        right: unset;
+        border-width: 0.5rem 0.5rem 0.5rem 0;
+        border-color: transparent #bcc6d0 transparent transparent;
+    }
+    /* Odd icons at the same spot */
+    .timeline-item:nth-of-type(odd):not(.timeline-item-right) .timeline-icon {
+        left: -15px;
+    }
+    .timeline-date,
+    .timeline-item:nth-of-type(even):not(.timeline-item-left) .timeline-date,
+    .timeline-item:nth-of-type(odd):not(.timeline-item-right) .timeline-date {
+        left: 0;
+        top: 0;
+        position: relative;
+        margin: 0;
+        padding: 1.4rem 1.5rem 1rem 0.2rem;
+    }
+}
+
+/* PMI */
+body.desktop.precision-marine-installations #content {
+    padding: 0 !important;
+    max-width: none;
+}
+
+/* Blog */
+.Blog #blog_posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.Blog #blog_posts .post {
+    background-color: #fff;
+    box-shadow: 0 0 3px #bcc6d0;
+    padding: 20px;
+    flex: 1 1 300px; /* Allows cards to grow, shrink, and sets a base width */
+    display: flex;
+    flex-direction: column;
+    max-width: 690px;
+}
+.Blog #blog_posts hr.post_divider,
+.BlogPost #blog_posts hr.post_divider {
+    display: none;
+}
+.Blog #blog_posts h1,
+.Blog #blog_posts .browse {
+    flex: 1 0 100%;
+}
+.Blog #blog_posts .post .entry .row {
+    margin: 0.5rem 0;
+}
+.Blog #blog_posts .post .entry .col-12.col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+.Blog #blog_posts .post .read_more a {
+    text-decoration: underline;
+}
+.Blog #blog_posts .post .category {
+    color: #777;
+}
+.Blog #blog_posts .post .category a {
+    opacity: 65%;
+}
+/* Blog Article */
+.BlogPost.desktop #wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+.BlogPost.mobile #wrapper {
+    padding: 0;
+}
+.BlogPost #blog_posts .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f0f3f5;
+    padding-bottom: 3rem;
+}
+.BlogPost.desktop #blog_posts .blog-post-image {
+    order: 1;
+    margin-bottom: -3.8rem;
+    max-width: 1600px;
+}
+.BlogPost.mobile #blog_posts .blog-post-image {
+    order: 1;
+    max-width: 1600px;
+}
+.BlogPost #blog_posts .post h1 {
+    order: 2;
+    background: #fff;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.BlogPost.desktop #blog_posts .post h1 {
+    font-size: 3rem;
+}
+.BlogPost #blog_posts .post .who_when {
+    order: 3;
+}
+.BlogPost #blog_posts .who_when a {
+    margin-left: -1rem;
+    background: #fff;
+    color: transparent;
+    pointer-events: none;
+}
+.BlogPost #blog_posts .post .category {
+    order: 4;
+}
+.BlogPost #blog_posts .post .entry {
+    order: 5;
+    /* margin-top: 2rem; */
+}
+.BlogPost #blog_posts .post h1,
+.BlogPost #blog_posts .post .who_when,
+.BlogPost #blog_posts .post .category,
+.BlogPost #blog_posts .post .entry {
+    max-width: 1124px;
+    width: 100%;
+    width: -moz-available; /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    padding: 1rem 2rem;
+    background: white;
+    margin: 0 3rem;
+}
+.BlogPost.mobile #blog_posts .post h1,
+.BlogPost.mobile #blog_posts .post .who_when,
+.BlogPost.mobile #blog_posts .post .category,
+.BlogPost.mobile #blog_posts .post .entry {
+    margin: 0 1rem;
+}
+.BlogPost.desktop #content {
+    padding: 0 !important;
+}
+.BlogPost .post_divider {
+    display: none;
+}
+.BlogPost #blog_posts .post .category a {
+    text-decoration: underline;
+}
+
+/* EDGE */
+body.desktop.edge-program #content {
+    padding: 0 !important;
+    max-width: none;
+}
+.edge-program #BannerSection .banner-content {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    z-index: 10;
+}
+.edge-program #BannerSection .banner-content-container,
+.edge-program #BannerSection .banner-content-box,
+.edge-program #EDGE-Banner div:nth-child(1),
+.edge-logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+#EDGE-Banner {
+    display: flex;
+    flex-grow: 1;
+}
+.desktop.edge-program #EDGE-Banner > div {
+    max-width: 50%;
+}
+.desktop .edge-logo-background {
+    padding-left: 30%;
+    padding-right: 15%;
+    align-items: center;
+    background: #000000;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 70%);
+}
+.edge-logo {
+    background: url(https://www.radioworld.ca/images/svg/Radioworld-Edge-Inverted.svg);
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#EDGE #Edge-4-step .card {
+    max-width: 300px;
+}
+#EDGE #Edge-4-step .content-card-content {
+    margin-top: 16px;
+}
+#EDGE .tournament-list-header a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none !important;
+    font-weight: 700;
+    /* color: #222 !important; */
+    /* font-size: 16px; */
+    /* padding-left:10px; */
+}
+#EDGE .iframe-responsive {
+    height: 540px;
+}
+#EDGE #videoOverlay.overlay {
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+    background-image: url("https://www.radioworld.ca/images/edge/EDGE-Video-Overlay.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: z-index 0s linear 0.2s; /* Delay the z-index change */
+}
+#EDGE input[type="checkbox"]:checked + div {
+    z-index: 0 !important;
+}
+#EDGE #videoOverlay .blur {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*mask: linear-gradient(black, transparent, black);*/
+    mask: radial-gradient(circle at center, #00000000, rgb(0 0 0));
+}
+#EDGE #play-button i {
+    font-size: 4rem;
+    color: #f0f3f5;
+}
+#EDGE img.icon {
+    height: 64px;
+}
+#EDGE #Perks img.hero {
+    height: 100%;
+    object-fit: cover;
+}
+#edge_results-form input[type="checkbox"]:not(.form-check-input),
+#edge_registration-form input[type="checkbox"]:not(.form-check-input) {
+    opacity: 100;
+    position: relative;
+    pointer-events: all;
+    cursor: pointer;
+    width: 16px;
+    margin-top: 11px;
+    margin-right: 16px;
+}
+#edge_results-form input#form-field-agreement {
+    display: none;
+}
+body.form input[type="text"]::placeholder {
+    font-size: 0.8rem;
+}
+body.form label.error {
+    color: red;
+}
+.mobile.edge-program #BannerSection .banner-content {
+    position: absolute;
+    align-items: flex-start;
+}
+.mobile.edge-program .banner-content,
+.mobile.edge-program .banner-content-container {
+    height: 100%;
+}
+.mobile.edge-program .banner-content-box {
+    background: transparent;
+    width: 100%;
+    margin: auto;
+}
+.mobile #EDGE-Banner {
+    flex-direction: column;
+}
+.mobile #EDGE-Banner h1 {
+    text-align: center;
+}
+@media (max-width: 370px) {
+    #EDGE-Banner h1 {
+        font-size: 1.2rem;
+    }
+}
+.mobile #EDGE-Banner button {
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.mobile .edge-logo-background {
+    padding: 0% 25%;
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 60%);
+}
+.mobile .edge-logo {
+    margin: 30% 30% 0 30%;
+}
+.mobile #EDGE #Tournaments .list-group-flush div {
+    flex-direction: column;
+}
+.mobile #EDGE #Tournaments .card-body .card-body {
+    padding: 1.25rem 0;
+}
+#EDGE div[id^="accordion-"] a,
+#EDGE div[id^="Purchase-List"] a {
+    text-decoration: none !important;
+}
+#EDGE #Purchase-List .card {
+    margin: 0;
+}
+.mobile #EDGE #Purchase-List .card {
+    flex: auto;
+}
+#EDGE #Purchase-List img {
+    max-height: 70px;
+    max-width: 240px;
+}
+.desktop #EDGE #Purchase-List {
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*gap: 10%;*/
+}
+.desktop #EDGE #Purchase-List .row {
+    gap: 10%;
+}
+#EDGE #Perks-Icons {
+    flex-flow: wrap;
+    column-gap: 1rem;
+}
+.mobile #EDGE #Perks-Icons {
+    flex-flow: wrap;
+    column-gap: 0.5rem;
+}
+.desktop #EDGE #Perks .container {
+    padding: 5% !important;
+}
+.mobile #EDGE #Perks .container {
+    padding: 3rem 0;
+}
+
+.price-not-visible,
+.cart-not-visible {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+body.desktop:not(.home):not(.SearchIndex):not(.Search):not(.product_details) #content {
+    padding: 5rem;
+}
+body.desktop.scrolled #mainMenuNavigationQuicklinksApp {
+    transition: none !important;
+}
+body.custom_pages #content .widget.custom_pages a.btn {
+    text-decoration: none;
+}
+.page-custom-content.placement-top {
+    width: 100%;
+}
+.mobile div#notice-bar {
+    margin: unset;
+}
+.desktop .breadcrumb {
+    background: none;
+    margin: 2rem 0;
+}
+.card,
+.jumbotron {
+    box-shadow: none;
+}
+.clear-filters-button:disabled {
+    display: none;
+}
+#product-selector-all-options-controller {
+    display: none !important;
+}
+.product_details .product-details-custom-fields {
+    font-weight: 400;
+}
+.product_preview .custom-field-content {
+    line-height: unset;
+    font-weight: 400;
+}
+.product_preview .custom-field-content p {
+    margin-bottom: 0;
+}
+.preview-list-item {
+    align-items: center;
+}
+.preview-list-item > div {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+#user_details_form label[for="user_billing_email"],
+#user_details_form input[name="user_billing_email"],
+#user_details_form label[for="billing_email"],
+#user_details_form input[id="billing_email"] {
+    background: #eee;
+    pointer-events: none;
+    display: none;
+} /* hiding the labels and input fields for users without customers and users assigned to customers */
+.mobile #user_details_form > .row .col-lg-4:nth-child(2) {
+    margin-top: 3rem;
+}
+.alert-warning {
+    background-color: #fcfcd7;
+    border-color: #fcfcd7;
+}
+.alert {
+    border-radius: 0 !important;
+}
+.mobile #contact-us .phone,
+.mobile #contact-us .live-chat {
+    min-width: 100%;
+}
+/* should be deprecated
+    .sales-page button {
+    font-size: 1rem !important;
+    padding: 0.6em 1rem !important;
+    font-weight: 400;
+    }
+    */
+.desktop .sales-page p {
+    padding: unset;
+}
+#login-form-container .form-inline {
+    margin: 0.7rem;
+}
+#login-form-container .form-inline .form-control {
+    width: 100%;
+}
+#login-form-container button {
+    margin: 0;
+}
+.no-account-message {
+    font-size: 0.9rem;
+}
+.terms-and-conditions-opt-in .text-right {
+    margin-top: 1rem;
+}
+.desktop .home .promos,
+.home .second-section {
+    min-height: unset;
+}
+.desktop.registration .card {
+    box-shadow: none;
+}
+.desktop .banner .carousel-arrow-prev {
+    left: 30px !important;
+    width: 36px;
+}
+.desktop .banner .carousel-arrow-next {
+    right: 30px !important;
+    width: 36px;
+}
+#checkout-place-order .row.mt-3 {
+    margin-top: 0 !important;
+}
+#checkout-right .coupon-section .col:first-of-type {
+    flex-grow: 4;
+    text-transform: lowercase !important;
+}
+#checkout-right .coupon-section .col:first-of-type span {
+    text-transform: none !important;
+}
+.mb-5.checkout-payment-method {
+    margin-bottom: 0 !important;
+}
+.btn-outline-info {
+    border: 1px solid #222 !important;
+    background-color: transparent !important;
+    color: #222 !important;
+}
+.btn-outline-info:active,
+.btn-outline-info:focus,
+.btn-outline-info:hover {
+    border-color: #222 !important;
+    background-color: #f7f7f7 !important;
+    color: #222 !important;
+}
+.btn-outline-info:not([disabled]):not(.disabled):active {
+    border-color: #d2d2d2 !important;
+    background-color: transparent !important;
+    color: #222 !important;
+}
+.btn-default:not([disabled]):not(.disabled):active,
+.btn-primary:not([disabled]):not(.disabled):active {
+    background-color: #7a96b8 !important;
+}
+img#sr_0,
+img#sr_1,
+img#sr_2,
+img#sr_3,
+img#sr_4 {
+    padding: 0.4rem;
+}
+#contact-us .date p {
+    line-height: 1.5;
+}
+/*
+    #section_newsletter_signup .form-check-label {
+    line-height: normal;
+    vertical-align: middle;
+    }
+    */
+.nav-item.installations a {
+    color: #d2d2d2 !important;
+    font-weight: 600;
+}
+.nav-item.installations a:hover {
+    color: #7a96b8 !important;
+}
+/* re-enable this when link is restored
+    .product_preview .stock-message:hover,
+    #product-details .stock-message:hover {
+    opacity: 80%;
+    text-decoration: underline;
+    }
+    */
+/* Temporarily hidding icon
+    .stock-message::before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 500;
+    content: "\f05a";
+    font-size: 0.9rem;
+    margin-right: 0.35rem;
+    color: #0f4b9c !important;
+    vertical-align: text-bottom;
+    }
+    */
+#inline-product-associations.container {
+    padding: 0;
+    margin: 1rem 0;
+}
+#inline-product-associations .container {
+    padding: 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+#inline-product-associations h5 {
+    font-size: small;
+    margin-bottom: 0.5rem !important;
+}
+#inline-product-associations .row {
+    margin: 0;
+    flex-wrap: nowrap;
+}
+#inline-product-associations .row .col-md-2 {
+    padding: 0;
+    max-width: 3.5rem;
+}
+#inline-product-associations .inline-assoc-partNum {
+    flex-grow: 1;
+    max-width: 100%;
+    font-size: small;
+    padding-right: 15px !important;
+}
+.BannerTour {
+    display: none;
+    background-image: url(/images/uploads/ContentCards/A222000.png);
+}
+#filter-controls .facet-group-label {
+    border: none;
+}
+.sales-page a.border.nav-link.waves-effect {
+    display: block;
+    border-radius: 0;
+}
+.sales-page a.border.nav-link.disabled {
+    background-color: #222;
+    color: #f0f3f5;
+}
+.sales-page a.border.nav-link:hover {
+    border-color: #222 !important;
+}
+body.form .form,
+#constant_contact_signup {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+body.form .form {
+    background: #f0f3f5;
+}
+body.form.mobile .form {
+    padding: 3rem 1rem;
+}
+body.form h1,
+body.form h2,
+body.form h3,
+body.form h4 {
+    font-weight: 800;
+}
+body.form input {
+    width: 100%;
+}
+body.form textarea {
+    width: 100%;
+    height: 10rem;
+}
+body.form button[type="submit"] {
+    margin: 3rem 0 0 0;
+}
+body.form .controls .required-notice {
+    display: none;
+}
+#notice-bar img.Maple-Leaf {
+    width: 1rem;
+    height: auto;
+}
+.widget.product_custom_shipping_message {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+.widget.product_custom_shipping_message a {
+    margin-top: 2px;
+}
+i.fas.fa-shipping-fast.rw-p1.pr-1:before {
+    font-size: 0.85rem;
+}
+i.fas.fa-shipping-fast.rw-p1.pr-1 {
+    vertical-align: text-bottom;
+}
+.CustomShippingMessage {
+    padding-top: 6px;
+}
+.browse_description a {
+    text-decoration: underline;
+}
+
+.mobile #events .month-separator {
+    display: flex;
+    align-items: center;
+}
+.mobile #events .month-separator:after {
+    background-color: #d2d2d2;
+    content: "";
+    display: block;
+    flex: auto;
+    height: 1px;
+    margin-left: 20px;
+}
+.mobile #events .event-date-tag {
+    min-width: 90px;
+    display: flex;
+}
+.mobile #events .event-date-tag-datetime {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    /* align-items: flex-start; */
+}
+.mobile #events .featured .event-date-tag-datetime:after {
+    background-color: #0a4f9d;
+    border-radius: 0.125rem;
+    content: "";
+    height: 100%;
+    right: -1px;
+    position: absolute;
+    width: 0.25rem;
+}
+.mobile #events .event-date-tag-weekday {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: #777;
+}
+.mobile #events .event-date-tag-daynum {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+/*
+    .mobile.scrolled .logo-sm {
+    width: 43px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-right: 10px;
+    }
+    */
+/*
+    .mobile #autocomplete {
+    width: 100%;
+    }
+    */
+.mobile body.scrolled .search-bar.main .form-control {
+    height: 26px;
+}
+.mobile #checkout .card.mb-2 .card-body {
+    padding: 0;
+}
+.mobile.checkout_receipt .col-12 > .row > .col-lg-4 {
+    font-weight: bold;
+}
+.mobile .receipt-billing-title {
+    margin-top: 2rem;
+}
+.mobile #contact-us .phone,
+.mobile #contact-us .live-chat {
+    min-width: 100%;
+}
+.mobile .banner {
+    min-height: unset !important;
+    height: unset !important;
+}
+.mobile .banner .carousel-arrow-prev {
+    width: 36px;
+}
+.mobile .banner .carousel-arrow-next {
+    width: 36px;
+}
+.mobile .banner-content {
+    height: auto;
+}
+.mobile .banner-content-container {
+    margin-bottom: 0;
+}
+.mobile .side-nav .account-links a.dropdown-item {
+    font-weight: 300;
+    background: transparent !important;
+}
+.mobile #section-before-wrapper .side-nav {
+    background: white;
+    padding: 0;
+}
+.mobile .account-links {
+    padding: 20px;
+    background: #f7f7f7;
+}
+/* Search Bar */
+.search-bar.main .form-control {
+    margin-right: 0;
+    padding: 8px 16px;
+    color: #f0f3f5;
+    background-color: #bcc6d033;
+}
+.search-bar .input-group .btn.btn-sm {
+    background-color: #bcc6d033 !important;
+    border: none;
+    padding: 0 1rem !important;
+}
+.search-bar.main input::placeholder {
+    color: #bcc6d0 !important;
+}
+.fa-search {
+    color: #bcc6d0;
+    font-size: 18px;
+}
+
+/* Header Links */
+#mainMenuNavigationQuicklinksApp .nav-item a:hover,
+#section-before-wrapper .section-collapse.button-collapse:hover,
+.account-links a:hover,
+#help-dropdown a:hover {
+    text-decoration: underline;
+}
+/* Change to overlay card titles*/
+.card-deck:not(.home-page-bottom) .card .content-card-overlay .content-card-content p {
+    margin: 0;
+    line-height: normal;
+    font-weight: 700;
+}
+.card-deck.product-categories-top .content-card-content span,
+.card-deck.Product-Categories .content-card-content span {
+    padding: 0.5rem 0.75rem;
+    backdrop-filter: blur(8px);
+    background-color: #22222259;
+    font-size: 1.2rem;
+}
+/* Side Menu */
+.vertical-slider-menu .links-container > div.back-link:hover,
+.vertical-slider-menu .links-container > div.menu-line:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Selector Colour Swatches & Buttons */
+.product-selector ul li.colour-swatch-li.selected {
+    outline: solid 2px #222;
+    outline-offset: 3px;
+    border: none;
+}
+.product-selector ul li.colour-swatch-li {
+    width: 16px;
+    height: 16px;
+    padding: 10px;
+    min-width: 16px;
+    border-radius: 16px;
+    margin: 0.5rem;
+}
+#product-selector-controller .card-footer .btn.btn-primary i {
+    margin-right: 4px;
+}
+#product-selector-controller .card-footer .btn.btn-primary {
+    display: none;
+}
+.product-selector ul li {
+    position: relative;
+}
+.product-selector ul li.group-disabled:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, transparent calc(50% - 1.5px), red, transparent calc(50% + 1.5px));
+}
+/* Footer */
+.footer-menu-section {
+    font-size: 1rem !important;
+}
+.footer-menu-section p,
+.footer-menu-section h5 span {
+    color: #bcc6d0;
+}
+.footer-menu-section-3 {
+    white-space: normal !important;
+}
+.desktop .footer-menu-section-3 .widget.custom_html.last-section {
+    width: 53%;
+}
+.footer-menu-section-4 svg {
+    height: 24px !important;
+    width: 24px;
+}
+.footer-menu-section-4 {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #bcc6d0;
+    padding: 32px 0;
+}
+.footer-links {
+    font-size: 0.8rem;
+}
+.desktop .footer-menu-section-3 .widget.custom_html.last-section {
+    max-width: 390px;
+    padding-right: 16px;
+}
+.desktop .social-links > div {
+    margin-right: unset;
+}
+.desktop .social-links {
+    flex-flow: wrap;
+    gap: 1.5rem;
+}
+.mobile .footer-menu-section {
+    font-size: 1rem;
+    padding-top: 3rem;
+}
+
+/* MISC */
+a:not(.collapsed) i.fa.fa-angle-down.rotate-icon,
+a:not(.collapsed) i.fas.fa-angle-down.rotate-icon {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#notify-me-modal-header {
+    background: #f0f3f5 !important;
+}
+.search-header .search-view-link {
+    margin: 34px 1rem 0;
+    font-size: 1rem;
+}
+.Store-Hours-Container .row {
+    margin: auto;
+}
+
+/*
+    .btn {
+    font-weight: 500 !important;
+    padding: 1rem 2rem !important;
+    font-size: 1rem;
+    line-height: 1rem !important;
+    }
+    .btn-secondary,
+    .btn-secondary:hover {
+    background-color: #222 !important;
+    }
+    button.btn.btn-primary.btn-sm.p-1.qty-increase,
+    button.btn.btn-primary.btn-sm.p-1.qty-decrease {
+    padding: 0.5rem !important;
+    }
+    .desktop .btn.btn-lg {
+    min-width: 240px;
+    }
+    .mobile .btn.btn-lg {
+    width: 100%;
+    }
+    .mobile .btn {
+    background-color: transparent;
+    }
+    */
+
+/* ***** DESKTOP ONLY ***** */
+.desktop main {
+    min-width: 940px;
+}
+.desktop .home-page-bottom h2 {
+    font-size: 3rem;
+}
+
+.desktop #top-bar #section-before-wrapper {
+    padding: 0 48px;
+}
+body.desktop #top-bar {
+    padding: 0 !important;
+}
+.desktop .custom-top-message-container {
+    max-width: 2260px;
+    padding: 0 48px;
+}
+.desktop .card-deck.home-page-buttons {
+    padding: 0 48px;
+}
+.desktop .card-deck.promos,
+.desktop .card-deck.product-categories-top,
+.desktop .card-deck.Product-Categories {
+    margin: 4rem auto;
+    padding: 2rem 3rem;
+    justify-content: center;
+    max-width: 1920px;
+}
+.desktop .card-deck.promos .card {
+    max-width: 700px;
+    padding: 1rem;
+}
+.desktop .card-deck.home-page-bottom {
+    margin-top: 4rem;
+}
+.desktop .card-deck.home-page-bottom .content-card-content span {
+    padding: 0.5rem 5% 0.5rem 15%;
+}
+body.home.desktop #product-carousel-5,
+body.home.desktop #product-carousel-4 {
+    margin: 4rem auto;
+    max-width: 1920px;
+    padding: 0 3rem;
+}
+.desktop .card-deck.Product-Categories-2,
+.desktop .card-deck.second-section {
+    padding: 0;
+}
+.desktop .card-deck h2 {
+    font-weight: 900;
+}
+.desktop .card .content-card-content p {
+    margin-bottom: 1rem;
+}
+.desktop #filter-controls-container h5 {
+    display: none;
+}
+.desktop .breadcrumb {
+    padding: 0 2rem;
+}
+.desktop .search-sort-by #sort-by,
+.desktop .search-group-by #group-by {
+    line-height: 19px;
+}
+
+/* ***** MOBILE ONLY ***** */
+.mobile #top-bar .button-collapse {
+    margin: 0 16px;
+}
+.mobile .logo {
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+/*
+    .mobile.scrolled .logo-sm {
+    margin: 0 16px 0 0;
+    }
+    */
+.mobile .homepage-logos-container-mobile {
+    margin: 3rem -15px;
+    background: #f0f3f5;
+    padding: 1rem;
+}
+.mobile .card-deck.home-page-buttons,
+.mobile .card-deck.home-page-bottom {
+    margin-top: 4rem;
+}
+.mobile .card-deck.product-categories-top,
+.mobile .card-deck.Product-Categories {
+    margin: 4rem 0;
+}
+.mobile .card-deck.home-page-bottom .content-card-content {
+    z-index: 1000;
+}
+.mobile .card-deck.home-page-bottom .content-card-content span {
+    padding: 0.5rem 1rem;
+}
+.mobile .card-deck.home-page-buttons .btn {
+    padding: 1rem !important;
+    align-content: center;
+    height: inherit;
+}
+.mobile-help-footer-header a {
+    font-size: 1.25rem;
+}
+#mobile-help-footer-content h5 {
+    display: none;
+}
+/* Mobile product details accordion tabs */
+div[id^="std-accordion-link"].show,
+div[id^="std-accordion-link"].collapsing {
+    border-top: 2px solid white;
+}
+.mobile #search-filter-sidenav-trigger {
+    height: 48px;
+}
+.mobile #search-filter-sidenav-trigger i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+.mobile .search-sort-by #sort-by,
+.mobile .search-group-by #group-by {
+    line-height: 19px;
+    height: 48px;
+}
+
+.mobile .pagination button.btn {
+    background: #0a4f9d;
+}
+.mobile .btn.btn-border {
+    color: #222;
+}
+/* CUSTOM CSS ADD ON */
+
+            </style>
+        
+        <!-- Crisp -->
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="45f614b3-0314-42e1-910a-68505287837e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "45e77d1b0308e1099f1606fdc03ff29d"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
+<script>
+$(document).ready(function() {
+    $("#search").on("click", ".price-not-visible, .cart-not-visible", function(){
+        $crisp.push(['do', 'chat:open']);
+    });
+    
+    $("#product-details").on("click", ".price-not-visible, .cart-not-visible", function(){
+        $crisp.push(['do', 'chat:open']);
+    });
+})
+</script>
+
+
+        <script>
+            var carousels = [4,5];
+        </script>
+    </head>
+    <body class=" desktop columns_double_left  Search primary-color">
+
+        
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8TTHNK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+        <header>
+            <div id="top-bar" class="fixed-top scrolling-navbar primary-color container-fluid clearfix">
+                
+                    
+                    
+                    
+    
+
+
+                    <div class="d-flex justify-content-between" id="section-before-wrapper">
+                                                    <div id="top_bar_full" class="w-100 ">
+                <div id="custom-top-message">
+    <div class="custom-top-message-container">
+        <div><img alt="" src="https://www.radioworld.ca/images/svg/canadian-maple-leaf-brands-solid.svg">Canadian Owned and Operated Since 1999</div>
+        <div style="display:flex;" id="custom-top-message-links">
+            <div><a href="https://www.radioworld.ca/contact-us">Contact Us</a></div>
+            <div class="header-devider">|</div>
+            <div><a href="https://www.radioworld.ca/form/constant-contact-signup">Subscribe</a></div>
+            <div class="header-devider">|</div>
+            <div><a href="https://www.radioworld.ca/radioworld-gift-cards/gc-gc-gc">Gift Cards</a></div>
+        </div>
+    </div>
+</div>
+
+            </div>
+                                    <div id="top_bar" class=" ">
+                <div class='d-flex'>
+    
+
+<div class="widget logo">
+    <a href="https://www.radioworld.ca/">
+        <img width="300px" height="80px" src="https://www.radioworld.ca/application/glue/themes/radioworld/images/logo.png" alt="Radioworld" border="0"/>
+    </a>
+</div>
+
+    <div id="autocomplete"></div>
+
+<script type="text/javascript">
+    var autocompleteTranslations = {
+        autocompletePlaceholder: "Search",
+        autocompleteLabel: "Search Autocomplete",
+        autocompleteButtonLabel: "Search",
+        productLabel: "Products",
+        categoryLabel: "Categories",
+        manufacturerLabel: "Brands",
+        customPageLabel: "Pages"
+    }
+
+    var searchControlId = 1
+    var hidePartNum = 0
+</script>
+
+                <div class="account-links d-flex flex-wrap">
+            <div class="mt-1">
+                <i class="fas fa-2x fa-user"></i>
+            </div>
+            <div>
+                            <div>
+                    <span class="pl-2" data-cy="welcome-message">Welcome, Guest</span>
+                </div>
+                <div>
+                    <a href="https://www.radioworld.ca/login" class="pl-2" data-cy="account-links-login">Login / Register</a>
+                </div>
+                        </div>
+        </div>
+    
+<script>
+$(document).click(function(e) {
+	if (!$(e.target).is('#portal-links')) {
+    	$('#portal-links.collapse').collapse('hide');	    
+    }
+});
+</script>
+
+
+<style>
+
+#portal-links {
+    padding-bottom: 8px;
+    position: absolute;
+    margin-left:10px;
+}
+
+#portal-links a {
+    margin: 4px 8px 4px 8px;
+    display: inline-block;
+    color: #414345;
+}
+
+</style>
+    <div class="d-flex mr-4">
+        <div>
+            <div id="help-dropdown" class="info" id="help-links-container">
+    <div class="dropdown info">
+        <button class="dropbtn info-btn d-flex" data-toggle="collapse" href="#help-links" aria-expanded="false" aria-controls="help-links"> <div><i class="fas fa-question-circle"></i></div><div class="help-link-label">
+        Help Centre
+    </div></button>
+
+        <div class="collapse" id="help-links" style="background-color: #F0F3F5;">
+            <div class="widget custom_html  help-links-container">
+            
+
+        <div><a href="https://help.radioworld.ca">Search Our Help Centre</a></div>
+
+<div><a href="https://help.radioworld.ca/en/article/stock-availability-1r2ayes/">Stock Availability</a></div>
+
+<div><a href="https://help.radioworld.ca/en/article/returns-exchanges-1fvg55d/">Returns &amp; Exchanges</a></div>
+
+<div><a href="https://help.radioworld.ca/en/article/warranty-service-1tqzf0c/">Warranty Service</a></div>
+
+<div><a href="https://help.radioworld.ca/en/article/payment-methods-1klm8ha/">Payment Methods</a></div>
+
+<hr />
+<div><a href="/contact-us">Contact us</a></div>
+
+<div><a onclick="$crisp.push(['do', 'chat:open']);">Chat with us</a></div>
+
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).click(function(e) {
+	if (!$(e.target).is('#help-links')) {
+    	$('#help-links.collapse').collapse('hide');	    
+    }
+});
+</script>
+<style>
+.help-link-label {
+    font-weight: 500;
+    margin-left:10px;
+    color: white;
+    margin-top:1px;
+}
+
+#help-links {
+    padding-bottom: 8px;
+    position: absolute;
+    margin-top:8px;
+}
+
+#help-links a {
+    margin: 4px 8px 4px 8px;
+    display: inline-block;
+    color: #414345;
+    font-family: "Roboto" !important;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.info .title {
+    margin-left: 8px;
+}
+
+</style>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div>
+                <div id="cartApp" class="cart text-right">
+        <div class="nowrap">
+            <a id="cart-icon" class="ml-4 p-2" data-toggle="modal" data-target="#cart-modal" data-cy="cart-icon" aria-hidden="true" title="Cart">
+                <i class="fa fa-2x fas fa-shopping-cart aria-label="Shopping Cart"></i>
+                <span id="cart-count" class="hide"></span>
+                <span class="sr-only">Cart</span>
+            </a>
+        </div>
+
+                    <div id="cart-modal" class="modal fade" data-cy="cart-popup" tabindex="-1" role="dialog" aria-label="Shopping Cart" aria-modal="true"></div>
+            </div>
+
+    <script type="text/javascript">
+        window.cartController = window.cartController || {};
+
+        cartController.modalElement = $("#cart-modal");
+        cartController.itemCountElement = $("#cart-count");
+        cartController.updatingProducts = [];
+
+        cartController.show = function()
+        {
+            cartController.modalElement.modal("show");
+        }
+
+        cartController.renderItemCount = function(count)
+        {
+            cartController.itemCountElement.html(count).addClass("hide");
+
+            if (count > 0) {
+                cartController.itemCountElement.removeClass("hide");
+            }
+        }
+
+        cartController.renderCart = function(html)
+        {
+            cartController.modalElement.html(html);
+        }
+
+        cartController.hideConfirmDelete = function()
+        {
+            $("#confirmDelete").hide();
+        }
+
+        cartController.processClearCart = function()
+        {
+            var confirmDelete = $("#confirmDelete");
+
+            if (confirmDelete.length) {
+                confirmDelete.show();
+            } else {
+                cartController.clear();
+            }
+        }
+
+        cartController.clear = function()
+        {
+            $.ajax({
+                url: base_index_url + "cart/clear",
+                type: "POST"
+            }).done(function(data) {
+                cartController.reload(data);
+                $("#confirmDelete").hide();
+            });
+        }
+
+        cartController.reload = function(data)
+        {
+            cartController.renderItemCount(data.cartDetails.cartItemCount);
+            cartController.renderCart(data.cartDetails.cartHtml);
+        }
+
+         cartController.canCheckout = function(endPoint)
+        {
+            cartController.guestEmailValid(endPoint)
+        }
+
+        cartController.guestEmailValid = function(endPoint)
+        {
+            var guestEmail = $("#guest-email");
+
+            if (guestEmail.length == 0) {
+                  cartController.goTo(endPoint);
+            }
+
+            var cartInvalidEmailElement = $(".cart-invlaid-email"),
+                email = guestEmail.val(),
+                valid = isValidEmail(guestEmail.val());
+
+            cartInvalidEmailElement.hide();
+
+            if (!valid) {
+                cartInvalidEmailElement.show();
+            } else {
+               cartController.saveGuestEmail(email).done(function (data) {
+                    if (data.success === true) {
+                        cartController.goTo(endPoint);
+                    }
+
+                    return false;
+                })
+            }
+        }
+
+        cartController.saveGuestEmail = function(email)
+        {
+            return $.ajax({
+                url: base_index_url + "cart/guest-email",
+                method: "PUT",
+                data:  JSON.stringify({guestEmail: email})
+            });
+        }
+
+        cartController.goTo = function(endPoint)
+        {
+            window.location = base_index_url + endPoint;
+        }
+
+        cartController.removeItem = function(id)
+        {
+            return $.ajax({
+                url: base_index_url + "cart/" + id,
+                type: "DELETE",
+                dataType: "json",
+            }).done(function(data) {
+                if (!_.isEmpty(data.cartDetails)) {
+                    cartController.reload(data);
+                }
+
+                $("#confirmDelete").hide();
+
+                if (typeof analyticsRemoveFromCartEvent === "function") {
+                    analyticsRemoveFromCartEvent(data.message);
+                }
+
+                if (typeof dataLayerRemoveFromCartEvent === "function") {
+                    dataLayerRemoveFromCartEvent(data.message);
+                }
+            });
+        }
+
+        cartController.updateQty = function(id, qty)
+        {
+            if (!_.isNumber(qty)) {
+                return;
+            }
+
+            if (qty == 0) {
+                cartController.removeItem(id);
+                return;
+            }
+
+            cartController.clearProductTimeout(id);
+
+            var temp = {sequence: id, currentTimeout: null};
+            temp.currentTimeout = setTimeout(function () {
+                return $.ajax({
+                    url: base_index_url + "cart/" + id,
+                    type: "PUT",
+                    data: JSON.stringify({sequence: id, quantity: qty})
+                }).done(function(data) {
+                    if (!_.isEmpty(data.cartDetails)) {
+                        cartController.reload(data);
+                    }
+
+                    $("#confirmDelete").hide();
+                });
+            }, 200);
+
+            cartController.updatingProducts.push(temp);
+        }
+
+        cartController.clearProductTimeout = function (sequence) {
+            _.remove(cartController.updatingProducts, function (product) {
+                if (product.sequence === sequence) {
+                    clearTimeout(sequence);
+                    return true;
+                }
+            });
+        };
+
+        cartController.processRequest = function(endPoint, type, data = {})
+        {
+            $.ajax({
+                url: base_index_url + endPoint,
+                type: type,
+                data: data
+            }).done(function(data) {
+                if (!_.isEmpty(data.cartDetails)) {
+                    cartController.reload(data);
+                }
+
+                $("#confirmDelete").hide();
+            });
+        }
+
+        cartController.renderItemCount(0);
+
+                    cartController.renderCart(`"<div class="modal-dialog cascading-modal modal-lg"><div class="modal-content cart-content"><div class="modal-header primary-color">
+                    <div class="modal-title"><h3 class="modal-title">Cart Is Empty</h3>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                </div><div class="modal-body"></div></div>"`);
+
+            $(document).on("click", "#print-cart-button", function() {
+                $("#cart-modal .cart-content").print({noPrintSelector : ".no-print"});
+            });
+
+            $(document).on("keyup", ".cart-qty", function(event) {
+                var element = $(this);
+
+                if (only_numbers(event)) {
+                    cartController.updateQty(element.data("sequence"), parseInt(element.val()));
+                }
+            });
+            </script>
+
+        </div>
+        <div class="header-link-labels">
+            Cart
+        </div>
+    </div>
+</div>
+
+<style>
+.header-link-labels {
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+#section-before-wrapper {
+    flex-direction:column;
+}
+#top_bar {
+    width:100%;
+}
+#autocomplete {
+    flex-grow:1;
+}
+
+
+</style>
+            </div>
+                                    <div class="collapse-container">
+                <a href="#" data-activates="top_bar_2" class="section-collapse button-collapse btn btn-primary p-1 px-2">
+                                            <i class="fa fa-bars"></i>Shop
+                           
+                </a>
+            </div>
+            <div id="top_bar_2" class="side-nav  custom-scrollbar  ">
+                <div class="account-links d-flex flex-wrap">
+            <div class="mt-1">
+                <i class="fas fa-2x fa-user"></i>
+            </div>
+            <div class="flex-grow-1">
+                            <div>
+                    <span class="pl-2" data-cy="welcome-message">Welcome, Guest</span>
+                </div>
+                <div>
+                    <a href="https://www.radioworld.ca/login" class="pl-2" data-cy="account-links-login">Login / Register</a>
+                </div>
+                        </div>
+            <div>
+                <div id="close-button"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+
+
+
+
+<div class="accordion" id="side-menu-acct" role="tablist" aria-multiselectable="true">
+    <div class="card">
+        <div class="side-menu-acct-header" role="tab">
+            <a data-toggle="collapse" class="collapsed" data-parent="#side-menu-acct" href="#side-menu-acct-content" aria-expanded="false" aria-controls="side-menu-acct-content">
+               Account<i class="fa fa-angle-up rotate-icon"></i>
+            </a>
+        </div>
+        <div id="side-menu-acct-content" class="collapse" role="tabpanel" aria-labelledby="mobile-help-footer">
+            <div class="card-block">
+                <ul>
+                    <li>
+                        <a href="https://www.radioworld.ca/customer-portal/user-information">Profile</a>
+                    </li>
+                    <li>
+                    <a href="https://www.radioworld.ca/customer-portal/open-orders">Open Orders</a>
+                    </li>
+                    <li>
+                    <a href="https://www.radioworld.ca/customer-portal/invoiced-orders">Closed Orders</a>
+                    </li>
+                    <li>
+                    <a href="https://www.radioworld.ca/my_account/favourites">My Favourites</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+.fa.fa-angle-down.rotate-icon {
+    font-size: 27px;
+    font-weight: 300;
+    top: 1.3rem;
+}
+
+
+
+#side-menu-acct {
+    margin-left: -25px;
+    margin-right: -25px;
+    background-color: #F0F3F5;
+    width: auto;
+}
+
+#side-menu-acct-content .card-block {
+    padding: 0 16px;
+}
+
+#side-menu-acct-content .card-block ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    padding-left: 27px;
+}
+
+
+
+.side-menu-acct-header {
+    /* border-top:1px solid black;
+    border-bottom:1px solid black; */
+    padding:20px 16px;
+}
+
+.side-menu-acct-header a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none !important;
+    font-weight: 700;
+    color: #222 !important;
+    font-size: 16px;
+    padding-left:10px;
+}
+
+#side-menu-acct .card {
+    background: none;
+}
+
+.side-nav .account-links {
+    background-color: #222;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding: 31px 24px 23px 24px;
+    justify-content: space-between;
+    margin-top: 0px;
+    color: white;
+    font-size: 16px;
+}
+
+.side-nav .account-links a {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    line-height: normal;
+}
+
+div#top_bar_2 {
+    padding-top: 0px;
+}
+
+#close-button i {
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 6px;
+    color: white;
+}
+
+#mainMenuNavigationDesktopcategoriesmenuApp i {
+        font-weight: 500;
+    
+}
+
+
+.mobile #section-before-wrapper .side-nav {
+        padding: 0 20px;
+}
+
+
+
+
+</style>
+
+<script>
+$(document).ready(function() {
+    $('#close-button').on('click', function() {
+        $('#sidenav-overlay').remove();
+        $('.side-nav').attr('style','transform: translateX(-100%); transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94)');
+    });
+});
+
+</script><div id='mainMenuNavigationDesktopcategoriesmenuApp' class='vertical-slider-menu'><div id='group-top' class='links-container hide'><div data-target='group-8094' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Amateur Radio</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-7153' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Marine</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-3987' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Metal Detecting</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-4981' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Outdoors</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-3754' class='menu-line link-parent d-flex'><div class='flex-grow-1'>On The Road</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-6048' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Communications</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-3386' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Mounts</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line mb-3'><a href='#'></a></div><div class='menu-line '><a href='https://help.radioworld.ca/'>Search Our Help Centre</a></div><div class='menu-line '><a href='https://www.radioworld.ca/contact_us'>Visit / Contact Us</a></div></div><div id='group-8094' class='links-container hide'><div data-target='group-top' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-3544' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Transceivers</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-1547' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Amplifiers</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-7701' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Antennas</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-1357' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Antenna Tuners</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-6505' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Power</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-rep-ctrl/repeaters-controllers'>Repeaters & Controllers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-sdr-rec/sdr-receivers'>SDR Receivers</a></div><div data-target='group-9234' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Amateur Radio Accessories</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar/amateur-radio'>View all Amateur Radio</a></div></div><div id='group-3544' class='links-container hide'><div data-target='group-8094' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tran-hh/handhelds'>Handhelds</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tran-hf/hf'>HF</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tran-mobvh/vhf-uhf'>VHF/UHF</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tran-6mt/6-10-metre'>6 & 10 Metre</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tran-ds/digital-d-star'>Digital - D-STAR</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tran-fusn/digital-fusion'>Digital - Fusion</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tran/transceivers'>View all Transceivers</a></div></div><div id='group-1547' class='links-container hide'><div data-target='group-8094' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-amp-hfamp/hf-amplifiers'>HF Amplifiers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-amp-vhfuhf/vhf-uhf-amplifiers'>VHF / UHF Amplifiers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-amp-acc/amplifier-accessories'>Amplifier Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-amp/amplifiers'>View all Amplifiers</a></div></div><div id='group-7701' class='links-container hide'><div data-target='group-8094' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-7384' class='menu-line link-parent d-flex'><div class='flex-grow-1'>HF Antennas</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-5523' class='menu-line link-parent d-flex'><div class='flex-grow-1'>VHF/UHF Antennas</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-aa/antenna-analysers'>Antenna Analysers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-ac/antenna-controllers'>Antenna Controllers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-as/antenna-switches'>Antenna Switches</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-dt/diplexers-triplexers'>Diplexers & Triplexers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-pswrpm/power-swr-meters'>Power & SWR Meters</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-dlb/dummy-loads-baluns'>Dummy Loads & Baluns</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-pro/lightning-protection'>Lightning Protection</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-rot/rotors'>Rotors</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant-acc/antenna-accessories'>Antenna Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-ant/antennas'>View all Antennas</a></div></div><div id='group-7384' class='links-container hide'><div data-target='group-7701' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-anthf-ba/hf-beam-antennas'>HF Beam Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-anthf-ma/hf-mobile-antennas'>HF Mobile Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-anthf-va/hf-vertical-antennas'>HF Vertical Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-anthf-wa/hf-wire-antennas'>HF Wire Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-anthf/hf-antennas'>View all HF Antennas</a></div></div><div id='group-5523' class='links-container hide'><div data-target='group-7701' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-antvhf-ba/vhf-uhf-beam-antennas'>VHF/UHF Beam Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-antvhf-ha/vhf-uhf-handheld-antennas'>VHF/UHF Handheld Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-antvhf-ma/vhf-uhf-mobile-antennas'>VHF/UHF Mobile Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-antvhf-osa/vhf-uhf-satellite-antennas'>VHF/UHF Satellite Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-antvhf-va/vhf-uhf-vertical-antennas'>VHF/UHF Vertical Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-antvhf/vhf-uhf-antennas'>View all VHF/UHF Antennas</a></div></div><div id='group-1357' class='links-container hide'><div data-target='group-8094' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-at-aat/automatic-antenna-tuners'>Automatic Antenna Tuners</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-at-mat/manual-antenna-tuners'>Manual Antenna Tuners</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-at-st/smartuners'>Smartuners</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-at-acc/tuner-accessories'>Tuner Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-at/antenna-tuners'>View all Antenna Tuners</a></div></div><div id='group-6505' class='links-container hide'><div data-target='group-8094' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-pow-pb/power-bars'>Power Bars</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-pow-ssps/power-supplies'>Power Supplies</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-pow-acc/power-accessories'>Power Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-pow/power'>View all Power</a></div></div><div id='group-9234' class='links-container hide'><div data-target='group-8094' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-acc-acc/accessories'>Accessories</a></div><div data-target='group-7984' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Batteries and Chargers</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-9770' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Cables and Mounting</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-acc-cases/cases'>Cases</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-dig/interfaces-accessories'>Interfaces & Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-acc-mnt/equipment-mounting-handles'>Equipment Mounting & Handles</a></div><div data-target='group-9814' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Keys and Keyers</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-6853' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Microphones</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-sof/rig-control-software-programming'>Rig Control, Software & Programming</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-acc-spe-sp/speakers'>Speakers</a></div><div data-target='group-1342' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Training and Books</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-acc/amateur-radio-accessories'>View all Amateur Radio Accessories</a></div></div><div id='group-7984' class='links-container hide'><div data-target='group-9234' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-bc-cha/chargers'>Chargers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-bc-bat/batteries'>Batteries</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-bc/batteries-and-chargers'>View all Batteries and Chargers</a></div></div><div id='group-9770' class='links-container hide'><div data-target='group-9234' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-cm-mck/antenna-mounts-cable-kits'>Antenna Mounts & Cable Kits</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-cm-pmc/cables-coax'>Cables & Coax</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-cm-cs/coax-seal'>Coax Seal</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-cm-ca/connectors-and-accessories'>Connectors and Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-cm/cables-and-mounting'>View all Cables and Mounting</a></div></div><div id='group-9814' class='links-container hide'><div data-target='group-9234' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-kk-kk/keys'>Keys</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-kk-keyer/keyers'>Keyers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-kk/keys-and-keyers'>View all Keys and Keyers</a></div></div><div id='group-6853' class='links-container hide'><div data-target='group-9234' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-mic-hm/handheld-mics'>Handheld Mics</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-mic-dm/desktop-mics'>Desktop Mics</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-mic-hea/headsets'>Headsets</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-mic-ba/bluetooth-adapters'>Bluetooth Adapters</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-mic-ada/adapters-accessories'>Adapters & Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-mic/microphones'>View all Microphones</a></div></div><div id='group-1342' class='links-container hide'><div data-target='group-9234' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tb-bsg/books-and-study-guides'>Books and Study Guides</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tb-cd/cd-books-reference'>CD Books & Reference</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tb-cw/cw-morse-code-tutors'>CW & Morse Code Tutors</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tb-maps/printed-maps'>Printed Maps</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tb-nb/reference-guides'>Reference Guides</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-ar-tb/training-and-books'>View all Training and Books</a></div></div><div id='group-7153' class='links-container hide'><div data-target='group-top' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-4846' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Marine Electronics</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-2800' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Marine Accessories</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-8300' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Marine Radio</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-8348' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Marine Audio</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/marine/z-mar'>View all Marine</a></div></div><div id='group-4846' class='links-container hide'><div data-target='group-7153' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-mar-mfd/multi-function-displays'>Multi-Function Displays</a></div><div data-target='group-2869' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Forward Facing Sonar</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-7283' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Ice Fishing</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-7805' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Trolling Motors</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-1244' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Shallow Water Anchors</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-8325' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Downrigging</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-7406' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Autopilot</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/radar-and-sonar/z-mar-rs'>Radar</a></div><div class='menu-line '><a href='https://www.radioworld.ca/ais/z-mar-ais'>AIS</a></div><div class='menu-line '><a href='https://www.radioworld.ca/sailing/z-mar-sailing'>Sailing</a></div><div data-target='group-7733' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Sounders & Fishfinders</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/handheld-marine-gps/z-gps-mar-hand'>Handheld Marine GPS</a></div><div class='menu-line '><a href='https://www.radioworld.ca/ip-cameras/z-mar-acc-cams'>Marine Cameras</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-mar-e/marine-electronics'>View all Marine Electronics</a></div></div><div id='group-2869' class='links-container hide'><div data-target='group-4846' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/pole-mounts-and-accessories/z-mar-fe-ffs-pma'>Pole Mounts and Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/live-sonar/z-mar-fif-ls'>View all Forward Facing Sonar</a></div></div><div id='group-7283' class='links-container hide'><div data-target='group-4846' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-1011' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Ice Fishing Sonars</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/ice-fishing-cameras/z-fif-uci'>Ice Fishing Cameras</a></div><div class='menu-line '><a href='https://www.radioworld.ca/ice-conversion-kits/z-fif-acc-ick'>Ice Conversion Kits</a></div><div class='menu-line '><a href='https://www.radioworld.ca/ice-fishing-transducers/z-fif-iceducer'>Ice Fishing Transducers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-fif-acc-bc/ice-fishing-batteries-chargers'>Ice Fishing Batteries & Chargers</a></div><div data-target='group-5687' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Ice Fishing Accessories</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/ice-flasher/z-fif-if'>View all Ice Fishing</a></div></div><div id='group-1011' class='links-container hide'><div data-target='group-7283' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/live-sonar-bundles/z-fif-if-ifif-lsb'>Live Ice Sonar Bundles</a></div><div class='menu-line '><a href='https://www.radioworld.ca/lcd-ice-sonar/z-fif-if-ifif-lcdis'>LCD Ice Sonar</a></div><div class='menu-line '><a href='https://www.radioworld.ca/ice-flasher-ice-fishfinders/z-fif-if-ifif'>View all Ice Fishing Sonars</a></div></div><div id='group-5687' class='links-container hide'><div data-target='group-7283' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-fif-acc-a/augers'>Augers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-fif-acc/ice-fishing-accessories'>View all Ice Fishing Accessories</a></div></div><div id='group-7805' class='links-container hide'><div data-target='group-4846' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/trolling-motor-accessories/z-mar-tm-tmacc'>Trolling Motor Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/trolling-motors/z-mar-tm'>View all Trolling Motors</a></div></div><div id='group-1244' class='links-container hide'><div data-target='group-4846' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/power-poles/z-mar-swa-ppl'>Power-Poles</a></div><div class='menu-line '><a href='https://www.radioworld.ca/talons-raptors/z-mar-swa-tal'>Talons & Raptors</a></div><div class='menu-line '><a href='https://www.radioworld.ca/adapter-plates/z-mar-swa-ap'>Adapter Plates</a></div><div class='menu-line '><a href='https://www.radioworld.ca/shallow-water-anchor-accessories/z-mar-swa-acc'>Shallow Water Anchor Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/anchors/z-mar-swa'>View all Shallow Water Anchors</a></div></div><div id='group-8325' class='links-container hide'><div data-target='group-4846' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/downriggers/z-fif-dwnrig-dr'>Downriggers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/downrigging-accessories/z-fif-dwnrig-acc'>Downrigging Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/sensors-depth-temperature-speed/z-fif-sdts'>Sensors (Depth, Temperature, Speed)</a></div><div class='menu-line '><a href='https://www.radioworld.ca/downrigging/z-fif-dwnrig'>View all Downrigging</a></div></div><div id='group-7406' class='links-container hide'><div data-target='group-4846' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/autopilot-accessories/z-mar-autop-acc'>Autopilot Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/autopilot/z-mar-autop'>View all Autopilot</a></div></div><div id='group-7733' class='links-container hide'><div data-target='group-4846' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/portable-fishfinders/z-fif-fis-port'>Portable Fishfinders</a></div><div class='menu-line '><a href='https://www.radioworld.ca/sounders-fishfinders/z-mar-cs-soundr'>View all Sounders & Fishfinders</a></div></div><div id='group-2800' class='links-container hide'><div data-target='group-7153' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-8373' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Fishing Accessories</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/rigging-accessories/z-fif-ra'>Rigging Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-mar-ipfd/inflatable-pfds'>Inflatable PFDs</a></div><div class='menu-line '><a href='https://www.radioworld.ca/battery-charger/z-mar-bc'>Batteries & Chargers</a></div><div data-target='group-1349' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Transducers</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/mounts-mounting-kits/z-mar-acc-mounts'>Mounts & Mounting Kits</a></div><div class='menu-line '><a href='https://www.radioworld.ca/maps-and-charts/z-mar-mc'>Mapping Cards & Charts</a></div><div data-target='group-5164' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Networking</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/cables-adapters/z-mar-acc-cables'>Power & Data Cables</a></div><div class='menu-line '><a href='https://www.radioworld.ca/boat-kits/z-mar-acc-kits'>Boat Kits</a></div><div class='menu-line '><a href='https://www.radioworld.ca/antennas/z-mar-acc-ant'>GPS Antennas & Sensors</a></div><div class='menu-line '><a href='https://www.radioworld.ca/protective-covers-bags/z-mar-acc-covers'>Protective Covers & Bags</a></div><div class='menu-line '><a href='https://www.radioworld.ca/accessories/z-mar-acc'>View all Marine Accessories</a></div></div><div id='group-8373' class='links-container hide'><div data-target='group-2800' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-fif-facc-ba/boat-accessories'>Boat Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-fif-facc-ft/fishing-tools'>Fishing Tools</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-fif-facc-st/safety-tools'>Safety Tools</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-fif-facc/fishing-accessories'>View all Fishing Accessories</a></div></div><div id='group-1349' class='links-container hide'><div data-target='group-2800' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/transducer-accessories/z-fif-trans-acc'>Transducer Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/transducers/z-fif-trans'>View all Transducers</a></div></div><div id='group-5164' class='links-container hide'><div data-target='group-2800' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/ethernet/z-mar-acc-net-eth'>Ethernet</a></div><div class='menu-line '><a href='https://www.radioworld.ca/nmea-2000/z-mar-acc-net-n2k'>NMEA</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-mar-acc-net-st/seatalk'>SeaTalk</a></div><div class='menu-line '><a href='https://www.radioworld.ca/networking/z-mar-acc-net'>View all Networking</a></div></div><div id='group-8300' class='links-container hide'><div data-target='group-7153' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/vhf-fixed-mount/z-mar-tran-vhff'>VHF Fixed Mount</a></div><div class='menu-line '><a href='https://www.radioworld.ca/vhf-handheld/z-mar-tran-vhfh'>VHF Handheld</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-mar-tran-hfc/handsfree-communication'>Handsfree Communication</a></div><div class='menu-line '><a href='https://www.radioworld.ca/vhf-accessories/z-mar-tran-acc'>VHF Accessories</a></div><div data-target='group-1747' class='menu-line link-parent d-flex'><div class='flex-grow-1'>VHF Antennas</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-5195' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Other Marine Antennas</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/radios/z-mar-rad'>Pactor Modems</a></div><div class='menu-line '><a href='https://www.radioworld.ca/transceivers/z-mar-tran'>View all Marine Radio</a></div></div><div id='group-1747' class='links-container hide'><div data-target='group-8300' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/accessory/z-mar-ant-acc'>VHF Antenna Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/vhf-antennas/z-mar-ant-vhfa'>View all VHF Antennas</a></div></div><div id='group-5195' class='links-container hide'><div data-target='group-8300' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/am-fm-tv-hdtv-antennas/z-mar-ant-amfmt'>HDTV & Satellite Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/ais-antennas/z-mar-ant-ais'>View all Other Marine Antennas</a></div></div><div id='group-8348' class='links-container hide'><div data-target='group-7153' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/stereos/z-mar-aud-ster'>Stereos</a></div><div class='menu-line '><a href='https://www.radioworld.ca/amplifiers/z-mar-aud-amps'>Marine Amplifiers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/speakers/z-mar-aud-s'>Marine Speakers & Subwoofers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/accessories/z-mar-aud-acc'>Audio Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/audio/z-mar-aud'>View all Marine Audio</a></div></div><div id='group-3987' class='links-container hide'><div data-target='group-top' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-1294' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Gold & Treasure</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-1176' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Magnet Fishing</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-6062' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Security Metal Detectors</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/metal-detecting/z-md'>View all Metal Detecting</a></div></div><div id='group-1294' class='links-container hide'><div data-target='group-3987' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/metal-detectors/z-md-md'>Metal Detectors</a></div><div class='menu-line '><a href='https://www.radioworld.ca/coils-coil-covers-and-skidplates/z-md-cccs'>Coils, Coil Covers and Skidplates</a></div><div class='menu-line '><a href='https://www.radioworld.ca/digging-tools/z-md-dt'>Digging Scoops & Tools</a></div><div class='menu-line '><a href='https://www.radioworld.ca/pinpointers/z-md-acc-pinp'>Pinpointers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/headphones-and-accessories/z-md-acc-ha'>Headphones</a></div><div class='menu-line '><a href='https://www.radioworld.ca/rods-and-shafts/z-md-rs'>Rods and Shafts</a></div><div class='menu-line '><a href='https://www.radioworld.ca/instructional-books-videos-and-software/z-md-ibvs'>Instructional Books, Videos and Software</a></div><div data-target='group-3914' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Metal Detector Accessories</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/gold-treasure/z-md-gt'>View all Gold & Treasure</a></div></div><div id='group-3914' class='links-container hide'><div data-target='group-1294' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/metal-detector-batteries-and-chargers/z-md-acc-bc'>Metal Detector Batteries and Chargers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/bags-covers-and-weather-protection/z-md-acc-bcwp'>Bags, Covers and Weather Protection</a></div><div class='menu-line '><a href='https://www.radioworld.ca/assorted-accessories/z-md-acc-aa'>Other Metal Detector Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/minelab-merchandise/z-md-acc-mm'>Merchandise</a></div><div class='menu-line '><a href='https://www.radioworld.ca/accessories/z-md-acc'>View all Metal Detector Accessories</a></div></div><div id='group-1176' class='links-container hide'><div data-target='group-3987' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/apparel/z-md-mf-a'>Apparel</a></div><div class='menu-line '><a href='https://www.radioworld.ca/fishing-magnets/z-md-mf-fm'>Fishing Magnets</a></div><div class='menu-line '><a href='https://www.radioworld.ca/ropes-accessories/z-md-mf-ra'>Ropes & Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/magnet-fishing/z-md-mf'>View all Magnet Fishing</a></div></div><div id='group-6062' class='links-container hide'><div data-target='group-3987' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-5707' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Handheld Security Detectors</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-2966' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Walk Through Metal Detectors</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/ground-search-metal-detectors/z-sec-gnd'>Ground Search Metal Detectors</a></div><div class='menu-line '><a href='https://www.radioworld.ca/rentals/z-rp-sec-mtl-dt'>Rentals</a></div><div class='menu-line '><a href='https://www.radioworld.ca/security/z-sec'>View all Security Metal Detectors</a></div></div><div id='group-5707' class='links-container hide'><div data-target='group-6062' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/handheld-security-detector-accessories/z-sec-hand-acc'>Handheld Security Detector Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/handheld-security-detectors/z-sec-hand'>View all Handheld Security Detectors</a></div></div><div id='group-2966' class='links-container hide'><div data-target='group-6062' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/walk-through-detector-accessories/z-sec-wtmd-acc'>Walk Through Detector Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/walk-through-metal-detectors/z-sec-wtmd'>View all Walk Through Metal Detectors</a></div></div><div id='group-4981' class='links-container hide'><div data-target='group-top' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-1765' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Handheld GPS</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-3975' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Travel Gear</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-8425' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Fitness & Wearables</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-5305' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Knives</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-9521' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Cameras & Optics</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-elec-fss/flashlights-spotlights-and-searchlights'>Flashlights, Spotlights and Searchlights</a></div><div data-target='group-3363' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Hunting & Dog Training</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/outdoor/z-out'>View all Outdoors</a></div></div><div id='group-1765' class='links-container hide'><div data-target='group-4981' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/topo-maps/z-gps-mc-tm'>Topographic Maps</a></div><div class='menu-line '><a href='https://www.radioworld.ca/handheld/z-gps-han-han'>View all Handheld GPS</a></div></div><div id='group-3975' class='links-container hide'><div data-target='group-4981' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-water-bottles/water-bottles'>Water Bottles</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-travel-gear/travel-gear'>View all Travel Gear</a></div></div><div id='group-8425' class='links-container hide'><div data-target='group-4981' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/fitness-accessories/z-fit-access'>Fitness Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/fitness-wearables/z-fit'>View all Fitness & Wearables</a></div></div><div id='group-5305' class='links-container hide'><div data-target='group-4981' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-knives-sharp/knife-sharpeners'>Knife Sharpeners</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-knives/knives'>View all Knives</a></div></div><div id='group-9521' class='links-container hide'><div data-target='group-4981' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-cam-cam-ac/action-cameras'>Action Cameras</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-cam-opt-bin/binoculars'>Binoculars</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-cam-cam-acc/camera-accessories'>Cameras & Optics Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-cam/cameras-optics'>View all Cameras & Optics</a></div></div><div id='group-3363' class='links-container hide'><div data-target='group-4981' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/dog-training-accessories/z-hunt-dog'>Dog Training & Tracking</a></div><div class='menu-line '><a href='https://www.radioworld.ca/camping/z-hunt-camp'>Camping</a></div><div class='menu-line '><a href='https://www.radioworld.ca/hunting-camping/z-hunt'>View all Hunting & Dog Training</a></div></div><div id='group-3754' class='links-container hide'><div data-target='group-top' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-4250' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Dash Cameras</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-7094' class='menu-line link-parent d-flex'><div class='flex-grow-1'>GPS</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-9766' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Maps</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-2822' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Motorsport Communications</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-elec-pcjs/mini-jump-starters'>Mini Jump-Starters</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-agpst/automotive-gps-tracking'>Automotive GPS Tracking</a></div><div class='menu-line '><a href='https://www.radioworld.ca/on-the-road/z-otr'>View all On The Road</a></div></div><div id='group-4250' class='links-container hide'><div data-target='group-3754' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-cam-cam-dc-acc/dash-camera-accessories'>Dash Camera Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-cam-cam-dc/dash-cameras'>View all Dash Cameras</a></div></div><div id='group-7094' class='links-container hide'><div data-target='group-3754' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/autonavigation-gps/z-gps-agps-agps'>Automotive GPS</a></div><div class='menu-line '><a href='https://www.radioworld.ca/motorcycle-gps/z-gps-mgps-mgps'>Motorsports / Motorcycle</a></div><div class='menu-line '><a href='https://www.radioworld.ca/trucking-gps/z-gps-tgps-tgps'>RV & Trucking GPS</a></div><div class='menu-line '><a href='https://www.radioworld.ca/computer-and-smartphone-gps/z-gps-csgps'>GPS Receivers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-elec-blufox/gps-vehicle-tracking'>GPS Vehicle Tracking</a></div><div class='menu-line '><a href='https://www.radioworld.ca/accessories/z-gps-acc'>GPS Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/gps/z-gps'>View all GPS</a></div></div><div id='group-9766' class='links-container hide'><div data-target='group-3754' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/road-mapping/z-gps-mc-rm'>Road Mapping</a></div><div class='menu-line '><a href='https://www.radioworld.ca/snowmobile-maps/z-gps-mc-sm'>Snowmobile/ATV Maps</a></div><div class='menu-line '><a href='https://www.radioworld.ca/maps/Z-GPS-MC'>View all Maps</a></div></div><div id='group-2822' class='links-container hide'><div data-target='group-3754' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-4376' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Wireless Headsets</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/helmets/z-mm-helmet'>Smart Helmets</a></div><div data-target='group-1263' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Wired Headsets</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/radios-and-accessories/z-mm-radio'>Radios and Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/motorsports-motorcycle/z-mm'>View all Motorsport Communications</a></div></div><div id='group-4376' class='links-container hide'><div data-target='group-2822' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/wireless-headset-accessories/z-mm-wlhs-acc'>Wireless Headset Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/wireless-headsets/z-mm-wlhs'>View all Wireless Headsets</a></div></div><div id='group-1263' class='links-container hide'><div data-target='group-2822' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/headset-adapters-accessories/z-mm-whs-acc'>Headset Adapters & Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/wired-head-sets/z-mm-whs'>View all Wired Headsets</a></div></div><div id='group-6048' class='links-container hide'><div data-target='group-top' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div data-target='group-6791' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Audio Production</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-elec-sp/satellite-communicators-accessories'>Satellite Communicators & Accessories</a></div><div data-target='group-6978' class='menu-line link-parent d-flex'><div class='flex-grow-1'>CB Radios</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-3192' class='menu-line link-parent d-flex'><div class='flex-grow-1'>GMRS / FRS</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-6827' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Scanners and Receivers</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-9759' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Commercial Radios</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-3014' class='menu-line link-parent d-flex'><div class='flex-grow-1'>Avionic Radios</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/internet-radios/z-rad-ir'>Internet Radios</a></div><div class='menu-line '><a href='https://www.radioworld.ca/weather-radios/z-rad-wr'>Weather Radios</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-elec-ctk/clocks-and-time-keeping'>World Clocks</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-elec-cb/cellular-boosters'>Cellular Boosters</a></div><div data-target='group-4447' class='menu-line link-parent d-flex'><div class='flex-grow-1'>AM/FM, Portable & Clock Radios</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div data-target='group-2785' class='menu-line link-parent d-flex'><div class='flex-grow-1'>AM-FM, TV, HDTV & Satellite Antennas</div><div><i class='fal fa-chevron-right ml-3'></i></div></div><div class='menu-line '><a href='https://www.radioworld.ca/radios/z-rad'>View all Communications</a></div></div><div id='group-6791' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-audpro-mic/microphones'>Microphones</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-audpro-mix/mixers'>Mixers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-audpro-acc/accessories'>Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/category/z-audpro/audio-production'>View all Audio Production</a></div></div><div id='group-6978' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/transceivers/z-rad-cbr-tra'>CB Radio Transceivers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/antenna/z-rad-cbr-ant'>CB Antennas, Coax & Antenna Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/accessories/z-rad-cbr-acc'>CB Radio Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/cb-radio/z-rad-cbr'>View all CB Radios</a></div></div><div id='group-3192' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/gmrs-frs-radios/z-rad-gmrsfrs-g'>GMRS/FRS Radios</a></div><div class='menu-line '><a href='https://www.radioworld.ca/accessory/z-rad-gmrsfrs-a'>GMRS/FRS Radio Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/gmrs-frs/z-rad-gmrsfrs'>View all GMRS / FRS</a></div></div><div id='group-6827' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/antenna-antenna-accessories/z-rad-ss-ant'>Antenna & Antenna Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/scanners-and-receivers-base/z-rad-ss-srb'>Base Scanners and Receivers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/scanners-and-receivers-handheld/z-rad-ss-srh'>Handheld Scanners and Receivers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/shortwave-receivers/z-rad-ss-sr'>Shortwave Receivers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/accessory/z-rad-ss-acc'>Scanner & Shortwave Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/scanners-and-shortwave/z-rad-ss'>View all Scanners and Receivers</a></div></div><div id='group-9759' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/antenna/z-rad-com-ant'>Commercial Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/mobile-radios/z-rad-com-mr'>Mobile & Portable Radios</a></div><div class='menu-line '><a href='https://www.radioworld.ca/repeaters/z-rad-com-rep'>Repeaters</a></div><div class='menu-line '><a href='https://www.radioworld.ca/commercial-radio-accessories/z-rad-com-acc'>Commercial Radio Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/commercial-transceivers-base-mobile-handheld/z-rp-com-trncvr'>Rental Commercial Transceivers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/commercial/z-rad-com'>View all Commercial Radios</a></div></div><div id='group-3014' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/transceivers-accessories/z-rad-av-tran'>Avionic Transceivers</a></div><div class='menu-line '><a href='https://www.radioworld.ca/transceiver-accessories/z-rad-av-tacc'>Avionic Transceiver Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/headsets-accessories/z-rad-av-hs'>Avionic Headsets</a></div><div class='menu-line '><a href='https://www.radioworld.ca/headset-accessories/z-rad-av-hsacc'>Avionic Headset Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/avionics/z-rad-av'>View all Avionic Radios</a></div></div><div id='group-4447' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/radios/z-rad-amfmrad-r'>Radios</a></div><div class='menu-line '><a href='https://www.radioworld.ca/radio-accessories/z-rad-amfmrad-a'>Radio Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/am-fm-radios/z-rad-amfmrad'>View all AM/FM, Portable & Clock Radios</a></div></div><div id='group-2785' class='links-container hide'><div data-target='group-6048' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/radio-tv-antennas/z-rad-ant-ant'>Radio & TV Antennas</a></div><div class='menu-line '><a href='https://www.radioworld.ca/antenna/z-rad-ant'>View all AM-FM, TV, HDTV & Satellite Antennas</a></div></div><div id='group-3386' class='links-container hide'><div data-target='group-top' class='back-link'><i class='fal fa-chevron-left mr-2'></i>BACK</div><div class='menu-line '><a href='https://www.radioworld.ca/bases-mounting-plates/z-ms-bases'>Bases & Mounting Plates</a></div><div class='menu-line '><a href='https://www.radioworld.ca/mounting-kits/z-ms-mounts'>Mounting Kits</a></div><div class='menu-line '><a href='https://www.radioworld.ca/arms/z-ms-arms'>Arms</a></div><div class='menu-line '><a href='https://www.radioworld.ca/cradles-x-grips/z-ms-crdl'>Cradles & X-Grips</a></div><div class='menu-line '><a href='https://www.radioworld.ca/computer-tablet-phone/z-ms-device'>Computer, Tablet & Phone</a></div><div class='menu-line '><a href='https://www.radioworld.ca/other-accessories/z-ms-acc'>Other Accessories</a></div><div class='menu-line '><a href='https://www.radioworld.ca/mounting-solutions/z-ms'>View all Mounts</a></div></div></div><script type='text/javascript' src='https://www.radioworld.ca/application/modules/core/Menu/Assets/Js/VerticalSliderMenu.js'></script>
+
+            </div>
+                                    <div id="top_bar_3" class=" ">
+                <div id='mainMenuNavigationQuicklinksApp'><div id='main-menu-navigation-quicklinks' class='main-menu-navigation'><nav class='navbar-toggleable'><div class='navbar-nav mr-auto d-flex flex-row flex-wrap justify-content-between'><div class='nav-item installations'><a  href='https://www.radioworld.ca/page/precision-marine-installations' target='_self'  >Installations</a><div class='dropdown-menu mega-menu animated fadeIn w-100 p-3 menu-7820'><div class='animate fadeIn megamenu-content d-flex flex-column flex-wrap'></div></div></div><div class='nav-item dropdown '><a  href='/new-products' target='_self'  >New Arrivals</a><div class='dropdown-menu dropdown-primary animated fadeIn'></div></div><div class='nav-item dropdown '><a  href='/deals' target='_self'  >Deals</a><div class='dropdown-menu dropdown-primary animated fadeIn'></div></div></div></nav></div></div><script type='text/javascript' src='https://www.radioworld.ca/application/modules/core/Menu/Assets/Js/DropdownMenu.js'></script>
+
+            </div>
+                                
+                    </div>
+                            </div>
+        </header>
+
+        <main>
+            <div id="wrapper" class="container-fluid mb-1">
+                <div id="section-before-main">
+                    <div class="d-flex justify-content-between">
+                                                                    <div id="header" class="col-sm-12 ">
+                
+            </div>
+                            
+                    </div>
+                </div>
+                <div id="section-before-main-2">
+                    <div class="d-flex justify-content-between">
+                                                                
+                    </div>
+                </div>
+                <div id="main-panel" class="row">
+                    
+
+
+
+                    <div id="section-before-content" class="col-12">
+                                                                                    <div id="BannerSection" class=" ">
+                
+
+        
+    <div id="slider_desktop_search_header" class=" container_desktop_search_header banner" style="padding-bottom: 0%; height:0;">
+            </div>
+
+    
+            </div>
+            
+                    </div>
+
+                    <div id="content" class="col-12">
+                        <div class="row">
+                                                                    
+                            <div class="col">
+                                
+
+
+                                
+
+<script type="text/javascript">
+    var crumbCats = ["Z-MD","Z-MD-GT","Z-MD-MD"]
+</script>
+
+<div id="search" ></div>
+
+<script type="text/javascript">
+    var searchId = '3';
+
+            var systemSearchFilterId = 'Z-MD-MD';
+    </script>
+
+                                
+
+
+                            </div>
+                                                                    
+                        </div>
+                    </div>
+
+                    <div id="section-after-content" class="col-12">
+                                                                
+                    </div>
+
+                    <div class="clear"></div>
+                    
+
+
+                </div>
+                <div class="primary-color d-flex justify-content-between container" id="section-after-main">
+                                                                    <div id="footer" class=" ">
+                
+            </div>
+                        
+                </div>
+            </div>
+
+            <div class="primary-color container-fluid p-1 clearfix" id="section-after-wrapper">
+                                <div class="d-flex justify-content-between">
+                                                                        <div id="footer_buttons_section" class=" ">
+                
+
+    <div class="card-deck last-section" >
+                    <div class="card">                <div class="content-cards  content-card-overlay  content-card-align-bottom" >
+                                                                                    <div class="content-card-content"><span><a class="btn btn-lg btn-light" href="/partnership-program"><img alt="" src="https://www.radioworld.ca/images/svg/handshake-solid-full.svg" style="height:150px; width:150px" />Partnership Program</a>
+</span></div>
+                                                        </div>
+            </div>                    <div class="card">                <div class="content-cards  content-card-overlay  content-card-align-bottom" >
+                                                                                    <div class="content-card-content"><span><a class="btn btn-lg btn-light" href="/edge"><img alt="" src="https://www.radioworld.ca/images/svg/Edge-Fish-Icon.svg" style="height:150px; width:150px;filter:none;" />EDGE Performance Payouts</a>
+</span></div>
+                                                        </div>
+            </div>                    <div class="card">                <div class="content-cards  content-card-overlay  content-card-align-bottom" >
+                                                                                    <div class="content-card-content"><span><a class="btn btn-lg btn-light" href="/upcoming-events"><img alt="" src="https://www.radioworld.ca/images/svg/ticket-solid.svg" style="height:150px; width:150px" />Community Events</a>
+</span></div>
+                                                        </div>
+            </div>            </div>
+
+
+            </div>
+                                    <div id="bottom_bar" class="row ">
+                <div class="d-flex footer-menu-section ">
+    <div class="flex-grow-1 footer-menu-section-1">
+        <div class="widget custom_html  last-section">
+            
+
+        <h5>Radioworld<span class="font-small ml-3">Since 1999</span></h5>
+
+<p>We are the largest store of its type in Canada, offering a wide variety of specialty electronics for your hobby needs. We are committed to providing the widest selection, competitive pricing and quality service. As an Authorised Dealer for all the products we sell, we provide full warranty support for any product purchased at Radioworld. Learn more <a href="/page/about-us">about us</a>.</p>
+
+    </div>
+
+
+        <div class="d-flex social-links">
+            <div><a href="https://www.facebook.com/RadioworldInc/"><i class="fab fa-facebook-f"></i></a></div>
+            <div><a href="https://www.instagram.com/radioworld.ca/"><i class="fab fa-instagram"></i></a></div>
+            <div><a href="https://www.youtube.com/user/RadioworldInc/videos"><i class="fab fa-youtube"></i></a></div>
+            <div><a href="https://www.radioworld.ca/page/rebates">Rebates</a></div>
+            <div><a href="https://www.radioworld.ca/images/uploads/files/used_products.pdf">Used & Demo</a></div>
+        </div>
+    </div>
+    <div class="footer-menu-section-2">
+        <div>
+            <div class="widget custom_html  last-section">
+            
+
+        <div>
+<h5>Help Centre</h5>
+
+<ul>
+	<li><a href="https://help.radioworld.ca">Search</a></li>
+	<li><a href="https://help.radioworld.ca/en/article/shipping-methods-1n9cuzp/">Shipping Methods</a></li>
+	<li><a href="https://help.radioworld.ca/en/article/stock-availability-1r2ayes/">Stock Availability</a></li>
+	<li><a href="https://help.radioworld.ca/en/article/returns-exchanges-1fvg55d/">Returns &amp; Exchanges</a></li>
+	<li><a href="https://help.radioworld.ca/en/article/warranty-service-1tqzf0c/">Warranty Service</a></li>
+	<li><a href="https://help.radioworld.ca/en/article/payment-methods-1klm8ha/">Payment Methods</a></li>
+</ul>
+</div>
+
+    </div>
+
+
+        </div>
+    </div>
+    <div class="footer-menu-section-3">
+        <div class="widget custom_html  last-section">
+            
+
+        <h5>Get in Touch</h5>
+
+<p>We&rsquo;re ready to help. Call, text, chat, email or better yet, come <a href="/contact-us">visit us!</a></p>
+
+<p>Monday - Friday: 9:30am - 5pm<br />
+Saturday: 9am - 2pm.</p>
+
+<p><a href="/contact-us">Contact Us</a> <a href="/contact-us">Holiday Hours</a></p>
+
+    </div>
+
+
+        <div class="footer-menu-section-4">
+            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1 .6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>1 416-667-1000</div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Pro 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.--><path d="M320 352h-23.1a174.1 174.1 0 0 1 -145.8 0H128A128 128 0 0 0 0 480a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32 128 128 0 0 0 -128-128zM48 224a16 16 0 0 0 16-16v-16c0-88.2 71.8-160 160-160s160 71.8 160 160v16a80.1 80.1 0 0 1 -80 80h-32a32 32 0 0 0 -32-32h-32a32 32 0 0 0 0 64h96a112.1 112.1 0 0 0 112-112v-16C416 86.1 329.9 0 224 0S32 86.1 32 192v16a16 16 0 0 0 16 16zm160 0h32a64 64 0 0 1 55.4 32H304a48.1 48.1 0 0 0 48-48v-16a128 128 0 0 0 -256 0c0 40.4 19.1 76 48.4 99.5-.1-1.2-.4-2.3-.4-3.5a64.1 64.1 0 0 1 64-64z"/></svg>1 866-666-8600</div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7 1.3 3 4.1 4.8 7.3 4.8 66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128.2 304H116c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h12.3c6 0 10.4-3.5 10.4-6.6 0-1.3-.8-2.7-2.1-3.8l-21.9-18.8c-8.5-7.2-13.3-17.5-13.3-28.1 0-21.3 19-38.6 42.4-38.6H156c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8h-12.3c-6 0-10.4 3.5-10.4 6.6 0 1.3 .8 2.7 2.1 3.8l21.9 18.8c8.5 7.2 13.3 17.5 13.3 28.1 .1 21.3-19 38.6-42.4 38.6zm191.8-8c0 4.4-3.6 8-8 8h-16c-4.4 0-8-3.6-8-8v-68.2l-24.8 55.8c-2.9 5.9-11.4 5.9-14.3 0L224 227.8V296c0 4.4-3.6 8-8 8h-16c-4.4 0-8-3.6-8-8V192c0-8.8 7.2-16 16-16h16c6.1 0 11.6 3.4 14.3 8.8l17.7 35.4 17.7-35.4c2.7-5.4 8.3-8.8 14.3-8.8h16c8.8 0 16 7.2 16 16v104zm48.3 8H356c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h12.3c6 0 10.4-3.5 10.4-6.6 0-1.3-.8-2.7-2.1-3.8l-21.9-18.8c-8.5-7.2-13.3-17.5-13.3-28.1 0-21.3 19-38.6 42.4-38.6H396c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8h-12.3c-6 0-10.4 3.5-10.4 6.6 0 1.3 .8 2.7 2.1 3.8l21.9 18.8c8.5 7.2 13.3 17.5 13.3 28.1 .1 21.3-18.9 38.6-42.3 38.6z"/></svg>1 289-236-0636</div>
+        </div>
+    </div>
+</div>
+    <div>
+        <div class="d-flex footer-links">
+            <div><a href="https://www.radioworld.ca/page/terms-and-conditions">Terms & Conditions</a></div>
+            <div><a href="https://www.radioworld.ca/page/privacy-policy">Privacy Policy</a></div>
+        </div>
+
+            <div class="footer-copyright">
+                    <span class="copyright-company-name">Radioworld &copy; 2026.</span> <span class="copyright-all-rights-reserved">All Rights Reserved.</span>
+                <a href="https://www.terracor.ca/" target="_blank" id="powered-by-terracor-b2b-ecommerce-hub">Powered by Terracor B2B Ecommerce Hub</a>
+    </div>
+
+    </div>
+<style>
+
+.social-links i {
+    font-size: 25px;
+}
+
+.social-links {
+    margin: 35px 0;
+}
+
+.footer-menu-section-4 svg {
+    color: white;
+    height: 18px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.footer-menu-section-4  {
+ padding-top:30px;
+ padding-left: 30px;
+}
+
+.footer-menu-section-4 > div {
+    margin-bottom: 20px;
+}
+.social-links > div {
+    margin-right:20px;
+}
+
+.footer-links > div {
+    margin-right: 20px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+
+.footer-menu-section {
+    font-size: 14px;
+}
+
+.footer-menu-section a {
+    text-decoration: underline;
+}
+
+.footer-menu-section-1 {
+    padding-right: 80px;
+}
+
+.footer-menu-section-3 {
+    padding-left: 80px;
+    white-space: nowrap;
+    display: flex;
+    flex-grow:1;
+}
+
+.footer-menu-section-2 {
+    white-space: nowrap;
+}
+
+.footer-menu-section-2 > div {
+    border-left:1px solid white;
+    border-right:1px solid white;
+    padding:0 80px;
+    white-space: nowrap;
+}
+
+
+.footer-menu-section-3 {
+    white-space: nowrap;
+}
+
+.footer-menu-section-3 a {
+    margin-right:20px;
+}
+
+
+
+.footer-menu-section .custom_html {
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-menu-section h5 {
+    font-weight: 800;
+
+}
+
+
+.footer-menu-section .custom_html ul {
+    padding:0 !important;
+}
+
+.footer-menu-section .custom_html ul li {
+    list-style: none;
+    text-decoration: underline;
+}
+
+</style>
+            </div>
+                
+                </div>
+                            </div>
+        </main>
+
+        
+        
+        <script src="https://www.radioworld.ca/application/modules/core/assets/mdb/js/mdb.min.js" type="text/javascript"></script>
+
+                    <script>
+                $(document).ready(function(){
+                    $("#wrapper").css("margin-top", $("#top-bar").outerHeight());
+                });
+            </script>
+        
+        
+        <div id="global-modal" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div id="global-modal-dialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div id="global-modal-header" class="modal-header primary-color hide">
+                        <div class="modal-title">
+                            <h3 id="global-modal-title"></h3>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="message-content">
+                            <div id="global-modal-progress-bar" class="progress md-progress primary-color-dark">
+                                <div class="indeterminate"></div>
+                            </div>
+                            <div id="global-modal-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' /><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css' />
+
+<link href="https://www.radioworld.ca/application/modules/core/assets/Fontawesome/css/all.min.css?v=200355" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/string.js/1.9.0/string.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+<script src="https://cloudfront.loggly.com/js/loggly.tracker-latest.min.js" type="text/javascript" async></script>
+
+
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-responsive/4.6.0/js-cloudimage-responsive.min.js"></script>
+
+
+<script type="text/javascript">
+    var ciResponsive;
+
+    $(document).ready(function() {
+        ciResponsive = new window.CIResponsive({
+            token: "aovihjkbbm",
+            params: "org_if_sml=1",
+            exactSize: false,
+            limitFactor: 10,
+            ignoreNodeImgSize: true,
+            lowQualityPreview: {
+                minImgWidth: 180
+            },
+            apiVersion: null
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    var zsAjaxCartConfig = {};
+
+    zsAjaxCartConfig.responses = {
+        invalid_qty : "Quantity must be greater than zero.",
+        individual_errors : "One or more products could not be added to your cart.",
+        generic_error : "We encountered a problem adding your product(s) to the cart - please try again.",
+        cart_fetch_error : "We encountered a problem trying to display your cart - please reload the page to update the cart preview.",
+        adding : "<i class='fas fa-spinner fa-spin loading_image col-lg-offset-1'></i>",
+        page_change : "There are still some items that you have not added to the cart - are you sure you want to leave this page?",
+        products_added_successfully : "All products have been successfully added to your cart.",
+        addonCommentRequired : "This product has an associated addon that requires a comment. Please enter it in the box provided.",
+        missingAddonComment : "Product has not been added as the required addon Comment is missing. Please add to cart again and provide your addon Comment.",
+        addonTotal : "Addon Total",
+        addingToYourCart: "Adding to your cart...",
+        addingToYourQuoteCart: "Adding to your quote cart..."
+    };
+
+    zsAjaxCartConfig.settings = { };
+
+    zsAjaxCartConfig.settings.cart = {
+        addProductsIndividually: 0,
+        afterAddToCartShowCart : 1,
+        resetQuantityAfterAddToCart: 0
+    };
+
+    zsAjaxCartConfig.settings.quote = {
+        afterAddToQuoteShowQuoteCart : 0
+    };
+</script>
+
+
+<script type="text/javascript">
+    var companyName = "Radioworld";
+
+    $(document).ready(function() {
+        $("body").on("hidden.bs.modal", ".modal", function () {
+            $(this).removeData("bs.modal");
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    var basename = '/' + window.location.pathname.split("/")[1];
+    window.basename = basename === "/_mirror" || basename === "/_staging" ? basename : "/";
+
+    window.favouriteAddSuccess = "successfully added to favourites";
+    window.favouriteRemoveSuccess = "successfully removed from favourites";
+    window.genericFail = "Please try again!";
+
+        window.user = null;
+    window.site = 'Radioworld';
+</script>
+
+<script type="text/javascript" src="https://www.radioworld.ca/dist/search.bundle.js?v=200355"></script><script type="text/javascript" src="https://www.radioworld.ca/dist/promosGrid.bundle.js?v=200355"></script><script type="text/javascript" src="https://www.radioworld.ca/dist/vendor.bundle.js?v=200355"></script><script type="text/javascript" src="https://www.radioworld.ca/dist/autocomplete.bundle.js?v=200355"></script>
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dbf15674bd6ebb8',t:'MTc3MzQ0NzMyMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

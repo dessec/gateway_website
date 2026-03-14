@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .glass-card {
+        @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl transition-all duration-300;
+    }
+
+    .glass-card:hover {
+        @apply bg-white/10 border-white/20 -translate-y-1 shadow-2xl;
+    }
+
+    .sticky-sale-banner {
+        @apply sticky top-0 z-50 w-full bg-red-600 text-white text-center py-2 font-bold uppercase tracking-widest text-sm shadow-lg;
+    }
+}
+
+body {
+    @apply bg-void text-gray-300 antialiased;
+}

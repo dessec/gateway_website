@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub - Gateway Metal Detectors</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: "#0A0E1A",
+                        gold: "#C8972A",
+                        signal: "#22C55E",
+                    },
+                    fontFamily: {
+                        display: ["Barlow Condensed", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .glass-card {
+                @apply bg-void backdrop-blur-md border border-gold rounded-2xl transition-all duration-300;
+            }
+            .glass-card:hover {
+                @apply shadow-[0_0_15px_rgba(200,151,42,0.3)] -translate-y-1;
+            }
+            .sticky-sale-banner {
+                @apply sticky top-0 z-50 w-full bg-red-600 text-white text-center py-2 font-bold uppercase tracking-widest text-sm shadow-lg;
+            }
+        }
+        
+        body {
+            @apply bg-void text-gray-300 antialiased;
+        }
+
+        /* Navbar Underline Transition */
+        #nav-underline {
+            transition: left 0.3s ease-out, width 0.3s ease-out, opacity 0.3s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-void min-h-screen flex flex-col">
+
+    <!-- Sticky Banner -->
+    <div class="sticky-sale-banner">
+        JUST IN TIME FOR SUMMER SALE!
+    </div>
+
+    <!-- Aceternity Navbar Replica -->
+    <nav class="sticky top-[36px] z-40 bg-void/90 backdrop-blur-md border-b border-white/10 w-full">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative">
+            <a href="../index.html" class="flex flex-col">
+                <span class="text-2xl font-bold tracking-widest text-white leading-none">GATEWAY</span>
+                <span class="text-[10px] tracking-widest text-gray-400 font-medium">METAL DETECTORS</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 relative group" id="navbar-links">
+                <a href="../index.html"
+                    class="nav-item text-white font-medium text-sm hover:text-gray-300 transition-colors px-1 py-2 relative">Home</a>
+                <a href="../index.html#brands" class="nav-link">Shop</a>
+                <a href="about.html"
+                    class="nav-item text-white font-medium text-sm hover:text-gray-300 transition-colors px-1 py-2 relative">About
+                    Us</a>
+                <a href="../index.html#tools" class="nav-link">Tools</a>
+                <a href="community-map.html"
+                    class="nav-item text-white font-medium text-sm hover:text-gray-300 transition-colors px-1 py-2 relative">Maps</a>
+
+                <!-- Underline element -->
+                <div id="nav-underline" class="absolute bottom-0 h-[2px] bg-white opacity-0" style="left: 0; width: 0;">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="max-w-7xl mx-auto px-6 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-4 tracking-wider uppercase">Ontario
+            Detecting Hub</h1>
+        <div class="h-1 w-24 bg-gold mx-auto rounded"></div>
+        <p class="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">Connect with local clubs, experts, and fellow
+            detectorists across the province.</p>
+    </header>
+
+    <!-- Directory Content -->
+    <main class="max-w-7xl mx-auto px-6 pb-24 flex-grow w-full">
+
+        <!-- Featured Banner: SOBH -->
+        <div class="mb-12">
+            <a href="#"
+                class="block w-full relative h-[200px] rounded-xl overflow-hidden border border-gold group shadow-2xl">
+                <!-- Abstract Background -->
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-900 via-gray-900 to-black"></div>
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(to_right,#C8972A11_1px,transparent_1px),linear-gradient(to_bottom,#C8972A11_1px,transparent_1px)] bg-[size:2rem_2rem]">
+                </div>
+
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-6 z-10">
+                    <span
+                        class="text-gold font-bold tracking-widest text-sm uppercase mb-2 border border-gold/50 px-3 py-1 rounded bg-black/50">Featured
+                        Event</span>
+                    <h2
+                        class="text-3xl md:text-4xl font-display font-bold text-white uppercase tracking-wider group-hover:scale-105 transition-transform duration-300">
+                        Southern Ontario Beach Hunt (SOBH)</h2>
+                    <p class="text-gray-300 mt-2">The biggest community event of the season.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Column: Clubs -->
+            <div class="lg:col-span-2 space-y-6">
+                <h3 class="text-2xl font-bold text-white border-b border-white/10 pb-2 mb-6 uppercase tracking-wider">
+                    Local Clubs</h3>
+
+                <!-- REMDA -->
+                <div class="glass-card p-6 flex flex-col md:flex-row gap-6 items-start">
+                    <div
+                        class="w-full md:w-48 h-32 bg-black flex items-center justify-center rounded-lg border border-white/5 flex-shrink-0">
+                        <span class="text-gray-500 font-display text-xl tracking-widest">REMDA</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-2">REMDA</h4>
+                        <p class="text-gold font-medium mb-3 text-sm tracking-wider uppercase">Niagara Region Focus</p>
+                        <p class="text-gray-400 mb-4 line-clamp-2">Dedicated to preserving history and promoting
+                            responsible metal detecting across the beautiful Niagara peninsula.</p>
+                        <a href="#"
+                            class="inline-block text-white border border-white/20 hover:border-gold hover:text-gold px-4 py-2 rounded text-sm transition-colors">Visit
+                            Association</a>
+                    </div>
+                </div>
+
+                <!-- Canadian Heritage Seekers -->
+                <div class="glass-card p-6 flex flex-col md:flex-row gap-6 items-start">
+                    <div
+                        class="w-full md:w-48 h-32 bg-black flex items-center justify-center rounded-lg border border-white/5 flex-shrink-0">
+                        <span
+                            class="text-gray-500 font-display text-xl tracking-widest text-center">HERITAGE<br>SEEKERS</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-2">Canadian Heritage Seekers</h4>
+                        <p class="text-gold font-medium mb-3 text-sm tracking-wider uppercase">St. Catharines Chapter
+                        </p>
+                        <p class="text-gray-400 mb-4 line-clamp-2">A passionate group of history enthusiasts based in
+                            St. Catharines, uncovering the past one signal at a time.</p>
+                        <a href="#"
+                            class="inline-block text-white border border-white/20 hover:border-gold hover:text-gold px-4 py-2 rounded text-sm transition-colors">Visit
+                            Chapter</a>
+                    </div>
+                </div>
+
+                <!-- Toronto Metal Detecting Club -->
+                <div class="glass-card p-6 flex flex-col md:flex-row gap-6 items-start">
+                    <div
+                        class="w-full md:w-48 h-32 bg-black flex items-center justify-center rounded-lg border border-white/5 flex-shrink-0">
+                        <span class="text-gray-500 font-display text-xl tracking-widest text-center">TMDC</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-2">Toronto Metal Detecting Club</h4>
+                        <p class="text-gold font-medium mb-3 text-sm tracking-wider uppercase">Greater Toronto Area</p>
+                        <p class="text-gray-400 mb-4 line-clamp-2">The premier detecting club for Canada's largest city.
+                            Weekly meetings, group hunts, and educational seminars.</p>
+                        <a href="#"
+                            class="inline-block text-white border border-white/20 hover:border-gold hover:text-gold px-4 py-2 rounded text-sm transition-colors">Visit
+                            Club</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Featured Services -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-white border-b border-white/10 pb-2 mb-6 uppercase tracking-wider">
+                    Expert Recovery</h3>
+
+                <!-- The Ring Finders -->
+                <div class="glass-card p-6 text-center border-t-4 border-t-gold">
+                    <div
+                        class="w-24 h-24 mx-auto bg-black rounded-full border-2 border-gold flex items-center justify-center mb-4 overflow-hidden">
+                        <span class="text-3xl">💍</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">Alison Walker</h4>
+                    <p class="text-gold font-bold text-sm mb-4 uppercase tracking-wider">The Ring Finders</p>
+                    <p class="text-gray-400 text-sm mb-6 pb-6 border-b border-white/10">Lost a ring, keys, or valuables
+                        in the sand, snow, or water? Professional recovery services available across Ontario.</p>
+                    <button
+                        class="w-full bg-gold text-void font-bold py-3 rounded hover:bg-yellow-500 transition-colors uppercase tracking-widest text-sm">Request
+                        Recovery</button>
+                </div>
+            </div>
+
+            <!-- Equipment Spotlight (Live Stock UI) -->
+            <h3 class="text-2xl font-bold text-white border-b border-white/10 pb-2 mb-6 mt-8 uppercase tracking-wider">
+                Equipment Spotlight</h3>
+
+            <!-- Live Stock Card 1 -->
+            <div class="glass-card p-6" data-product-name="Minelab Detector Model X0">
+                <h4 class="text-xl font-bold text-white mb-2">Minelab Detector Model X0</h4>
+                <p class="text-gray-400 text-sm mb-4">The ultimate machine for all terrains. Perfect for finding lost
+                    rings!</p>
+
+                <div class="flex justify-between items-center border-t border-white/10 pt-4 mt-4">
+                    <span class="text-gray-400 text-sm italic stock-status">Checking live stock...</span>
+                    <span class="text-lg font-bold text-white product-price"></span>
+                </div>
+            </div>
+
+            <!-- Live Stock Card 2 -->
+            <div class="glass-card p-6" data-product-name="Garrett Detector Model X5">
+                <h4 class="text-xl font-bold text-white mb-2">Garrett Detector Model X5</h4>
+                <p class="text-gray-400 text-sm mb-4">Robust, reliable, and deep seeking. The Canadian favorite.</p>
+
+                <div class="flex justify-between items-center border-t border-white/10 pt-4 mt-4">
+                    <span class="text-gray-400 text-sm italic stock-status">Checking live stock...</span>
+                    <span class="text-lg font-bold text-white product-price"></span>
+                </div>
+            </div>
+
+            <!-- Live Stock Card (Fallback Demo) -->
+            <div class="glass-card p-6" data-product-name="Non-Existent Ultra 5000">
+                <h4 class="text-xl font-bold text-white mb-2">Ultra Scanner 5000</h4>
+                <p class="text-gray-400 text-sm mb-4">Next generation pulse induction machine.</p>
+
+                <div class="flex justify-between items-center border-t border-white/10 pt-4 mt-4">
+                    <span class="text-gray-400 text-sm italic stock-status">Checking live stock...</span>
+                    <span class="text-lg font-bold text-white product-price"></span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <!-- Vanilla JS Logic for Navbar Hover Underline -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navItems = document.querySelectorAll('.nav-item');
+            const navUnderline = document.getElementById('nav-underline');
+            const navContainer = document.getElementById('navbar-links');
+
+            navItems.forEach(item => {
+                item.addEventListener('mouseenter', (e) => {
+                    const rect = e.target.getBoundingClientRect();
+                    const containerRect = navContainer.getBoundingClientRect();
+
+                    navUnderline.style.width = `${rect.width}px`;
+                    navUnderline.style.left = `${rect.left - containerRect.left}px`;
+                    navUnderline.style.opacity = '1';
+                });
+            });
+
+            navContainer.addEventListener('mouseleave', () => {
+                navUnderline.style.opacity = '0';
+            });
+        });
+    </script>
+
+    <!-- Live Stock Integration Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('live_inventory.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.json();
+                })
+                .then(inventory => {
+                    const productCards = document.querySelectorAll('[data-product-name]');
+
+                    productCards.forEach(card => {
+                        const productName = card.getAttribute('data-product-name');
+                        const productData = inventory.find(item => item.name === productName);
+                        const statusContainer = card.querySelector('.stock-status');
+                        const priceContainer = card.querySelector('.product-price');
+
+                        if (productData) {
+                            // Update Price
+                            priceContainer.textContent = productData.price;
+
+                            // Update Stock UI
+                            if (productData.stock === 'In Stock') {
+                                statusContainer.innerHTML = '<span class="flex items-center text-signal text-sm font-bold"><span class="w-2 h-2 rounded-full bg-signal mr-2 animate-pulse"></span>In Stock</span>';
+                                card.classList.add('border-t-4', 'border-t-signal');
+                            } else {
+                                statusContainer.innerHTML = `<span class="flex items-center text-red-500 text-sm font-bold bg-red-500/10 px-2 py-1 rounded">${productData.stock}</span>`;
+                                card.classList.add('border-t-4', 'border-t-red-500');
+                            }
+                        } else {
+                            // Fallback
+                            statusContainer.innerHTML = '<a href="https://radioworld.ca" target="_blank" class="text-gold text-sm font-bold hover:underline">Check Availability ↗</a>';
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching live inventory:', error);
+                    document.querySelectorAll('[data-product-name]').forEach(card => {
+                        const statusContainer = card.querySelector('.stock-status');
+                        statusContainer.innerHTML = '<a href="https://radioworld.ca" target="_blank" class="text-gold text-sm font-bold hover:underline">Check Availability ↗</a>';
+                    });
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Discoveries Map - Gateway Metal Detectors</title>
+
+    <!-- Mapbox GL JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: "#0A0E1A",
+                        gold: "#C8972A",
+                        signal: "#22C55E",
+                    },
+                    fontFamily: {
+                        display: ["Barlow Condensed", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .glass-card {
+                @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl transition-all duration-300;
+            }
+            .form-input {
+                @apply w-full bg-black/50 border border-white/20 rounded p-2 text-white focus:border-gold outline-none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-void text-gray-300 antialiased h-screen flex flex-col overflow-hidden">
+
+    <!-- Simple Nav -->
+    <nav class="bg-void/90 backdrop-blur-md border-b border-white/10 w-full z-40 relative">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex flex-col">
+                <span class="text-2xl font-bold tracking-widest text-white leading-none">GATEWAY</span>
+                <span class="text-[10px] tracking-widest text-gray-400 font-medium">&#8592; BACK TO HOME</span>
+            </a>
+            <div class="text-white font-bold uppercase tracking-widest text-sm">
+                Live Detecting Map
+            </div>
+        </div>
+    </nav>
+
+    <!-- Map Container -->
+    <div id="map" class="flex-grow w-full relative"></div>
+
+    <!-- Post Find Modal (Hidden by Default) -->
+    <div id="pinModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center">
+        <div class="glass-card p-8 max-w-md w-full mx-4 shadow-2xl shadow-black">
+            <h2 class="text-2xl font-bold text-white mb-4 uppercase tracking-wider border-b border-white/20 pb-2">Record
+                Discovery</h2>
+
+            <form id="postFindForm" class="space-y-4" enctype="multipart/form-data">
+                <!-- Hidden coordinate fields -->
+                <input type="hidden" id="lng" name="lng">
+                <input type="hidden" id="lat" name="lat">
+
+                <div class="text-xs text-gray-400 font-mono mb-4" id="coord-display">
+                    Coords: Selected Location
+                </div>
+
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">What did you find?</label>
+                    <textarea id="description" name="description" rows="3" class="form-input" required
+                        placeholder="Describe your find..."></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">Upload Image (Optional)</label>
+                    <!-- Tailwind native file input styling -->
+                    <input type="file" id="image" name="image" accept="image/*"
+                        class="block w-full text-sm text-gray-400
+                        file:mr-4 file:py-2 file:px-4
+                        file:rounded file:border-0
+                        file:text-sm file:font-bold
+                        file:bg-white/10 file:text-white
+                        hover:file:bg-white/20 transition-colors cursor-pointer border border-white/20 rounded bg-black/50">
+                </div>
+
+                <div class="flex space-x-4 pt-4">
+                    <button type="button" id="cancelBtn"
+                        class="flex-1 px-4 py-2 border border-white/20 text-white rounded hover:bg-white/10 transition-colors">Cancel</button>
+                    <button type="submit"
+                        class="flex-1 px-4 py-2 bg-gradient-to-r from-green-600 to-green-500 text-white font-bold rounded shadow-lg hover:from-green-500 hover:to-green-400 transition-colors">Post
+                        Find</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mapbox Initialization Script -->
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYnJhZGw3IiwiYSI6ImNtbWU2bjhqbTAwcXYycXExMHk4YzY1ZnAifQ.NW2DUIy379kLRVbQxEeVFQ';
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            // User specified custom style
+            style: 'mapbox://styles/bradl7/cmm8p0apa00w801s38nr5636j',
+            // Niagara Region coordinated logic
+            center: [-79.245, 43.089], // Coordinates roughly centering Niagara peninsula
+            zoom: 11,
+            pitch: 45,      // Cinematic View
+            bearing: -17,   // Cinematic View
+            antialias: true
+        });
+
+        map.on('style.load', () => {
+            // Enable 3D Terrain
+            map.addSource('mapbox-dem', {
+                'type': 'raster-dem',
+                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                'tileSize': 512,
+                'maxzoom': 14
+            });
+            map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+            // Dynamic Lighting
+            map.setLight({
+                anchor: 'map',
+                color: '#fdb813',
+                intensity: 0.5,
+                position: [1.15, 210, 30] // Morning sunlight angle
+            });
+        });
+
+        // Modal Logic
+        const modal = document.getElementById('pinModal');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const form = document.getElementById('postFindForm');
+        const lngInput = document.getElementById('lng');
+        const latInput = document.getElementById('lat');
+        const coordDisplay = document.getElementById('coord-display');
+
+        // Capture Coordinates on Click
+        map.on('click', (e) => {
+            const coordinates = e.lngLat;
+
+            // Populate hidden form inputs
+            lngInput.value = coordinates.lng;
+            latInput.value = coordinates.lat;
+
+            // Update display
+            coordDisplay.innerText = `Coords: [${coordinates.lng.toFixed(4)}, ${coordinates.lat.toFixed(4)}]`;
+
+            // Show modal
+            modal.classList.remove('hidden');
+        });
+
+        cancelBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            form.reset();
+        });
+
+        // Handle Submission
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Posting...';
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('../save-pin.php', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Create a marker immediately for user feedback
+                    new mapboxgl.Marker({ color: '#22C55E' })
+                        .setLngLat([parseFloat(lngInput.value), parseFloat(latInput.value)])
+                        .addTo(map);
+
+                    modal.classList.add('hidden');
+                    form.reset();
+                    alert("Discovery logged successfully!");
+                } else {
+                    alert("Error saving pin: " + result.message);
+                }
+            } catch (error) {
+                console.error("Error submitting find:", error);
+                alert("An error occurred communicating with the server.");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerText = 'Post Find';
+            }
+        });
+
+        // Navigation controls (zoom/tilt)
+        map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    </script>
+</body>
+
+</html>

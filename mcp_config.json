@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "ssh-filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-ssh",
+                "--host",
+                "82.25.87.5",
+                "--port",
+                "65002",
+                "--user",
+                "u887202781"
+            ]
+        }
+    }
+}

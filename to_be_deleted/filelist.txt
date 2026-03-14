@@ -1,0 +1,320 @@
+C:\Projects\Gateway_Final\api_response.json
+C:\Projects\Gateway_Final\assets
+C:\Projects\Gateway_Final\community-clubs.html
+C:\Projects\Gateway_Final\community-map.html
+C:\Projects\Gateway_Final\fetch_http_service.py
+C:\Projects\Gateway_Final\fetch_js.py
+C:\Projects\Gateway_Final\fetch_rw.py
+C:\Projects\Gateway_Final\filelist.txt
+C:\Projects\Gateway_Final\frontend
+C:\Projects\Gateway_Final\garrett.html
+C:\Projects\Gateway_Final\http_service.js
+C:\Projects\Gateway_Final\index.html
+C:\Projects\Gateway_Final\live_inventory.json
+C:\Projects\Gateway_Final\mcp_config.json
+C:\Projects\Gateway_Final\network.log
+C:\Projects\Gateway_Final\network_headers.log
+C:\Projects\Gateway_Final\nokta.html
+C:\Projects\Gateway_Final\Organized_Photos
+C:\Projects\Gateway_Final\parse_test.py
+C:\Projects\Gateway_Final\parse_test_2.py
+C:\Projects\Gateway_Final\pw_headers.py
+C:\Projects\Gateway_Final\radioworld_sync.py
+C:\Projects\Gateway_Final\rw_product.html
+C:\Projects\Gateway_Final\rw_snippet.html
+C:\Projects\Gateway_Final\save-pin.php
+C:\Projects\Gateway_Final\scraper.log
+C:\Projects\Gateway_Final\search.js
+C:\Projects\Gateway_Final\search_service.js
+C:\Projects\Gateway_Final\style.css
+C:\Projects\Gateway_Final\tailwind.config.js
+C:\Projects\Gateway_Final\test_api.py
+C:\Projects\Gateway_Final\test_post.py
+C:\Projects\Gateway_Final\test_pw.py
+C:\Projects\Gateway_Final\test_pw_network.py
+C:\Projects\Gateway_Final\xp.html
+C:\Projects\Gateway_Final\.git\COMMIT_EDITMSG
+C:\Projects\Gateway_Final\.git\config
+C:\Projects\Gateway_Final\.git\description
+C:\Projects\Gateway_Final\.git\HEAD
+C:\Projects\Gateway_Final\.git\hooks
+C:\Projects\Gateway_Final\.git\index
+C:\Projects\Gateway_Final\.git\info
+C:\Projects\Gateway_Final\.git\logs
+C:\Projects\Gateway_Final\.git\objects
+C:\Projects\Gateway_Final\.git\refs
+C:\Projects\Gateway_Final\.git\hooks\applypatch-msg.sample
+C:\Projects\Gateway_Final\.git\hooks\commit-msg.sample
+C:\Projects\Gateway_Final\.git\hooks\fsmonitor-watchman.sample
+C:\Projects\Gateway_Final\.git\hooks\post-update.sample
+C:\Projects\Gateway_Final\.git\hooks\pre-applypatch.sample
+C:\Projects\Gateway_Final\.git\hooks\pre-commit.sample
+C:\Projects\Gateway_Final\.git\hooks\pre-merge-commit.sample
+C:\Projects\Gateway_Final\.git\hooks\pre-push.sample
+C:\Projects\Gateway_Final\.git\hooks\pre-rebase.sample
+C:\Projects\Gateway_Final\.git\hooks\pre-receive.sample
+C:\Projects\Gateway_Final\.git\hooks\prepare-commit-msg.sample
+C:\Projects\Gateway_Final\.git\hooks\push-to-checkout.sample
+C:\Projects\Gateway_Final\.git\hooks\sendemail-validate.sample
+C:\Projects\Gateway_Final\.git\hooks\update.sample
+C:\Projects\Gateway_Final\.git\info\exclude
+C:\Projects\Gateway_Final\.git\logs\HEAD
+C:\Projects\Gateway_Final\.git\logs\refs
+C:\Projects\Gateway_Final\.git\logs\refs\heads
+C:\Projects\Gateway_Final\.git\logs\refs\remotes
+C:\Projects\Gateway_Final\.git\logs\refs\heads\main
+C:\Projects\Gateway_Final\.git\logs\refs\remotes\origin
+C:\Projects\Gateway_Final\.git\logs\refs\remotes\origin\main
+C:\Projects\Gateway_Final\.git\objects\00
+C:\Projects\Gateway_Final\.git\objects\01
+C:\Projects\Gateway_Final\.git\objects\03
+C:\Projects\Gateway_Final\.git\objects\0e
+C:\Projects\Gateway_Final\.git\objects\0f
+C:\Projects\Gateway_Final\.git\objects\15
+C:\Projects\Gateway_Final\.git\objects\16
+C:\Projects\Gateway_Final\.git\objects\17
+C:\Projects\Gateway_Final\.git\objects\18
+C:\Projects\Gateway_Final\.git\objects\1b
+C:\Projects\Gateway_Final\.git\objects\1c
+C:\Projects\Gateway_Final\.git\objects\1d
+C:\Projects\Gateway_Final\.git\objects\20
+C:\Projects\Gateway_Final\.git\objects\23
+C:\Projects\Gateway_Final\.git\objects\26
+C:\Projects\Gateway_Final\.git\objects\27
+C:\Projects\Gateway_Final\.git\objects\2a
+C:\Projects\Gateway_Final\.git\objects\2b
+C:\Projects\Gateway_Final\.git\objects\2e
+C:\Projects\Gateway_Final\.git\objects\34
+C:\Projects\Gateway_Final\.git\objects\35
+C:\Projects\Gateway_Final\.git\objects\38
+C:\Projects\Gateway_Final\.git\objects\42
+C:\Projects\Gateway_Final\.git\objects\47
+C:\Projects\Gateway_Final\.git\objects\48
+C:\Projects\Gateway_Final\.git\objects\49
+C:\Projects\Gateway_Final\.git\objects\4b
+C:\Projects\Gateway_Final\.git\objects\51
+C:\Projects\Gateway_Final\.git\objects\56
+C:\Projects\Gateway_Final\.git\objects\57
+C:\Projects\Gateway_Final\.git\objects\59
+C:\Projects\Gateway_Final\.git\objects\5a
+C:\Projects\Gateway_Final\.git\objects\5d
+C:\Projects\Gateway_Final\.git\objects\5e
+C:\Projects\Gateway_Final\.git\objects\60
+C:\Projects\Gateway_Final\.git\objects\61
+C:\Projects\Gateway_Final\.git\objects\62
+C:\Projects\Gateway_Final\.git\objects\63
+C:\Projects\Gateway_Final\.git\objects\66
+C:\Projects\Gateway_Final\.git\objects\67
+C:\Projects\Gateway_Final\.git\objects\6a
+C:\Projects\Gateway_Final\.git\objects\6d
+C:\Projects\Gateway_Final\.git\objects\72
+C:\Projects\Gateway_Final\.git\objects\77
+C:\Projects\Gateway_Final\.git\objects\79
+C:\Projects\Gateway_Final\.git\objects\7b
+C:\Projects\Gateway_Final\.git\objects\7d
+C:\Projects\Gateway_Final\.git\objects\81
+C:\Projects\Gateway_Final\.git\objects\87
+C:\Projects\Gateway_Final\.git\objects\89
+C:\Projects\Gateway_Final\.git\objects\8a
+C:\Projects\Gateway_Final\.git\objects\8b
+C:\Projects\Gateway_Final\.git\objects\8f
+C:\Projects\Gateway_Final\.git\objects\91
+C:\Projects\Gateway_Final\.git\objects\97
+C:\Projects\Gateway_Final\.git\objects\9b
+C:\Projects\Gateway_Final\.git\objects\9f
+C:\Projects\Gateway_Final\.git\objects\a0
+C:\Projects\Gateway_Final\.git\objects\a2
+C:\Projects\Gateway_Final\.git\objects\a4
+C:\Projects\Gateway_Final\.git\objects\a5
+C:\Projects\Gateway_Final\.git\objects\a7
+C:\Projects\Gateway_Final\.git\objects\a8
+C:\Projects\Gateway_Final\.git\objects\a9
+C:\Projects\Gateway_Final\.git\objects\aa
+C:\Projects\Gateway_Final\.git\objects\ac
+C:\Projects\Gateway_Final\.git\objects\ae
+C:\Projects\Gateway_Final\.git\objects\b3
+C:\Projects\Gateway_Final\.git\objects\b4
+C:\Projects\Gateway_Final\.git\objects\b5
+C:\Projects\Gateway_Final\.git\objects\b7
+C:\Projects\Gateway_Final\.git\objects\ba
+C:\Projects\Gateway_Final\.git\objects\bd
+C:\Projects\Gateway_Final\.git\objects\c0
+C:\Projects\Gateway_Final\.git\objects\c2
+C:\Projects\Gateway_Final\.git\objects\c7
+C:\Projects\Gateway_Final\.git\objects\c9
+C:\Projects\Gateway_Final\.git\objects\d1
+C:\Projects\Gateway_Final\.git\objects\d5
+C:\Projects\Gateway_Final\.git\objects\d6
+C:\Projects\Gateway_Final\.git\objects\da
+C:\Projects\Gateway_Final\.git\objects\e4
+C:\Projects\Gateway_Final\.git\objects\e7
+C:\Projects\Gateway_Final\.git\objects\e8
+C:\Projects\Gateway_Final\.git\objects\e9
+C:\Projects\Gateway_Final\.git\objects\f1
+C:\Projects\Gateway_Final\.git\objects\f2
+C:\Projects\Gateway_Final\.git\objects\f3
+C:\Projects\Gateway_Final\.git\objects\f5
+C:\Projects\Gateway_Final\.git\objects\f8
+C:\Projects\Gateway_Final\.git\objects\fa
+C:\Projects\Gateway_Final\.git\objects\fc
+C:\Projects\Gateway_Final\.git\objects\info
+C:\Projects\Gateway_Final\.git\objects\pack
+C:\Projects\Gateway_Final\.git\objects\00\5fb3b6e738f27f712082f7009e8de573fb6682
+C:\Projects\Gateway_Final\.git\objects\01\081729bab1e66b41cc42a921d6b2a0ee0ed468
+C:\Projects\Gateway_Final\.git\objects\03\95c36eb331a83f22ff65eab0ecf5b4f416bcaa
+C:\Projects\Gateway_Final\.git\objects\0e\bd4be47ad299f5375bff61502769561fddc403
+C:\Projects\Gateway_Final\.git\objects\0f\bf5bebba5f757078cff9c75c9a2957777da670
+C:\Projects\Gateway_Final\.git\objects\15\1cf631105673e27fbc8177b5dba89b82a67d49
+C:\Projects\Gateway_Final\.git\objects\16\c1a9b3661db22fa4bd9f61c890901a854f4185
+C:\Projects\Gateway_Final\.git\objects\17\d2c201d60890e0c283cbb417c712007c4740c8
+C:\Projects\Gateway_Final\.git\objects\18\2e2099203672e66b96637335eaafac5edd3d7f
+C:\Projects\Gateway_Final\.git\objects\1b\1414b18a3a8705bff533c056728693e1aea9b2
+C:\Projects\Gateway_Final\.git\objects\1b\a6e595313e6ca2e4d16ca1b39a86f932de40b6
+C:\Projects\Gateway_Final\.git\objects\1c\c41f562108149d07bf8c899ffe9d69ddf7bc99
+C:\Projects\Gateway_Final\.git\objects\1c\fa6335c04fe5fb73ae20133608d23be2412379
+C:\Projects\Gateway_Final\.git\objects\1d\083794784440bd9443b2b1c9d675db18cf4775
+C:\Projects\Gateway_Final\.git\objects\1d\4a4b3fca535c8623096ee5b1bde19265754436
+C:\Projects\Gateway_Final\.git\objects\1d\f4f0267a0499b9a59ad4846c3d197381022410
+C:\Projects\Gateway_Final\.git\objects\20\1ad68f48f19ce7f572ca12a114118417643d60
+C:\Projects\Gateway_Final\.git\objects\23\e074b9b1d59c0a47fc1721c4039de79af79790
+C:\Projects\Gateway_Final\.git\objects\26\69ae0ced6739b591a61ed02a79aac79d937561
+C:\Projects\Gateway_Final\.git\objects\27\6d67cbf1a117d9f41e629580836cfb3e61f1fb
+C:\Projects\Gateway_Final\.git\objects\2a\8e8c40d79aa71c59bdd887a3a8ed9055f4b191
+C:\Projects\Gateway_Final\.git\objects\2b\f89873225e7419413e11dbf8015d22862b3579
+C:\Projects\Gateway_Final\.git\objects\2e\232f78b7e4e2e3964cd5fda80e9f226f41e196
+C:\Projects\Gateway_Final\.git\objects\34\43ad48d284715fd6422fc786291a70591168f4
+C:\Projects\Gateway_Final\.git\objects\35\1c9469582dde094e07a3fb2145184d9a7ea832
+C:\Projects\Gateway_Final\.git\objects\35\5157908a7657d964745b9a124144cf85336467
+C:\Projects\Gateway_Final\.git\objects\35\d8fdf045b059a887c646f39151358d1623b9f6
+C:\Projects\Gateway_Final\.git\objects\38\11560387351fcb7017572f6d914938a86fde3d
+C:\Projects\Gateway_Final\.git\objects\42\9bd8718a7d768522de30f14ae9697ed7db43a4
+C:\Projects\Gateway_Final\.git\objects\42\afc189ca301b651c1b4218a36f17acff0de592
+C:\Projects\Gateway_Final\.git\objects\47\456092e1a776992d9e99372cb43603eb5cc111
+C:\Projects\Gateway_Final\.git\objects\48\5daa970d1825032324680c73a0c8fde37a540f
+C:\Projects\Gateway_Final\.git\objects\49\6fc0f21b9e4ed5c17f74245b9d89d25e9719bd
+C:\Projects\Gateway_Final\.git\objects\4b\73d93f5bff7aa65640efc9c1d050d59430da47
+C:\Projects\Gateway_Final\.git\objects\4b\825dc642cb6eb9a060e54bf8d69288fbee4904
+C:\Projects\Gateway_Final\.git\objects\51\05d5d71107fdd85cbe0e0c3e6d07043ecbbcd8
+C:\Projects\Gateway_Final\.git\objects\51\1deb58d02ac88bbeaf5497e23f967cde2cb3e6
+C:\Projects\Gateway_Final\.git\objects\51\9b30a9651513b0eae6a86a054a4a36ec910c92
+C:\Projects\Gateway_Final\.git\objects\56\1b54054f59bc38e7988a7f3ee21ec3517a1044
+C:\Projects\Gateway_Final\.git\objects\57\204f8ad6933540f79fc9cd272741f05c234625
+C:\Projects\Gateway_Final\.git\objects\59\37fe76f0648535dd58930cc39999a863929cd2
+C:\Projects\Gateway_Final\.git\objects\5a\81eb168752af1fb67591ffcdac395098f39855
+C:\Projects\Gateway_Final\.git\objects\5d\10b10d0b6ed39ebc296c028fcbf581f0ebe510
+C:\Projects\Gateway_Final\.git\objects\5e\17be8918b0c0cf4565916c830197ee93fc02db
+C:\Projects\Gateway_Final\.git\objects\60\1738683ab544bfb438da0e741ab5a0a0730b80
+C:\Projects\Gateway_Final\.git\objects\61\57de66cbe224ec210f4fdbee73f26474208a79
+C:\Projects\Gateway_Final\.git\objects\61\6ccd30b51fe43b659c922370961567bd56b3de
+C:\Projects\Gateway_Final\.git\objects\61\ba47be1e56c541e8fa053287cb0e0f8c8e9b49
+C:\Projects\Gateway_Final\.git\objects\62\86df41bc332656ffbf09f72df7e15d624e06d4
+C:\Projects\Gateway_Final\.git\objects\63\5310d889df2345ba594f7322e3b6de12fc721e
+C:\Projects\Gateway_Final\.git\objects\66\2128006cc4394cea09f289619bb7222ba9b8d0
+C:\Projects\Gateway_Final\.git\objects\67\1c58bcf8247cec7e0e1f15c153dfc79561b6f2
+C:\Projects\Gateway_Final\.git\objects\67\61201e1add629dfe03a3e6db455b3463967ed0
+C:\Projects\Gateway_Final\.git\objects\6a\ce2c047bc9e522adb591d887309c52b6650173
+C:\Projects\Gateway_Final\.git\objects\6d\3fa2f17b8c6d07ea7d017f49f462a8c2065f60
+C:\Projects\Gateway_Final\.git\objects\6d\5a26820461fd11bdebee9b10832554b17b1635
+C:\Projects\Gateway_Final\.git\objects\72\66e21b2751b21823a586a68492e139721324b5
+C:\Projects\Gateway_Final\.git\objects\77\c676c0dda2dc3bb674917e22a952db4d690a65
+C:\Projects\Gateway_Final\.git\objects\79\58fbd40ec738344a66f9a29e316470a851f637
+C:\Projects\Gateway_Final\.git\objects\7b\881f47fce798a181e07f842c18735516237def
+C:\Projects\Gateway_Final\.git\objects\7b\f4d69d2ccc7bdf15e682301ef83e7deae9fdb2
+C:\Projects\Gateway_Final\.git\objects\7d\32395d844c3d474a8a50c2ab1705188eea6c3b
+C:\Projects\Gateway_Final\.git\objects\81\7d24a1eaac03eb3b1dab1dea4d244543037234
+C:\Projects\Gateway_Final\.git\objects\87\d2eb9201dde28151ddbc36e7e6d45136cca69f
+C:\Projects\Gateway_Final\.git\objects\89\cc2bc4f61a590a9654ee62b4681bbc818edb00
+C:\Projects\Gateway_Final\.git\objects\8a\f644bc69818e33aa50efa8309149f5d7838a11
+C:\Projects\Gateway_Final\.git\objects\8b\0cf4672cf2ca8ecd9fe36ea1cb1225d836c2f0
+C:\Projects\Gateway_Final\.git\objects\8f\3c4bac9410a8b8367181528dddee7bd58c657a
+C:\Projects\Gateway_Final\.git\objects\91\71017a03ae619a3cb9042ac95ae954d1df28f0
+C:\Projects\Gateway_Final\.git\objects\97\f1fd18de6f2c1d4c0b3677f4f15b8472ffb8d6
+C:\Projects\Gateway_Final\.git\objects\9b\1c1e332ca49d909e9d957cd93a5c5ee6ce5e25
+C:\Projects\Gateway_Final\.git\objects\9f\4f09422ce5beb1658b580296a2f7dd7385136e
+C:\Projects\Gateway_Final\.git\objects\a0\e3c5f98eede926b095ba87f56ac0e9554aa7de
+C:\Projects\Gateway_Final\.git\objects\a2\9a93df4cca0e4533de1451d81c8196cedb5623
+C:\Projects\Gateway_Final\.git\objects\a4\8b59e799bad298bf2a817917678c83aecfd218
+C:\Projects\Gateway_Final\.git\objects\a5\f066ef0ada89dd12ddec9c5245df628fafb1f3
+C:\Projects\Gateway_Final\.git\objects\a7\7ff469bd13a2ca6fdf83eeb0f0fc4800978fcf
+C:\Projects\Gateway_Final\.git\objects\a8\c7b93fef94fc48a05bd69e67c24068f1b30bca
+C:\Projects\Gateway_Final\.git\objects\a8\e634fc0c5f45a9dc5a654f6eeef5bee0f4e5a6
+C:\Projects\Gateway_Final\.git\objects\a9\9c18fd397643d108c65895e066e79790a1678c
+C:\Projects\Gateway_Final\.git\objects\aa\1653f81378b8de7f44f6119329eae55724cdbd
+C:\Projects\Gateway_Final\.git\objects\aa\c9eaecf204251173b4fc13c0dcc5ec53c3b3a1
+C:\Projects\Gateway_Final\.git\objects\ac\401274f9eb12f13475cc2c9d6325a239c39514
+C:\Projects\Gateway_Final\.git\objects\ae\191277b57b3a68275d315945f3e075871047ad
+C:\Projects\Gateway_Final\.git\objects\b3\5698ad8c1499ae5fd3550c8bc880ff0f7fcce2
+C:\Projects\Gateway_Final\.git\objects\b4\2aca12c65a03d6b2d4c2113b59ae3e98b17609
+C:\Projects\Gateway_Final\.git\objects\b5\4f046bfe2fdda9b3dbc9757f9a4fe58ce070fa
+C:\Projects\Gateway_Final\.git\objects\b7\6e44e19492ae227507f525f43a219fab8297fd
+C:\Projects\Gateway_Final\.git\objects\ba\9ad4184bdbd221d687764ee73bb5abfb058e50
+C:\Projects\Gateway_Final\.git\objects\bd\28abdd56b5430e52f72d06c46358df4f2cf21d
+C:\Projects\Gateway_Final\.git\objects\c0\e43502df2f30c679125a7699d4b527caf7328a
+C:\Projects\Gateway_Final\.git\objects\c2\0c8e8963257856407b192e362b8a16c2345e24
+C:\Projects\Gateway_Final\.git\objects\c7\b39e37f810541209cc6ce3b8ef4e99b0e5c289
+C:\Projects\Gateway_Final\.git\objects\c9\7b37da2c8e1d700035c5ce5bfb6b2d189a3565
+C:\Projects\Gateway_Final\.git\objects\d1\8db0fcc28b948065760baaeb309e1b39839c94
+C:\Projects\Gateway_Final\.git\objects\d5\667ea78dfe54e45055d1decb81f8902609473c
+C:\Projects\Gateway_Final\.git\objects\d6\4807ce3ebcca6ff8d566b21b20fad1fda3198b
+C:\Projects\Gateway_Final\.git\objects\da\561f91a421856a9e35dac5db59cb64d06bd929
+C:\Projects\Gateway_Final\.git\objects\e4\4062b6f0a2bc736e01c1154ac4fa76e5d45d2a
+C:\Projects\Gateway_Final\.git\objects\e4\8d942eeef0fb6fbb9aafd52a99273d60cba0e4
+C:\Projects\Gateway_Final\.git\objects\e4\b0e342d3430e26a5cf478f9522d3ea59a58d89
+C:\Projects\Gateway_Final\.git\objects\e7\5b525fc0f2f5d8a29d6616e014f98c092ebf18
+C:\Projects\Gateway_Final\.git\objects\e8\d1a855ff04f07fa182cb783676cd80e8082e79
+C:\Projects\Gateway_Final\.git\objects\e9\6173f39458a02407f8563822fc5e90f63d5fa7
+C:\Projects\Gateway_Final\.git\objects\f1\e1149a76bbd326403f618cf0e3f0d2965aa53a
+C:\Projects\Gateway_Final\.git\objects\f2\f71b140bff9135c37b251299c7a2a44924810e
+C:\Projects\Gateway_Final\.git\objects\f3\bff38e15072afd6003766a94ec408c262faf06
+C:\Projects\Gateway_Final\.git\objects\f3\dd07fb3266089023c39d809d572c1f21552c0d
+C:\Projects\Gateway_Final\.git\objects\f5\e16cd52e4fd4f8b59a7d1243eeab9ce0d72a76
+C:\Projects\Gateway_Final\.git\objects\f8\c58e03dd01d2b186c98e5fff4f1931c4752a72
+C:\Projects\Gateway_Final\.git\objects\fa\2a4b2c3e2703381da01797ed577434f8245386
+C:\Projects\Gateway_Final\.git\objects\fc\af2e54702c234fc4136c8fca8a5a8fc008cb9e
+C:\Projects\Gateway_Final\.git\refs\heads
+C:\Projects\Gateway_Final\.git\refs\remotes
+C:\Projects\Gateway_Final\.git\refs\tags
+C:\Projects\Gateway_Final\.git\refs\heads\main
+C:\Projects\Gateway_Final\.git\refs\remotes\origin
+C:\Projects\Gateway_Final\.git\refs\remotes\origin\main
+C:\Projects\Gateway_Final\assets\1-9 Structure
+C:\Projects\Gateway_Final\assets\accessories.png
+C:\Projects\Gateway_Final\assets\Brand Cards
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)
+C:\Projects\Gateway_Final\assets\gateway_full_structure.txt
+C:\Projects\Gateway_Final\assets\Hero_River_2.jpg
+C:\Projects\Gateway_Final\assets\Identifier_Tool.jpg.png
+C:\Projects\Gateway_Final\assets\identifier_tool_cinematic.png
+C:\Projects\Gateway_Final\assets\Map_Pin.png
+C:\Projects\Gateway_Final\assets\Tailwind CSS
+C:\Projects\Gateway_Final\assets\uploads
+C:\Projects\Gateway_Final\assets\1-9 Structure\1-9 Structure.zip
+C:\Projects\Gateway_Final\assets\1-9 Structure\1st.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\2nd.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\3rd.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\4th.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\5th.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\6th.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\7th.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\8th.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\9th.png
+C:\Projects\Gateway_Final\assets\1-9 Structure\README.txt
+C:\Projects\Gateway_Final\assets\Brand Cards\Final Copy
+C:\Projects\Gateway_Final\assets\Brand Cards\Garret.png
+C:\Projects\Gateway_Final\assets\Brand Cards\Rough Copy
+C:\Projects\Gateway_Final\assets\Brand Cards\Final Copy\ChatGPT Image Mar 2, 2026, 10_11_26 AM.png
+C:\Projects\Gateway_Final\assets\Brand Cards\Final Copy\ChatGPT Image Mar 2, 2026, 10_39_37 AM.png
+C:\Projects\Gateway_Final\assets\Brand Cards\Final Copy\ChatGPT Image Mar 2, 2026, 10_41_43 AM.png
+C:\Projects\Gateway_Final\assets\Brand Cards\Rough Copy\Garret.png
+C:\Projects\Gateway_Final\assets\Brand Cards\Rough Copy\MineLab.png
+C:\Projects\Gateway_Final\assets\Brand Cards\Rough Copy\Nokta.png
+C:\Projects\Gateway_Final\assets\Brand Cards\Rough Copy\XP.png
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\Garret_Backdrop.jpg
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\Gemini_Generated_Image_8giicz8giicz8gii.png
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\minelab.jpg
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\minelab.png
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\Nokta.jpg
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\nokta.png
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\unnamed.jpg
+C:\Projects\Gateway_Final\assets\Extra Assets (Unused)\xp.png
+C:\Projects\Gateway_Final\assets\Tailwind CSS\_tailwind-css.txt

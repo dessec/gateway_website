@@ -1,0 +1,92 @@
+2026-03-05 23:55:52,660 - INFO - Targeting Minelab at https://www.radioworld.ca/metal-detecting/minelab
+2026-03-05 23:55:53,810 - ERROR - Failed HTTP request for Minelab: 404 Client Error: Not Found for url: https://www.radioworld.ca/oops
+2026-03-05 23:55:53,810 - INFO - Sleeping for 6.38 seconds before next category...
+2026-03-05 23:56:00,190 - INFO - Targeting Garrett at https://www.radioworld.ca/metal-detecting/garrett
+2026-03-05 23:56:01,345 - ERROR - Failed HTTP request for Garrett: 404 Client Error: Not Found for url: https://www.radioworld.ca/oops
+2026-03-05 23:56:01,345 - INFO - Sleeping for 4.50 seconds before next category...
+2026-03-05 23:56:05,844 - INFO - Targeting Nokta at https://www.radioworld.ca/metal-detecting/nokta
+2026-03-05 23:56:06,973 - ERROR - Failed HTTP request for Nokta: 404 Client Error: Not Found for url: https://www.radioworld.ca/oops
+2026-03-05 23:56:06,974 - INFO - Sleeping for 4.31 seconds before next category...
+2026-03-05 23:56:11,285 - INFO - Scrape complete. Total items extracted: 0
+2026-03-05 23:56:11,285 - WARNING - Aborting atomic write. Found 0 items, which is below the safe threshold of 50.
+2026-03-05 23:57:26,658 - INFO - Targeting Minelab at https://www.radioworld.ca/metal-detecting/minelab
+2026-03-05 23:57:27,859 - ERROR - Failed HTTP request for Minelab: 404 Client Error: Not Found for url: https://www.radioworld.ca/oops
+2026-03-05 23:57:27,859 - INFO - Sleeping for 3.42 seconds before next category...
+2026-03-05 23:57:31,282 - INFO - Targeting Garrett at https://www.radioworld.ca/metal-detecting/garrett
+2026-03-05 23:57:32,055 - ERROR - Failed HTTP request for Garrett: 404 Client Error: Not Found for url: https://www.radioworld.ca/oops
+2026-03-05 23:57:32,055 - INFO - Sleeping for 5.69 seconds before next category...
+2026-03-05 23:57:37,746 - INFO - Targeting Nokta at https://www.radioworld.ca/metal-detecting/nokta
+2026-03-05 23:57:38,523 - ERROR - Failed HTTP request for Nokta: 404 Client Error: Not Found for url: https://www.radioworld.ca/oops
+2026-03-05 23:57:38,523 - INFO - Sleeping for 4.82 seconds before next category...
+2026-03-05 23:57:43,340 - INFO - Scrape complete. Total items extracted: 0
+2026-03-05 23:57:43,340 - WARNING - Aborting atomic write. Found 0 items, which is below the safe threshold of 50.
+2026-03-05 23:58:52,257 - INFO - Targeting Minelab at https://www.radioworld.ca/metal-detecting/minelab
+2026-03-05 23:58:53,284 - WARNING - Minelab live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops). Falling back to Web Archive for local parsing validation.
+2026-03-05 23:58:55,510 - ERROR - Fallback archive fetch failed: 404 Client Error: NOT FOUND for url: https://web.archive.org/web/20240901000000/https://www.radioworld.ca/metal-detecting/minelab
+2026-03-05 23:58:55,511 - INFO - Targeting Garrett at https://www.radioworld.ca/metal-detecting/garrett
+2026-03-05 23:58:56,468 - WARNING - Garrett live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops). Falling back to Web Archive for local parsing validation.
+2026-03-05 23:58:56,988 - ERROR - Fallback archive fetch failed: 404 Client Error: NOT FOUND for url: https://web.archive.org/web/20240901000000/https://www.radioworld.ca/metal-detecting/garrett
+2026-03-05 23:58:56,988 - INFO - Targeting Nokta at https://www.radioworld.ca/metal-detecting/nokta
+2026-03-05 23:58:57,721 - WARNING - Nokta live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops). Falling back to Web Archive for local parsing validation.
+2026-03-05 23:58:59,774 - ERROR - Fallback archive fetch failed: 404 Client Error: NOT FOUND for url: https://web.archive.org/web/20240901000000/https://www.radioworld.ca/metal-detecting/nokta
+2026-03-05 23:58:59,775 - INFO - Scrape complete. Total items extracted: 0
+2026-03-05 23:58:59,775 - WARNING - Aborting atomic write. Found 0 items, which is below the safe threshold of 50.
+2026-03-05 23:59:30,685 - INFO - Targeting Minelab at https://www.radioworld.ca/metal-detecting/minelab
+2026-03-05 23:59:31,694 - WARNING - Minelab live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops). Injecting OpenCart structural mock for parsing validation.
+2026-03-05 23:59:31,697 - INFO - Sleeping for 3.77 seconds before next category...
+2026-03-05 23:59:35,468 - INFO - Targeting Garrett at https://www.radioworld.ca/metal-detecting/garrett
+2026-03-05 23:59:36,218 - WARNING - Garrett live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops). Injecting OpenCart structural mock for parsing validation.
+2026-03-05 23:59:36,223 - INFO - Sleeping for 7.42 seconds before next category...
+2026-03-05 23:59:43,646 - INFO - Targeting Nokta at https://www.radioworld.ca/metal-detecting/nokta
+2026-03-05 23:59:44,391 - WARNING - Nokta live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops). Injecting OpenCart structural mock for parsing validation.
+2026-03-05 23:59:44,396 - INFO - Sleeping for 5.55 seconds before next category...
+2026-03-05 23:59:49,943 - INFO - Scrape complete. Total items extracted: 60
+2026-03-05 23:59:49,950 - INFO - Successfully dumped to live_inventory.json via os.fsync()
+2026-03-06 11:45:10,050 - INFO - Targeting Minelab at https://www.radioworld.ca/metal-detecting/minelab
+2026-03-06 11:45:11,534 - ERROR - Minelab live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-06 11:45:11,534 - INFO - Targeting Garrett at https://www.radioworld.ca/metal-detecting/garrett
+2026-03-06 11:45:12,321 - ERROR - Garrett live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-06 11:45:12,322 - INFO - Targeting Nokta at https://www.radioworld.ca/metal-detecting/nokta
+2026-03-06 11:45:13,117 - ERROR - Nokta live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-06 11:45:13,117 - INFO - Targeting XP at https://www.radioworld.ca/metal-detecting/xp
+2026-03-06 11:45:13,973 - ERROR - XP live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-06 11:45:13,973 - INFO - Scrape complete. Total items extracted: 0
+2026-03-06 11:45:13,973 - WARNING - Aborting atomic write. Found 0 items, which is below the safe threshold of 50.
+2026-03-13 20:02:20,660 - INFO - Targeting Minelab at https://www.radioworld.ca/metal-detecting/minelab
+2026-03-13 20:02:21,655 - ERROR - Minelab live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-13 20:02:21,655 - INFO - Targeting Garrett at https://www.radioworld.ca/metal-detecting/garrett
+2026-03-13 20:02:22,258 - ERROR - Garrett live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-13 20:02:22,258 - INFO - Targeting Nokta at https://www.radioworld.ca/metal-detecting/nokta
+2026-03-13 20:02:22,881 - ERROR - Nokta live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-13 20:02:22,882 - INFO - Targeting XP at https://www.radioworld.ca/metal-detecting/xp
+2026-03-13 20:02:23,498 - ERROR - XP live fetch failed (Blocked by Cloudflare! Redirected to https://www.radioworld.ca/oops).
+2026-03-13 20:02:23,498 - INFO - Scrape complete. Total items extracted: 0
+2026-03-13 20:02:23,498 - WARNING - Aborting atomic write. Found 0 items, which is below the safe threshold of 50.
+2026-03-13 20:13:04,455 - INFO - Targeting Minelab at https://www.radioworld.ca/manufacturer/97/Minelab
+2026-03-13 20:13:05,330 - WARNING - No products found for Minelab. The page structure might have changed or bot protection blocked the request.
+2026-03-13 20:13:05,330 - INFO - Sleeping for 5 seconds before next category...
+2026-03-13 20:13:10,331 - INFO - Targeting Garrett at https://www.radioworld.ca/manufacturer/144/Garrett
+2026-03-13 20:13:10,923 - WARNING - No products found for Garrett. The page structure might have changed or bot protection blocked the request.
+2026-03-13 20:13:10,923 - INFO - Sleeping for 5 seconds before next category...
+2026-03-13 20:13:15,924 - INFO - Targeting Nokta at https://www.radioworld.ca/manufacturer/236/Nokta
+2026-03-13 20:13:16,577 - WARNING - No products found for Nokta. The page structure might have changed or bot protection blocked the request.
+2026-03-13 20:13:16,577 - INFO - Sleeping for 5 seconds before next category...
+2026-03-13 20:13:21,578 - INFO - Targeting XP at https://www.radioworld.ca/manufacturer/175/XP-Metal-Detectors
+2026-03-13 20:13:22,200 - WARNING - No products found for XP. The page structure might have changed or bot protection blocked the request.
+2026-03-13 20:13:22,200 - INFO - Sleeping for 5 seconds before next category...
+2026-03-13 20:13:27,200 - INFO - Scrape complete. Total items extracted: 0
+2026-03-13 20:13:27,200 - WARNING - Aborting atomic write. Found 0 items, which is below the safe threshold of 50.
+2026-03-13 20:28:42,304 - INFO - Starting live stock sync...
+2026-03-13 20:28:42,326 - INFO - Targeting Minelab API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BMinelab%5D%5Bkey%5D=Minelab&termsFilters%5BMinelab%5D%5Bname%5D=manufacturer
+2026-03-13 20:28:48,782 - INFO - Targeting Garrett API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BGarrett%5D%5Bkey%5D=Garrett&termsFilters%5BGarrett%5D%5Bname%5D=manufacturer
+2026-03-13 20:28:55,722 - INFO - Targeting Nokta API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BNokta%5D%5Bkey%5D=Nokta&termsFilters%5BNokta%5D%5Bname%5D=manufacturer
+2026-03-13 20:29:02,677 - INFO - Targeting XP Metal Detectors API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BXP+Metal+Detectors%5D%5Bkey%5D=XP+Metal+Detectors&termsFilters%5BXP+Metal+Detectors%5D%5Bname%5D=manufacturer
+2026-03-13 20:29:02,941 - WARNING - No products found for XP Metal Detectors via API.
+2026-03-13 20:29:06,716 - INFO - Successfully synced 300 products to C:\Projects\Gateway_Final\live_inventory.json
+2026-03-13 20:35:09,570 - INFO - Starting live stock sync...
+2026-03-13 20:35:09,593 - INFO - Targeting Minelab API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BMinelab%5D%5Bkey%5D=Minelab&termsFilters%5BMinelab%5D%5Bname%5D=manufacturer
+2026-03-13 20:35:17,305 - INFO - Targeting Garrett API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BGarrett%5D%5Bkey%5D=Garrett&termsFilters%5BGarrett%5D%5Bname%5D=manufacturer
+2026-03-13 20:35:24,868 - INFO - Targeting Nokta API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BNokta%5D%5Bkey%5D=Nokta&termsFilters%5BNokta%5D%5Bname%5D=manufacturer
+2026-03-13 20:35:31,334 - INFO - Targeting XP Metal Detectors API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BXP+Metal+Detectors%5D%5Bkey%5D=XP+Metal+Detectors&termsFilters%5BXP+Metal+Detectors%5D%5Bname%5D=manufacturer
+2026-03-13 20:35:31,672 - WARNING - No products found for XP Metal Detectors via API.
+2026-03-13 20:35:34,617 - INFO - Successfully synced 300 products to C:\Projects\Gateway_Final\live_inventory.json
