@@ -190,12 +190,26 @@
     </footer>
 
     <script>
+        // Bundle/package keywords to exclude from display
+        function isBundleItem(item) {
+            const name = (item.name || '').toLowerCase();
+            const url  = (item.url  || '').toLowerCase();
+            const bundleKeywords = [
+                'bundle', 'pro-pack', 'propack', 'pro pack',
+                'expedition pack', 'beginner pack', 'package',
+                ' kit', '-kit'
+            ];
+            return bundleKeywords.some(kw => name.includes(kw) || url.includes(kw));
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             fetch('../scripts/live_inventory.json')
                 .then(r => r.json())
                 .then(data => {
-                    // Filter specifically for Minelab scraped items
-                    const brandData = data.filter(item => item.brand.includes('Minelab'));
+                    // Filter for Minelab items only — no bundles/packages/deals
+                    const brandData = data.filter(item =>
+                        item.brand.includes('Minelab') && !isBundleItem(item)
+                    );
                     const grid = document.getElementById('inventory-grid');
 
                     if (brandData.length === 0) {
