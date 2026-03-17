@@ -130,6 +130,17 @@
         </div>
     </section>
 
+    <!-- Category Filter Bar -->
+    <div id="category-filter" class="max-w-[1400px] mx-auto px-6 mb-10">
+        <div class="flex flex-wrap gap-3">
+            <button data-category="all" class="filter-btn active bg-black text-white px-6 py-3 text-[11px] font-black uppercase tracking-widest border border-black transition-all duration-200 hover:bg-gray-900">All</button>
+            <button data-category="detectors" class="filter-btn bg-white text-gray-700 px-6 py-3 text-[11px] font-black uppercase tracking-widest border border-gray-300 transition-all duration-200 hover:bg-gray-100">Detectors</button>
+            <button data-category="coils" class="filter-btn bg-white text-gray-700 px-6 py-3 text-[11px] font-black uppercase tracking-widest border border-gray-300 transition-all duration-200 hover:bg-gray-100">Coils</button>
+            <button data-category="accessories" class="filter-btn bg-white text-gray-700 px-6 py-3 text-[11px] font-black uppercase tracking-widest border border-gray-300 transition-all duration-200 hover:bg-gray-100">Accessories</button>
+            <button data-category="parts" class="filter-btn bg-white text-gray-700 px-6 py-3 text-[11px] font-black uppercase tracking-widest border border-gray-300 transition-all duration-200 hover:bg-gray-100">Cables & Parts</button>
+        </div>
+    </div>
+
     <!-- Inventory Grid -->
     <main class="max-w-[1400px] mx-auto px-6 pb-32">
         <div id="inventory-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -190,23 +201,44 @@
     </footer>
 
     <script>
-        // Bundle/package keywords to exclude from display
         function isBundleItem(item) {
             const name = (item.name || '').toLowerCase();
             const url  = (item.url  || '').toLowerCase();
             const bundleKeywords = [
                 'bundle', 'pro-pack', 'propack', 'pro pack',
                 'expedition pack', 'beginner pack', 'package',
-                ' kit', '-kit', ' pack', '-pack', 'combo', 'deal'
+                ' kit', '-kit', ' pack', '-pack', 'combo', 'deal',
+                'accessory package', 'starter accessory', 'advantage accessory',
+                'adventure accessory'
             ];
             return bundleKeywords.some(kw => name.includes(kw) || url.includes(kw));
+        }
+
+        function getCategory(item) {
+            const name = (item.name || '').toLowerCase();
+            const url  = (item.url  || '').toLowerCase();
+            const text = name + ' ' + url;
+
+            if (text.includes('coil') || text.includes('searchcoil'))
+                return 'coils';
+
+            if (text.includes('metal detector') || text.includes('treasure detector') ||
+                text.includes('gold detector') || /\b(simplex|legend|score|findx|hoard|vortex|axiom|ace |ace-|apex|atpro|atmax|at pro|at max|at gold|goldmaster|equinox|manticore|vanquish|ctx|gpx|gpz|sdc|gold monster|x-terra|deus)\b/i.test(name))
+                return 'detectors';
+
+            if (text.includes('cable') || text.includes('shaft') || text.includes('charger') ||
+                text.includes('replacement') || text.includes('mounting') || text.includes('battery') ||
+                text.includes('cover') || text.includes('upgrade code') || text.includes('cuff') ||
+                text.includes('armrest') || text.includes('bolt') || text.includes('hardware'))
+                return 'parts';
+
+            return 'accessories';
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             fetch('../scripts/live_inventory.json')
                 .then(r => r.json())
                 .then(data => {
-                    // Filter for Minelab items only — no bundles/packages/deals
                     const brandData = data.filter(item =>
                         item.brand.includes('Minelab') && !isBundleItem(item)
                     );
@@ -217,9 +249,10 @@
                         return;
                     }
 
-                    // Render chunky, big cards matching the layout ratio
-                    grid.innerHTML = brandData.map(item => `
-                        <div class="border border-gray-200 shadow-xl p-10 flex flex-col items-center justify-between text-center transition-transform hover:-translate-y-2 bg-white rounded-none">
+                    grid.innerHTML = brandData.map(item => {
+                        const cat = getCategory(item);
+                        return `
+                        <div class="product-card border border-gray-200 shadow-xl p-10 flex flex-col items-center justify-between text-center transition-transform hover:-translate-y-2 bg-white rounded-none" data-category="${cat}">
                             <div class="h-64 w-full bg-white mb-8 flex items-center justify-center p-4">
                                 ${item.image ? `<img src="${item.image}" alt="${item.name}" class="max-h-full max-w-full object-contain">` : '<div class="text-gray-300 font-bold uppercase tracking-widest text-sm border-2 border-dashed border-gray-200 w-full h-full flex items-center justify-center bg-gray-50">No Image</div>'}
                             </div>
@@ -228,8 +261,23 @@
                                 ${item.stock}
                             </div>
                             <a href="mailto:info@gatewaydetectors.com?subject=Inquiry%20About%20${encodeURIComponent(item.name)}" class="mt-auto bg-black text-white px-10 py-5 font-black uppercase tracking-widest text-lg w-full hover:bg-gray-800 transition block">Contact Us</a>
-                        </div>
-                    `).join('');
+                        </div>`;
+                    }).join('');
+
+                    document.querySelectorAll('.filter-btn').forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const cat = btn.dataset.category;
+                            document.querySelectorAll('.filter-btn').forEach(b => {
+                                b.classList.remove('active','bg-black','text-white','border-black');
+                                b.classList.add('bg-white','text-gray-700','border-gray-300');
+                            });
+                            btn.classList.remove('bg-white','text-gray-700','border-gray-300');
+                            btn.classList.add('active','bg-black','text-white','border-black');
+                            document.querySelectorAll('.product-card').forEach(card => {
+                                card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
+                            });
+                        });
+                    });
                 })
                 .catch(err => {
                     console.error(err);
