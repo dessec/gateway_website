@@ -2,2401 +2,3301 @@
     {
         "brand": "Minelab",
         "name": "GOLD MONSTER 2000 Gold Metal Detector",
+        "slug": "gold-monster-2000-gold-metal-detector",
         "price": "$ 2999",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3318-001/gold-monster-2000-gold-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE3318001.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE3318001.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPX 6000 Gold Metal Detector",
+        "slug": "gpx-6000-gold-metal-detector",
         "price": "$ 10499",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-gpx6000/gpx-6000-gold-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEGPX6000.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEGPX6000.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GOLD MONSTER 1000 Gold Metal Detector",
+        "slug": "gold-monster-1000-gold-metal-detector",
         "price": "$ 1299.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3317-0005/gold-monster-1000-gold-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE33170005.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE33170005.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "X-TERRA ELITE EXPEDITION PACK Treasure Detector",
+        "slug": "x-terra-elite-expedition-pack-treasure-detector",
         "price": "$ 899",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3707-0003/x-terra-elite-expedition-pack-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37070003BUNDLEMar2025.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37070003BUNDLEMar2025.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "X-TERRA ELITE Treasure Detector",
+        "slug": "x-terra-elite-treasure-detector",
         "price": "$ 699",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3707-0002/x-terra-elite-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37070002BUNDLEMar2025.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37070002BUNDLEMar2025.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "X-TERRA PRO Fully-Waterproof Treasure Detector",
+        "slug": "x-terra-pro-fully-waterproof-treasure-detector",
         "price": "$ 499",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3707-0001/x-terra-pro-fully-waterproof-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37070001.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37070001.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "SDC 2300 Gold Metal Detector",
+        "slug": "sdc-2300-gold-metal-detector",
         "price": "$ 5549",
         "stock": "Out of Stock",
         "url": "https://www.radioworld.ca/product/mine-sdc2300/sdc-2300-gold-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/16cebaf5d976e8f2_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/16cebaf5d976e8f2_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPZ 7000 Ultimate Gold Metal Detector",
+        "slug": "gpz-7000-ultimate-gold-metal-detector",
         "price": "$ 14249",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-gpz7000/gpz-7000-ultimate-gold-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEGPZ7000.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEGPZ7000.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "MANTICORE Treasure Detector",
+        "slug": "manticore-treasure-detector",
         "price": "$ 2245",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-manticore/manticore-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEMANTICORE.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEMANTICORE.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQUINOX 900 All Terrain All Target Detector",
+        "slug": "equinox-900-all-terrain-all-target-detector",
         "price": "$ 1499",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3720-0006/equinox-900-all-terrain-all-target-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37200006.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37200006.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQUINOX 700 All Terrain Treasure Detector",
+        "slug": "equinox-700-all-terrain-treasure-detector",
         "price": "$ 1329",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3720-0005/equinox-700-all-terrain-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37200005.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE37200005.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "CTX3030 Ultimate Treasure Detector",
+        "slug": "ctx3030-ultimate-treasure-detector",
         "price": "$ 2999",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-ctx3030standard/ctx3030-ultimate-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINECTX3030STANDARD.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINECTX3030STANDARD.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "VANQUISH 540 PRO-PACK Treasure Detector",
+        "slug": "vanquish-540-pro-pack-treasure-detector",
         "price": "$ 749",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-vanquish540propack/vanquish-540-pro-pack-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH5401.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH5401.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EXCALIBUR II Deep Dive Detector",
+        "slug": "excalibur-ii-deep-dive-detector",
         "price": "$ 2549",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-excalibur/excalibur-ii-deep-dive-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/cf6e5bd3fdf735e8_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/cf6e5bd3fdf735e8_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "VANQUISH 440 Treasure Detector",
+        "slug": "vanquish-440-treasure-detector",
         "price": "$ 449",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-vanquish440/vanquish-440-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH440.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH440.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GO-FIND 66 Treasure Detector",
-        "price": "$ 249.99",
-        "stock": "In Stock",
+        "slug": "go-find-66-treasure-detector",
+        "price": "$ 299",
+        "stock": "Out of Stock",
         "url": "https://www.radioworld.ca/product/mine-gofind66/go-find-66-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEGOFIND66.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEGOFIND66.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GO-FIND 44 Treasure Detector",
-        "price": "$ 179.99",
+        "slug": "go-find-44-treasure-detector",
+        "price": "$ 229",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-gofind44/go-find-44-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/07f6762f68e394a8_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/07f6762f68e394a8_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "VANQUISH 540 Treasure Detector",
+        "slug": "vanquish-540-treasure-detector",
         "price": "$ 599",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-vanquish540/vanquish-540-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH540.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH540.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "VANQUISH 340 Treasure Detector",
+        "slug": "vanquish-340-treasure-detector",
         "price": "$ 299",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-vanquish340/vanquish-340-treasure-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH340.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINEVANQUISH340.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V10X Coil For Xterra Pro",
+        "slug": "v10x-coil-for-xterra-pro",
         "price": "$ 200",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0458/v10x-coil-for-xterra-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110458.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110458.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Skidplate for M8 8 inch Coil For Manticore",
+        "slug": "skidplate-for-m8-8-inch-coil-for-manticore",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0475/skidplate-for-m8-8-inch-coil-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110475.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110475.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Skidplate for M15 15 inch Coil For Manticore",
+        "slug": "skidplate-for-m15-15-inch-coil-for-manticore",
         "price": "$ 40",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0477/skidplate-for-m15-15-inch-coil-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110477.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110477.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "11 Inch Coil For Manticore",
+        "slug": "11-inch-coil-for-manticore",
         "price": "$ 450",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0446/11-inch-coil-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110446.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110446.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "8 Inch Coil M8 For Manticore",
+        "slug": "8-inch-coil-m8-for-manticore",
         "price": "$ 420",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0422/8-inch-coil-m8-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110422.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110422.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Skidplate for M11 11 inch Coil For Manticore",
+        "slug": "skidplate-for-m11-11-inch-coil-for-manticore",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0474/skidplate-for-m11-11-inch-coil-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110474.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110474.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Skidplate for M9 Coil For Manticore",
+        "slug": "skidplate-for-m9-coil-for-manticore",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0476/skidplate-for-m9-coil-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110476.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110476.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Coil Washers 4 Prong Type Manticore",
+        "slug": "coil-washers-4-prong-type-manticore",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0484/coil-washers-4-prong-type-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110484.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110484.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "9 Inch Coil M9 For Manticore",
+        "slug": "9-inch-coil-m9-for-manticore",
         "price": "$ 450",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0473/9-inch-coil-m9-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE301104732.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE301104732.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "15 Inch Coil M15 For Manticore",
+        "slug": "15-inch-coil-m15-for-manticore",
         "price": "$ 570",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0423/15-inch-coil-m15-for-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110423.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110423.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPZ 19 Skidplate For GPZ7000 Coil",
+        "slug": "gpz-19-skidplate-for-gpz7000-coil",
         "price": "$ 70",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0316/gpz-19-skidplate-for-gpz7000-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/mine301103161.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/mine301103161.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQX 06 6 Inch Coil For Equinox & Xterra Pro",
+        "slug": "6-inch-coil-eqx06-for-equinox-700-900-series-xterra-pro",
         "price": "$ 340",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0462/6-inch-coil-eqx06-for-equinox-700-900-series-xterra-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE301104621.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE301104621.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPX 11 Monoloop Coil For GPX6000",
-        "price": "$ 299.99",
+        "slug": "gpx-11-monoloop-coil-for-gpx6000",
+        "price": "$ 510",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0425/gpx-11-monoloop-coil-for-gpx6000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110425.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110425.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V10 Double D Coil For Vanquish Series",
+        "slug": "v10-double-d-coil-for-vanquish-series",
         "price": "$ 210",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0409/v10-double-d-coil-for-vanquish-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6608d046eda9484a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6608d046eda9484a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQX 15 15 inch Coil For Equinox Series",
+        "slug": "15-inch-coil-eqx15-for-equinox-700-900-series-xterra-pro",
         "price": "$ 440",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0464/15-inch-coil-eqx15-for-equinox-700-900-series-xterra-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110464.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110464.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPX 17 Elliptical Coil For GPX6000",
+        "slug": "gpx-17-elliptical-coil-for-gpx6000",
         "price": "$ 600",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0427/gpx-17-elliptical-coil-for-gpx6000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110427.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110427.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V12 12 Inch Skidplate For Vanquish Series",
+        "slug": "v12-12-inch-skidplate-for-vanquish-series",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0411/v12-12-inch-skidplate-for-vanquish-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/79360aba097ccc76_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/79360aba097ccc76_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V12X Coil For Xterra Pro",
+        "slug": "v12x-coil-for-xterra-pro",
         "price": "$ 230",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0459/v12x-coil-for-xterra-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110459.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110459.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V8 8 Inch Skidplate For Vanquish Series",
+        "slug": "v8-8-inch-skidplate-for-vanquish-series",
         "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0413/v8-8-inch-skidplate-for-vanquish-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/34ee051af654666a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/34ee051af654666a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V12 Double D Coil For Vanquish Series",
+        "slug": "v12-double-d-coil-for-vanquish-series",
         "price": "$ 230",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0408/v12-double-d-coil-for-vanquish-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/4ba868765932792d_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/4ba868765932792d_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GM 05 5 Inch Skidplate For Goldmonster 1000",
+        "slug": "gm-05-5-inch-skidplate-for-goldmonster-1000",
         "price": "$ 20",
         "stock": "Out of Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0360/gm-05-5-inch-skidplate-for-goldmonster-1000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a94be61468df971f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a94be61468df971f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "14\" Skidplate for GPZ14 Coil GPZ7000",
+        "slug": "14-skidplate-for-gpz14-coil-gpz7000",
         "price": "$ 90",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0286/14-skidplate-for-gpz14-coil-gpz7000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/4871a176005963fe_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/4871a176005963fe_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQX 11 11 Inch Coil for Equinox & Xterra Pro",
+        "slug": "11-inch-coil-eqx11-for-equinox-700-900-series-xterra-pro",
         "price": "$ 420",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0463/11-inch-coil-eqx11-for-equinox-700-900-series-xterra-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110463.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110463.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPX 14 DD Coil For GPX6000",
+        "slug": "gpx-14-dd-coil-for-gpx6000",
         "price": "$ 570",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0426/gpx-14-dd-coil-for-gpx6000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110426.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110426.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V8 Double D Coil For Vanquish Series",
+        "slug": "v8-double-d-coil-for-vanquish-series",
         "price": "$ 170",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0410/v8-double-d-coil-for-vanquish-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e479622009be45f1_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e479622009be45f1_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "15\" Skidplate For Older Xterra Series",
+        "slug": "15-skidplate-for-older-xterra-series",
         "price": "$ 40",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0367/15-skidplate-for-older-xterra-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1b0a6c542f8ebe4a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1b0a6c542f8ebe4a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V8X Coil For Xterra Pro",
+        "slug": "v8x-coil-for-xterra-pro",
         "price": "$ 190",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0457/v8x-coil-for-xterra-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110457.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110457.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "V10 10 Inch Skidplate For Vanquish Series",
+        "slug": "v10-10-inch-skidplate-for-vanquish-series",
         "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0412/v10-10-inch-skidplate-for-vanquish-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c3597098f5d7a437_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c3597098f5d7a437_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "5\" Double D Coil For Gold Monster",
+        "slug": "5-double-d-coil-for-gold-monster",
         "price": "$ 280",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0337/5-double-d-coil-for-gold-monster",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e8ebfc19c6a4ea31_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e8ebfc19c6a4ea31_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "11\" Round Mono Commander Coil",
+        "slug": "11-round-mono-commander-coil",
         "price": "$ 430",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0073/11-round-mono-commander-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/fcbe58fefe418b1e_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/fcbe58fefe418b1e_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "15\" Elliptical Mono Commander Coil",
+        "slug": "15-elliptical-mono-commander-coil",
         "price": "$ 580",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0074/15-elliptical-mono-commander-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f37d2392daa813b5_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f37d2392daa813b5_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "10\" Elliptical DD Commander Coil",
+        "slug": "10-elliptical-dd-commander-coil",
         "price": "$ 360",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0076/10-elliptical-dd-commander-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/298eae9143b8142a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/298eae9143b8142a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "18\" Round DD Commander Coil",
-        "price": "$ 399.99",
+        "slug": "18-round-dd-commander-coil",
+        "price": "$ 605",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0079/18-round-dd-commander-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/398d23ea2310f03a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/398d23ea2310f03a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "10\" DD Elliptical X-Terra 18.75KHz Coil",
-        "price": "$ 199.99",
+        "slug": "10-dd-elliptical-x-terra-18-75khz-coil",
+        "price": "$ 274",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0101/10-dd-elliptical-x-terra-18-75khz-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/63cae0bca7741ad6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/63cae0bca7741ad6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "10.5\" DD Round 7.5KHZ X-Terra Coil",
+        "slug": "10-5-dd-round-7-5khz-x-terra-coil",
         "price": "$ 227",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0102/10-5-dd-round-7-5khz-x-terra-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/56e95c66fb3bd0b2_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/56e95c66fb3bd0b2_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "11\" DD Round Commander Coil",
+        "slug": "11-dd-round-commander-coil",
         "price": "$ 420",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0113/11-dd-round-commander-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/7be0a9b7e2aac1af_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/7be0a9b7e2aac1af_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "6\" CTX3030 Coil",
+        "slug": "6-ctx3030-coil",
         "price": "$ 490",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0114/6-ctx3030-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a53fc942afdc937a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a53fc942afdc937a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "17\" Elliptical CTX3030 Coil",
+        "slug": "17-elliptical-ctx3030-coil",
         "price": "$ 640",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0116/17-elliptical-ctx3030-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a1d9ad282edcfc00_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a1d9ad282edcfc00_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "8\" Skidplate For Etrac Safari Explorer",
+        "slug": "8-skidplate-for-etrac-safari-explorer",
         "price": "$ 40",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0155/8-skidplate-for-etrac-safari-explorer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/512c8883bc8a7e3a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/512c8883bc8a7e3a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "10.5\" Skidplate For Etrac Safari Explorer",
+        "slug": "10-5-skidplate-for-etrac-safari-explorer",
         "price": "$ 30",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0152/10-5-skidplate-for-etrac-safari-explorer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/df14f84cf520fe3f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/df14f84cf520fe3f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPZ14 14 Inch Coil For GPZ7000",
+        "slug": "gpz14-14-inch-coil-for-gpz7000",
         "price": "$ 1580",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0278/gpz14-14-inch-coil-for-gpz7000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/7a204a6830bd73c6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/7a204a6830bd73c6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQX 06 6 Inch  Double D Smart Coil For Equinox Series",
+        "slug": "eqx-06-6-inch-double-d-smart-coil-for-equinox-600-800-series",
         "price": "$ 300",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0333/eqx-06-6-inch-double-d-smart-coil-for-equinox-600-800-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0e191f6911bd08b9_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0e191f6911bd08b9_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GPZ 19 Super D Coil For GPZ7000",
+        "slug": "gpz-19-super-d-coil-for-gpz7000",
         "price": "$ 2370",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0304/gpz-19-super-d-coil-for-gpz7000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/10b2860de7793716_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/10b2860de7793716_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQX 15 15 Inch Skidplate For Equinox 600 800 Series",
+        "slug": "eqx-15-15-inch-skidplate-for-equinox-600-800-series",
         "price": "$ 60",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0378/eqx-15-15-inch-skidplate-for-equinox-600-800-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e411db2504f5dfd1_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e411db2504f5dfd1_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "10\" X 6\" Double D Coil For Goldmonster 1000l",
+        "slug": "10-x-6-double-d-coil-for-goldmonster-1000l",
         "price": "$ 300",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0336/10-x-6-double-d-coil-for-goldmonster-1000l",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b2ebb95474a5b939_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b2ebb95474a5b939_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "6\" Skidplate",
+        "slug": "6-skidplate",
         "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0135/6-skidplate",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2e1bbf7bfca28e3a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2e1bbf7bfca28e3a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "9\" Skidplate For Older Xterra Series",
+        "slug": "9-skidplate-for-older-xterra-series",
         "price": "$ 30",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0153/9-skidplate-for-older-xterra-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/d9b525cbf53208b6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/d9b525cbf53208b6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "17\" Skidplate",
+        "slug": "17-skidplate",
         "price": "$ 40",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0137/17-skidplate",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ad6f2dcb3982feb8_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ad6f2dcb3982feb8_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "11\" Skidplate For CTX303 Etrac Safari Explorer",
+        "slug": "11-skidplate-for-ctx303-etrac-safari-explorer",
         "price": "$ 30",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0154/11-skidplate-for-ctx303-etrac-safari-explorer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/7ed98c57fd3e9045_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/7ed98c57fd3e9045_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "11\" Round DD CTX3030 Coil",
+        "slug": "11-round-dd-ctx3030-coil",
         "price": "$ 570",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0115/11-round-dd-ctx3030-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/059f675ae2646122_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/059f675ae2646122_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Coil Wear Kit",
+        "slug": "coil-wear-kit",
         "price": "$ 50",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0141/coil-wear-kit",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/16ed6f86d12bc9c5_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/16ed6f86d12bc9c5_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Coil Wear Kit For Etrac Safari Explorer",
+        "slug": "coil-wear-kit-for-etrac-safari-explorer",
         "price": "$ 45",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0148/coil-wear-kit-for-etrac-safari-explorer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6834fe23ebc8d8e5_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6834fe23ebc8d8e5_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Coil Wear Kit For Older X-Terra Series",
+        "slug": "coil-wear-kit-for-older-x-terra-series",
         "price": "$ 40",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0150/coil-wear-kit-for-older-x-terra-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f4cc0a433417549b_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f4cc0a433417549b_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "11\" White Round Skidplate For GPX Series",
+        "slug": "11-white-round-skidplate-for-gpx-series",
         "price": "$ 60",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0164/11-white-round-skidplate-for-gpx-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/66bcda7205bd3de3_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/66bcda7205bd3de3_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "18\" Round Skidplate For Older GPX Series",
+        "slug": "18-round-skidplate-for-older-gpx-series",
         "price": "$ 100",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0183/18-round-skidplate-for-older-gpx-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a374bf1acbfbfe0f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a374bf1acbfbfe0f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "11\" FBS Double D Coil For ETRAC SAFARI EXPLORER",
+        "slug": "11-fbs-double-d-coil-for-etrac-safari-explorer",
         "price": "$ 340",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0221/11-fbs-double-d-coil-for-etrac-safari-explorer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/541781779c39ff0b_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/541781779c39ff0b_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "10\" Elliptical Skidplate For Older XTERRA Series",
+        "slug": "10-elliptical-skidplate-for-older-xterra-series",
         "price": "$ 40",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0231/10-elliptical-skidplate-for-older-xterra-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a69364bd18bc10ec_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a69364bd18bc10ec_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "8\" Double D Coil & Lower Shaft For ETRAC SAFARI EXPLORER",
+        "slug": "8-double-d-coil-lower-shaft-for-etrac-safari-explorer",
         "price": "$ 450",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0226/8-double-d-coil-lower-shaft-for-etrac-safari-explorer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3b2a5ce65d56177d_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3b2a5ce65d56177d_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "GM 10 10 Inch Skidplate For Goldmonster 1000",
+        "slug": "gm-10-10-inch-skidplate-for-goldmonster-1000",
         "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0361/gm-10-10-inch-skidplate-for-goldmonster-1000",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1e95c9978bc545ae_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1e95c9978bc545ae_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "EQX 11 11 Inch Skidplate For Equinox 600 800 Series",
+        "slug": "eqx-11-11-inch-skidplate-for-equinox-600-800-series",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0377/eqx-11-11-inch-skidplate-for-equinox-600-800-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a1a11eecd6cc1119_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a1a11eecd6cc1119_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Hard Plastic Digging Tool",
+        "slug": "hard-plastic-digging-tool",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0295/hard-plastic-digging-tool",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/14ccdb2b1ecae623_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/14ccdb2b1ecae623_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Rubbish and Finds Bag",
+        "slug": "rubbish-and-finds-bag",
         "price": "$ 80",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0151/rubbish-and-finds-bag",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/cba23f5203de13ac_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/cba23f5203de13ac_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Pro-Gold 15",
+        "slug": "pro-gold-15",
         "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0326/pro-gold-15",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6a793591df807cfa_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6a793591df807cfa_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Pro-Gold Classifier",
+        "slug": "pro-gold-classifier",
         "price": "$ 30",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0328/pro-gold-classifier",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/338361c7e320ca86_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/338361c7e320ca86_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Pro-Gold 10",
+        "slug": "pro-gold-10",
         "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0327/pro-gold-10",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2d5e40b0240351d6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2d5e40b0240351d6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "PRO-FIND 40 Waterproof Pinpointer with Ferrous ID & Flashlight",
+        "slug": "pro-find-40-waterproof-pinpointer-with-ferrous-id-flashlight",
         "price": "$ 229",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3226-0005/pro-find-40-waterproof-pinpointer-with-ferrous-id-flashlight",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE32260005.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE32260005.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "PRO-FIND 35 Waterproof Pinpointer with Ferrous ID & Flashlight",
+        "slug": "pro-find-35-waterproof-pinpointer-with-ferrous-id-flashlight",
         "price": "$ 149",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-profind35/pro-find-35-waterproof-pinpointer-with-ferrous-id-flashlight",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2b2cde6e51bc1aaa_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2b2cde6e51bc1aaa_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "PRO-FIND 20 Splashproof Pinpointer with Vibration Alert",
-        "price": "$ 99.99",
+        "slug": "pro-find-20-splashproof-pinpointer-with-vibration-alert",
+        "price": "$ 133.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-profind20/pro-find-20-splashproof-pinpointer-with-vibration-alert",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/69a9cc964fd9725b_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/69a9cc964fd9725b_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "PRO-FIND 15 Splashproof Pinpointer",
+        "slug": "pro-find-15-splashproof-pinpointer",
         "price": "$ 119",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-profind15/pro-find-15-splashproof-pinpointer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2361c56ac8bcb6a7_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2361c56ac8bcb6a7_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "SDC Headphone Cable",
+        "slug": "sdc-headphone-cable",
         "price": "$ 90",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0415/sdc-headphone-cable",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3a43b1f240991c32_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3a43b1f240991c32_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Headphones ML105 Manticore/Equinox700/Equinox900/XterraPro",
+        "slug": "headphones-ml105-manticore-equinox700-equinox900-xterrapro",
         "price": "$ 270",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0445/headphones-ml105-manticore-equinox700-equinox900-xterrapro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110445.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110445.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "In Ear Headphones For Go Find Series",
+        "slug": "in-ear-headphones-for-go-find-series",
         "price": "$ 60",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0297/in-ear-headphones-for-go-find-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3f1631315d4916b8_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3f1631315d4916b8_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "SDC2300 Outdoor Headphones",
+        "slug": "sdc2300-outdoor-headphones",
         "price": "$ 340",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0417/sdc2300-outdoor-headphones",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ae13214556c593f8_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ae13214556c593f8_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "ML85 Wireless Low Latency Headphones Equinox700/900/XterraPro/Manticore",
+        "slug": "ml85-wireless-low-latency-headphones-equinox700-900-xterrapro-manticore",
         "price": "$ 190",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0465/ml85-wireless-low-latency-headphones-equinox700-900-xterrapro-manticore",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110465.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/MINE30110465.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Headphone Module",
+        "slug": "headphone-module",
         "price": "$ 60",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0119/headphone-module",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/dcf2dfbd6e07e28e_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/dcf2dfbd6e07e28e_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "WM 10 Wireless Audio Module",
+        "slug": "wm-10-wireless-audio-module",
         "price": "$ 400",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0120/wm-10-wireless-audio-module",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f6f11917e4ecd96e_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f6f11917e4ecd96e_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Waterproof Koss Headphones",
+        "slug": "waterproof-koss-headphones",
         "price": "$ 240",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0134/waterproof-koss-headphones",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/302a4ad9d24a057f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/302a4ad9d24a057f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "RPG Headphones",
-        "price": "$ 29.99",
+        "slug": "rpg-headphones",
+        "price": "$ 90",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0181/rpg-headphones",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0426edf239a574a7_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0426edf239a574a7_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "UR30 Koss Headphones With 1/4 Inch Plug",
+        "slug": "ur30-koss-headphones-with-1-4-inch-plug",
         "price": "$ 150",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/mine-3011-0214/ur30-koss-headphones-with-1-4-inch-plug",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6106646c2fbde9c5_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6106646c2fbde9c5_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Koss Headphones For SDC2300",
+        "slug": "koss-headphones-for-sdc2300",
         "price": "$ 227",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0253/koss-headphones-for-sdc2300",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/db67ca7ff5bd8ae4_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/db67ca7ff5bd8ae4_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Minelab",
         "name": "Waterproof Koss Headphones For SDC2300",
+        "slug": "waterproof-koss-headphones-for-sdc2300",
         "price": "$ 400",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/mine-3011-0258/waterproof-koss-headphones-for-sdc2300",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/55c8af873b5dac16_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/55c8af873b5dac16_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "VORTEX VX-5 METAL DETECTOR",
+        "slug": "vortex-vx-5-metal-detector",
         "price": "$ 653.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1142860/vortex-vx-5-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1142860.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1142860.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "VORTEX VX-7 METAL DETECTOR",
+        "slug": "vortex-vx-7-metal-detector",
         "price": "$ 776.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1142960/vortex-vx-7-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1142960.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1142960.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "VORTEX VX-9 METAL DETECTOR",
+        "slug": "vortex-vx-9-metal-detector",
         "price": "$ 862.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1143060/vortex-vx-9-metal-detector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT11463060.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT11463060.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "AT Gold",
+        "slug": "at-gold",
         "price": "$ 928.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-atgold5x8/at-gold",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e8617648d66436bd_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/e8617648d66436bd_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Goldmaster 24K",
+        "slug": "goldmaster-24k",
         "price": "$ 985.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-goldmaster24k/goldmaster-24k",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTGOLDMASTER24K.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTGOLDMASTER24K.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Axiom Metal Detector with 13\"x11\" Mono Coil 11\"x7\" DD-FC Coil and MS-2",
+        "slug": "axiom-metal-detector-with-13-x11-mono-coil-11-x7-dd-fc-coil-and-ms-2",
         "price": "$ 4313.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-1142765/axiom-metal-detector-with-13-x11-mono-coil-11-x7-dd-fc-coil-and-ms-2",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/011142720gallery2000x1000whtbckgrn.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/011142720gallery2000x1000whtbckgrn.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "AT Gold Metal Detector Pro Pointer Bundle",
+        "slug": "at-gold-metal-detector-pro-pointer-bundle",
         "price": "$ 1068.94",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-atgold5x8-bundle/at-gold-metal-detector-pro-pointer-bundle",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATGOLD5X8BUNDLENOV1.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATGOLD5X8BUNDLENOV1.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ATPRO International Wireless Pro Pointer Bundle",
+        "slug": "atpro-international-wireless-pro-pointer-bundle",
         "price": "$ 1230",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-atpro-pp-wireless-bundle/atpro-international-wireless-pro-pointer-bundle",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATPROPPWIRELESSBUNDLE.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATPROPPWIRELESSBUNDLE.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE APEX Wireless",
+        "slug": "ace-apex-wireless",
         "price": "$ 650.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-aceapexwireless/ace-apex-wireless",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEXWIRELES.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEXWIRELES.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE 400I Bundle",
+        "slug": "ace-400i-bundle",
         "price": "$ 656.98",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-ace400i-bundle/ace-400i-bundle",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c3532f40111f122a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c3532f40111f122a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE APEX With Raider",
+        "slug": "ace-apex-with-raider",
         "price": "$ 580.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-aceapex-raider/ace-apex-with-raider",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEXRAIDER.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEXRAIDER.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE APEX Jase Robertson Signature Edition",
+        "slug": "ace-apex-jase-robertson-signature-edition",
         "price": "$ 580.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-aceapexjr/ace-apex-jase-robertson-signature-edition",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1142320aceapexjaserobertsonleftangle2000x752.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1142320aceapexjaserobertsonleftangle2000x752.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ATMAXInternational Viper Coil Bundle",
+        "slug": "atmaxinternational-viper-coil-bundle",
         "price": "$ 985.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-atmax-viper/atmaxinternational-viper-coil-bundle",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATMAXVIPERBUNDLE11.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATMAXVIPERBUNDLE11.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE APEX Wireless Raider",
+        "slug": "ace-apex-wireless-raider",
         "price": "$ 653.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-aceapexwireless-raider/ace-apex-wireless-raider",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEXWIRELESRAIDER.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEXWIRELESRAIDER.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE APEX",
+        "slug": "ace-apex",
         "price": "$ 557.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-aceapex/ace-apex",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEX.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTACEAPEX.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ATPRO International",
+        "slug": "atpro-international",
         "price": "$ 801.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-atprointernational/atpro-international",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/98d71502e612374c_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/98d71502e612374c_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE 400I",
+        "slug": "ace-400i",
         "price": "$ 520.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-ace400i/ace-400i",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/72d396ec2a70c411_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/72d396ec2a70c411_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE 250",
+        "slug": "ace-250",
         "price": "$ 327.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-ace250/ace-250",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/803b9778920c7684_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/803b9778920c7684_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE 300I",
+        "slug": "ace-300i",
         "price": "$ 392.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-ace300i/ace-300i",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/029edaf0080fa9fb_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/029edaf0080fa9fb_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ACE 200I",
-        "price": "$ 199.99",
+        "slug": "ace-200i-with-6-x-9-coil",
+        "price": "$ 243",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-ace200i/ace-200i-with-6-x-9-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/5af2694e98fe3469_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/5af2694e98fe3469_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "INFINIUM LS",
+        "slug": "infinium-ls",
         "price": "$ 1391.95",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-infiniumls/infinium-ls",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8221949c3a3286d3_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8221949c3a3286d3_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "ATMAX International",
+        "slug": "atmax-international",
         "price": "$ 1103.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-atmaxinternational/atmax-international",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATMAXINTERNATIONAL.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRTATMAXINTERNATIONAL.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "8.5\" x 11\" Raider Multi Flex DD Coil for APEX",
-        "price": "$ 149.99",
+        "slug": "8-5-x-11-raider-multi-flex-dd-coil-for-apex",
+        "price": "$ 196",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2223700/8-5-x-11-raider-multi-flex-dd-coil-for-apex",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c506787f91081cc6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c506787f91081cc6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "6\" x 11\" Coil Cover ACE Viper Multi-Flex Black",
+        "slug": "6-x-11-coil-cover-ace-viper-multi-flex-black",
         "price": "$ 23.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1613100/6-x-11-coil-cover-ace-viper-multi-flex-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6x11coilcoverwhtbckgrnd.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6x11coilcoverwhtbckgrnd.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "14\" X 11\" DD Multi-Flex Reaper Searchcoil for APEX",
+        "slug": "14-x-11-dd-multi-flex-reaper-searchcoil-for-apex",
         "price": "$ 342.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2223900/14-x-11-dd-multi-flex-reaper-searchcoil-for-apex",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/222390014x11ApexMultiflexDDReaper.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/222390014x11ApexMultiflexDDReaper.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "14\" x 11\" DD Reaper Searchcoil for AT Series",
+        "slug": "14-x-11-dd-reaper-searchcoil-for-at-series",
         "price": "$ 333.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2224100/14-x-11-dd-reaper-searchcoil-for-at-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/222410014x11ReaperATseries.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/222410014x11ReaperATseries.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "6\" x 11\" DD Multi-Flex Viper Searchcoil for APEX",
-        "price": "$ 149.99",
+        "slug": "6-x-11-dd-multi-flex-viper-searchcoil-for-apex",
+        "price": "$ 181",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2223600/6-x-11-dd-multi-flex-viper-searchcoil-for-apex",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3ac798c48531c04d_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/3ac798c48531c04d_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "14\u201d x 11\u201d DD Reaper Searchcoil for ACE Detectors",
+        "slug": "14-x-11-dd-reaper-searchcoil-for-ace-detectors",
         "price": "$ 316.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2224300/14-x-11-dd-reaper-searchcoil-for-ace-detectors",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT2224300.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT2224300.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "5\" x 8\" DD Multi-Flex Ripper Searchcoil for APEX",
-        "price": "$ 149.99",
+        "slug": "5-x-8-dd-multi-flex-ripper-searchcoil-for-apex",
+        "price": "$ 174",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2223800/5-x-8-dd-multi-flex-ripper-searchcoil-for-apex",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f95b60506c20a14f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f95b60506c20a14f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "10\" x 14\" PROformance Mono Searchcoil",
+        "slug": "10-x-14-proformance-mono-searchcoil",
         "price": "$ 184.89",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2215300/10-x-14-proformance-mono-searchcoil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/278eddb44061da8b_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/278eddb44061da8b_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "4.5\" Coil Cover Black",
+        "slug": "4-5-coil-cover-black",
         "price": "$ 11.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1604200/4-5-coil-cover-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/39af35b9bade4e04_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/39af35b9bade4e04_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "6.5\" x 9\" Elliptical Coil Cover for ACE Black",
-        "price": "$ 14.99",
+        "slug": "6-5-x-9-elliptical-coil-cover-for-ace-black",
+        "price": "$ 23.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1605700/6-5-x-9-elliptical-coil-cover-for-ace-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/994a782d3b287d96_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/994a782d3b287d96_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "9.5\" PROformance Coil Cover Black",
+        "slug": "9-5-proformance-coil-cover-black",
         "price": "$ 14.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-1606500/9-5-proformance-coil-cover-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0a87b7bbc306ccb6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0a87b7bbc306ccb6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "4.5\" ACE Sniper Searchcoil Black",
+        "slug": "4-5-ace-sniper-searchcoil-black",
         "price": "$ 103.88",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2221800/4-5-ace-sniper-searchcoil-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f5a1367e9e0a9d17_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f5a1367e9e0a9d17_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "9\" x 12\" ACE PROformance Searchcoil",
+        "slug": "9-x-12-ace-proformance-searchcoil",
         "price": "$ 121.43",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2221900/9-x-12-ace-proformance-searchcoil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b4c34c4a217d4221_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b4c34c4a217d4221_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "8.5\" x 11\" PROformance DD Submersible Searchcoil Black",
+        "slug": "8-5-x-11-proformance-dd-submersible-searchcoil-black",
         "price": "$ 195.68",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2222400/8-5-x-11-proformance-dd-submersible-searchcoil-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/aac0c5fe439556cb_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/aac0c5fe439556cb_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "4.5\" Super Sniper Searchcoil For ATPRO or ATGOLD Black",
+        "slug": "4-5-super-sniper-searchcoil-for-atpro-or-atgold-black",
         "price": "$ 137.63",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2222500/4-5-super-sniper-searchcoil-for-atpro-or-atgold-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6357a64b262c7dad_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6357a64b262c7dad_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "6.5\" x 9\" PROformance Searchcoil For ATPRO or ATGOLD",
+        "slug": "6-5-x-9-proformance-searchcoil-for-atpro-or-atgold",
         "price": "$ 149.78",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2222600/6-5-x-9-proformance-searchcoil-for-atpro-or-atgold",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1f39ed6aa6595594_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1f39ed6aa6595594_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "9\" x 12\" AT Pro PROformance Concentric Searchcoil For ATPRO or ATGOLD",
+        "slug": "9-x-12-at-pro-proformance-concentric-searchcoil-for-atpro-or-atgold",
         "price": "$ 172.73",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2222700/9-x-12-at-pro-proformance-concentric-searchcoil-for-atpro-or-atgold",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/af03060e6e53c1a3_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/af03060e6e53c1a3_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "5\" x 8\" AT DD PROformance Searchcoil for ATPRO or ATGOLD",
+        "slug": "5-x-8-at-dd-proformance-searchcoil-for-atpro-or-atgold",
         "price": "$ 225",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2222800/5-x-8-at-dd-proformance-searchcoil-for-atpro-or-atgold",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f52e02bd2764a94f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f52e02bd2764a94f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "5\" x 8\" PROformance DD Searchcoil for ACE",
+        "slug": "5-x-8-proformance-dd-searchcoil-for-ace",
         "price": "$ 161.94",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2223000/5-x-8-proformance-dd-searchcoil-for-ace",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/da93ebfe067e5eab_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/da93ebfe067e5eab_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "8.5\" x 11\" DD Coil Cover Black",
+        "slug": "8-5-x-11-dd-coil-cover-black",
         "price": "$ 17.27",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1606600/8-5-x-11-dd-coil-cover-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/609a642df4942667_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/609a642df4942667_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "5\" x 8\" DD Coil Cover Black",
+        "slug": "5-x-8-dd-coil-cover-black",
         "price": "$ 14.97",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1607400/5-x-8-dd-coil-cover-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/eef1d7344dc431e5_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/eef1d7344dc431e5_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "9\" x 12\" Elliptical Coil Cover Black",
+        "slug": "9-x-12-elliptical-coil-cover-black",
         "price": "$ 17.27",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1612600/9-x-12-elliptical-coil-cover-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/96f0d537041e193a_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/96f0d537041e193a_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Belt Treasure Pouch",
+        "slug": "belt-treasure-pouch",
         "price": "$ 13",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1608800/belt-treasure-pouch",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1608800.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1608800.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Nugget Scoop",
+        "slug": "nugget-scoop",
         "price": "$ 13.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1630300/nugget-scoop",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1630300.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1630300.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "AT Dig Pouch with Pro-Pointer Holster",
+        "slug": "at-dig-pouch-with-pro-pointer-holster",
         "price": "$ 44.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-1664800/at-dig-pouch-with-pro-pointer-holster",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1664800.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1664800.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Garrett Keepers Detecting Finds Box",
-        "price": "$ 9.99",
+        "slug": "garrett-keepers-detecting-finds-box",
+        "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627900/garrett-keepers-detecting-finds-box",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT16279004.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT16279004.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Razor Relic Shovel 36\"",
+        "slug": "razor-relic-shovel-36",
         "price": "$ 112.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1664900/razor-relic-shovel-36",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1664900.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1664900.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "14\" Sifter Classifier Gold Pan",
+        "slug": "14-sifter-classifier-gold-pan",
         "price": "$ 12.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1650200/14-sifter-classifier-gold-pan",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/225f9bd001090bc3_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/225f9bd001090bc3_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Stainless Steel Sand Scoop",
+        "slug": "stainless-steel-sand-scoop",
         "price": "$ 74",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1600900/stainless-steel-sand-scoop",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2ee2bf5890e0d71c_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2ee2bf5890e0d71c_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Anodized Steel Metal Sand Scoop",
+        "slug": "anodized-steel-metal-sand-scoop",
         "price": "$ 73.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1600970/anodized-steel-metal-sand-scoop",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f41a7d8b7e873b34_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f41a7d8b7e873b34_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Camo Diggers Pouch",
+        "slug": "camo-diggers-pouch",
         "price": "$ 14.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1612900/camo-diggers-pouch",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/268ff1fc67d037e9_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/268ff1fc67d037e9_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Edge Digger with Nylon Sheath",
+        "slug": "7-5-serrated-edge-with-nylon-sheath",
         "price": "$ 56.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1626200/7-5-serrated-edge-with-nylon-sheath",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/660cd0045819ae29_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/660cd0045819ae29_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "10\" Backpacker Gold Pan",
+        "slug": "10-backpacker-gold-pan",
         "price": "$ 12.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1650100/10-backpacker-gold-pan",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/abfa34e5182a6e76_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/abfa34e5182a6e76_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "15\" SuperSluice Gold Pan",
+        "slug": "15-supersluice-gold-pan",
         "price": "$ 16.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1650400/15-supersluice-gold-pan",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1e1e2cac3e054f12_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1e1e2cac3e054f12_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "14\" Gold Trap Prospector Gold Pan",
+        "slug": "14-gold-trap-prospector-gold-pan",
         "price": "$ 12.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1651100/14-gold-trap-prospector-gold-pan",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a749caca5623f3e5_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a749caca5623f3e5_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Gold Pan Kit",
+        "slug": "gold-pan-kit",
         "price": "$ 58.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1651310/gold-pan-kit",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/grt16513102.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/grt16513102.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Deluxe Gold Pan Kit",
+        "slug": "deluxe-gold-pan-kit",
         "price": "$ 87.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1651410/deluxe-gold-pan-kit",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/557a6cd2da1caa92_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/557a6cd2da1caa92_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "PRO-POINTER AT",
+        "slug": "pro-pointer-at",
         "price": "$ 160.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-propointer-at/pro-pointer-at",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c645cf79081bb21f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c645cf79081bb21f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "PRO-POINTER II",
+        "slug": "pro-pointer-ii",
         "price": "$ 146.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-propointerii/pro-pointer-ii",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/60d2b8497658f395_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/60d2b8497658f395_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "PRO-POINTER AT Z-Lynk",
+        "slug": "pro-pointer-at-z-lynk",
         "price": "$ 210.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-propointer-at-z-lynk/pro-pointer-at-z-lynk",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b4704a023c982ec4_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b4704a023c982ec4_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Submersible Headset For Vortex",
+        "slug": "wireless-headset-for-vortex",
         "price": "$ 218.44",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2202150/wireless-headset-for-vortex",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT2202150.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT2202150.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Treasure Sound Headphone",
-        "price": "$ 14.99",
+        "slug": "treasure-sound-headphone",
+        "price": "$ 25.85",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1612500/treasure-sound-headphone",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8370dab2d9e999dd_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8370dab2d9e999dd_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Clear Sound Headphone",
-        "price": "$ 25.99",
+        "slug": "clear-sound-headphone",
+        "price": "$ 31",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1612700/clear-sound-headphone",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6568875884113faf_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6568875884113faf_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Waterproof Underwater Headset",
+        "slug": "waterproof-underwater-headset",
         "price": "$ 218.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-2202100/waterproof-underwater-headset",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a2f725f60fb6947d_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/a2f725f60fb6947d_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Headphone Adapter Underwater 2 pin to 1/4\"",
+        "slug": "headphone-adapter-underwater-2-pin-to-1-4",
         "price": "$ 54.72",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1626000/headphone-adapter-underwater-2-pin-to-1-4",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/bf8c4b6e6737b54f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/bf8c4b6e6737b54f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Z-Lynk Wireless System with 1/4\" Headphone Jack Connector",
-        "price": "$ 129.99",
+        "slug": "z-lynk-wireless-system-with-1-4-headphone-jack-connector",
+        "price": "$ 167",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627100/z-lynk-wireless-system-with-1-4-headphone-jack-connector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/94b675f7c8424fcc_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/94b675f7c8424fcc_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Headphone Cable With 2-PIN Connector For Z-Lynk System",
+        "slug": "headphone-cable-with-2-pin-connector-for-z-lynk-system",
         "price": "$ 35",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627410/headphone-cable-with-2-pin-connector-for-z-lynk-system",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/25cf4d5eaa514425_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/25cf4d5eaa514425_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "MS-2 Headphones With AT 2-Pin Connector",
+        "slug": "ms-2-headphones-with-at-2-pin-connector",
         "price": "$ 80",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627310/ms-2-headphones-with-at-2-pin-connector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2fb9a7df306f29bd_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2fb9a7df306f29bd_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Garrett Pro-pointer AT Z-Lynk MS3 Kit",
-        "price": "$ 249.99",
+        "slug": "garrett-pro-pointer-at-z-lynk-ms3-kit",
+        "price": "$ 389.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1142210/garrett-pro-pointer-at-z-lynk-ms3-kit",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/794907e67fb2ce1d_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/794907e67fb2ce1d_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Z-Lynk WR-1 Wireless Receiver for 2-pin AT Headphones",
+        "slug": "z-lynk-wr-1-wireless-receiver-for-2-pin-at-headphones",
         "price": "$ 81",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627610/z-lynk-wr-1-wireless-receiver-for-2-pin-at-headphones",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8ee4863c94792fd5_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8ee4863c94792fd5_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "MS-3 Z-Lynk Wireless Headphones",
+        "slug": "ms-3-z-lynk-wireless-headphones",
         "price": "$ 155.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627710/ms-3-z-lynk-wireless-headphones",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/9ce0d057e7acdec4_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/9ce0d057e7acdec4_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "MS-3 Z-Lynk Wireless Kit",
+        "slug": "ms-3-z-lynk-wireless-kit-includes",
         "price": "$ 206",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627720/ms-3-z-lynk-wireless-kit-includes",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/24b3c3b5766a821d_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/24b3c3b5766a821d_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Z-Lynk Headphone Cable \u00bc\" connector",
+        "slug": "z-lynk-headphone-cable-1-4-connector",
         "price": "$ 27",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1627800/z-lynk-headphone-cable-1-4-connector",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c1ee2de1309ce982_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/c1ee2de1309ce982_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Lower Shaft Stem for AT Series",
+        "slug": "lower-shaft-stem-for-at-series",
         "price": "$ 17.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-9975610/lower-shaft-stem-for-at-series",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT9975610.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT9975610.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Black Middle Stem with Camlocks",
+        "slug": "black-middle-stem-with-camlocks",
         "price": "$ 26.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-2347500/black-middle-stem-with-camlocks",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2ca77ae70f9251ee_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/2ca77ae70f9251ee_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Favorite Finds Book",
-        "price": "$ 19.99",
+        "slug": "favorite-finds-book",
+        "price": "$ 24",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1556100/favorite-finds-book",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1556100.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1556100.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "All Purpose Carry Bag 50\"",
+        "slug": "all-purpose-carry-bag-50",
         "price": "$ 36.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1634800/all-purpose-carry-bag-50",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1634800.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT1634800.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Weather Cover for APEX Metal Detectors",
+        "slug": "weather-cover-for-apex-metal-detectors",
         "price": "$ 20",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1628700/weather-cover-for-apex-metal-detectors",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1628700ApexCoverUp.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/1628700ApexCoverUp.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "All Purpose Carry Bag 50\"",
+        "slug": "all-purpose-carry-bag-50",
         "price": "$ 35.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1608700/all-purpose-carry-bag-50",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b118186fdfb50228_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b118186fdfb50228_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Camo Pouch 18\" Extender",
+        "slug": "camo-pouch-18-extender",
         "price": "$ 4",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1613000/camo-pouch-18-extender",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8dbb0f0a2f3867e6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/8dbb0f0a2f3867e6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Weather Cover for ACE Detectors",
+        "slug": "weather-cover-for-ace-detectors",
         "price": "$ 19",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1619900/weather-cover-for-ace-detectors",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f072022185da724f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/f072022185da724f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "All Purpose BackPack Black",
-        "price": "$ 19.99",
+        "slug": "all-purpose-backpack-black",
+        "price": "$ 23",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1651700/all-purpose-backpack-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/bb8b0bb9ad9e1a21_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/bb8b0bb9ad9e1a21_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "VORTEX VX5 To VX7 Upgrade Code",
+        "slug": "vortex-vx5-to-vx7-upgrade-code",
         "price": "$ 127.5",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-3000900/vortex-vx5-to-vx7-upgrade-code",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT3000900.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT3000900.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "VORTEX VX5 To VX9 Upgrade Code",
+        "slug": "vortex-vx5-to-vx9-upgrade-code",
         "price": "$ 225",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-3001000/vortex-vx5-to-vx9-upgrade-code",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT30010001.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT30010001.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "VORTEX VX7 To VX9 Upgrade Code",
+        "slug": "vortex-vx7-to-vx9-upgrade-code",
         "price": "$ 97.5",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/grt-3001100/vortex-vx7-to-vx9-upgrade-code",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT3001000.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT3001000.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Replacement Cuff Support for ACE-250 CSI-250",
+        "slug": "replacement-cuff-support-for-ace-250-csi-250",
         "price": "$ 5",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-9875200/replacement-cuff-support-for-ace-250-csi-250",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT9875200.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GRT9875200.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Mounting Band",
+        "slug": "mounting-band",
         "price": "$ 3",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-9885100/mounting-band",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/fdce37ca07ab9812_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/fdce37ca07ab9812_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Replacement Armrest Cuff for ATPRO and ATGOLD",
+        "slug": "replacement-armrest-cuff-for-atpro-and-atgold",
         "price": "$ 5.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-9875101/replacement-armrest-cuff-for-atpro-and-atgold",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6d4554a5dccfeeff_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6d4554a5dccfeeff_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Replacement Armrest Strap for AT Pro",
+        "slug": "replacement-armrest-strap-for-at-pro",
         "price": "$ 3",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-9851300/replacement-armrest-strap-for-at-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ff62ba56dcb486be_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ff62ba56dcb486be_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Garrett \"AT PRO\" Camo Cap",
-        "price": "$ 9.99",
+        "slug": "garrett-at-pro-camo-cap",
+        "price": "$ 15",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1633400/garrett-at-pro-camo-cap",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/5255c19c56028b45_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/5255c19c56028b45_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Garrett Metal Detectors \"ACE\" Cap",
-        "price": "$ 9.99",
+        "slug": "garrett-metal-detectors-ace-cap",
+        "price": "$ 15",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/grt-1664400/garrett-metal-detectors-ace-cap",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/aed23ffe4ec955e6_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/aed23ffe4ec955e6_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Guide Hand-Held Metal Detector",
+        "slug": "1173000-guide-handheld-metal-detector-with-3-ft-usb-c-to-usb-a-charging-cable",
         "price": "$ 425",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/garrett-1173000/1173000-guide-handheld-metal-detector-with-3-ft-usb-c-to-usb-a-charging-cable",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRET1173000.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRET1173000.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Guide Hand-Held Metal Detector and Charging Base Kit",
+        "slug": "guide-hand-held-metal-detector-and-charging-base-kit",
         "price": "$ 625",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/garrett-1173010/guide-hand-held-metal-detector-and-charging-base-kit",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT11730101.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT11730101.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "CSI Pro Pointer AT",
+        "slug": "csi-pro-pointer-at",
         "price": "$ 249",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/garrett-1140920/csi-pro-pointer-at",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1140920.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1140920.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "PRO-Pointer AT Blackline Edition",
+        "slug": "1140950-pro-pointer-at-blackline-edition",
         "price": "$ 325",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/garrett-1140950/1140950-pro-pointer-at-blackline-edition",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1140950.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1140950.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "Super Scanner V Metal Detector - Audible and Vibrating Tones",
+        "slug": "1165190-superscanner-v-handheld-metal-detector-audible-and-vibrating-tones",
         "price": "$ 325",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/garrett-1165190/1165190-superscanner-v-handheld-metal-detector-audible-and-vibrating-tones",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1165190.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1165190.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "SuperWand Metal Detector,  360 deg detection and tip pinpointing.",
+        "slug": "1165800-superwand-handheld-metal-detector-360-deg-detection-tip-pinpoint",
         "price": "$ 375",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/garrett-1165800/1165800-superwand-handheld-metal-detector-360-deg-detection-tip-pinpoint",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1165800.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1165800.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Garrett",
         "name": "THD Tactical Hand-Held Metal Detector  with Holster",
+        "slug": "1165900-thd-tactical-handheld-metal-detector-with-holster",
         "price": "$ 325",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/garrett-1165900/1165900-thd-tactical-handheld-metal-detector-with-holster",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1165900.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/GARRETT1165900.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Simplex Lite With SX28 Coil",
+        "slug": "simplex-lite-with-sx28-coil",
         "price": "$ 359.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000705/simplex-lite-with-sx28-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA110007053.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA110007053.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "The Legend 2",
+        "slug": "the-legend-2",
         "price": "$ 1439.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000562/the-legend-2",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000562BUNDLEFEB.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000562BUNDLEFEB.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Double Score Serious Beginner Pack",
-        "price": "$ 559.9",
+        "slug": "double-score-serious-beginner-pack",
+        "price": "$ 677.86",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000867-sbp/double-score-serious-beginner-pack",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000867SBP.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000867SBP.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Double Score",
+        "slug": "score-2",
         "price": "$ 559.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000867/score-2",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000867.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000867.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Simplex Ultra Serious Beginner Pack",
-        "price": "$ 429.9",
+        "slug": "simplex-ultra-serious-beginner-pack",
+        "price": "$ 537.86",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000625-sbp/simplex-ultra-serious-beginner-pack",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000625SBP.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000625SBP.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "FindX Pro",
+        "slug": "findx-pro",
         "price": "$ 287.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000876/findx-pro",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000876.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000876.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Mini Hoard (8048)",
+        "slug": "mini-hoard-8048",
         "price": "$ 195.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000804/mini-hoard-8048",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAMINIHOARD1.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAMINIHOARD1.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "FindX",
+        "slug": "findx",
         "price": "$ 209.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000875/findx",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000875.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000875.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Jeohunter 3D Dual System",
+        "slug": "jeohunter-3d-dual-system",
         "price": "$ 3319.9",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-10000609/jeohunter-3d-dual-system",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA10000609.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA10000609.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Deephunter 3D Pro Package (8024)",
+        "slug": "deephunter-3d-pro-package-8024",
         "price": "$ 4769.9",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000802/deephunter-3d-pro-package-8024",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTADEEPHUNTER3DPROPACKAGE3.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTADEEPHUNTER3DPROPACKAGE3.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Midi Hoard (8055)",
+        "slug": "midi-hoard-8055",
         "price": "$ 215.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000805/midi-hoard-8055",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAMIDIHOARD.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAMIDIHOARD.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "PulseDive Scuba Detector - Yellow (1148)",
+        "slug": "pulsedive-scuba-detector-yellow-1148",
         "price": "$ 329.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-10000114/pulsedive-scuba-detector-yellow-1148",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAPULSEDIVESCUBAYELLOW.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAPULSEDIVESCUBAYELLOW.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Triple Score PROPACK",
+        "slug": "score-3-propack",
         "price": "$ 954.79",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000808/score-3-propack",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000808BUNDLEDEC.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000808BUNDLEDEC.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "The Legend Pro Pack with LG30 (8406)",
+        "slug": "the-legend-with-lg30-pro-pack-8406",
         "price": "$ 955.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000840/the-legend-with-lg30-pro-pack-8406",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA1100084001.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA1100084001.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "The Legend WHP with LG30 (8390)",
+        "slug": "the-legend-whp-with-lg30-8390",
         "price": "$ 949.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000839/the-legend-whp-with-lg30-8390",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTALEGENDwhp.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTALEGENDwhp.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Simplex Lite",
-        "price": "$ 299.99",
+        "slug": "simplex-lite",
+        "price": "$ 359.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000623/simplex-lite",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000623.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000623.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SC35 Search Coil 13.5 X 12.5 Inch Black For Score Double Score Triple Score",
+        "slug": "sc35-search-coil-13-5-x-12-5-inch-black-for-score-double-score-triple-score",
         "price": "$ 241.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000184/sc35-search-coil-13-5-x-12-5-inch-black-for-score-double-score-triple-score",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000184.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000184.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Mounting Hardware (7348)",
+        "slug": "search-coil-mounting-hardware-7348",
         "price": "$ 9.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000734/search-coil-mounting-hardware-7348",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILKIT.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILKIT.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "GK40 Waterproof DD Search Coil 40\u00d733.5 cm / 15.5\"x13\" - White (1315)",
+        "slug": "gk40-waterproof-dd-search-coil-40x33-5-cm-15-5-x13-white-1315",
         "price": "$ 302.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000131/gk40-waterproof-dd-search-coil-40x33-5-cm-15-5-x13-white-1315",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAGK40.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAGK40.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "GK26C Waterproof Concentric Search Coil 26x14 cm / 10\"x5.5\" - White (1308)",
+        "slug": "gk26c-waterproof-concentric-search-coil-26x14-cm-10-x5-5-white-1308",
         "price": "$ 185.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000130/gk26c-waterproof-concentric-search-coil-26x14-cm-10-x5-5-white-1308",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAGK26C.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAGK26C.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "KR40 Waterproof DD Search Coil 40x35 cm / 15\"x14\" - Black (1056)",
+        "slug": "kr40-waterproof-dd-search-coil-40x35-cm-15-x14-black-1056",
         "price": "$ 282",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000105/kr40-waterproof-dd-search-coil-40x35-cm-15-x14-black-1056",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAKR40.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAKR40.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "IM24 Search Coil Cover 9.5\" X 5\" - Black (2268)",
+        "slug": "im24-search-coil-cover-9-5-x-5-black-2268",
         "price": "$ 24.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000226/im24-search-coil-cover-9-5-x-5-black-2268",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER9.5X5.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER9.5X5.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "INV40 Search Coil Cover 15.5\" x 14\" - Black (2398)",
+        "slug": "inv40-search-coil-cover-15-5-x-14-black-2398",
         "price": "$ 33.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000239/inv40-search-coil-cover-15-5-x-14-black-2398",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER15.5X14.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER15.5X14.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "AF35 Search Coil Cover 13.5\" X 13\" - Black (2367)",
+        "slug": "af35-search-coil-cover-13-5-x-13-black-2367",
         "price": "$ 25",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000236/af35-search-coil-cover-13-5-x-13-black-2367",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER13.7X13.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER13.7X13.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "AF23C Search Coil Cover 9\" - Black (2244)",
+        "slug": "af23c-search-coil-cover-9-black-2244",
         "price": "$ 14",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000224/af23c-search-coil-cover-9-black-2244",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER9.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVER9.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SP24 / KR24 Search Coil Cover 9.5\" X 5\" - Black (2497)",
+        "slug": "sp24-kr24-search-coil-cover-9-5-x-5-black-2497",
         "price": "$ 14",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000249/sp24-kr24-search-coil-cover-9-5-x-5-black-2497",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVERSP24.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVERSP24.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SP22 Search Coil Cover 8.5\" - Black (2503)",
+        "slug": "sp22-search-coil-cover-8-5-black-2503",
         "price": "$ 14",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000250/sp22-search-coil-cover-8-5-black-2503",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVERSP22.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTACOILCOVERSP22.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SC24 SEARCH COIL (9.5'' X 6'') BLACK",
+        "slug": "sc24-search-coil-9-5-x-6-black",
         "price": "$ 194",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000182/sc24-search-coil-9-5-x-6-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000182.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000182.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Cover 9 Inch  Black",
+        "slug": "search-coil-cover-9-inch-black",
         "price": "$ 28.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000568/search-coil-cover-9-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000568.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000568.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Cover 11\" Black",
+        "slug": "search-coil-cover-11-black",
         "price": "$ 28.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000569/search-coil-cover-11-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000569.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000569.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Coil Mounting Hardware 3 Pieces - Legend 2",
+        "slug": "coil-mounting-hardware-3-pieces-legend",
         "price": "$ 11.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000575/coil-mounting-hardware-3-pieces-legend",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000575.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000575.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Cover 8\" x 5.5\"  Black",
+        "slug": "search-coil-cover-8-x-5-5-black",
         "price": "$ 28.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000567/search-coil-cover-8-x-5-5-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000567.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000567.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Cover 15\" x 12\"  Black",
+        "slug": "search-coil-cover-15-x-12-black",
         "price": "$ 43.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000570/search-coil-cover-15-x-12-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000570.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000570.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LD21 Search Coil 8\" x 5.5\" Black",
+        "slug": "ld21-search-coil-8-x-5-5-black",
         "price": "$ 246.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000563/ld21-search-coil-8-x-5-5-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000563.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000563.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LD22 Search Coil 9 Inch  Black",
+        "slug": "ld22-search-coil-9-inch-black",
         "price": "$ 275.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000564/ld22-search-coil-9-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000564.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000564.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LD28 Search Coil 11 Inch  Black",
+        "slug": "ld28-search-coil-11-inch-black",
         "price": "$ 347.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000565/ld28-search-coil-11-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA170005641.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA170005641.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LD38 Search Coil 15\" x 12\"  Black",
+        "slug": "ld38-search-coil-15-x-12-black",
         "price": "$ 405.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000566/ld38-search-coil-15-x-12-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000566.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000566.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Replaceable Scuba Coil 20 cm / 8\" - Yellow (1674)",
+        "slug": "replaceable-scuba-coil-20-cm-8-yellow-1674",
         "price": "$ 120.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000167/replaceable-scuba-coil-20-cm-8-yellow-1674",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTASCUBACOILYELLOW.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTASCUBACOILYELLOW.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SX24 Search Coil 9.5 x 6 Inch Black",
+        "slug": "sx24-search-coil-9-5-x-6-inch-black",
         "price": "$ 168.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000178/sx24-search-coil-9-5-x-6-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000178.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000178.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LG28 Waterproof DD Search Coil 28 cm / 11\" - Black (1728)",
+        "slug": "lg28-waterproof-dd-search-coil-28-cm-11-black-1728",
         "price": "$ 198.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000172/lg28-waterproof-dd-search-coil-28-cm-11-black-1728",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000172.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000172.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Coil Cover 11 Inch Black",
+        "slug": "coil-cover-11-inch-black",
         "price": "$ 28.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000263/coil-cover-11-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000263.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000263.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SP35 Waterproof DD Search Coil 35x31.5 cm / 13.5\"x12.5\" - Black (2589)",
+        "slug": "sp35-waterproof-dd-search-coil-35x31-5-cm-13-5-x12-5-black-2589",
         "price": "$ 228",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-sp35/sp35-waterproof-dd-search-coil-35x31-5-cm-13-5-x12-5-black-2589",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/SP35WaterproofDDSearchCoil.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/SP35WaterproofDDSearchCoil.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SX35 Search Coil 13.5 X 12.5 Inch Black",
+        "slug": "sx35-search-coil-13-5-x-12-5-inch-black",
         "price": "$ 241.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000180/sx35-search-coil-13-5-x-12-5-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000180.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000180.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LG15 Search Coil Cover 6\" - Black (1742)",
+        "slug": "lg15-search-coil-cover-6-black-1742",
         "price": "$ 18.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000174/lg15-search-coil-cover-6-black-1742",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000174.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000174.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Mounting Hardware 28R (7546)",
+        "slug": "search-coil-mounting-hardware-28r-7546",
         "price": "$ 9.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000754/search-coil-mounting-hardware-28r-7546",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ZestawsrubmocujacychcewkeNoktaMacro28RSimplex17000754zestaw.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/ZestawsrubmocujacychcewkeNoktaMacro28RSimplex17000754zestaw.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Cover (9.5'' X 6'') For LG24 Coil",
+        "slug": "search-coil-cover-9-5-x-6-for-lg24-coil",
         "price": "$ 28.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000260/search-coil-cover-9-5-x-6-for-lg24-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000260.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000260.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LG30 Waterproof DD Search Coil 12\" x 9\", Black",
+        "slug": "lg30-waterproof-dd-search-coil-12-x-9-black",
         "price": "$ 217.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000176/lg30-waterproof-dd-search-coil-12-x-9-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/lg30.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/lg30.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LG15 Waterproof DD Search Coil  15 cm / 6\" - Black (1711)",
+        "slug": "lg15-waterproof-dd-search-coil-15-cm-6-black-1711",
         "price": "$ 181.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000171/lg15-waterproof-dd-search-coil-15-cm-6-black-1711",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000171.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000171.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Coil Cover 9.5 x 6 Inch Black",
+        "slug": "coil-cover-9-5-x-6-inch-black",
         "price": "$ 18.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000262/coil-cover-9-5-x-6-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000262.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000262.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SP24 Waterproof DD Search Coil 24\u00d713 cm / 9.5\"x5\" - Black (1681)",
+        "slug": "sp24-waterproof-dd-search-coil-24x13-cm-9-5-x5-black-1681",
         "price": "$ 148",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-sp24/sp24-waterproof-dd-search-coil-24x13-cm-9-5-x5-black-1681",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/06ad824da12bf250_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/06ad824da12bf250_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SP28 / AF28 / IM28R Search Coil Cover 11\" - Black (2473)",
+        "slug": "sp28-af28-im28r-search-coil-cover-11-black-2473",
         "price": "$ 26.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000247/sp28-af28-im28r-search-coil-cover-11-black-2473",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakrosp28af28imr28searchcoilcover850x459.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakrosp28af28imr28searchcoilcover850x459.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SX28 Search Coil 11 Inch Black",
+        "slug": "sx28-search-coil-11-inch-black",
         "price": "$ 193.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000179/sx28-search-coil-11-inch-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000179.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000179.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LG35 Waterproof DD Search Coil 35x31.5 cm / 13.5\"x12.5\" - Black (1735)",
+        "slug": "lg35-waterproof-dd-search-coil-35x31-5-cm-13-5-x12-5-black-1735",
         "price": "$ 241.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000173/lg35-waterproof-dd-search-coil-35x31-5-cm-13-5-x12-5-black-1735",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000173.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000173.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SP35 Search Coil Cover 13.5\" x 12.5\" - Black - Simplex (2596)",
+        "slug": "sp35-search-coil-cover-13-5-x-12-5-black-simplex-2596",
         "price": "$ 31.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000259/sp35-search-coil-cover-13-5-x-12-5-black-simplex-2596",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000259.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000259.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LG24 Waterproof DD Search Coil 9.5\" x 6\", Black",
+        "slug": "lg24-waterproof-dd-search-coil-9-5-x-6-black",
         "price": "$ 193.99",
         "stock": "Out of Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000175/lg24-waterproof-dd-search-coil-9-5-x-6-black",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/lg24.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/lg24.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Search Coil Cover (12'' X 9'') For LG30 Coil",
+        "slug": "search-coil-cover-12-x-9-for-lg30-coil",
         "price": "$ 31.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000261/search-coil-cover-12-x-9-for-lg30-coil",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000261.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000261.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "SP22 Waterproof DD Search Coil 22 cm / 8.5\" - Black (1698)",
+        "slug": "sp22-waterproof-dd-search-coil-22-cm-8-5-black-1698",
         "price": "$ 148",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-sp22/sp22-waterproof-dd-search-coil-22-cm-8-5-black-1698",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0d243efcb2d5a86f_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/0d243efcb2d5a86f_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "LG35 Search Coil Cover 13.5\" x 12.5\" - Black - S2 (2565)",
+        "slug": "lg35-search-coil-cover-13-5-x-12-5-black-s2-2565",
         "price": "$ 32.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000256/lg35-search-coil-cover-13-5-x-12-5-black-s2-2565",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000256.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000256.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Premium Shovel (0592)",
+        "slug": "premium-shovel-0592",
         "price": "$ 144.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000059/premium-shovel-0592",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/Noktapremiumshovel1.jpg"
-    },
-    {
-        "brand": "Nokta",
-        "name": "Plastic Sand Scoop (0646)",
-        "price": "$ 21.99",
-        "stock": "In Stock",
-        "url": "https://www.radioworld.ca/product/nokta-17000064/plastic-sand-scoop-0646",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTASANDSCOOP.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/Noktapremiumshovel1.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Adventure Accessory Package (3067)",
+        "slug": "adventure-accessory-package-3067",
         "price": "$ 169",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000306/adventure-accessory-package-3067",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakroadventureaccessorypackage.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakroadventureaccessorypackage.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Standard Digger with Belt Holster (0608)",
-        "price": "$ 21.95",
+        "slug": "standard-digger-with-belt-holster-0608",
+        "price": "$ 28.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000060/standard-digger-with-belt-holster-0608",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTADIGGER.jpg"
-    },
-    {
-        "brand": "Nokta",
-        "name": "Premium Digger with Belt Holster (0615)",
-        "price": "$ 36.95",
-        "stock": "In Stock",
-        "url": "https://www.radioworld.ca/product/nokta-17000061/premium-digger-with-belt-holster-0615",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTADIGGERPREMIUM4.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTADIGGER.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Premium Sand Scoop 3-in-1 Set (0714)",
-        "price": "$ 149.95",
+        "slug": "premium-sand-scoop-3-in-1-set-0714",
+        "price": "$ 205.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000071/premium-sand-scoop-3-in-1-set-0714",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktapremiumsandscoop3in1set31.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktapremiumsandscoop3in1set31.jpg",
+        "specs_html": "",
+        "description_text": ""
+    },
+    {
+        "brand": "Nokta",
+        "name": "Premium Digger with Belt Holster (0615)",
+        "slug": "premium-digger-with-belt-holster-0615",
+        "price": "$ 48.99",
+        "stock": "In Stock",
+        "url": "https://www.radioworld.ca/product/nokta-17000061/premium-digger-with-belt-holster-0615",
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTADIGGERPREMIUM4.JPG",
+        "specs_html": "",
+        "description_text": ""
+    },
+    {
+        "brand": "Nokta",
+        "name": "Plastic Sand Scoop (0646)",
+        "slug": "plastic-sand-scoop-0646",
+        "price": "$ 21.99",
+        "stock": "In Stock",
+        "url": "https://www.radioworld.ca/product/nokta-17000064/plastic-sand-scoop-0646",
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTASANDSCOOP.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Advantage Accessory Package (3050)",
+        "slug": "advantage-accessory-package-3050",
         "price": "$ 209.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000305/advantage-accessory-package-3050",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakroadvantageaccessorypackage.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakroadvantageaccessorypackage.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Starter Accessory Package (3043)",
+        "slug": "starter-accessory-package-3043",
         "price": "$ 72.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000304/starter-accessory-package-3043",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakrostarteraccessorypackage.jpg"
-    },
-    {
-        "brand": "Nokta",
-        "name": "Finds Pouch (3593)",
-        "price": "$ 18.99",
-        "stock": "In Stock",
-        "url": "https://www.radioworld.ca/product/nokta-17000359/finds-pouch-3593",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAPOUCH4.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakrostarteraccessorypackage.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "PP Leg Holster (3630)",
+        "slug": "pp-leg-holster-3630",
         "price": "$ 18.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000363/pp-leg-holster-3630",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000363.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000363.jpg",
+        "specs_html": "",
+        "description_text": ""
+    },
+    {
+        "brand": "Nokta",
+        "name": "Finds Pouch (3593)",
+        "slug": "finds-pouch-3593",
+        "price": "$ 18.99",
+        "stock": "In Stock",
+        "url": "https://www.radioworld.ca/product/nokta-17000359/finds-pouch-3593",
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAPOUCH4.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "***Premium Sand Scoop Handle (0691)",
+        "slug": "premium-sand-scoop-handle-0691",
         "price": "$ 46.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-premiumsandscoophandle/premium-sand-scoop-handle-0691",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakropremiumsandscoophandle.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/noktamakropremiumsandscoophandle.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Nokta Pointer (1100)",
+        "slug": "nokta-pointer-1100",
         "price": "$ 143.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-10000110/nokta-pointer-1100",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTANOKTAPOINTER3.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTANOKTAPOINTER3.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "PulseDive 2-in-1 Set - Yellow (1131)",
+        "slug": "pulsedive-2-in-1-set-yellow-1131",
         "price": "$ 329.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-10000113/pulsedive-2-in-1-set-yellow-1131",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAPULSEDIVESCUBAYELLOW.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAPULSEDIVESCUBAYELLOW.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Belt Holster (3234)",
+        "slug": "belt-holster-3234",
         "price": "$ 20.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000323/belt-holster-3234",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000323.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000323.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Security Lanyard (7379)",
+        "slug": "security-lanyard-7379",
         "price": "$ 13.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000737/security-lanyard-7379",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000737.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000737.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Accupoint Pinpointer",
+        "slug": "accupoint-pinpointer",
         "price": "$ 215.9",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-11000116/accupoint-pinpointer",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000116.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA11000116.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "PulseDive Pointer (1117)",
+        "slug": "pulsedive-pointer-1117",
         "price": "$ 179.95",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-pulsedivepointer/pulsedive-pointer-1117",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6e40f68366c1944c_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/6e40f68366c1944c_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "EZ Wander Wireless Module (2169)",
+        "slug": "ez-wander-wireless-module-2169",
         "price": "$ 149.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000216/ez-wander-wireless-module-2169",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAEZWANDER.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAEZWANDER.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Nokta Bone Conduction Headphones - Legend 2",
+        "slug": "nokta-bone-conduction-headphones-legend",
         "price": "$ 130.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000576/nokta-bone-conduction-headphones-legend",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000576.png"
-    },
-    {
-        "brand": "Nokta",
-        "name": "Waterproof Headphones (2107)",
-        "price": "$ 209.99",
-        "stock": "In Stock",
-        "url": "https://www.radioworld.ca/product/nokta-17000210/waterproof-headphones-2107",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAWATERPROOFHEADPHONES.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000576.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Headphones Adapter 6.3mm 1/4\" (7317)",
+        "slug": "headphones-adapter-6-3mm-1-4-7317",
         "price": "$ 36.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000731/headphones-adapter-6-3mm-1-4-7317",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAHEADPHONEADAPTER.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAHEADPHONEADAPTER.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "2.4GHz Wireless Headphones - Green Edition (2091)",
-        "price": "$ 119.99",
+        "slug": "2-4ghz-wireless-headphones-green-edition-2091",
+        "price": "$ 162.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000209/2-4ghz-wireless-headphones-green-edition-2091",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAHEADPHONES.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAHEADPHONES.jpg",
+        "specs_html": "",
+        "description_text": ""
+    },
+    {
+        "brand": "Nokta",
+        "name": "Waterproof Headphones (2107)",
+        "slug": "waterproof-headphones-2107",
+        "price": "$ 209.99",
+        "stock": "Out of Stock",
+        "url": "https://www.radioworld.ca/product/nokta-17000210/waterproof-headphones-2107",
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAWATERPROOFHEADPHONES.jpg",
+        "specs_html": "",
+        "description_text": ""
+    },
+    {
+        "brand": "Nokta",
+        "name": "Waterproof Headphones *NEW* Improved Audio Quality!",
+        "slug": "waterproof-headphones-new-improved-audio-quality",
+        "price": "$ 120.99",
+        "stock": "In Stock",
+        "url": "https://www.radioworld.ca/product/nokta-17000218/waterproof-headphones-new-improved-audio-quality",
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000218.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Koss Headphones with 6.3MM Jack (2138)",
-        "price": "$ 59.99",
+        "slug": "koss-headphones-with-6-3mm-jack-2138",
+        "price": "$ 92.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000213/koss-headphones-with-6-3mm-jack-2138",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/170002132.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/170002132.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Bluetooth Low Latency Headphones (2572)",
+        "slug": "bluetooth-low-latency-headphones-2572",
         "price": "$ 157.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000257/bluetooth-low-latency-headphones-2572",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000257.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000257.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Koss Headphones with Waterproof Connector (2145)",
+        "slug": "koss-headphones-with-waterproof-connector-2145",
         "price": "$ 115.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000214/koss-headphones-with-waterproof-connector-2145",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/170002143.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/170002143.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Longer Middle Shaft (Aluminum) - Trapezoid 60cm / 23.5\" - Black (6587)",
+        "slug": "longer-middle-shaft-aluminum-trapezoid-60cm-23-5-black-6587",
         "price": "$ 37.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000658/longer-middle-shaft-aluminum-trapezoid-60cm-23-5-black-6587",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTALONGSHAFTSIMPLEX.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTALONGSHAFTSIMPLEX.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Shaft Latch Replacement Kit 3 Pieces - Legend 2",
+        "slug": "shaft-latch-replacement-kit-3-pieces-legend",
         "price": "$ 11.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000573/shaft-latch-replacement-kit-3-pieces-legend",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA170005731.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA170005731.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Middle Shaft Carbon Fiber 50 cm - Legend 2",
+        "slug": "middle-shaft-carbon-fiber-50-cm-legend",
         "price": "$ 57.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000572/middle-shaft-carbon-fiber-50-cm-legend",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000572.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000572.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Lower Shaft Carbon Fiber 60 cm - Legend 2",
+        "slug": "lower-shaft-carbon-fiber-60-cm-legend",
         "price": "$ 72.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000571/lower-shaft-carbon-fiber-60-cm-legend",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000571.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000571.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Middle Shaft Carbon Fibre 21.5 Inches",
+        "slug": "middle-shaft-carbon-fibre-21-5-inches",
         "price": "$ 61.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000650/middle-shaft-carbon-fibre-21-5-inches",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000650.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000650.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "*** Lower Shaft - Triangle 50cm - Black (6334)",
+        "slug": "lower-shaft-triangle-50cm-black-6334",
         "price": "$ 26.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-lowershaftblacktriangle50cm/lower-shaft-triangle-50cm-black-6334",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b6d3473e0af40438_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/b6d3473e0af40438_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Longer Carbon Fibre Lower Shaft  64.5cm Fits Simplex Legend Score Models",
+        "slug": "longer-carbon-fiber-lower-shaft-64-5cm-fits-simplex-legend-score-models",
         "price": "$ 54.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000652/longer-carbon-fiber-lower-shaft-64-5cm-fits-simplex-legend-score-models",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000652.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000652.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Lower Shaft Carbon Fibre-Trapezoid  60CM / 23.5\" (0677)",
+        "slug": "lower-shaft-carbon-fibre-trapezoid-60cm-23-5-0677",
         "price": "$ 48.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000067/lower-shaft-carbon-fibre-trapezoid-60cm-23-5-0677",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/9c2b5718cefc219c_large.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/9c2b5718cefc219c_large.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Longer Carbon Fibre Middle Shaft  63cm Fits Simplex Legend Score Models",
+        "slug": "longer-carbon-fiber-middle-shaft-63cm-fits-simplex-legend-score-models",
         "price": "$ 54.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000653/longer-carbon-fiber-middle-shaft-63cm-fits-simplex-legend-score-models",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000653.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000653.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Waterproof Battery Pod 4xAA Batteries (Not Included)",
+        "slug": "waterproof-battery-pod-4xaa-batteries-not-included",
         "price": "$ 61.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000457/waterproof-battery-pod-4xaa-batteries-not-included",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000457.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000457.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "External Waterproof Battery - Legend 2",
+        "slug": "external-waterproof-battery-legend",
         "price": "$ 101.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000577/external-waterproof-battery-legend",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA170005771.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA170005771.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "USB Charger & Data Cable (5603)",
+        "slug": "usb-charger-data-cable-5603",
         "price": "$ 28.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000560/usb-charger-data-cable-5603",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAUSBCHARGCABLE.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAUSBCHARGCABLE.jpg",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Waterproof Battery Case (4xAA) (3012)",
+        "slug": "waterproof-battery-case-4xaa-3012",
         "price": "$ 58.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000301/waterproof-battery-case-4xaa-3012",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAAACASE.png"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTAAACASE.png",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Battery Compartment Cover (7225)",
+        "slug": "battery-compartment-cover-7225",
         "price": "$ 13.99",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000722/battery-compartment-cover-7225",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000722.PNG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/17000722.PNG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Waterproof Battery Li-Po & Charger (4569)",
+        "slug": "waterproof-battery-li-po-charger-for-legend-4569",
         "price": "$ 120.99",
         "stock": "Special Order",
         "url": "https://www.radioworld.ca/product/nokta-17000456/waterproof-battery-li-po-charger-for-legend-4569",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000456.JPG"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000456.JPG",
+        "specs_html": "",
+        "description_text": ""
     },
     {
         "brand": "Nokta",
         "name": "Multi-Purpose Backpack (3623)",
+        "slug": "multi-purpose-backpack-3623",
         "price": "$ 135",
         "stock": "In Stock",
         "url": "https://www.radioworld.ca/product/nokta-17000362/multi-purpose-backpack-3623",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000362.jpg"
-    },
-    {
-        "brand": "Nokta",
-        "name": "Detectobag Backpack",
-        "price": "$ 124.99",
-        "stock": "In Stock",
-        "url": "https://www.radioworld.ca/product/nokta-17000039/detectobag-backpack",
-        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000039.jpg"
+        "image": "https://aovihjkbbm.cloudimg.io/v7/https://www.radioworld.ca/images/default/thumbnails/products/NOKTA17000362.jpg",
+        "specs_html": "",
+        "description_text": ""
     }
 ]

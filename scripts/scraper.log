@@ -12,3 +12,10 @@
 2026-03-13 21:05:31,555 - INFO - Targeting XP Metal Detectors API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BXP+Metal+Detectors%5D%5Bkey%5D=XP+Metal+Detectors&termsFilters%5BXP+Metal+Detectors%5D%5Bname%5D=manufacturer
 2026-03-13 21:05:31,818 - WARNING - No products found for XP Metal Detectors via API.
 2026-03-13 21:05:35,170 - INFO - Successfully synced 300 products to C:\Projects\Gateway_Final\scripts\live_inventory.json
+2026-03-17 22:54:45,267 - INFO - Starting live stock sync...
+2026-03-17 22:54:45,580 - INFO - Targeting Minelab API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BMinelab%5D%5Bkey%5D=Minelab&termsFilters%5BMinelab%5D%5Bname%5D=manufacturer
+2026-03-17 22:57:31,194 - INFO - Targeting Garrett API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BGarrett%5D%5Bkey%5D=Garrett&termsFilters%5BGarrett%5D%5Bname%5D=manufacturer
+2026-03-17 23:00:09,914 - INFO - Targeting Nokta API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BNokta%5D%5Bkey%5D=Nokta&termsFilters%5BNokta%5D%5Bname%5D=manufacturer
+2026-03-17 23:03:01,116 - INFO - Targeting XP Metal Detectors API at https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5BXP+Metal+Detectors%5D%5Bkey%5D=XP+Metal+Detectors&termsFilters%5BXP+Metal+Detectors%5D%5Bname%5D=manufacturer
+2026-03-17 23:03:01,403 - WARNING - No products found for XP Metal Detectors via API.
+2026-03-17 23:03:04,038 - INFO - Successfully synced 300 products to c:\Projects\Gateway_Final\scripts\live_inventory.json
