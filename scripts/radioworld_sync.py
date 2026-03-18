@@ -134,11 +134,21 @@ def scrape_radioworld():
                     page_resp = scraper.get(prod_url, headers=html_headers, timeout=30)
                     soup = BeautifulSoup(page_resp.text, 'html.parser')
                     
-                    # Radioworld's standard elements (from previous tests)
+                    # Radioworld's standard elements
+                    # Try targeting the tab-description structure or the productView-description
                     desc_tab = soup.find(id='tab-description')
                     if desc_tab:
-                        # Convert to string to preserve HTML formatting (lists, bolding, etc.)
-                        specs_html = str(desc_tab)
+                        # Find the first table or bullet list within the description tab to represent 'specs'
+                        table = desc_tab.find('table')
+                        ul = desc_tab.find('ul')
+                        
+                        if table:
+                            specs_html = str(table)
+                        elif ul:
+                            specs_html = str(ul)
+                        else:
+                            specs_html = str(desc_tab)
+                            
                         description_text = desc_tab.text.strip()
                     else:
                         article = soup.find('article', class_='productView-description')
