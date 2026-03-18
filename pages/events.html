@@ -132,109 +132,40 @@
 
     <div class="h-20 w-full"></div>
 
-    <!-- Hero — short cinematic strip matching homepage style -->
-    <header class="w-full h-[52vh] min-h-[380px] flex items-center justify-center relative bg-black overflow-hidden">
-        <!-- Reuse the river hero from homepage -->
-        <img src="../assets/images/Hero_River_2.jpg"
-             onerror="this.style.display='none'"
-             alt="Events — Gateway Metal Detectors"
-             class="absolute inset-0 w-full h-full object-cover opacity-55">
-
-        <!-- Gradient overlay — left-heavy to contrast right side of hero -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/20"></div>
-
-        <!-- Text — left-aligned matching homepage hero style -->
-        <div class="relative z-10 w-full max-w-[1280px] mx-auto px-8 md:px-16">
-            <p class="text-gray-400 text-[10px] font-black uppercase tracking-[0.35em] mb-4 anim-in">Gateway Metal Detectors · Hamilton, Ontario</p>
-            <h1 class="text-white font-bold uppercase leading-none mb-4 anim-in-delay drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]"
-                style="font-family: Georgia, serif; font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -0.02em;">
-                Events
-            </h1>
-            <p class="text-gray-300 text-lg md:text-xl font-medium anim-in-delay2">
-                Hunts, community meets & more — all in one place.
-            </p>
-        </div>
-    </header>
-
-    <!-- Section separator -->
-    <section class="max-w-[1280px] mx-auto px-6 py-10 w-full">
-        <div class="section-separator-container">
-            <div class="section-separator-line"></div>
-            <h2 class="section-title">Upcoming Events</h2>
-            <div class="section-separator-line"></div>
-        </div>
-    </section>
-
-    <!-- Coming Soon block -->
-    <main class="max-w-[1280px] mx-auto px-6 pb-40 w-full flex flex-col items-center text-center">
-
-        <!-- Icon -->
-        <div class="relative flex items-center justify-center mb-10">
-            <!-- Pulsing ring -->
-            <div class="pulse-ring absolute w-32 h-32 rounded-full border-2 border-gray-200"></div>
-            <!-- Inner circle -->
-            <div class="w-24 h-24 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center">
-                <svg class="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+    <!-- Minimalist Coming Soon Block -->
+    <main class="w-full flex-grow flex flex-col items-center justify-center text-center px-6 min-h-[60vh] bg-white">
+        
+        <!-- Animated Icon Container -->
+        <div class="relative flex items-center justify-center mb-12">
+            <!-- Subtle spinning dashed ring -->
+            <div class="absolute w-28 h-28 rounded-full border border-dashed border-gray-300 animate-[spin_8s_linear_infinite]"></div>
+            
+            <!-- Solid inner circle with icon -->
+            <div class="w-20 h-20 rounded-full bg-white border border-gray-200 shadow-[0_4px_14px_0_rgb(0,0,0,0.05)] flex items-center justify-center z-10">
+                <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5"
                         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
             </div>
         </div>
 
-        <!-- Headline -->
-        <h2 class="text-black font-bold uppercase leading-none mb-4"
-            style="font-family: Georgia, serif; font-size: clamp(2.4rem, 5vw, 4rem); letter-spacing: -0.02em;">
+        <!-- Typography matching homepage 'Pro Gear. Real Finds.' style but adapted for light mode -->
+        <p class="text-gray-400 text-[10px] font-black uppercase tracking-[0.35em] mb-4">Community · Gateway Metal Detectors</p>
+        
+        <h1 class="text-black font-bold leading-none mb-6 drop-shadow-sm"
+            style="font-family: Georgia, serif; font-size: clamp(3rem, 7vw, 5.5rem); letter-spacing: -0.02em;">
+            Events Calendar
+        </h1>
+
+        <div class="h-[2px] w-12 bg-black mx-auto mb-8"></div>
+
+        <p class="text-gray-500 text-lg md:text-xl font-medium max-w-xl leading-relaxed mb-4">
             Coming Soon
-        </h2>
-
-        <div class="h-[2px] w-12 bg-black mx-auto mb-6"></div>
-
-        <p class="text-gray-500 text-base font-semibold leading-relaxed max-w-lg mb-12">
-            We're building out a full events calendar for hunts, club meetups, and community detecting days across Southern Ontario. Check back soon.
         </p>
-
-        <!-- Beach hunt preview teaser card -->
-        <a href="community-clubs.html"
-            class="group flex flex-col md:flex-row w-full max-w-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500 text-left mb-16">
-
-            <!-- Left: seasonal teal-sand atmosphere (reuses pattern from homepage ad) -->
-            <div class="relative md:w-52 h-48 md:h-auto shrink-0 overflow-hidden">
-                <div class="absolute inset-0 group-hover:scale-105 transition-transform duration-500"
-                    style="background: linear-gradient(to bottom, #a8c8e8 0%, #c9dff3 30%, #d4c9a0 50%, #c8b882 68%, #b8a86a 100%);"></div>
-                <!-- Horizon -->
-                <div class="absolute" style="top:32%; left:0; right:0; height:1px; background:rgba(120,160,200,0.3);"></div>
-                <!-- Sun -->
-                <div class="absolute" style="top:14%; left:50%; transform:translateX(-50%); width:40px; height:40px; border-radius:50%; background:radial-gradient(circle, rgba(255,240,200,0.9) 0%, rgba(255,220,150,0.4) 55%, transparent 72%);"></div>
-                <!-- Overlay -->
-                <div class="absolute inset-0" style="background:linear-gradient(to top right, rgba(0,0,0,0.35) 0%, transparent 55%);"></div>
-                <div class="absolute bottom-0 left-0 p-5">
-                    <p class="text-white/60 text-[8px] font-black uppercase tracking-widest mb-1">May 2025</p>
-                    <p class="text-white font-black" style="font-family:Georgia,serif; font-size:1.8rem; line-height:1;">23–24</p>
-                </div>
-            </div>
-
-            <!-- Right: text -->
-            <div class="flex-1 bg-white px-8 py-7 flex flex-col justify-between">
-                <div>
-                    <p class="text-gray-400 text-[9px] font-black uppercase tracking-widest mb-3">Featured · Beach Hunt</p>
-                    <h3 class="text-black text-xl font-black uppercase leading-tight mb-3" style="font-family: Georgia, serif;">
-                        Southern Ontario<br>Beach Hunt 2025
-                    </h3>
-                    <p class="text-gray-500 text-sm font-semibold leading-relaxed">
-                        Two days on the Southern Ontario shoreline. Open to all skill levels — details dropping soon.
-                    </p>
-                </div>
-                <div class="mt-6">
-                    <span class="inline-flex items-center gap-2 bg-black text-white text-[10px] font-black uppercase tracking-widest px-6 py-3 group-hover:bg-gray-900 transition-colors">
-                        More Info
-                        <svg class="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-                    </span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Bottom text -->
-        <p class="text-gray-300 text-xs font-bold uppercase tracking-widest">More events being added — stay tuned.</p>
+        
+        <p class="text-gray-400 text-sm font-semibold max-w-md leading-relaxed">
+            We are curating a schedule of local hunts, club meetups, and community detecting days across Southern Ontario.
+        </p>
 
     </main>
 
