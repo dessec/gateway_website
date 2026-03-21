@@ -8,76 +8,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
-            color: #111827;
-            overflow-x: hidden;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #fff; color: #111827; overflow-x: hidden; }
 
-        .nav-link {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 2px;
-            color: #1f2937;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.05em;
-            transition: color 0.3s ease;
-        }
+        .nav-link { position: relative; display: inline-block; padding-bottom: 2px; color: #1f2937; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 50%; transform: translateX(-50%); background-color: #000; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -4px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #000;
-            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        /* Image Gallery */
+        .gallery-main { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border: 1px solid #e5e7eb; overflow: hidden; }
+        .gallery-main img { max-width: 100%; max-height: 100%; object-fit: contain; transition: opacity 0.2s ease; }
+        .gallery-thumb { width: 72px; height: 72px; border: 2px solid #e5e7eb; cursor: pointer; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f9f9f9; transition: border-color 0.2s; flex-shrink: 0; }
+        .gallery-thumb:hover { border-color: #000; }
+        .gallery-thumb.active { border-color: #000; }
+        .gallery-thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
+        /* Specs Table */
+        .specs-table { width: 100%; border-collapse: collapse; }
+        .specs-table tr:nth-child(odd) { background: #f9f9f9; }
+        .specs-table td { padding: 0.7rem 1rem; font-size: 0.875rem; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+        .specs-table td:first-child { font-weight: 700; color: #111; width: 38%; }
+        .specs-table td:last-child { color: #4b5563; }
 
-        /* Dynamically injected HTML from BigCommerce needs some basic styling so it's not totally broken */
-        .generated-content h1, .generated-content h2, .generated-content h3 {
-            font-family: Georgia, serif;
-            font-weight: bold;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: #000;
-        }
-        .generated-content h2 { font-size: 1.5rem; }
-        .generated-content p {
-            margin-bottom: 1rem;
-            color: #4b5563;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-        .generated-content ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-            color: #4b5563;
-        }
-        .generated-content li {
-            margin-bottom: 0.5rem;
-        }
-        .generated-content table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1rem;
-        }
-        .generated-content th, .generated-content td {
-            border: 1px solid #e5e7eb;
-            padding: 0.5rem;
-            text-align: left;
-        }
+        /* Description */
+        .description-body { color: #4b5563; font-size: 0.95rem; line-height: 1.75; }
     </style>
 </head>
 
@@ -89,7 +42,6 @@
             <span class="text-2xl font-black tracking-tight leading-none text-black">GATEWAY</span>
             <span class="text-[0.55rem] tracking-[0.2em] font-bold uppercase text-gray-500">Metal Detectors</span>
         </a>
-
         <div class="hidden lg:flex items-center space-x-6">
             <a href="../index.html" class="nav-link">Home</a>
             <span class="text-gray-300">-</span>
@@ -103,89 +55,100 @@
             <span class="text-gray-300">-</span>
             <a href="../index.html#contact" class="nav-link">Contact</a>
         </div>
-
         <div class="hidden md:flex items-center font-bold text-sm text-gray-800">
-            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-            </svg>
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
             +1 (905) 870-8689
         </div>
     </nav>
 
     <div class="h-20 w-full"></div>
 
-    <!-- Main Content Area populated by JS -->
-    <main class="w-full flex-grow flex flex-col items-center">
-        <!-- Loading Spinner -->
-        <div id="loading" class="w-full h-[60vh] flex items-center justify-center">
-            <div class="w-12 h-12 rounded-full border-2 border-dashed border-gray-400 animate-spin"></div>
-        </div>
+    <!-- Loading Spinner -->
+    <div id="loading" class="w-full h-[60vh] flex items-center justify-center">
+        <div class="w-12 h-12 rounded-none border-2 border-dashed border-gray-400 animate-spin"></div>
+    </div>
 
-        <!-- Product Container -->
-        <div id="product-container" class="hidden w-full max-w-[1280px] mx-auto px-6 md:px-16 py-12">
-            
-            <!-- Breadcrumbs -->
-            <div class="w-full flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-400 mb-12">
+    <!-- Main Product Container -->
+    <main id="product-container" class="hidden w-full flex-grow">
+        <div class="max-w-[1280px] mx-auto px-6 md:px-16 py-12 w-full">
+
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-400 mb-10">
                 <a href="../index.html" class="hover:text-black transition-colors">Home</a>
                 <span>/</span>
-                <span id="breadcrumb-brand" class="hover:text-black transition-colors cursor-pointer">Brand</span>
+                <span id="breadcrumb-brand" class="hover:text-black transition-colors cursor-pointer"></span>
                 <span>/</span>
-                <span id="breadcrumb-name" class="text-black">Product Name</span>
+                <span id="breadcrumb-name" class="text-black"></span>
             </div>
 
-            <!-- Hero Section -->
+            <!-- Hero: Image Gallery + Product Info -->
             <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-20 w-full">
-                <!-- Image -->
-                <div class="w-full lg:w-1/2 flex items-center justify-center p-8 border border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] rounded-none bg-white min-h-[400px]">
-                    <img id="product-image" src="" alt="Product Image" class="max-w-full max-h-[500px] object-contain">
+
+                <!-- LEFT: Image Gallery -->
+                <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                    <div class="gallery-main">
+                        <img id="gallery-main-img" src="" alt="Product Image">
+                    </div>
+                    <!-- Thumbnails Row -->
+                    <div id="gallery-thumbs" class="flex flex-row gap-2 overflow-x-auto pb-1"></div>
                 </div>
-                
-                <!-- Info -->
+
+                <!-- RIGHT: Info -->
                 <div class="w-full lg:w-1/2 flex flex-col justify-center">
-                    <p id="product-brand" class="text-gray-400 text-xs font-black uppercase tracking-[0.3em] mb-4">Manufacturer</p>
-                    <h1 id="product-title" class="text-black font-bold leading-tight mb-6" style="font-family: Georgia, serif; font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em;">
-                        Product Name
-                    </h1>
-                    
+                    <p id="product-brand" class="text-gray-400 text-xs font-black uppercase tracking-[0.3em] mb-4"></p>
+                    <h1 id="product-title" class="text-black font-bold leading-tight mb-6" style="font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -0.02em;"></h1>
                     <div class="h-[2px] w-12 bg-black mb-8"></div>
-                    
+
                     <div class="flex items-end gap-4 mb-4">
-                        <span id="product-price" class="text-3xl md:text-4xl font-black tracking-tight text-black">$0.00</span>
+                        <span id="product-price" class="text-3xl md:text-4xl font-black tracking-tight text-black"></span>
                         <span class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-1 border-b border-gray-200">Regular MSRP</span>
                     </div>
 
                     <div class="flex items-center gap-3 mb-10">
-                        <div id="stock-indicator" class="w-2.5 h-2.5 rounded-none bg-black"></div>
+                        <div id="stock-indicator" class="w-2.5 h-2.5 bg-black"></div>
                         <span id="product-stock" class="text-xs font-black uppercase tracking-widest text-gray-600">Checking Stock...</span>
                     </div>
 
-                    <p id="product-short-desc" class="text-gray-500 text-base font-medium leading-relaxed mb-12 max-w-lg">
-                        Loading brief description...
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="contact.html" class="flex-1 bg-black text-white p-5 flex items-center justify-between group hover:bg-gray-900 transition-all rounded-none shadow-xl hover:-translate-y-1">
-                            <div class="text-left">
-                                <span class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1">Inquire About</span>
-                                <span class="block font-bold uppercase tracking-widest text-sm">Contact Us</span>
-                            </div>
-                            <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        </a>
-                    </div>
+                    <!-- Contact Us Button -->
+                    <a href="contact.html" class="inline-flex items-center justify-between bg-black text-white px-6 py-5 group hover:bg-gray-900 transition-all hover:-translate-y-1 shadow-xl max-w-xs">
+                        <div class="text-left">
+                            <span class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1">Inquire About This Product</span>
+                            <span class="block font-bold uppercase tracking-widest text-sm">Contact Us</span>
+                        </div>
+                        <svg class="w-5 h-5 ml-6 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </a>
                 </div>
             </div>
 
-            <!-- Specifications / Detailed Features -->
-            <div class="w-full max-w-4xl border-t border-gray-200 pt-16 mb-20">
-                <div class="flex items-center gap-4 mb-10">
+            <!-- Description Section -->
+            <div id="description-section" class="hidden w-full border-t border-gray-200 pt-16 mb-16">
+                <div class="flex items-center gap-4 mb-8">
                     <span class="w-2 h-8 bg-black"></span>
-                    <h2 class="text-2xl font-black uppercase tracking-widest text-black">Specifications & Features</h2>
+                    <h2 class="text-2xl font-black uppercase tracking-widest text-black">Product Description</h2>
                 </div>
-                
-                <div id="product-specs" class="generated-content text-gray-600 text-base">
-                    <!-- HTML content from radioworld scraper injected here -->
-                    No detailed specifications available.
+                <div id="product-description" class="description-body max-w-4xl"></div>
+            </div>
+
+            <!-- Specifications Section -->
+            <div id="specs-section" class="hidden w-full border-t border-gray-200 pt-16 mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="w-2 h-8 bg-black"></span>
+                    <h2 class="text-2xl font-black uppercase tracking-widest text-black">Technical Specifications</h2>
                 </div>
+                <div class="max-w-4xl overflow-x-auto">
+                    <table class="specs-table" id="specs-table">
+                        <tbody id="specs-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Fallback Specs (from scraper HTML) -->
+            <div id="fallback-specs-section" class="hidden w-full border-t border-gray-200 pt-16 mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="w-2 h-8 bg-black"></span>
+                    <h2 class="text-2xl font-black uppercase tracking-widest text-black">Specifications &amp; Features</h2>
+                </div>
+                <div id="product-specs" class="max-w-4xl text-gray-600 text-base"></div>
             </div>
 
         </div>
@@ -193,16 +156,13 @@
 
     <!-- Footer -->
     <footer class="bg-[#050505] text-white pt-24 pb-16 w-full mt-auto">
-        <!-- Exact same footer as homepage -->
         <div class="max-w-[1280px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-4 gap-12">
             <div class="col-span-1 md:col-span-2 md:pr-16">
                 <a href="../index.html" class="flex flex-col items-start gap-0 hover:opacity-80 transition cursor-pointer mb-6">
                     <span class="text-3xl font-black tracking-tight leading-none text-white block">GATEWAY</span>
                     <span class="text-[0.6rem] tracking-[0.25em] font-bold uppercase text-gray-400 block mt-1">Metal Detectors</span>
                 </a>
-                <p class="text-xs text-gray-400 font-semibold leading-relaxed mb-8">
-                    <span class="text-white font-bold">ABOUT US:</span> Hamilton's dedicated treasure hunting hub.
-                </p>
+                <p class="text-xs text-gray-400 font-semibold leading-relaxed mb-8"><span class="text-white font-bold">ABOUT US:</span> Hamilton's dedicated treasure hunting hub, founded on a lifelong passion for discovery.</p>
                 <p class="text-[10px] text-gray-600 font-semibold">&copy; 2026 Metal Detectors Legacy.</p>
             </div>
             <div>
@@ -212,6 +172,7 @@
                     <li><a href="../index.html#about" class="hover:text-white transition cursor-pointer inline-block">About Us</a></li>
                     <li><a href="events.html" class="hover:text-white transition cursor-pointer inline-block">Events</a></li>
                     <li><a href="community-map.html" class="hover:text-white transition cursor-pointer inline-block">Maps</a></li>
+                    <li><a href="../index.html#contact" class="hover:text-white transition cursor-pointer inline-block">Contact</a></li>
                 </ul>
             </div>
             <div class="text-[13px] font-semibold text-gray-400 flex flex-col">
@@ -219,90 +180,170 @@
                 <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-gray-500">📞</span> +1(905)870-8689</p>
                 <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-gray-500">📍</span> Hamilton, Ontario, Canada.</p>
                 <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-gray-500">✉️</span> info@gatewaydetectors.com</p>
+                <div class="flex items-center mt-auto w-full md:w-11/12 border border-gray-800 rounded bg-[#111] overflow-hidden">
+                    <input type="email" placeholder="Subscribe to newsletter" class="bg-transparent text-white px-4 py-2 text-[11px] w-full focus:outline-none placeholder-gray-500">
+                    <button class="bg-white text-black px-4 py-2 font-black leading-none hover:bg-gray-200 transition text-sm">›</button>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const slug = urlParams.get('id');
-
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('id');
             const loading = document.getElementById('loading');
             const container = document.getElementById('product-container');
 
             if (!slug) {
-                loading.innerHTML = '<p class="text-red-500 font-bold uppercase tracking-widest">Error: Product ID not found.</p>';
+                loading.innerHTML = '<p class="text-red-500 font-bold uppercase tracking-widest">Error: No product ID specified.</p>';
                 return;
             }
 
             try {
-                // Fetch the live inventory JSON
-                const response = await fetch('../scripts/live_inventory.json');
-                if (!response.ok) throw new Error("Failed to load inventory data");
-                const inventory = await response.json();
+                // Load both inventory + local product data in parallel
+                const [invRes, pdRes] = await Promise.all([
+                    fetch('../scripts/live_inventory.json'),
+                    fetch('../scripts/product_data.json')
+                ]);
 
-                // Find the product by slug
+                const inventory = await invRes.json();
+                const productData = pdRes.ok ? await pdRes.json() : {};
+
                 const product = inventory.find(p => p.slug === slug);
-
                 if (!product) {
-                    loading.innerHTML = '<p class="text-red-500 font-bold uppercase tracking-widest">Error: Product not found.</p>';
+                    loading.innerHTML = '<p class="text-red-500 font-bold uppercase tracking-widest">Product not found.</p>';
                     return;
                 }
 
-                // Populate data
+                // Local enrichment data (matched by slug or partial)
+                const localData = findLocalData(productData, slug, product.name);
+
+                // ── Title/Brand ──
                 document.title = `${product.name} - Gateway Metal Detectors`;
-                
                 document.getElementById('breadcrumb-brand').textContent = product.brand;
-                document.getElementById('breadcrumb-brand').href = `shop.html?brand=${product.brand}`;
                 document.getElementById('breadcrumb-name').textContent = product.name;
-
-                // Handle image (use a placeholder if missing)
-                document.getElementById('product-image').src = product.image || 'https://via.placeholder.com/500x500?text=No+Image';
-
                 document.getElementById('product-brand').textContent = product.brand;
                 document.getElementById('product-title').textContent = product.name;
-                document.getElementById('product-price').textContent = product.price;
+                document.getElementById('product-price').textContent = product.price || 'Call for Price';
 
-                // Handle description logic
-                if (product.description_text) {
-                     document.getElementById('product-short-desc').textContent = product.description_text;
-                } else {
-                     document.getElementById('product-short-desc').textContent = "A premium metal detector engineered for top performance.";
-                }
-
-                // Handle Specs logic
-                if (product.specs_html && product.specs_html.trim() !== '') {
-                    document.getElementById('product-specs').innerHTML = product.specs_html;
-                } else {
-                    document.getElementById('product-specs').innerHTML = '<p class="text-gray-400">Detailed specifications are currently unavailable.</p>';
-                }
-
-
-                // Handle stock UI
+                // ── Stock ──
                 const stockEl = document.getElementById('product-stock');
                 const dotEl = document.getElementById('stock-indicator');
                 stockEl.textContent = product.stock;
-                
                 if (product.stock.toLowerCase().includes('in stock')) {
-                    dotEl.classList.remove('bg-black');
-                    dotEl.classList.add('bg-green-500');
+                    dotEl.classList.replace('bg-black', 'bg-green-500');
                     stockEl.classList.add('text-green-600');
-                } else if (product.stock.toLowerCase().includes('out of stock') || product.stock.toLowerCase().includes('sold')) {
-                    dotEl.classList.remove('bg-black');
-                    dotEl.classList.add('bg-red-500');
+                } else if (product.stock.toLowerCase().includes('out') || product.stock.toLowerCase().includes('sold')) {
+                    dotEl.classList.replace('bg-black', 'bg-red-500');
                     stockEl.classList.add('text-red-600');
+                } else {
+                    dotEl.classList.replace('bg-black', 'bg-yellow-400');
+                    stockEl.classList.add('text-yellow-600');
                 }
 
-                // Show container
+                // ── Image Gallery ──
+                const galleryMain = document.getElementById('gallery-main-img');
+                const thumbsContainer = document.getElementById('gallery-thumbs');
+
+                // Gather images: local folder images first, then fallback to inventory image
+                let images = [];
+                if (localData && localData.images && localData.images.length > 0) {
+                    images = localData.images;
+                } else if (product.image) {
+                    images = [product.image];
+                }
+
+                if (images.length > 0) {
+                    galleryMain.src = images[0];
+                    galleryMain.alt = product.name;
+
+                    if (images.length > 1) {
+                        images.forEach((src, i) => {
+                            const thumb = document.createElement('div');
+                            thumb.className = 'gallery-thumb' + (i === 0 ? ' active' : '');
+                            thumb.innerHTML = `<img src="${src}" alt="Image ${i+1}" loading="lazy">`;
+                            thumb.addEventListener('click', () => {
+                                galleryMain.style.opacity = '0';
+                                setTimeout(() => {
+                                    galleryMain.src = src;
+                                    galleryMain.style.opacity = '1';
+                                }, 150);
+                                document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+                                thumb.classList.add('active');
+                            });
+                            thumbsContainer.appendChild(thumb);
+                        });
+                    }
+                } else {
+                    galleryMain.src = 'https://via.placeholder.com/500x500?text=No+Image';
+                }
+
+                // ── Description ──
+                const desc = (localData && localData.description) ? localData.description : (product.description_text || '');
+                if (desc && desc.trim()) {
+                    // Clean up and display description
+                    const cleaned = desc.split('|').map(s => s.trim()).filter(s => s && s.length > 10);
+                    const descEl = document.getElementById('product-description');
+                    descEl.innerHTML = cleaned.map(p => `<p class="mb-4">${p}</p>`).join('');
+                    document.getElementById('description-section').classList.remove('hidden');
+                }
+
+                // ── Specifications ──
+                if (localData && localData.detailed_specs && Object.keys(localData.detailed_specs).length > 0) {
+                    const tbody = document.getElementById('specs-tbody');
+                    const specs = localData.detailed_specs;
+                    let rows = '';
+                    for (const [key, val] of Object.entries(specs)) {
+                        if (!key.trim() || !val.trim()) continue;
+                        rows += `<tr><td>${key}</td><td>${val}</td></tr>`;
+                    }
+                    if (rows) {
+                        tbody.innerHTML = rows;
+                        document.getElementById('specs-section').classList.remove('hidden');
+                    }
+                } else if (product.specs_html && product.specs_html.trim()) {
+                    // Fallback: use scraped HTML from radioworld
+                    document.getElementById('product-specs').innerHTML = product.specs_html;
+                    document.getElementById('fallback-specs-section').classList.remove('hidden');
+                }
+
                 loading.style.display = 'none';
                 container.classList.remove('hidden');
 
-            } catch (error) {
-                console.error("Error loading product data:", error);
+            } catch (err) {
+                console.error('Product load error:', err);
                 loading.innerHTML = '<p class="text-red-500 font-bold uppercase tracking-widest">Failed to load product details.</p>';
             }
         });
+
+        /**
+         * Try to match local product data to the current product slug or name.
+         * Handles fuzzy matching since folder slugs may not exactly match live_inventory slugs.
+         */
+        function findLocalData(productData, slug, name) {
+            // Direct slug match
+            if (productData[slug]) return productData[slug];
+
+            // Try stripping trailing segments: "vortex-vx-5-metal-detector" → "vortex-vx-5"
+            const parts = slug.split('-');
+            for (let len = parts.length - 1; len >= 2; len--) {
+                const shorter = parts.slice(0, len).join('-');
+                if (productData[shorter]) return productData[shorter];
+            }
+
+            // Try matching by name keywords
+            const nameLower = name.toLowerCase();
+            for (const [key, val] of Object.entries(productData)) {
+                const keyWords = key.replace(/-/g, ' ');
+                // Check if the key words appear inside the product name
+                if (nameLower.includes(keyWords) || keyWords.split(' ').every(w => w.length > 2 && nameLower.includes(w))) {
+                    return val;
+                }
+            }
+
+            return null;
+        }
     </script>
 </body>
 </html>
