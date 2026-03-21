@@ -42,38 +42,43 @@ def generate_sticky_proxy():
     return None
 
 def harvest_token(target_url: str, proxy_str: str) -> dict:
-    """Part 1: Camoufox harvest cf_clearance + UA"""
+    """Part 1: Camoufox harvest cf_clearance + UA using xvfb-run on Hostinger"""
+    import subprocess
     token_data = {}
-    proxy_id = uuid.uuid4().hex[:16]
-    redis_key = f"radioworld_token_{proxy_id}"
     
+    script = f'''
+import json
+import time
+from camoufox import Camoufox as CamouFox
+try:
+    with CamouFox(proxy="{proxy_str or ''}", headless=False, humanize=True, os="windows") as browser:
+        page = browser.new_page()
+        page.goto("{target_url}")
+        time.sleep(10)  # Turnstile solve
+        cookies = page.context.cookies()
+        cf = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
+        ua = page.evaluate("navigator.userAgent")
+        if cf:
+            with open("token_buffer.json", "w") as f:
+                json.dump({{"cf_clearance": cf, "user_agent": ua, "sticky_proxy": "{proxy_str or ''}"}}, f)
+except Exception as e:
+    import builtins
+    builtins.print("CamouFox error:", e)
+'''
     try:
-        with CamouFox(proxy=proxy_str, headless=False, humanize=True, os="windows") as browser:
-            page = browser.new_page()
-            page.goto(target_url)
-            time.sleep(10)  # Turnstile solve
-            
-            cookies = page.context.cookies()
-            cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
-            
-            # user_agent from page evaluation or browser
-            user_agent = page.evaluate("navigator.userAgent")
-            
-            if cf_clearance and user_agent:
-                token_data = {
-                    'cf_clearance': cf_clearance,
-                    'user_agent': user_agent,
-                    'sticky_proxy': proxy_str,
-                    'expires_at': (datetime.now() + timedelta(hours=4)).isoformat()
-                }
-                
-                
-                # JSON buffer replacement for Redis
-                with open('token_buffer.json', 'w') as f:
-                    json.dump(token_data, f)
-                logger.info(f"Token harvested → JSON Buffer: token_buffer.json")
+        if os.name == 'nt':
+            subprocess.run([sys.executable], input=script, text=True, check=True)
+        else:
+            subprocess.run(['xvfb-run', '-a', '--server-args=-screen 0 1024x768x24', 'python3'], input=script, text=True, check=True)
     except Exception as e:
-        logger.error(f"Harvest failed: {e}")
+        logger.error(f"Harvest subprocess failed: {e}")
+
+    try:
+        with open('token_buffer.json', 'r') as f:
+            token_data = json.load(f)
+        logger.info("Token harvested → JSON Buffer: token_buffer.json")
+    except Exception as e:
+        logger.error(f"No token written to JSON Buffer: {e}")
     
     return token_data
 
