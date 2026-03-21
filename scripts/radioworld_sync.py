@@ -49,12 +49,15 @@ def harvest_token(target_url: str, proxy_str: str) -> dict:
     
     try:
         with CamouFox(proxy=proxy_str, headless=False, humanize=True, os="windows") as browser:
-            browser.get(target_url)
+            page = browser.new_page()
+            page.goto(target_url)
             time.sleep(10)  # Turnstile solve
             
-            cookies = browser.get_cookies()
+            cookies = page.context.cookies()
             cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
-            user_agent = browser.user_agent
+            
+            # user_agent from page evaluation or browser
+            user_agent = page.evaluate("navigator.userAgent")
             
             if cf_clearance and user_agent:
                 token_data = {
@@ -89,7 +92,18 @@ def replay_request(redis_key: str, target_url: str) -> str:
     
     with Session() as session:
         session.cookies.set('cf_clearance', cf_clearance)
-        headers = {'User-Agent': user_agent}
+        if '/api/' in target_url:
+            headers = {
+                'User-Agent': user_agent,
+                'Accept': 'application/json',
+                'api-key': 'zs-search',
+                'Referer': 'https://www.radioworld.ca/metal-detecting/z-md'
+            }
+        else:
+            headers = {
+                'User-Agent': user_agent,
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            }
         resp = session.get(target_url, headers=headers, impersonate="chrome120", proxy=proxy_str, timeout=45)
         logger.info(f"Replay {target_url} → {resp.status_code}")
         return resp.text
@@ -102,41 +116,91 @@ def lognormal_jitter(mean=8.0, variance=1.5):
     return max(1.0, min(90.0, delay))  # Bounds
 
 # === ORIGINAL SCRAPING LOGIC (PRESERVED) ===
-def parse_inventory(html_or_json: str, brand: str) -> list:
-    """Exact original RadioWorld parsing logic"""
+def parse_inventory(html_or_json: str, brand: str, redis_key: str) -> list:
+    """Exact original RadioWorld parsing logic with HTML fetching"""
     inventory = []
     
-    if html_or_json.startswith('{'):  # API JSON
-        data = json.loads(html_or_json)
-        items = data.get('items', [])
-        
-        for prod in items:
-            name = prod.get('shortDescription') or prod.get('name', 'Unknown')
-            price_data = prod.get('price', {})
-            price_amount = price_data.get('listPrice') or price_data.get('amount')
-            price_str = f"${price_amount}" if price_amount else "Call for Price"
-            
-            stock_data = prod.get('stock', {})
-            stock_display = stock_data.get('display', {}).get('message', '')
-            stock_status = "In Stock" if "In Stock" in stock_display or stock_data.get('available', 0) > 0 else "Out of Stock"
-            
-            url_slug = prod.get('url', '')
-            prod_url = f"https://www.radioworld.ca{url_slug}" if url_slug else ""
-            clean_slug = url_slug.split('/')[-1] if url_slug else name.replace(' ', '-').lower()
-            
-            images = prod.get('images', [])
-            image_url = images[0].get('urls', {}).get('large', '') if images else ""
-            
-            inventory.append({
-                "brand": "XP" if "XP " in brand else brand,
-                "name": name, "slug": clean_slug, "price": price_str,
-                "stock": stock_status, "url": prod_url, "image": image_url
-            })
-    else:  # HTML fallback (specs)
-        soup = BeautifulSoup(html_or_json, 'html.parser')
-        # Your original BS4 logic here if needed
-        pass
+    if not html_or_json or not html_or_json.startswith('{'):
+        return []
+
+    data = json.loads(html_or_json)
+    items = data.get('items', [])
     
+    for prod in items:
+        name = prod.get('shortDescription') or prod.get('name', 'Unknown')
+        
+        # Original price logic
+        price_data = prod.get('price', {})
+        price_amount = price_data.get('listPrice')
+        if price_amount is None:
+            price_amount = price_data.get('amount')
+            
+        price_str = f"$ {price_amount}" if price_amount is not None else "Call for Price"
+        
+        stock_data = prod.get('stock', {})
+        stock_display = stock_data.get('display', {}).get('message', '')
+        if "In Stock" in stock_display or stock_data.get('available', 0) > 0:
+            stock_status = "In Stock"
+        elif "Out Of Stock" in stock_display or "Sold Out" in stock_display:
+            stock_status = "Out of Stock"
+        else:
+            stock_status = stock_display if stock_display else "Unknown"
+        
+        url_slug = prod.get('url', '')
+        prod_url = url_slug if url_slug.startswith('http') else (f"https://www.radioworld.ca{url_slug}" if url_slug else "https://www.radioworld.ca/manufacturer/")
+        
+        clean_slug = url_slug.split('/')[-1] if url_slug else name.replace(' ', '-').lower()
+        
+        image_url = ""
+        images = prod.get('images', [])
+        if images and isinstance(images, list) and len(images) > 0:
+            try:
+                image_url = images[0].get('thumbnails', {}).get('small', {}).get('src', '')
+                large_image_url = images[0].get('urls', {}).get('large', '')
+                if large_image_url:
+                    image_url = large_image_url
+            except:
+                pass
+                
+        # Fetch actual product HTML to grab descriptions/specs
+        specs_html = ""
+        description_text = ""
+        try:
+            time.sleep(random.uniform(0.5, 1.0))
+            page_resp_text = replay_request(redis_key, prod_url)
+            if page_resp_text:
+                soup = BeautifulSoup(page_resp_text, 'html.parser')
+                desc_tab = soup.find(id='tab-description')
+                if desc_tab:
+                    table = desc_tab.find('table')
+                    ul = desc_tab.find('ul')
+                    if table:
+                        specs_html = str(table)
+                    elif ul:
+                        specs_html = str(ul)
+                    else:
+                        specs_html = str(desc_tab)
+                    description_text = desc_tab.text.strip()
+                else:
+                    article = soup.find('article', class_='productView-description')
+                    if article:
+                        specs_html = str(article)
+                        description_text = article.text.strip()
+        except Exception as e:
+            logger.warning(f"Failed to fetch detailed HTML for {name}: {e}")
+            
+        inventory.append({
+            "brand": "XP" if "XP " in brand else brand,
+            "name": name, 
+            "slug": clean_slug, 
+            "price": price_str,
+            "stock": stock_status, 
+            "url": prod_url, 
+            "image": image_url,
+            "specs_html": specs_html,
+            "description_text": description_text[:500] + "..." if len(description_text) > 500 else description_text
+        })
+        
     return inventory
 
 def atomic_dump(data, filepath):
@@ -167,7 +231,7 @@ def main():
         html = replay_request(redis_key, api_url)
         time.sleep(lognormal_jitter())  # Human jitter
         
-        brand_inventory = parse_inventory(html, brand)
+        brand_inventory = parse_inventory(html, brand, redis_key)
         inventory.extend(brand_inventory)
     
     if len(inventory) < EXPECTED_THRESHOLD:
