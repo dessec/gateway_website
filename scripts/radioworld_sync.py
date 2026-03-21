@@ -20,7 +20,6 @@ from datetime import datetime, timedelta
 from loguru import logger
 # import redis
 from bs4 import BeautifulSoup
-from camoufox import Camoufox as CamouFox  # Keep original name for compatibility in script
 from curl_cffi import requests  # pip install curl-cffi
 from curl_cffi.requests import Session
 
@@ -36,67 +35,16 @@ IPROYAL_AUTH = "your_iproyal_username:password"  # Residential proxy creds
 
 logger.add(LOG_FILE, level="INFO", rotation="1 week")
 
-# === HYBRID SOLVER CORE (Qwen Parts 1-3) ===
+# === CLOUDFLARE BYPASS CORE ===
 def generate_sticky_proxy():
-    """Part 1: IPRoyal sticky session ID"""
+    """Part 1: IPRoyal sticky session ID (Not used by default)"""
     return None
 
-def harvest_token(target_url: str, proxy_str: str) -> dict:
-    """Part 1: Camoufox harvest cf_clearance + UA using xvfb-run on Hostinger"""
-    import subprocess
-    token_data = {}
-    
-    script = f'''
-import json
-import time
-from camoufox import Camoufox as CamouFox
-try:
-    with CamouFox(proxy="{proxy_str or ''}", headless=False, humanize=True, os="windows") as browser:
-        page = browser.new_page()
-        page.goto("{target_url}")
-        time.sleep(10)  # Turnstile solve
-        cookies = page.context.cookies()
-        cf = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
-        ua = page.evaluate("navigator.userAgent")
-        if cf:
-            with open("token_buffer.json", "w") as f:
-                json.dump({{"cf_clearance": cf, "user_agent": ua, "sticky_proxy": "{proxy_str or ''}"}}, f)
-except Exception as e:
-    import builtins
-    builtins.print("CamouFox error:", e)
-'''
-    try:
-        if os.name == 'nt':
-            subprocess.run([sys.executable], input=script, text=True, check=True)
-        else:
-            subprocess.run(['xvfb-run', '-a', '--server-args=-screen 0 1024x768x24', 'python3'], input=script, text=True, check=True)
-    except Exception as e:
-        logger.error(f"Harvest subprocess failed: {e}")
-
-    try:
-        with open('token_buffer.json', 'r') as f:
-            token_data = json.load(f)
-        logger.info("Token harvested → JSON Buffer: token_buffer.json")
-    except Exception as e:
-        logger.error(f"No token written to JSON Buffer: {e}")
-    
-    return token_data
-
-def replay_request(redis_key: str, target_url: str) -> str:
-    """Part 2: curl_cffi replay w/ JA4 pinning"""
-    try:
-        with open('token_buffer.json', 'r') as f:
-            data = json.load(f)
-    except Exception as e:
-        logger.error(f"No token in JSON buffer: {e}")
-        return None
-    
-    cf_clearance = data.get('cf_clearance', '')
-    user_agent = data.get('user_agent', '')
-    proxy_str = data.get('sticky_proxy', '')
+def fetch_url(target_url: str, proxy_str: str = None) -> str:
+    """curl_cffi fetch w/ JA4 pinning (No Browser)"""
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     
     with Session() as session:
-        session.cookies.set('cf_clearance', cf_clearance)
         if '/api/' in target_url:
             headers = {
                 'User-Agent': user_agent,
@@ -109,9 +57,14 @@ def replay_request(redis_key: str, target_url: str) -> str:
                 'User-Agent': user_agent,
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             }
-        resp = session.get(target_url, headers=headers, impersonate="chrome120", proxy=proxy_str, timeout=45)
-        logger.info(f"Replay {target_url} → {resp.status_code}")
-        return resp.text
+            
+        try:
+            resp = session.get(target_url, headers=headers, impersonate="chrome120", proxy=proxy_str, timeout=45)
+            logger.info(f"Fetch {target_url} → {resp.status_code}")
+            return resp.text
+        except Exception as e:
+            logger.error(f"Fetch error {target_url}: {e}")
+            return ""
 
 def lognormal_jitter(mean=8.0, variance=1.5):
     """Part 3: Human-like delays (heavy-tailed)"""
@@ -121,7 +74,7 @@ def lognormal_jitter(mean=8.0, variance=1.5):
     return max(1.0, min(90.0, delay))  # Bounds
 
 # === ORIGINAL SCRAPING LOGIC (PRESERVED) ===
-def parse_inventory(html_or_json: str, brand: str, redis_key: str) -> list:
+def parse_inventory(html_or_json: str, brand: str) -> list:
     """Exact original RadioWorld parsing logic with HTML fetching"""
     inventory = []
     
@@ -172,7 +125,7 @@ def parse_inventory(html_or_json: str, brand: str, redis_key: str) -> list:
         description_text = ""
         try:
             time.sleep(random.uniform(0.5, 1.0))
-            page_resp_text = replay_request(redis_key, prod_url)
+            page_resp_text = fetch_url(prod_url)
             if page_resp_text:
                 soup = BeautifulSoup(page_resp_text, 'html.parser')
                 desc_tab = soup.find(id='tab-description')
@@ -221,22 +174,19 @@ def atomic_dump(data, filepath):
 
 # === MAIN LOOP ===
 def main():
-    logger.info("=== RadioWorld Stealth Sync v2 Starting ===")
+    logger.info("RadioWorld Stealth Sync v2 - curl_cffi ONLY")
     
-    # Harvest fresh token
     proxy_str = generate_sticky_proxy()
-    harvest_token("https://www.radioworld.ca/metal-detecting/z-md", proxy_str)
-    redis_key = "radioworld_token_*"  # Match latest
     
     inventory = []
     for brand in BRANDS:
         brand_encoded = urllib.parse.quote_plus(brand)
         api_url = f"https://www.radioworld.ca/api/search/3/Z-MD?limit=100&termsFilters%5B{brand_encoded}%5D%5Bkey%5D={brand_encoded}&termsFilters%5B{brand_encoded}%5D%5Bname%5D=manufacturer"
         
-        html = replay_request(redis_key, api_url)
+        html = fetch_url(api_url, proxy_str)
         time.sleep(lognormal_jitter())  # Human jitter
         
-        brand_inventory = parse_inventory(html, brand, redis_key)
+        brand_inventory = parse_inventory(html, brand)
         inventory.extend(brand_inventory)
     
     if len(inventory) < EXPECTED_THRESHOLD:
