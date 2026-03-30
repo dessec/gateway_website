@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gateway Metal Detectors</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 2px;
+            color: #1f2937;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black w-full overflow-x-hidden flex flex-col min-h-screen selection:bg-black selection:text-white">
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 right-0 h-20 bg-white border-b border-gray-100 shadow-sm z-50 flex items-center justify-between px-6 md:px-12 w-full">
+        <!-- Logo -->
+        <a href="../index.html" class="flex flex-col items-start gap-0 hover:opacity-80 transition cursor-pointer">
+            <span class="text-2xl font-black tracking-tight leading-none text-black">GATEWAY</span>
+            <span class="text-[0.55rem] tracking-[0.2em] font-bold uppercase text-gray-500">Metal Detectors</span>
+        </a>
+
+        <!-- Center Nav Links -->
+        <div class="hidden lg:flex items-center space-x-6">
+            <a href="../index.html" class="nav-link">Home</a>
+            <span class="text-gray-300">-</span>
+            <a href="../index.html#brands" class="nav-link">Shop</a>
+            <span class="text-gray-300">-</span>
+            <a href="about.html" class="nav-link active">About Us</a>
+            <span class="text-gray-300">-</span>
+            <a href="events.html" class="nav-link">Events</a>
+            <span class="text-gray-300">-</span>
+            <a href="community-map.html" class="nav-link">Maps</a>
+            <span class="text-gray-300">-</span>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="hidden md:flex items-center font-bold text-sm text-gray-800">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            +1 (905) 870-8689
+        </div>
+    </nav>
+    <div class="h-20 w-full"></div>
+
+    <!-- Store Photos Strip -->
+    <div class="w-full bg-white overflow-hidden border-b border-gray-100">
+        <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row">
+            <!-- Sign image - takes 40% width and full height to feature it -->
+            <div class="w-full md:w-2/5 h-64 md:h-80 overflow-hidden relative flex items-center justify-center bg-white border-r border-gray-100">
+                <img src="../assets/images/store_sign.png"
+                     alt="Gateway Metal Detectors Sign"
+                     class="w-full h-full object-contain p-8 hover:scale-105 transition-transform duration-500"
+                     onerror="this.parentElement.classList.add('hidden')">
+            </div>
+            <!-- Booth photo -->
+            <div class="w-full md:w-3/10 h-64 md:h-80 overflow-hidden relative border-r border-gray-100">
+                <img src="../assets/images/store_booth.png"
+                     alt="Gateway Metal Detectors Store Booth"
+                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                     onerror="this.parentElement.classList.add('hidden')">
+            </div>
+            <!-- Interior / detector wall -->
+            <div class="w-full md:w-3/10 h-64 md:h-80 overflow-hidden relative">
+                <img src="../assets/images/store_interior.png"
+                     alt="Gateway Metal Detectors Store Interior"
+                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                     onerror="this.parentElement.classList.add('hidden')">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main About Section -->
+    <main class="w-full max-w-[1280px] mx-auto px-6 py-20 flex-grow">
+        
+        <!-- 1. Business Introduction -->
+        <div class="mb-20 text-center max-w-4xl mx-auto flex flex-col items-center">
+            <p class="text-[10px] font-black uppercase tracking-[0.35em] text-gray-400 mb-6">About Gateway</p>
+            <h1 class="text-5xl md:text-6xl font-black text-black leading-none mb-10 tracking-tight" style="font-family: Georgia, serif;">
+                About Us
+            </h1>
+            <div class="h-[3px] w-16 bg-black mb-10"></div>
+            <p class="text-lg md:text-xl text-gray-700 font-medium leading-relaxed mb-6">
+                Gateway Metal Detectors is Hamilton's dedicated treasure hunting hub, founded on a lifelong passion for discovery. We carry professional-grade equipment from the world's leading brands — Nokta, Minelab, XP, and Garrett. Whether you're a first-time hobbyist or a seasoned detectorist, we have the gear and the knowledge to back it up. Serving Southern Ontario and shipping across Canada and worldwide.
+            </p>
+        </div>
+
+        <!-- 2. Embedded Map & 3. Contact Details Block -->
+        <div class="flex flex-col lg:flex-row gap-12 items-stretch bg-white border border-gray-100 shadow-xl p-6 md:p-12 mb-16 relative overflow-hidden">
+            
+            <div class="w-full lg:w-1/2">
+                <!-- 2. Embedded Map -->
+                <!-- Use a dark map style via CSS filter to match the site's dark aesthetics on maps. -->
+                <div class="w-full h-[400px] lg:h-full min-h-[400px] relative overflow-hidden bg-black border border-gray-200 shadow-sm">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.1583!2d-79.8055!3d43.2505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c99a0a0a0a0a0%3A0x882c99a0a0a0a0a0!2s1565+Barton+St+E%2C+Hamilton%2C+ON+L8H+2Y3!5e0!3m2!1sen!2sca!4v1711000000000"
+                        width="100%"
+                        height="100%"
+                        style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(1.2);"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- 3. Contact Details Block -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-center px-2 md:px-8 py-6">
+                <p class="text-[10px] font-black uppercase tracking-[0.35em] text-gray-400 mb-4">Location &amp; Contact</p>
+                <h3 class="text-3xl font-black text-black uppercase tracking-tight mb-10">Gateway Metal Detectors</h3>
+                
+                <div class="space-y-6 text-base font-bold text-gray-800 flex flex-col">
+                    <div class="flex items-start gap-4">
+                        <span class="text-xl w-6 shrink-0 text-gray-500">📍</span>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Address</span>
+                            <span>1565 Barton St E, Hamilton, ON L8H 2Y3</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-xl w-6 shrink-0 text-gray-500">📞</span>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Phone</span>
+                            <a href="tel:+19058708689" class="hover:opacity-70 transition">+1 (905) 870-8689</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-xl w-6 shrink-0 text-gray-500">✉️</span>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Email</span>
+                            <a href="mailto:info@gatewaydetectors.com" class="hover:opacity-70 transition">info@gatewaydetectors.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-xl w-6 shrink-0 text-gray-500">🌐</span>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Website</span>
+                            <a href="https://gatewaymetaldetectors.com" class="hover:opacity-70 transition">gatewaymetaldetectors.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-xl w-6 shrink-0 text-gray-500">🕐</span>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Hours</span>
+                            <span>Sunday 10:00 AM – 5:00 PM <br> <span class="text-gray-500">Monday – Saturday: Closed</span></span>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-xl w-6 shrink-0 text-gray-500">💳</span>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Payment Accepted</span>
+                            <span>Visa, MasterCard, Amex, Discover<br>Interac E-Transfer (preferred)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- 4. Closing Call to Action -->
+        <div class="w-full flex justify-center mt-12 pb-12">
+            <a href="shop.html" class="inline-flex items-center gap-2 bg-black text-white font-black text-[13px] uppercase tracking-widest px-10 py-5 hover:bg-gray-800 transition-colors duration-300 shadow-xl">
+                Browse Our Shop
+                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+        
+    </main>
+
+</body>
+</html>
