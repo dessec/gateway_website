@@ -2,6 +2,13 @@
 // send_message.php
 session_start();
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'phpmailer/Exception.php';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize input
     $name = htmlspecialchars(strip_tags($_POST['name']));
@@ -21,23 +28,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Phone: $phone\n\n";
     $body .= "Message:\n$message\n";
 
-    // Build headers
-    $headers = "From: no-reply@gatewaymetaldetectors.com\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    
-    // Headers required to flag the email as urgent (Red Exclamation Mark in Hotmail/Outlook)
-    $headers .= "X-Priority: 1 (Highest)\r\n";
-    $headers .= "X-MSMail-Priority: High\r\n";
-    $headers .= "Importance: High\r\n";
+    $mail = new PHPMailer(true);
 
-    // Send email via PHP mail()
-    if (mail($to, $subject, $body, $headers)) {
+    try {
+        // Server settings
+        $mail->isSMTP();
+        
+        // TODO: Replace with your actual SMTP server details
+        $mail->Host       = 'smtp.hostinger.com'; // e.g. smtp.hostinger.com
+        $mail->SMTPAuth   = true;
+        
+        // IMPORTANT: Enter your SMTP username (usually your full email address)
+        $mail->Username   = 'no-reply@gatewaymetaldetectors.com';
+        
+        // IMPORTANT: Enter your SMTP password
+        $mail->Password   = 'YOUR_EMAIL_PASSWORD_HERE';
+        
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable TLS encryption, `ssl` also accepted
+        $mail->Port       = 465; // TCP port to connect to
+
+        // Recipients
+        $mail->setFrom('no-reply@gatewaymetaldetectors.com', 'Gateway Metal Detectors'); // Domain-based FROM address
+        $mail->addAddress($to); // Add a recipient
+
+        // Reply-To field correctly set to the visitor's email
+        $mail->addReplyTo($email, $name);
+
+        // Content
+        $mail->isHTML(false); // Set email format to plain text
+        $mail->Subject = $subject;
+        $mail->Body    = $body;
+        
+        // Headers to flag as urgent
+        $mail->addCustomHeader('X-Priority', '1 (Highest)');
+        $mail->addCustomHeader('X-MSMail-Priority', 'High');
+        $mail->addCustomHeader('Importance', 'High');
+
+        $mail->send();
+        
         // Redirect back to contact page with success parameter
         header("Location: pages/contact.html?success=true");
         exit;
-    } else {
+    } catch (Exception $e) {
         // Fallback error
-        echo "Error: Unable to send email. Please try again later or contact $to directly.";
+        echo "Error: Unable to send email. Mailer Error: {$mail->ErrorInfo}";
     }
 } else {
     // If not POST, redirect back to contact
