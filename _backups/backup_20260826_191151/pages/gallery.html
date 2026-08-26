@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Gateway Metal Detectors</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 2px;
+            color: #1f2937;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black w-full overflow-x-hidden flex flex-col min-h-screen selection:bg-black selection:text-white">
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 right-0 h-20 bg-white border-b border-gray-100 shadow-sm z-50 flex items-center justify-between px-6 md:px-12 w-full">
+        <!-- Logo -->
+        <a href="../index.html" class="flex flex-col items-start gap-0 hover:opacity-80 transition cursor-pointer">
+            <span class="text-2xl font-black tracking-tight leading-none text-black">GATEWAY</span>
+            <span class="text-[0.55rem] tracking-[0.2em] font-bold uppercase text-gray-500">Metal Detectors</span>
+        </a>
+
+        <!-- Center Nav Links -->
+        <div class="hidden lg:flex items-center space-x-6">
+            <a href="../index.html" class="nav-link">Home</a>
+            <span class="text-gray-300">-</span>
+            <a href="shop.html" class="nav-link">Shop</a>
+            <span class="text-gray-300">-</span>
+            <a href="about.html" class="nav-link">About Us</a>
+            <span class="text-gray-300">-</span>
+            <a href="events.html" class="nav-link">Events</a>
+            <span class="text-gray-300">-</span>
+            <a href="community-map.html" class="nav-link">Maps</a>
+            <span class="text-gray-300">-</span>
+            <a href="gallery.html" class="nav-link active">Gallery</a>
+            <span class="text-gray-300">-</span>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="hidden md:flex items-center font-bold text-sm text-gray-800">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            +1 (905) 870-8689
+        </div>
+    </nav>
+    <div class="h-20 w-full"></div>
+
+    <!-- Main Content: Coming Soon -->
+    <main class="w-full max-w-[1280px] mx-auto px-6 py-32 flex-grow flex flex-col items-center text-center">
+        <p class="text-[10px] font-black uppercase tracking-[0.35em] text-gray-400 mb-6">Historical Archives</p>
+        <h1 class="text-4xl md:text-6xl font-black text-black leading-none mb-10 tracking-tight" style="font-family: Georgia, serif;">
+            Photo Gallery
+        </h1>
+        <div class="h-[3px] w-16 bg-black mb-12"></div>
+        <div class="w-full columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/101091106_10220019160462909_3283220567548755968_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/101411084_275063713545352_1063526516844039590_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/101847093_673913070122518_3604443143006584832_o%20%282%29.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/10439381_935144183197573_8896456703893271904_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/10442516_935160993195892_589295361999163339_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/10592716_935144553197536_2861269893944382033_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/106458844_10217329191729546_3814408731268637996_n%20%281%29.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/106539322_10217329192129556_5082963457538378036_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/10922714_935146513197340_2204694403453376821_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/10923827_935144566530868_101073659203514294_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/10929205_935145049864153_8280793766772408631_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/10931277_935140689864589_5456338661483646468_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/116706260_10158846788471289_3198660563058512266_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/116899672_10158846788326289_7241772461801705787_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/11865344_10155927612205343_5167189221767136107_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/119065118_10223501965519296_2487596149466447182_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/119214139_3050498511727957_7277426141751482417_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/121111586_3852576861420308_2892908048377184492_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/12341486_565073846978459_257786351258910_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/12814426_10156644677750343_5172403484052626554_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/12983990_10154112832790522_2697624825868714566_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/139482324_3030531407049263_7596205060086204277_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/14203280_10157419942465343_3782482164465267156_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/142618912_10158841066711605_3409801176006282436_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/14344100_10157448344415343_474392840636704029_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/14650571_10157631125360343_9148486489592650366_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/14702233_10157605695685343_3423717386757071723_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/1475867_935160856529239_685660728075178222_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/1491663_935160849862573_1997276891573334776_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/1493230_935146646530660_6285656409076433070_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/1493230_935146693197322_6367144298062052844_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/1513775_935160963195895_5429174324766578557_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/15338701_1504498626244688_573986182090397981_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/160138546_10158813364746391_3462419775846519953_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/175524449_10225534300094050_3803131524443103774_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/20200622_115650.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/20200622_115659.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/20200830_163023.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/20201025_124200.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/2021.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/20210309_181510_HDR.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/2066.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/22491923_10154945616592371_8887042735366266420_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/22519193_10154945616777371_359238983056540684_n%20-%20Copy.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/227084844_4818411564853361_8213329457152831829_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/241126818_10227248916795016_3979614824493355366_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/277099365_738334774241744_1409062849756060070_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/277165358_738334784241743_5345086946779313119_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/277656899_10159768124020867_8343959524938581930_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/278978501_10221612501169011_8599689981401668202_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/281452844_738326440881301_8555768462805434296_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/28953693_10215615098704109_7897447517559386733_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/326546852_1644947985919349_5986544056779104959_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/48363230_10156095102043553_7895891847178878976_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/48380296_10156095101293553_7147900215721197568_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/49413425_10156010759822876_122200297836642304_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/53110474_1013511205501396_8441538412451725312_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/54214917_1013510905501426_2616450495690047488_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/5oz%20Gold%20chain%20recovered%20and%20returned.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/62208425_1076513102534539_6820782733225099264_n%20%281%29.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/62568979_10161821145240072_3340179663619096576_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/67131604_2385982498356818_538337084985835520_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/67195210_2507585155929788_2538456878891925504_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/67403703_2385982521690149_6843177989786566656_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/67408932_10219334817774761_164934208819560448_n%20%281%29.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/67643482_749940335436665_3719259021966835712_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/68504391_10219584133847507_5009711611389149184_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/68534608_888721714841991_3669329825287372800_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/68686019_10219589343937756_8795841453088571392_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/68940897_10219588593638999_463207588603887616_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/69356547_759539551143410_6288969192460779520_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/70667744_921730751541087_2861392149868445696_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/71935882_10220007367668088_6451275976511848448_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/72653345_943685962678899_5268176257861812224_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/75586169_10162708248050444_21435073672773632_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/78081166_10162708248070444_8351337562295500800_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/78509978_10162708240275444_1258853265190158336_o%20-%20Copy.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/78529138_10162748228715603_481320732706471936_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/80903045_10220802072615215_5302141430469230592_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/81515992_10220810369942643_4318249295804366848_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/82523118_10162976160000444_7258426616353652736_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/83362446_10162820510070177_7457229116203335680_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/83519589_10162976160010444_1301529464697520128_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/83595509_234035511328107_4963068369633804288_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/87142192_1049286622118832_6200772915210747904_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/88265900_4217128791646505_968885974199173120_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/89789871_10163238078085444_4373007753711452160_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/91287932_533369560923394_3621673963387617280_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/92214218_10219688081965317_2527133498263732224_o.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/93289186_3006190212760571_7469325552290103296_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/93394219_1538273099669207_3054009261156728832_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/94222147_1538273153002535_470207311554543616_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/94392768_1538273173002533_8712544599651909632_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/96238091_257463211972069_1506046757836947456_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/96265801_310193300350116_248787445204647936_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/96585376_310193333683446_863217306132545536_n.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/Brockville.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/Empty%20001.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/Empty%20009.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/Empty%20025.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/Empty%20031.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/IMG_1045.JPG" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/IMG_1047.JPG" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/IMG_1605.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/New%20028.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/New%20029.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/for%20sub%20041.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/for%20sub%20042.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/for%20sub%20043.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/for%20sub%20044.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/list%20001.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        <div class="break-inside-avoid overflow-hidden rounded-xl shadow-md cursor-pointer relative group">
+            <img src="../assets/images/gallery/thumbnail_image.jpg" loading="lazy" alt="Gateway Metal Detectors Discovery" class="w-full transform group-hover:scale-105 transition-all duration-500 ease-out">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] text-white pt-24 pb-16 w-full mt-auto">
+        <div class="max-w-[1280px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2 md:pr-16">
+                <a href="../index.html" class="flex flex-col items-start gap-0 hover:opacity-80 transition cursor-pointer mb-6">
+                    <span class="text-3xl font-black tracking-tight leading-none text-white block">GATEWAY</span>
+                    <span class="text-[0.6rem] tracking-[0.25em] font-bold uppercase text-gray-400 block mt-1">Metal Detectors</span>
+                </a>
+                <p class="text-xs text-gray-400 font-semibold leading-relaxed mb-8">
+                    <span class="text-white font-bold">ABOUT US:</span> Hamilton's dedicated treasure hunting hub.
+                </p>
+                <p class="text-[10px] text-gray-600 font-semibold">&copy; 2026 Metal Detectors Legacy.</p>
+            </div>
+            <div>
+                <ul class="space-y-3 pt-1 text-xs font-semibold text-gray-400 uppercase tracking-widest flex flex-col items-start">
+                    <li><a href="../index.html" class="hover:text-white transition cursor-pointer inline-block">Home</a></li>
+                    <li><a href="shop.html" class="hover:text-white transition cursor-pointer inline-block">Shop</a></li>
+                    <li><a href="about.html" class="hover:text-white transition cursor-pointer inline-block">About Us</a></li>
+                    <li><a href="events.html" class="hover:text-white transition cursor-pointer inline-block">Events</a></li>
+                    <li><a href="community-map.html" class="hover:text-white transition cursor-pointer inline-block">Maps</a></li>
+                    <li><a href="gallery.html" class="hover:text-white transition cursor-pointer inline-block">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="text-[13px] font-semibold text-gray-400 flex flex-col">
+                <h4 class="text-white font-bold mb-5 tracking-wider">Contact info</h4>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-gray-500">ðŸ“ž</span> +1(905)870-8689</p>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-gray-500">ðŸ“</span> Hamilton, Ontario, Canada.</p>
+                <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-gray-500">âœ‰ï¸</span> gatewaydetecting@hotmail.com</p>
+            </div>
+        </div>
+    </footer>
+<script>
+window.replainSettings = { id: '49635770-b7b9-49c1-bb08-348efe34892c' };
+(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
+</body>
+</html>
+
