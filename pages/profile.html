@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Gateway Metal Detectors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #111827; overflow-x: hidden; }
+        .nav-link { position: relative; display: inline-block; padding-bottom: 2px; color: #374151; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; letter-spacing: 0.06em; transition: color 0.3s ease; }
+        .nav-link:hover, .nav-link.active { color: #111827; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 50%; transform: translateX(-50%); background-color: #d97706; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .gear-select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E"); background-position: right 0.5rem center; background-repeat: no-repeat; background-size: 1.5em 1.5em; }
+    </style>
+</head>
+
+<body class="bg-[#f9fafb] text-gray-900 w-full min-h-screen flex flex-col selection:bg-amber-600 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 h-20 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm z-50 flex items-center justify-between px-6 md:px-12 w-full">
+        <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer">
+            <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-16 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+            <div class="flex flex-col justify-center">
+                <span class="text-xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
+            </div>
+        </a>
+        <div class="hidden lg:flex items-center space-x-6 absolute left-1/2 -translate-x-1/2">
+            <a href="../index.html" class="nav-link">Home</a>
+            <span class="text-gray-300">-</span>
+            <a href="shop.html" class="nav-link">Shop</a>
+            <span class="text-gray-300">-</span>
+            <a href="about.html" class="nav-link">About Us</a>
+            <span class="text-gray-300">-</span>
+            <a href="events.html" class="nav-link">Events</a>
+            <span class="text-gray-300">-</span>
+            <a href="community-map.html" class="nav-link">Maps</a>
+            <span class="text-gray-300">-</span>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <span class="text-gray-300">-</span>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div id="auth-cart-container" class="hidden lg:flex items-center"></div>
+    </nav>
+    <div class="h-20 w-full"></div>
+
+    <!-- Not Logged In State -->
+    <div id="not-logged-in" class="hidden flex-grow flex flex-col items-center justify-center py-32 text-center px-6">
+        <svg class="w-16 h-16 text-gray-300 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        <h2 class="text-2xl font-black text-gray-900 uppercase tracking-tight mb-3">Profile Locked</h2>
+        <p class="text-gray-500 text-sm font-semibold mb-8 max-w-md">Sign in to your Gateway community account to access your detectorist profile and gear rig builder.</p>
+        <button onclick="window.GatewayAuthModal && window.GatewayAuthModal.open('signin')" class="bg-amber-600 text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded hover:bg-amber-700 transition-colors shadow-md cursor-pointer">Sign In</button>
+    </div>
+
+    <!-- Profile Content -->
+    <main id="profile-content" class="hidden flex-grow w-full max-w-[1000px] mx-auto px-6 md:px-12 py-12">
+        
+        <!-- Profile Header -->
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm mb-8">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <!-- Avatar Upload -->
+                <div class="relative group">
+                    <div id="profile-avatar" class="w-28 h-28 rounded-full bg-amber-600 text-white text-3xl font-black flex items-center justify-center overflow-hidden border-4 border-gray-200 shadow-md">
+                        <span id="avatar-initials">U</span>
+                    </div>
+                    <label class="absolute inset-0 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <input type="file" id="avatar-upload" accept="image/*" class="hidden">
+                    </label>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="text-[10px] font-black uppercase tracking-[0.3em] text-amber-600 mb-1">Gateway Community Member</p>
+                    <h1 id="profile-email" class="text-2xl font-black text-gray-900 tracking-tight mb-1"></h1>
+                    <p id="profile-joined" class="text-xs text-gray-500 font-semibold"></p>
+                    <p id="upload-status" class="text-xs font-bold mt-2 hidden"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gear Rig Builder -->
+        <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+            <div class="flex items-center gap-4 mb-8 border-b border-gray-200 pb-6">
+                <span class="w-2 h-8 bg-amber-600 rounded-full"></span>
+                <div>
+                    <h2 class="text-xl font-black uppercase tracking-widest text-gray-900">My Active Field Gear Rig</h2>
+                    <p class="text-xs text-gray-500 font-semibold mt-1">Select your current detecting equipment loadout</p>
+                </div>
+            </div>
+
+            <form id="gear-rig-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">🔎 Metal Detector</label>
+                    <select id="detector" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Detector —</option>
+                        <option value="Minelab Manticore">Minelab Manticore</option>
+                        <option value="Minelab Equinox 900">Minelab Equinox 900</option>
+                        <option value="Minelab X-Terra Pro">Minelab X-Terra Pro</option>
+                        <option value="Minelab GPZ 7000">Minelab GPZ 7000</option>
+                        <option value="Minelab GPX 6000">Minelab GPX 6000</option>
+                        <option value="Minelab X-Terra 705/505">Minelab X-Terra 705/505</option>
+                        <option value="Minelab E-Trac">Minelab E-Trac</option>
+                        <option value="Minelab Safari">Minelab Safari</option>
+                        <option value="Minelab Excalibur II">Minelab Excalibur II</option>
+                        <option value="Garrett Vortex VX-9">Garrett Vortex VX-9</option>
+                        <option value="Garrett AT Pro International">Garrett AT Pro International</option>
+                        <option value="Garrett AT Gold">Garrett AT Gold</option>
+                        <option value="Garrett GTI 2500">Garrett GTI 2500</option>
+                        <option value="Garrett Sea Hunter Mark II">Garrett Sea Hunter Mark II</option>
+                        <option value="Nokta Legend 2">Nokta Legend 2</option>
+                        <option value="Nokta Simplex Lite">Nokta Simplex Lite</option>
+                        <option value="Nokta Simplex+">Nokta Simplex+</option>
+                        <option value="Nokta Anfibio Multi">Nokta Anfibio Multi</option>
+                        <option value="Nokta Kruzer">Nokta Kruzer</option>
+                        <option value="AlgoForce E1500 Plus">AlgoForce E1500 Plus</option>
+                        <option value="White's MXT All Pro">White's MXT All Pro</option>
+                        <option value="White's V3i">White's V3i</option>
+                        <option value="White's Coinmaster GT">White's Coinmaster GT</option>
+                        <option value="Tesoro Cibola">Tesoro Cibola</option>
+                        <option value="Tesoro Tejon">Tesoro Tejon</option>
+                        <option value="Fisher F75+">Fisher F75+</option>
+                        <option value="Fisher F70">Fisher F70</option>
+                        <option value="Fisher F5">Fisher F5</option>
+                        <option value="Fisher F19">Fisher F19</option>
+                        <option value="Fisher F2">Fisher F2</option>
+                        <option value="Fisher CZ-21">Fisher CZ-21</option>
+                        <option value="Fisher 1280-X">Fisher 1280-X</option>
+                        <option value="Fisher Gemini III">Fisher Gemini III</option>
+                        <option value="Teknetics T2">Teknetics T2</option>
+                        <option value="Teknetics Omega 8500">Teknetics Omega 8500</option>
+                        <option value="Teknetics Gamma 6000">Teknetics Gamma 6000</option>
+                        <option value="Teknetics Alpha 2000">Teknetics Alpha 2000</option>
+                        <option value="Teknetics TreasureTek Elite">Teknetics TreasureTek Elite</option>
+                        <option value="Bounty Hunter Discovery 2200">Bounty Hunter Discovery 2200</option>
+                        <option value="Bounty Hunter Tracker IV">Bounty Hunter Tracker IV</option>
+                        <option value="Bounty Hunter Land Ranger Pro">Bounty Hunter Land Ranger Pro</option>
+                        <option value="Bounty Hunter Quick Draw Pro">Bounty Hunter Quick Draw Pro</option>
+                        <option value="Bounty Hunter Gold Digger">Bounty Hunter Gold Digger</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">📌 Pinpointer</label>
+                    <select id="pinpointer" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Pinpointer —</option>
+                        <option value="Garrett Pro-Pointer AT">Garrett Pro-Pointer AT</option>
+                        <option value="XP MI-6">XP MI-6</option>
+                        <option value="Teknetics Tek-Point">Teknetics Tek-Point</option>
+                        <option value="Vibra-Probe 585">Vibra-Probe 585</option>
+                        <option value="Nokta AccuPOINT">Nokta AccuPOINT</option>
+                        <option value="Minelab Pro-Find 35">Minelab Pro-Find 35</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">🎧 Headphones</label>
+                    <select id="headphones" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Headphones —</option>
+                        <option value="Gray Ghost Underwater Headphones">Gray Ghost Underwater Headphones</option>
+                        <option value="Minelab ML85 Wireless">Minelab ML85 Wireless</option>
+                        <option value="Nokta Bluetooth Headphones">Nokta Bluetooth Headphones</option>
+                        <option value="XP Wave Wireless">XP Wave Wireless</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">🔧 Hand Digger</label>
+                    <select id="digger" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Hand Digger —</option>
+                        <option value="Garrett Edge Digger">Garrett Edge Digger</option>
+                        <option value="Lesche Standard Hand Digger">Lesche Standard Hand Digger</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">⛏️ Shovel</label>
+                    <select id="shovel" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Shovel —</option>
+                        <option value="Lesche Sampson 36&quot; T-Handle">Lesche Sampson 36" T-Handle</option>
+                        <option value="Root Slayer Nomad">Root Slayer Nomad</option>
+                        <option value="Grave Digger Nemesis">Grave Digger Nemesis</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">🏖️ Sand Scoop</label>
+                    <select id="scoop" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Sand Scoop —</option>
+                        <option value="RTG Stainless Steel Scoop">RTG Stainless Steel Scoop</option>
+                        <option value="PTG Aluminium Sand Scoop">PTG Aluminium Sand Scoop</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">🎒 Finds Pouch</label>
+                    <select id="pouch" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Finds Pouch —</option>
+                        <option value="Garrett Finds Pouch">Garrett Finds Pouch</option>
+                        <option value="PTG Camo Recovery Pouch">PTG Camo Recovery Pouch</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">🛡️ Gloves & Knee Pads</label>
+                    <select id="protection" class="gear-select w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:border-amber-500 outline-none transition-colors pr-10">
+                        <option value="">— Select Protection —</option>
+                        <option value="Garrett Tough Digging Gloves">Garrett Tough Digging Gloves</option>
+                        <option value="PTG Heavy Duty Gel Knee Pads">PTG Heavy Duty Gel Knee Pads</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="mt-8 pt-6 border-t border-gray-200 flex items-center justify-between">
+                <p id="save-status" class="text-xs font-bold hidden"></p>
+                <button id="save-rig-btn" class="bg-amber-600 text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-lg hover:bg-amber-700 transition-colors shadow-md cursor-pointer ml-auto">Save Profile Rig</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 text-gray-800 pt-24 pb-16 w-full mt-auto">
+        <div class="max-w-[1280px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2 md:pr-16">
+                <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer mb-6">
+                    <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+                    <div class="flex flex-col justify-center">
+                        <span class="text-2xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                        <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
+                    </div>
+                </a>
+                <p class="text-xs text-gray-600 font-semibold leading-relaxed mb-8">
+                    <span class="text-gray-900 font-bold">ABOUT US:</span> Gateway Metal Detectors is Hamilton's dedicated treasure hunting hub, founded on a lifelong passion for discovery.
+                </p>
+                <p class="text-[10px] text-gray-500 font-semibold">&copy; 2026 Gateway Metal Detectors. All Rights Reserved.</p>
+            </div>
+            <div>
+                <ul class="space-y-3 pt-1 text-xs font-semibold text-gray-600 uppercase tracking-widest flex flex-col items-start">
+                    <li><a href="../index.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Home</a></li>
+                    <li><a href="shop.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Shop</a></li>
+                    <li><a href="about.html" class="hover:text-gray-900 transition cursor-pointer inline-block">About Us</a></li>
+                    <li><a href="events.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Events</a></li>
+                    <li><a href="community-map.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Maps</a></li>
+                    <li><a href="gallery.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-[13px] font-semibold text-gray-600 flex flex-col">
+                <h4 class="text-gray-900 font-bold mb-5 tracking-wider uppercase text-xs text-amber-600">Contact info</h4>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📞</span> +1(905)870-8689</p>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📍</span> Hamilton, Ontario, Canada.</p>
+                <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">✉️</span> gatewaydetecting@hotmail.com</p>
+            </div>
+        </div>
+        <div class="max-w-[1280px] mx-auto px-6 pt-12 mt-12 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-[11px] text-gray-500 font-medium">
+            <span class="text-gray-700 font-bold uppercase tracking-wider text-[10px] text-amber-600">Proudly Serving Southern Ontario:</span>
+            <div class="flex flex-wrap gap-x-2 gap-y-1 text-gray-500">
+                <span>Hamilton</span> • <span>Stoney Creek</span> • <span>Ancaster</span> • <span>Burlington</span> • <span>Oakville</span> • <span>Mississauga</span> • <span>Toronto</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/gateway-auth.js"></script>
+    <script src="../scripts/auth-modal.js"></script>
+    <script>
+        // Gear mapping (HTML ID -> DB Column)
+        const GEAR_MAP = {
+            'detector': 'metal_detector',
+            'pinpointer': 'pinpointer',
+            'headphones': 'headphones',
+            'digger': 'hand_digger',
+            'shovel': 'shovel',
+            'scoop': 'sand_scoop',
+            'pouch': 'finds_pouch',
+            'protection': 'gloves' // Combining gloves & knee pads into one DB field
+        };
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const sb = window._supabase;
+            const notLoggedIn = document.getElementById('not-logged-in');
+            const profileContent = document.getElementById('profile-content');
+
+            // Check session
+            let session = null;
+            if (sb) {
+                try {
+                    const { data } = await sb.auth.getSession();
+                    session = data?.session;
+                } catch (e) {}
+            }
+
+            if (!session) {
+                notLoggedIn.classList.remove('hidden');
+                notLoggedIn.classList.add('flex');
+                profileContent.classList.add('hidden');
+
+                // Listen for auth changes
+                if (sb) {
+                    sb.auth.onAuthStateChange((_event, s) => {
+                        if (s) window.location.reload();
+                    });
+                }
+                return;
+            }
+
+            // Show profile
+            notLoggedIn.classList.add('hidden');
+            profileContent.classList.remove('hidden');
+            profileContent.classList.add('flex');
+
+            const user = session.user;
+            document.getElementById('profile-email').textContent = user.email || 'Community Member';
+            document.getElementById('avatar-initials').textContent = (user.email || 'U')[0].toUpperCase();
+            document.getElementById('profile-joined').textContent = `Member since ${new Date(user.created_at).toLocaleDateString('en-CA', { year: 'numeric', month: 'long' })}`;
+
+            // Dropdowns are now populated statically in HTML.
+
+            // Load existing profile data
+            try {
+                const { data: profile } = await sb.from('profiles').select('*').eq('id', user.id).single();
+                if (profile) {
+                    if (profile.avatar_url) {
+                        const avatarEl = document.getElementById('profile-avatar');
+                        avatarEl.innerHTML = `<img src="${profile.avatar_url}" alt="Avatar" class="w-full h-full object-cover">`;
+                    }
+                    Object.entries(GEAR_MAP).forEach(([htmlId, dbColumn]) => {
+                        const select = document.getElementById(htmlId);
+                        if (select && profile[dbColumn]) {
+                            select.value = profile[dbColumn];
+                        }
+                    });
+                }
+            } catch (e) {
+                console.warn('Could not load profile:', e);
+            }
+
+            // Avatar upload
+            document.getElementById('avatar-upload').addEventListener('change', async (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+                const statusEl = document.getElementById('upload-status');
+                statusEl.textContent = 'Uploading...';
+                statusEl.className = 'text-xs font-bold mt-2 text-amber-600';
+                statusEl.classList.remove('hidden');
+
+                try {
+                    const fileExt = file.name.split('.').pop();
+                    const filePath = `${user.id}/avatar.${fileExt}`;
+                    const { error: uploadError } = await sb.storage.from('avatars').upload(filePath, file, { upsert: true });
+                    if (uploadError) throw uploadError;
+
+                    const { data: urlData } = sb.storage.from('avatars').getPublicUrl(filePath);
+                    const publicUrl = urlData.publicUrl + '?t=' + Date.now();
+
+                    await sb.from('profiles').upsert({ id: user.id, avatar_url: publicUrl, updated_at: new Date().toISOString() });
+
+                    const avatarEl = document.getElementById('profile-avatar');
+                    avatarEl.innerHTML = `<img src="${publicUrl}" alt="Avatar" class="w-full h-full object-cover">`;
+                    statusEl.textContent = 'Avatar updated!';
+                    statusEl.className = 'text-xs font-bold mt-2 text-green-600';
+                } catch (err) {
+                    statusEl.textContent = 'Upload failed: ' + (err.message || 'Try again');
+                    statusEl.className = 'text-xs font-bold mt-2 text-red-500';
+                }
+            });
+
+            // Save Rig
+            document.getElementById('save-rig-btn').addEventListener('click', async () => {
+                const btn = document.getElementById('save-rig-btn');
+                const statusEl = document.getElementById('save-status');
+                btn.textContent = 'Saving...';
+                btn.disabled = true;
+
+                const rigData = { id: user.id, updated_at: new Date().toISOString() };
+                Object.entries(GEAR_MAP).forEach(([htmlId, dbColumn]) => {
+                    const select = document.getElementById(htmlId);
+                    if (select) rigData[dbColumn] = select.value || null;
+                });
+
+                try {
+                    const { error } = await sb.from('profiles').upsert(rigData);
+                    if (error) throw error;
+                    statusEl.textContent = '✓ Rig saved successfully!';
+                    statusEl.className = 'text-xs font-bold text-green-600';
+                    statusEl.classList.remove('hidden');
+                } catch (err) {
+                    statusEl.textContent = 'Save failed: ' + (err.message || 'Try again');
+                    statusEl.className = 'text-xs font-bold text-red-500';
+                    statusEl.classList.remove('hidden');
+                }
+
+                btn.textContent = 'Save Profile Rig';
+                btn.disabled = false;
+                setTimeout(() => statusEl.classList.add('hidden'), 4000);
+            });
+        });
+    </script>
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '76adb4c9-78ac-4ea9-b7b3-36e4412eca7d', f: true }); done = true; } }; })();</script>
+</body>
+
+</html>

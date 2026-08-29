@@ -9,6 +9,7 @@ Write-Host "========================================" -ForegroundColor Cyan
 scp "$PSScriptRoot\index.html" "namecheap-gateway:public_html/index.html"
 scp -r "$PSScriptRoot\pages\*" "namecheap-gateway:public_html/pages/"
 scp -r "$PSScriptRoot\styles\*" "namecheap-gateway:public_html/styles/"
+scp -r "$PSScriptRoot\scripts\*" "namecheap-gateway:public_html/scripts/"
 scp -r "$PSScriptRoot\assets\*" "namecheap-gateway:public_html/assets/"
 if (Test-Path "$PSScriptRoot\send_message.php") {
     scp "$PSScriptRoot\send_message.php" "namecheap-gateway:public_html/send_message.php"

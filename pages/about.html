@@ -7,6 +7,7 @@
     <title>About Us - Gateway Metal Detectors</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
@@ -59,7 +60,7 @@
         </a>
 
         <!-- Center Nav Links -->
-        <div class="hidden lg:flex items-center space-x-6">
+        <div class="hidden lg:flex items-center space-x-6 absolute left-1/2 -translate-x-1/2">
             <a href="../index.html" class="nav-link">Home</a>
             <span class="text-gray-300">-</span>
             <a href="shop.html" class="nav-link">Shop</a>
@@ -74,6 +75,7 @@
             <span class="text-gray-300">-</span>
             <a href="contact.html" class="nav-link">Contact</a>
         </div>
+        <div id="auth-cart-container" class="hidden lg:flex items-center"></div>
     </nav>
     <div class="h-20 w-full"></div>
 
@@ -286,6 +288,8 @@
         </div>
     </footer>
 
+<script src="../scripts/gateway-auth.js"></script>
+<script src="../scripts/auth-modal.js"></script>
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '76adb4c9-78ac-4ea9-b7b3-36e4412eca7d', f: true }); done = true; } }; })();</script>
 </body>
 </html>
