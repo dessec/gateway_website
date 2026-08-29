@@ -1,0 +1,522 @@
+import os
+
+configs = [
+    {
+        'file': r'C:\Projects\Gateway_Final\pages\garrett.html',
+        'title': 'Garrett Detectors - Gateway',
+        'brand': 'Garrett',
+        'filter_brand': 'garrett',
+        'hero_img': '../assets/images/garrett_hero.png',
+        'hero_title': 'Garrett',
+        'hero_subtitle': 'The American Legend.'
+    },
+    {
+        'file': r'C:\Projects\Gateway_Final\pages\minelab.html',
+        'title': 'Minelab Detectors - Gateway',
+        'brand': 'Minelab',
+        'filter_brand': 'minelab',
+        'hero_img': '../assets/images/minelab_hero.png',
+        'hero_title': 'Minelab',
+        'hero_subtitle': 'World Leader in Metal Detecting Technology.'
+    },
+    {
+        'file': r'C:\Projects\Gateway_Final\pages\nokta.html',
+        'title': 'Nokta Detectors - Gateway',
+        'brand': 'Nokta',
+        'filter_brand': 'nokta',
+        'hero_img': '../assets/images/nokta_hero.png',
+        'hero_title': 'Nokta',
+        'hero_subtitle': 'Next-Generation Detection Performance.'
+    },
+    {
+        'file': r'C:\Projects\Gateway_Final\pages\xp.html',
+        'title': 'XP Detectors - Gateway',
+        'brand': 'XP',
+        'filter_brand': 'xp',
+        'hero_img': '../assets/images/xp_hero.png',
+        'hero_title': 'XP Metal Detectors',
+        'hero_subtitle': 'Wireless Innovation & Extreme Precision.'
+    }
+]
+
+template = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>__PAGE_TITLE__</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #111827; overflow-x: hidden; }
+        .nav-link { position: relative; display: inline-block; padding-bottom: 2px; color: #374151; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.06em; transition: color 0.3s ease; }
+        .nav-link:hover, .nav-link.active { color: #111827; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 50%; transform: translateX(-50%); background-color: #d97706; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f3f4f6; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #d97706; }
+        .filter-checkbox { appearance: none; width: 1.1rem; height: 1.1rem; border: 1px solid #d1d5db; background-color: #ffffff; border-radius: 3px; outline: none; cursor: pointer; position: relative; transition: all 0.2s ease; flex-shrink: 0; }
+        .filter-checkbox:checked { background-color: #d97706; border-color: #d97706; }
+        .filter-checkbox:checked::after { content: ''; position: absolute; left: 5px; top: 2px; width: 4px; height: 8px; border: solid white; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+        .product-card { background: #ffffff; border: 1px solid #e5e7eb; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; position: relative; display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); }
+        .product-card:hover { border-color: #d97706; transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 0 12px rgba(217, 119, 6, 0.15); z-index: 10; }
+        .img-container { width: 100%; aspect-ratio: 1 / 1; padding: 1.25rem; display: flex; align-items: center; justify-content: center; background-color: #f8fafc; position: relative; }
+        .img-container img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.3s ease; }
+        .product-card:hover .img-container img { transform: scale(1.05); }
+        .textContainer { padding: 1.25rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .badge-tag { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }
+        .custom-select { background-color: #ffffff; border: 1px solid #d1d5db; color: #111827; padding: 0.5rem 2rem 0.5rem 0.85rem; border-radius: 0.375rem; font-size: 0.85rem; font-weight: 600; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23d97706'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.6rem center; background-size: 1rem; cursor: pointer; outline: none; transition: border-color 0.2s; }
+        .custom-select:focus { border-color: #d97706; }
+        .search-input { background-color: #ffffff; border: 1px solid #d1d5db; color: #111827; padding: 0.5rem 0.85rem 0.5rem 2.25rem; border-radius: 0.375rem; font-size: 0.85rem; outline: none; width: 100%; transition: border-color 0.2s, box-shadow 0.2s; }
+        .search-input:focus { border-color: #d97706; box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.2); }
+        .filter-section-title { display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #d97706; margin-bottom: 0.85rem; }
+        .active-filter-pill { background-color: #ffffff; border: 1px solid #d97706; color: #1f2937; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 9999px; display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="bg-[#f9fafb] text-gray-900 w-full selection:bg-amber-600 selection:text-white flex flex-col min-h-screen">
+    <nav class="fixed top-0 left-0 right-0 h-20 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm z-50 flex items-center justify-between px-6 md:px-12 w-full">
+        <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer">
+            <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+            <div class="flex flex-col justify-center">
+                <span class="text-xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
+            </div>
+        </a>
+        <div class="hidden lg:flex items-center space-x-6">
+            <a href="../index.html" class="nav-link">Home</a>
+            <span class="text-gray-300">-</span>
+            <a href="shop.html" class="nav-link active">Shop</a>
+            <span class="text-gray-300">-</span>
+            <a href="about.html" class="nav-link">About Us</a>
+            <span class="text-gray-300">-</span>
+            <a href="events.html" class="nav-link">Events</a>
+            <span class="text-gray-300">-</span>
+            <a href="community-map.html" class="nav-link">Maps</a>
+            <span class="text-gray-300">-</span>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <span class="text-gray-300">-</span>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <div class="h-20 w-full"></div>
+    <header class="w-full h-[32vh] min-h-[280px] max-h-[380px] flex items-center justify-center relative bg-gray-900 overflow-hidden">
+        <img src="__HERO_IMG__" alt="__HERO_TITLE__ Metal Detectors" class="absolute inset-0 w-full h-full object-cover opacity-60" onerror="this.src='../assets/images/garrett_hero.png'">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/40 to-black/60"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white uppercase tracking-tight mb-2 drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)]" style="font-family: Georgia, serif;">__HERO_TITLE__</h1>
+            <p class="text-lg md:text-xl text-amber-400 font-semibold drop-shadow-md">__HERO_SUBTITLE__</p>
+        </div>
+    </header>
+    <div class="w-full flex-grow flex flex-col md:flex-row max-w-[1750px] mx-auto pt-8 px-4 md:px-8 bg-[#f9fafb] gap-8">
+        <aside class="w-full md:w-64 lg:w-72 shrink-0">
+            <div class="sticky top-28 bg-white p-5 rounded-lg border border-gray-200 max-h-[calc(100vh-140px)] overflow-y-auto custom-scrollbar shadow-sm">
+                <div class="flex items-center justify-between border-b border-gray-200 pb-4 mb-6">
+                    <h2 class="text-base font-black uppercase tracking-wider text-gray-900 flex items-center gap-2">
+                        <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                        Filters
+                    </h2>
+                    <button id="clear-filters-sidebar" class="text-[11px] font-bold uppercase tracking-wider text-amber-600 hover:text-amber-700 transition-colors">Reset</button>
+                </div>
+                <div class="mb-6">
+                    <div class="relative">
+                        <svg class="w-4 h-4 absolute left-3 top-3 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        <input type="text" id="search-filter" placeholder="Search __BRAND_NAME__..." class="search-input text-xs">
+                    </div>
+                </div>
+                <div class="mb-7">
+                    <div class="filter-section-title"><span>Product Type</span></div>
+                    <div class="space-y-2.5">
+                        <label class="flex items-center justify-between cursor-pointer group py-0.5">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="filter-checkbox filter-category" value="detectors">
+                                <span class="text-sm font-bold text-amber-600 group-hover:text-amber-700 transition-colors">Metal Detectors</span>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-500" id="count-cat-detectors">0</span>
+                        </label>
+                        <label class="flex items-center justify-between cursor-pointer group py-0.5">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="filter-checkbox filter-category" value="pinpointers">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Pinpointers</span>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-500" id="count-cat-pinpointers">0</span>
+                        </label>
+                        <label class="flex items-center justify-between cursor-pointer group py-0.5">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="filter-checkbox filter-category" value="coils">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Searchcoils</span>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-500" id="count-cat-coils">0</span>
+                        </label>
+                        <label class="flex items-center justify-between cursor-pointer group py-0.5">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="filter-checkbox filter-category" value="audio">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Headphones & Audio</span>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-500" id="count-cat-audio">0</span>
+                        </label>
+                        <label class="flex items-center justify-between cursor-pointer group py-0.5">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="filter-checkbox filter-category" value="digging">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Digging & Recovery</span>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-500" id="count-cat-digging">0</span>
+                        </label>
+                        <label class="flex items-center justify-between cursor-pointer group py-0.5">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="filter-checkbox filter-category" value="accessories">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Accessories & Bags</span>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-500" id="count-cat-accessories">0</span>
+                        </label>
+                        <label class="flex items-center justify-between cursor-pointer group py-0.5">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="filter-checkbox filter-category" value="parts">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Shafts & Parts</span>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-500" id="count-cat-parts">0</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-7 border-t border-gray-200 pt-6">
+                    <div class="filter-section-title"><span>Price Range</span></div>
+                    <div class="space-y-2.5">
+                        <label class="flex items-center gap-3 cursor-pointer group py-0.5">
+                            <input type="checkbox" class="filter-checkbox filter-price" value="under-100">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Under $100</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group py-0.5">
+                            <input type="checkbox" class="filter-checkbox filter-price" value="100-300">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">$100 - $300</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group py-0.5">
+                            <input type="checkbox" class="filter-checkbox filter-price" value="300-700">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">$300 - $700</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group py-0.5">
+                            <input type="checkbox" class="filter-checkbox filter-price" value="700-1200">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">$700 - $1,200</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group py-0.5">
+                            <input type="checkbox" class="filter-checkbox filter-price" value="over-1200">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">$1,200+ (Flagship)</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-6 border-t border-gray-200 pt-6">
+                    <div class="filter-section-title"><span>Availability</span></div>
+                    <div class="space-y-2.5">
+                        <label class="flex items-center gap-3 cursor-pointer group py-0.5">
+                            <input type="checkbox" class="filter-checkbox filter-stock" value="in-stock">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">In Stock Only</span>
+                        </label>
+                    </div>
+                </div>
+                <button id="clear-filters" class="w-full py-2.5 bg-gray-100 text-amber-700 font-bold uppercase tracking-wider text-xs hover:bg-amber-600 hover:text-white border border-gray-200 hover:border-amber-600 transition-all rounded">
+                    Clear All Filters
+                </button>
+            </div>
+        </aside>
+        <main class="w-full flex-grow pb-32">
+            <div class="bg-white p-4 rounded-lg border border-gray-200 mb-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm">
+                <div class="flex flex-wrap items-center gap-3">
+                    <h2 class="text-xl font-bold font-serif text-gray-900 tracking-tight" style="font-family: Georgia, serif;">__BRAND_NAME__ Products</h2>
+                    <span id="product-count" class="text-xs font-bold px-2.5 py-1 bg-amber-50 border border-amber-200 text-amber-700 rounded uppercase tracking-wider">Loading...</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 w-full md:w-auto justify-between md:justify-end">
+                    <div class="flex items-center gap-2">
+                        <label for="sort-select" class="text-xs font-bold text-gray-500 uppercase tracking-wider whitespace-nowrap">Sort by:</label>
+                        <select id="sort-select" class="custom-select">
+                            <option value="featured">Featured (Detectors First)</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="name-asc">Name: A to Z</option>
+                            <option value="name-desc">Name: Z to A</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="active-filters-bar" class="hidden mb-6 flex flex-wrap items-center gap-2">
+                <span class="text-xs text-gray-500 font-semibold">Active Filters:</span>
+                <div id="active-filters-list" class="flex flex-wrap gap-2"></div>
+            </div>
+            <div id="loading" class="w-full py-32 flex flex-col justify-center items-center">
+                <div class="w-9 h-9 rounded-full border-2 border-dashed border-amber-600 animate-spin mb-4"></div>
+                <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Syncing __BRAND_NAME__ Inventory...</p>
+            </div>
+            <div id="inventory-grid" class="hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-5"></div>
+            <div id="no-results" class="hidden w-full py-28 flex flex-col items-center justify-center border border-dashed border-gray-300 rounded-lg bg-white">
+                <svg class="w-12 h-12 text-gray-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <p class="text-lg font-bold text-gray-800 tracking-tight mb-2">No products match your criteria.</p>
+                <p class="text-xs text-gray-500 mb-5">Try removing some filters or search query.</p>
+                <button onclick="document.getElementById('clear-filters').click()" class="px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-sm">Reset All Filters</button>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-white border-t border-gray-200 text-gray-800 pt-20 pb-14 w-full mt-auto">
+        <div class="max-w-[1280px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2 md:pr-16">
+                <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer mb-6">
+                    <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+                    <div class="flex flex-col justify-center">
+                        <span class="text-2xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                        <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
+                    </div>
+                </a>
+                <p class="text-xs text-gray-600 font-semibold leading-relaxed mb-8">
+                    <span class="text-gray-900 font-bold">ABOUT US:</span> Southern Ontario's dedicated treasure hunting and metal detecting authority.
+                </p>
+                <p class="text-[10px] text-gray-500 font-semibold">&copy; 2026 Gateway Metal Detectors. All Rights Reserved.</p>
+            </div>
+            <div>
+                <ul class="space-y-3 pt-1 text-xs font-semibold text-gray-600 uppercase tracking-widest flex flex-col items-start">
+                    <li><a href="../index.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Home</a></li>
+                    <li><a href="shop.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Shop All</a></li>
+                    <li><a href="about.html" class="hover:text-gray-900 transition cursor-pointer inline-block">About Us</a></li>
+                    <li><a href="events.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Events</a></li>
+                    <li><a href="community-map.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Maps</a></li>
+                    <li><a href="gallery.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-[13px] font-semibold text-gray-600 flex flex-col">
+                <h4 class="text-gray-900 font-bold mb-5 tracking-wider uppercase text-xs text-amber-600">Contact Info</h4>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📞</span> +1 (905) 870-8689</p>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📍</span> Hamilton, Ontario, Canada</p>
+                <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">✉️</span> gatewaydetecting@hotmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let brandProducts = [];
+        const CATEGORY_PRIORITY = { 'detectors': 1, 'pinpointers': 2, 'coils': 3, 'audio': 4, 'digging': 5, 'accessories': 6, 'parts': 7 };
+        const CATEGORY_LABELS = { 'detectors': 'Metal Detector', 'pinpointers': 'Pinpointer', 'coils': 'Searchcoil', 'audio': 'Audio', 'digging': 'Digging Tool', 'accessories': 'Accessory', 'parts': 'Part / Cable' };
+
+        function getCategory(item) {
+            const name = (item.name || '').toLowerCase();
+            const url  = (item.url  || '').toLowerCase();
+            const text = name + ' ' + url;
+            if (text.includes('pinpointer') || text.includes('pro-pointer') || text.includes('pro pointer') || text.includes('pro-find') || text.includes('pro find') || text.includes('accupoint') || text.includes('pulseive') || text.includes('mi-4') || text.includes('mi-6') || (text.includes('pointer') && !text.includes('coil'))) {
+                return 'pinpointers';
+            }
+            if (text.includes('coil') || text.includes('searchcoil')) return 'coils';
+            const isDetectorKeyword = /(metal detector|treasure detector|gold detector|underwater detector|all-terrain detector|simplex|legend|score|findx|hoard|1st swing|vortex|axiom|ace 200|ace 300|ace 400|ace-|apex|at pro|at max|at gold|sea hunter|goldmaster|equinox|manticore|vanquish|ctx 3030|gpx|gpz|sdc 2300|gold monster|x-terra|go-find|deus|orx|ws6 master)/i.test(text);
+            const isNonDetectorAcc = text.includes('bag') || text.includes('cover') || text.includes('strap') || text.includes('stand') || text.includes('mount') || text.includes('cap') || text.includes('case');
+            if (isDetectorKeyword && !isNonDetectorAcc) return 'detectors';
+            if (text.includes('headphone') || text.includes('wireless') || text.includes('z-lynk') || text.includes('audio') || text.includes('speaker') || text.includes('module')) return 'audio';
+            if (text.includes('shovel') || text.includes('digger') || text.includes('trowel') || text.includes('scoop') || text.includes('pouch') || text.includes('gold pan') || text.includes('sifter') || text.includes('classifier') || text.includes('finds box') || text.includes('sand scoop')) return 'digging';
+            if (text.includes('cable') || text.includes('shaft') || text.includes('stem') || text.includes('lower rod') || text.includes('middle rod') || text.includes('charger') || text.includes('battery') || text.includes('replacement') || text.includes('bolt') || text.includes('hardware') || text.includes('armrest') || text.includes('cuff') || text.includes('adapter') || text.includes('upgrade code')) return 'parts';
+            return 'accessories';
+        }
+
+        function getProductName(item) {
+            if (item.name && item.name !== 'Unknown') return item.name;
+            if (!item.url) return '__BRAND_NAME__ Product';
+            const parts = item.url.split('/').filter(Boolean);
+            const lastPart = parts[parts.length - 1] || 'product';
+            return lastPart.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        }
+
+        function getProductSlug(item) {
+            if (item.slug) return item.slug;
+            if (!item.url) return '__FILTER_BRAND__';
+            const parts = item.url.split('/').filter(Boolean);
+            return parts[parts.length - 1] || '__FILTER_BRAND__';
+        }
+
+        function extractPrice(priceStr) {
+            if (!priceStr || priceStr.toLowerCase().includes('call')) return null;
+            const numeric = parseFloat(priceStr.replace(/[^0-9.]/g, ''));
+            return isNaN(numeric) ? null : numeric;
+        }
+
+        const grid = document.getElementById('inventory-grid');
+        const loading = document.getElementById('loading');
+        const countDisplay = document.getElementById('product-count');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search-filter');
+        const sortSelect = document.getElementById('sort-select');
+        const activeFiltersBar = document.getElementById('active-filters-bar');
+        const activeFiltersList = document.getElementById('active-filters-list');
+
+        function updateCategoryCounts() {
+            const counts = { 'detectors': 0, 'pinpointers': 0, 'coils': 0, 'audio': 0, 'digging': 0, 'accessories': 0, 'parts': 0 };
+            brandProducts.forEach(p => { if (counts[p.category] !== undefined) counts[p.category]++; });
+            Object.keys(counts).forEach(cat => {
+                const el = document.getElementById(`count-cat-${cat}`);
+                if (el) el.innerText = counts[cat];
+            });
+        }
+
+        function renderGrid(productsToRender) {
+            countDisplay.innerText = `${productsToRender.length} Products`;
+            if (productsToRender.length === 0) {
+                grid.classList.add('hidden');
+                noResults.classList.remove('hidden');
+                grid.innerHTML = '';
+                return;
+            }
+            noResults.classList.add('hidden');
+            grid.classList.remove('hidden');
+            grid.innerHTML = productsToRender.map(item => {
+                const name = getProductName(item);
+                const slug = getProductSlug(item);
+                const isOutOfStock = item.stock && (item.stock.toLowerCase().includes('out') || item.stock.toLowerCase().includes('sold'));
+                const stockDot = isOutOfStock ? 'bg-red-500' : 'bg-green-500';
+                const stockText = isOutOfStock ? 'text-red-500' : 'text-green-600';
+                const catLabel = CATEGORY_LABELS[item.category] || 'Equipment';
+                const isDetector = item.category === 'detectors';
+
+                return `
+                <a href="product.html?id=${slug}" class="product-card group">
+                    <div class="img-container border-b border-gray-100">
+                        ${isDetector ? '<span class="absolute top-2.5 left-2.5 badge-tag bg-amber-500 text-black font-black z-10 shadow">Detector</span>' : ''}
+                        ${item.image ? `<img src="${item.image}" alt="${name}" loading="lazy">` : `<div class="text-gray-400 font-bold uppercase tracking-widest text-[10px] w-full h-full flex items-center justify-center bg-gray-100">__BRAND_NAME__</div>`}
+                    </div>
+                    <div class="textContainer gap-1">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-[10px] font-black uppercase tracking-wider text-amber-600">${item.brand || '__BRAND_NAME__'}</span>
+                            <span class="text-[9px] font-semibold uppercase tracking-wider text-gray-500">${catLabel}</span>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 leading-snug mb-2 flex-grow group-hover:text-amber-600 transition-colors line-clamp-2" title="${name}">${name}</h3>
+                        <div class="flex items-center justify-between mt-auto pt-3 border-t border-gray-100">
+                            <span class="text-base md:text-lg font-black tracking-tight text-amber-700">${item.price || 'Inquire'}</span>
+                            <div class="flex items-center gap-1.5" title="${item.stock || 'In Stock'}">
+                                <div class="w-2 h-2 rounded-full ${stockDot}"></div>
+                                <span class="text-[10px] font-bold uppercase ${stockText}">${isOutOfStock ? 'Out of stock' : 'In Stock'}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>`;
+            }).join('');
+        }
+
+        function applyFilters() {
+            const selectedCategories = Array.from(document.querySelectorAll('.filter-category:checked')).map(cb => cb.value);
+            const selectedPrices = Array.from(document.querySelectorAll('.filter-price:checked')).map(cb => cb.value);
+            const inStockOnly = document.querySelector('.filter-stock:checked') !== null;
+            const searchQuery = (searchInput.value || '').trim().toLowerCase();
+            const sortBy = sortSelect.value;
+            let filtered = [...brandProducts];
+
+            if (searchQuery) {
+                filtered = filtered.filter(p => (p.name || '').toLowerCase().includes(searchQuery) || (p.brand || '').toLowerCase().includes(searchQuery));
+            }
+            if (selectedCategories.length > 0) {
+                filtered = filtered.filter(p => selectedCategories.includes(p.category));
+            }
+            if (inStockOnly) {
+                filtered = filtered.filter(p => p.stock && !p.stock.toLowerCase().includes('out') && !p.stock.toLowerCase().includes('sold'));
+            }
+            if (selectedPrices.length > 0) {
+                filtered = filtered.filter(p => {
+                    const priceNum = p.priceNum;
+                    if (priceNum === null) return false;
+                    return selectedPrices.some(range => {
+                        if (range === 'under-100') return priceNum < 100;
+                        if (range === '100-300') return priceNum >= 100 && priceNum <= 300;
+                        if (range === '300-700') return priceNum >= 300 && priceNum <= 700;
+                        if (range === '700-1200') return priceNum >= 700 && priceNum <= 1200;
+                        if (range === 'over-1200') return priceNum > 1200;
+                        return false;
+                    });
+                });
+            }
+
+            filtered.sort((a, b) => {
+                if (sortBy === 'featured') {
+                    const priorityA = CATEGORY_PRIORITY[a.category] || 99;
+                    const priorityB = CATEGORY_PRIORITY[b.category] || 99;
+                    if (priorityA !== priorityB) return priorityA - priorityB;
+                    return (b.priceNum || 0) - (a.priceNum || 0);
+                } else if (sortBy === 'price-asc') {
+                    return (a.priceNum || 0) - (b.priceNum || 0);
+                } else if (sortBy === 'price-desc') {
+                    return (b.priceNum || 0) - (a.priceNum || 0);
+                } else if (sortBy === 'name-asc') {
+                    return (a.name || '').localeCompare(b.name || '');
+                } else if (sortBy === 'name-desc') {
+                    return (b.name || '').localeCompare(a.name || '');
+                }
+                return 0;
+            });
+
+            renderActiveFilterPills(selectedCategories, selectedPrices, inStockOnly, searchQuery);
+            renderGrid(filtered);
+        }
+
+        function renderActiveFilterPills(cats, prices, stock, search) {
+            const pills = [];
+            if (search) pills.push(`Search: "${search}"`);
+            cats.forEach(c => pills.push(CATEGORY_LABELS[c] || c));
+            prices.forEach(pr => {
+                if (pr === 'under-100') pills.push('Under $100');
+                if (pr === '100-300') pills.push('$100 - $300');
+                if (pr === '300-700') pills.push('$300 - $700');
+                if (pr === '700-1200') pills.push('$700 - $1,200');
+                if (pr === 'over-1200') pills.push('$1,200+');
+            });
+            if (stock) pills.push('In Stock Only');
+            if (pills.length > 0) {
+                activeFiltersBar.classList.remove('hidden');
+                activeFiltersList.innerHTML = pills.map(p => `<span class="active-filter-pill">${p}</span>`).join('');
+            } else {
+                activeFiltersBar.classList.add('hidden');
+                activeFiltersList.innerHTML = '';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('../live_inventory.json')
+                .then(r => r.json())
+                .then(data => {
+                    brandProducts = data.filter(item => 
+                        (item.brand && item.brand.toLowerCase().includes('__FILTER_BRAND__')) ||
+                        (item.url && item.url.toLowerCase().includes('__FILTER_BRAND__')) ||
+                        (item.name && item.name.toLowerCase().includes('__FILTER_BRAND__'))
+                    ).map(item => ({
+                        ...item,
+                        category: getCategory(item),
+                        priceNum: extractPrice(item.price)
+                    }));
+                    loading.style.display = 'none';
+                    updateCategoryCounts();
+                    applyFilters();
+
+                    document.querySelectorAll('.filter-checkbox').forEach(cb => cb.addEventListener('change', applyFilters));
+                    searchInput.addEventListener('input', applyFilters);
+                    sortSelect.addEventListener('change', applyFilters);
+
+                    const resetAll = () => {
+                        document.querySelectorAll('.filter-checkbox').forEach(cb => cb.checked = false);
+                        searchInput.value = '';
+                        sortSelect.value = 'featured';
+                        applyFilters();
+                    };
+                    document.getElementById('clear-filters').addEventListener('click', resetAll);
+                    document.getElementById('clear-filters-sidebar').addEventListener('click', resetAll);
+                })
+                .catch(err => {
+                    console.error('Failed to load inventory:', err);
+                    loading.innerHTML = '<p class="text-red-500 font-bold uppercase tracking-widest text-sm">Failed to load inventory. Please try again later.</p>';
+                });
+        });
+    </script>
+    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '76adb4c9-78ac-4ea9-b7b3-36e4412eca7d', f: true }); done = true; } }; })();</script>
+</body>
+</html>"""
+
+for c in configs:
+    page_html = template.replace('__PAGE_TITLE__', c['title'])
+    page_html = page_html.replace('__HERO_IMG__', c['hero_img'])
+    page_html = page_html.replace('__HERO_TITLE__', c['hero_title'])
+    page_html = page_html.replace('__HERO_SUBTITLE__', c['hero_subtitle'])
+    page_html = page_html.replace('__BRAND_NAME__', c['brand'])
+    page_html = page_html.replace('__FILTER_BRAND__', c['filter_brand'])
+    
+    with open(c['file'], 'w', encoding='utf-8') as f_out:
+        f_out.write(page_html)
+    print(f"Generated: {c['brand']} -> {c['file']}")
+
+print("SUCCESSFULLY GENERATED ALL 4 BRAND PAGES!")

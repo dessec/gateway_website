@@ -11,8 +11,8 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #28211c;
-            color: #f3f4f6;
+            background-color: #f9fafb;
+            color: #111827;
             overflow-x: hidden;
         }
 
@@ -20,17 +20,17 @@
             position: relative;
             display: inline-block;
             padding-bottom: 2px;
-            color: #f3f4f6;
+            color: #374151;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             letter-spacing: 0.06em;
             transition: color 0.3s ease;
         }
 
         .nav-link:hover,
         .nav-link.active {
-            color: #ffffff;
+            color: #111827;
         }
 
         .nav-link::after {
@@ -85,47 +85,47 @@
         .section-separator-line {
             flex-grow: 1;
             height: 1px;
-            background-color: #483b33;
+            background-color: #e5e7eb;
         }
 
         .section-title {
             padding: 0 1.5rem;
             font-size: 1.15rem;
             font-weight: 800;
-            color: #f3f4f6;
+            color: #111827;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
     </style>
 </head>
 
-<body class="bg-[#28211c] text-stone-100 w-full selection:bg-amber-600 selection:text-white">
+<body class="bg-[#f9fafb] text-gray-900 w-full selection:bg-amber-600 selection:text-white">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 h-20 bg-[#1e1814]/95 backdrop-blur-md border-b border-[#3b2e26] shadow-md z-50 flex items-center justify-between px-6 md:px-12 w-full">
+    <nav class="fixed top-0 left-0 right-0 h-20 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm z-50 flex items-center justify-between px-6 md:px-12 w-full">
         <!-- Logo -->
         <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer">
-            <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+            <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-16 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
             <div class="flex flex-col justify-center">
-                <span class="text-xl font-black tracking-[0.16em] uppercase text-white leading-tight group-hover:text-amber-400 transition-colors">GATEWAY</span>
-                <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-500/90">Metal Detectors</span>
+                <span class="text-xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
             </div>
         </a>
 
         <!-- Center Nav Links -->
         <div class="hidden lg:flex items-center space-x-6">
             <a href="../index.html" class="nav-link">Home</a>
-            <span class="text-stone-600">-</span>
-            <a href="../index.html#brands" class="nav-link">Shop</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
+            <a href="shop.html" class="nav-link">Shop</a>
+            <span class="text-gray-300">-</span>
             <a href="about.html" class="nav-link">About Us</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="events.html" class="nav-link active">Events</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="community-map.html" class="nav-link">Maps</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="gallery.html" class="nav-link">Gallery</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="contact.html" class="nav-link">Contact</a>
         </div>
     </nav>
@@ -133,7 +133,7 @@
     <div class="h-20 w-full"></div>
 
     <!-- Minimalist Coming Soon Block -->
-    <main class="w-full flex-grow flex flex-col items-center justify-center text-center px-6 min-h-[60vh] bg-[#28211c]">
+    <main class="w-full flex-grow flex flex-col items-center justify-center text-center px-6 min-h-[60vh] bg-[#f9fafb]">
         
         <!-- Animated Icon Container -->
         <div class="relative flex items-center justify-center mb-12">
@@ -141,153 +141,157 @@
             <div class="absolute w-28 h-28 rounded-full border border-dashed border-amber-600/40 animate-[spin_8s_linear_infinite]"></div>
             
             <!-- Solid inner circle with icon -->
-            <div class="w-20 h-20 rounded-full bg-[#1e1814] border border-[#3b2e26] shadow-xl flex items-center justify-center z-10">
-                <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-20 h-20 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10">
+                <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5"
                         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
             </div>
         </div>
 
-        <p class="text-amber-500 text-[10px] font-black uppercase tracking-[0.35em] mb-4">Community · Gateway Metal Detectors</p>
+        <p class="text-amber-600 text-[10px] font-black uppercase tracking-[0.35em] mb-4">Community · Gateway Metal Detectors</p>
         
-        <h1 class="text-white font-bold leading-none mb-6 drop-shadow-sm"
+        <h1 class="text-gray-900 font-bold leading-none mb-6 drop-shadow-sm"
             style="font-family: Georgia, serif; font-size: clamp(3rem, 7vw, 5.5rem); letter-spacing: -0.02em;">
             Events Calendar
         </h1>
 
         <div class="h-[2px] w-12 bg-amber-600 mx-auto mb-8"></div>
 
-        <p class="text-stone-300 text-lg md:text-xl font-medium max-w-xl leading-relaxed mb-4">
+        <p class="text-gray-700 text-lg md:text-xl font-medium max-w-xl leading-relaxed mb-4">
             Coming Soon
         </p>
         
-        <p class="text-stone-400 text-sm font-semibold max-w-md leading-relaxed">
+        <p class="text-gray-500 text-sm font-semibold max-w-md leading-relaxed">
             We are curating a schedule of local hunts, club meetups, and community detecting days across Southern Ontario.
         </p>
 
-        <!-- SOBH 2026 Registration -->
-        <div class="mt-16 w-full max-w-2xl">
-            <a href="https://www.metaldetectinghunt.com/2026-SOBH-Registration-Form.pdf" target="_blank"
-                class="group flex flex-col sm:flex-row items-center justify-between w-full bg-[#1e1814] border border-[#3b2e26] text-white p-8 rounded-md shadow-xl hover:border-amber-600 transition-all duration-300 hover:-translate-y-1">
+        <!-- Annual Metal Detecting Beach Hunt 2026 (Featured Event) -->
+        <div class="mt-12 w-full max-w-3xl">
+            <div class="bg-white border-2 border-amber-500/80 text-gray-900 p-8 md:p-10 rounded-xl shadow-lg text-left relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-amber-600 text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-bl-lg shadow-sm">
+                    Featured Hunt
+                </div>
+                
+                <p class="text-[10px] font-black uppercase tracking-widest text-amber-600 mb-2">Radioworld &amp; Toronto Metal Detecting Club</p>
+                <h2 class="text-2xl md:text-3xl font-black text-gray-900 tracking-tight mb-4" style="font-family: Georgia, serif;">
+                    Annual Metal Detecting Beach Hunt 2026
+                </h2>
+                
+                <p class="text-gray-700 text-sm md:text-base font-medium leading-relaxed mb-6">
+                    Get ready for a great day of metal detecting! Organized by Radioworld and the Toronto Metal Detecting Club at Woodbine Beach Park in Toronto.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 mb-6">
+                    <div class="flex items-start gap-3">
+                        <span class="text-lg text-amber-600">📅</span>
+                        <div>
+                            <p class="text-[10px] font-black uppercase tracking-wider text-gray-400">Date</p>
+                            <p class="text-sm font-bold text-gray-900">Sunday, August 30, 2026</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-lg text-amber-600">📍</span>
+                        <div>
+                            <p class="text-[10px] font-black uppercase tracking-wider text-gray-400">Location</p>
+                            <p class="text-sm font-bold text-gray-900">Woodbine Beach Park, Toronto, ON</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 sm:col-span-2">
+                        <span class="text-lg text-amber-600">🎯</span>
+                        <div>
+                            <p class="text-[10px] font-black uppercase tracking-wider text-gray-400">Activities</p>
+                            <p class="text-sm font-semibold text-gray-700">Multiple seeded hunts, a ladies-only hunt, and a kids' (12 and under) hunt.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 sm:col-span-2">
+                        <span class="text-lg text-amber-600">🎁</span>
+                        <div>
+                            <p class="text-[10px] font-black uppercase tracking-wider text-gray-400">Perks &amp; Highlights</p>
+                            <p class="text-sm font-semibold text-gray-700">Prizes, giveaways, special guests from the metal detecting community, and a free BBQ lunch with refreshments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                    <span class="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Community Beach Hunt
+                    </span>
+                    <a href="https://www.facebook.com/RadioworldInc/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-amber-600 text-white font-bold uppercase tracking-widest text-xs px-6 py-3 rounded-md hover:bg-amber-700 transition-colors shadow-sm">
+                        Event Information
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOBH 2026 (Past / Concluded Event) -->
+        <div class="mt-8 w-full max-w-3xl opacity-75">
+            <div class="relative flex flex-col sm:flex-row items-center justify-between w-full bg-gray-100 border border-gray-300 text-gray-600 p-6 md:p-8 rounded-xl shadow-sm">
                 <div class="text-left mb-4 sm:mb-0">
-                    <p class="text-[10px] font-black uppercase tracking-widest text-amber-500 mb-2">Featured Event</p>
-                    <h3 class="text-2xl font-black uppercase tracking-tight text-white" style="font-family: Georgia, serif;">Southern Ontario Beach Hunt 2026</h3>
-                    <p class="text-stone-300 text-sm mt-1">Download Registration Form (PDF)</p>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-[10px] font-black uppercase tracking-widest bg-gray-300 text-gray-700 px-2.5 py-0.5 rounded">Event Concluded</span>
+                        <span class="text-[10px] font-bold text-gray-500 uppercase">Past Event</span>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase tracking-tight text-gray-500 line-through decoration-gray-500 decoration-2" style="font-family: Georgia, serif;">
+                        Southern Ontario Beach Hunt 2026
+                    </h3>
+                    <p class="text-gray-500 text-xs mt-1">This event has come and gone. Thank you to all detectorists who attended!</p>
                 </div>
-                <div class="shrink-0 bg-amber-600 text-white font-bold uppercase tracking-widest text-xs px-6 py-3 rounded-sm group-hover:bg-amber-700 transition-colors flex items-center gap-2">
-                    Register Now
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </div>
-            </a>
-        </div>
-
-        <!-- Community Partners & Services Grid -->
-        <div class="w-full max-w-5xl mt-24">
-            <div class="flex items-center justify-center w-full mb-12">
-                <div class="h-px bg-[#3b2e26] flex-grow"></div>
-                <h2 class="px-6 text-xs font-black text-amber-500 uppercase tracking-[0.25em]">Community Partners &amp; Services</h2>
-                <div class="h-px bg-[#3b2e26] flex-grow"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-                <!-- REMDA -->
-                <div class="bg-[#1e1814] border border-[#3b2e26] p-8 flex flex-col h-full shadow-lg rounded-md hover:border-amber-600/60 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="w-16 h-16 bg-[#140e0b] flex items-center justify-center rounded-sm border border-[#3b2e26] group-hover:border-amber-500/50 transition-colors text-2xl mb-6">🏛️</div>
-                    <h4 class="text-lg font-black text-white mb-1 uppercase tracking-tight">REMDA</h4>
-                    <p class="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-4">Niagara Region</p>
-                    <p class="text-stone-300 text-sm font-medium mb-8 leading-relaxed flex-grow">Rainbows End Metal Detecting Association. Dedicated to preserving history and promoting responsible metal detecting across the beautiful Niagara peninsula.</p>
-                    <a href="http://www.oocities.org/eureka/6429/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-[#140e0b] border border-[#3b2e26] text-white font-bold text-[11px] uppercase tracking-widest py-3.5 hover:bg-amber-600 hover:border-amber-600 transition-colors duration-300 mt-auto rounded-sm">
-                        Visit Webpage
-                    </a>
-                </div>
-
-                <!-- Canadian Heritage Seekers -->
-                <div class="bg-[#1e1814] border border-[#3b2e26] p-8 flex flex-col h-full shadow-lg rounded-md hover:border-amber-600/60 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="w-16 h-16 bg-[#140e0b] flex items-center justify-center rounded-sm border border-[#3b2e26] group-hover:border-amber-500/50 transition-colors text-2xl mb-6">🍁</div>
-                    <h4 class="text-lg font-black text-white mb-1 uppercase tracking-tight">Canadian Heritage Seekers</h4>
-                    <p class="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-4">St. Catharines Chapter</p>
-                    <p class="text-stone-300 text-sm font-medium mb-8 leading-relaxed flex-grow">A passionate group of history enthusiasts uncovering the past one signal at a time.</p>
-                    <a href="http://www.canadianheritageseekers.ca/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-[#140e0b] border border-[#3b2e26] text-white font-bold text-[11px] uppercase tracking-widest py-3.5 hover:bg-amber-600 hover:border-amber-600 transition-colors duration-300 mt-auto rounded-sm">
-                        Visit Webpage
-                    </a>
-                </div>
-
-                <!-- Alison Walker (The Ring Finders) -->
-                <div class="bg-[#1e1814] border border-[#3b2e26] p-8 flex flex-col h-full shadow-lg rounded-md hover:border-amber-500 transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden">
-                    <!-- Subtle top accent line for premium feel -->
-                    <div class="absolute top-0 left-0 w-full h-[3px] bg-amber-500"></div>
-                    
-                    <div class="w-16 h-16 bg-[#140e0b] flex items-center justify-center rounded-sm border border-[#3b2e26] group-hover:border-amber-500/50 transition-colors text-2xl mb-6">💍</div>
-                    <h4 class="text-lg font-black text-white mb-1 uppercase tracking-tight">Alison Walker</h4>
-                    <p class="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-4">The Ring Finders</p>
-                    <p class="text-stone-300 text-sm font-medium mb-5 leading-relaxed">Lost a ring, keys, or valuables? Professional recovery services across Ontario.</p>
-                    
-                    <ul class="text-xs text-stone-300 font-semibold mb-8 space-y-2 flex-grow">
-                        <li class="flex items-center gap-2 text-white">
-                            <span class="w-4 h-4 text-center">📱</span> 1-647-383-6891 (Call or Text)
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-4 h-4 text-center">🚶</span> Land / Shallow Water Search
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-4 h-4 text-center">🤿</span> Diver / Underwater Search
-                        </li>
-                        <li class="flex items-center gap-2 mt-2 pt-2 border-t border-[#3b2e26]">
-                            <span class="w-4 h-4 text-center">📺</span>
-                            <a href="https://www.youtube.com/c/AlisonPinkPowerAllyTreasureHunter/videos" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors underline decoration-stone-500 underline-offset-2">Watch Recoveries on YouTube</a>
-                        </li>
-                    </ul>
-
-                    <!-- Contact Services Button -->
-                    <a href="https://theringfinders.com/Alison.Walker/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-amber-600 text-white font-bold text-[11px] uppercase tracking-widest py-3.5 hover:bg-amber-700 transition-colors duration-300 mt-auto rounded-sm shadow-sm">
-                        Contact for Services
-                    </a>
+                <div class="shrink-0 bg-gray-300 text-gray-600 font-bold uppercase tracking-widest text-xs px-5 py-2.5 rounded-md flex items-center gap-2 cursor-not-allowed">
+                    <span>Ended</span>
                 </div>
             </div>
         </div>
 
-        <div class="mt-20 mb-8 w-full max-w-sm mx-auto h-px bg-gradient-to-r from-transparent via-[#3b2e26] to-transparent"></div>
-
+        <div class="mt-20 mb-8 w-full max-w-sm mx-auto h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#15100d] border-t border-[#332822] text-white pt-24 pb-16 w-full mt-auto">
+    <footer class="bg-white border-t border-gray-200 text-gray-800 pt-24 pb-16 w-full mt-auto">
         <div class="max-w-[1280px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-4 gap-12">
             <div class="col-span-1 md:col-span-2 md:pr-16">
                 <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer mb-6">
                     <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
                     <div class="flex flex-col justify-center">
-                        <span class="text-2xl font-black tracking-[0.16em] uppercase text-white leading-tight group-hover:text-amber-400 transition-colors">GATEWAY</span>
-                        <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-500/90">Metal Detectors</span>
+                        <span class="text-2xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                        <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
                     </div>
                 </a>
-                <p class="text-xs text-stone-400 font-semibold leading-relaxed mb-8">
-                    <span class="text-white font-bold">ABOUT US:</span> Hamilton's dedicated treasure hunting hub.
+                <p class="text-xs text-gray-600 font-semibold leading-relaxed mb-8">
+                    <span class="text-gray-900 font-bold">ABOUT US:</span> Gateway Metal Detectors is Hamilton's dedicated treasure hunting hub, founded on a lifelong passion for discovery. We carry professional-grade equipment from the world's leading brands — Nokta, Minelab, XP, and Garrett. Whether you're a first-time hobbyist or a seasoned detectorist, we have the gear and the knowledge to back it up. Serving Southern Ontario and shipping across Canada and worldwide.
                 </p>
-                <p class="text-[10px] text-stone-500 font-semibold">&copy; 2026 Metal Detectors Legacy.</p>
+                <p class="text-[10px] text-gray-500 font-semibold">&copy; 2026 Gateway Metal Detectors. All Rights Reserved.</p>
             </div>
             <div>
-                <ul class="space-y-3 pt-1 text-xs font-semibold text-stone-400 uppercase tracking-widest flex flex-col items-start">
-                    <li><a href="../index.html" class="hover:text-white transition cursor-pointer inline-block">Home</a></li>
-                    <li><a href="../index.html#brands" class="hover:text-white transition cursor-pointer inline-block">Shop</a></li>
-                    <li><a href="about.html" class="hover:text-white transition cursor-pointer inline-block">About Us</a></li>
-                    <li><a href="events.html" class="hover:text-white transition cursor-pointer inline-block">Events</a></li>
-                    <li><a href="community-map.html" class="hover:text-white transition cursor-pointer inline-block">Maps</a></li>
-                    <li><a href="gallery.html" class="hover:text-white transition cursor-pointer inline-block">Gallery</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition cursor-pointer inline-block">Contact</a></li>
+                <ul class="space-y-3 pt-1 text-xs font-semibold text-gray-600 uppercase tracking-widest flex flex-col items-start">
+                    <li><a href="../index.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Home</a></li>
+                    <li><a href="shop.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Shop</a></li>
+                    <li><a href="about.html" class="hover:text-gray-900 transition cursor-pointer inline-block">About Us</a></li>
+                    <li><a href="events.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Events</a></li>
+                    <li><a href="community-map.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Maps</a></li>
+                    <li><a href="gallery.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Contact</a></li>
                 </ul>
             </div>
-            <div class="text-[13px] font-semibold text-stone-400 flex flex-col">
-                <h4 class="text-white font-bold mb-5 tracking-wider">Contact info</h4>
-                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-500">📞</span> +1(905)870-8689</p>
-                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-500">📍</span> Hamilton, Ontario, Canada.</p>
-                <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-500">✉️</span> gatewaydetecting@hotmail.com</p>
+            <div class="text-[13px] font-semibold text-gray-600 flex flex-col">
+                <h4 class="text-gray-900 font-bold mb-5 tracking-wider uppercase text-xs text-amber-600">Contact info</h4>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📞</span> +1(905)870-8689</p>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📍</span> Hamilton, Ontario, Canada.</p>
+                <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">✉️</span> gatewaydetecting@hotmail.com</p>
+            </div>
+        </div>
+    
+        <!-- Regional Service Area (Low Profile SEO Block) -->
+        <div class="max-w-[1280px] mx-auto px-6 pt-12 mt-12 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-[11px] text-gray-500 font-medium">
+            <span class="text-gray-700 font-bold uppercase tracking-wider text-[10px] text-amber-600">Proudly Serving Southern Ontario:</span>
+            <div class="flex flex-wrap gap-x-2 gap-y-1 text-gray-500">
+                <span>Hamilton</span> • <span>Stoney Creek</span> • <span>Ancaster</span> • <span>Burlington</span> • <span>Oakville</span> • <span>Mississauga</span> • <span>Toronto</span>
             </div>
         </div>
     </footer>
 
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '76adb4c9-78ac-4ea9-b7b3-36e4412eca7d', f: true }); done = true; } }; })();</script>
 </body>
-
 </html>

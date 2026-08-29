@@ -17,5 +17,5 @@
 }
 
 body {
-    @apply bg-void text-gray-300 antialiased;
+    @apply bg-[#f9fafb] text-gray-900 antialiased;
 }

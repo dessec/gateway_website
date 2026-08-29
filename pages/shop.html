@@ -10,8 +10,8 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #28211c;
-            color: #f3f4f6;
+            background-color: #f9fafb;
+            color: #111827;
             overflow-x: hidden;
         }
 
@@ -19,17 +19,17 @@
             position: relative;
             display: inline-block;
             padding-bottom: 2px;
-            color: #f3f4f6;
+            color: #374151;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             letter-spacing: 0.06em;
             transition: color 0.3s ease;
         }
 
         .nav-link:hover,
         .nav-link.active {
-            color: #ffffff;
+            color: #111827;
         }
 
         .nav-link::after {
@@ -53,10 +53,10 @@
             width: 4px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-            background: #1e1814; 
+            background: #f3f4f6; 
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #3b2e26; 
+            background: #d1d5db; 
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #d97706; 
@@ -67,9 +67,9 @@
             appearance: none;
             width: 1rem;
             height: 1rem;
-            border: 1px solid #3b2e26;
-            background-color: #140e0b;
-            border-radius: 0;
+            border: 1px solid #d1d5db;
+            background-color: #ffffff;
+            border-radius: 2px;
             outline: none;
             cursor: pointer;
             position: relative;
@@ -95,19 +95,21 @@
         
         /* Grid product card styling */
         .product-card {
-            background: #1e1814;
-            border: 1px solid #3b2e26;
-            transition: box-shadow 0.2s ease, border-color 0.2s ease;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
             position: relative;
             display: flex;
             flex-direction: column;
             border-radius: 0.375rem;
             overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
         
         .product-card:hover {
             border-color: #d97706;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(217, 119, 6, 0.1);
             z-index: 10;
         }
 
@@ -118,7 +120,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #140e0b;
+            background-color: #f8fafc;
         }
 
         .img-container img {
@@ -136,33 +138,33 @@
     </style>
 </head>
 
-<body class="bg-[#28211c] text-stone-100 w-full min-h-screen flex flex-col selection:bg-amber-600 selection:text-white">
+<body class="bg-[#f9fafb] text-gray-900 w-full min-h-screen flex flex-col selection:bg-amber-600 selection:text-white">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 h-20 bg-[#1e1814]/95 backdrop-blur-md border-b border-[#3b2e26] shadow-md z-50 flex items-center justify-between px-6 md:px-12 w-full">
+    <nav class="fixed top-0 left-0 right-0 h-20 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm z-50 flex items-center justify-between px-6 md:px-12 w-full">
         <!-- Logo -->
         <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer">
-            <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+            <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-16 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
             <div class="flex flex-col justify-center">
-                <span class="text-xl font-black tracking-[0.16em] uppercase text-white leading-tight group-hover:text-amber-400 transition-colors">GATEWAY</span>
-                <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-500/90">Metal Detectors</span>
+                <span class="text-xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
             </div>
         </a>
 
         <!-- Center Nav Links -->
         <div class="hidden lg:flex items-center space-x-6">
             <a href="../index.html" class="nav-link">Home</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="shop.html" class="nav-link active">Shop</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="about.html" class="nav-link">About Us</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="events.html" class="nav-link">Events</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="community-map.html" class="nav-link">Maps</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="gallery.html" class="nav-link">Gallery</a>
-            <span class="text-stone-600">-</span>
+            <span class="text-gray-300">-</span>
             <a href="contact.html" class="nav-link">Contact</a>
         </div>
     </nav>
@@ -170,99 +172,111 @@
     <div class="h-20 w-full"></div>
 
     <!-- Page Header -->
-    <header class="w-full bg-[#1e1814] border-b border-[#3b2e26] py-12 px-6 md:px-12 mb-8">
+    <header class="w-full bg-white border-b border-gray-200 py-12 px-6 md:px-12 mb-8">
         <div class="max-w-[1700px] mx-auto">
-            <h1 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-2" style="font-family: Georgia, serif;">All Inventory</h1>
-            <p class="text-stone-400 text-sm font-semibold">Browse our complete collection of detectors, searchcoils, and field gear.</p>
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 uppercase tracking-tight mb-2" style="font-family: Georgia, serif;">All Inventory</h1>
+            <p class="text-gray-600 text-sm font-semibold">Browse our complete collection of detectors, searchcoils, and field gear.</p>
         </div>
     </header>
 
     <!-- Shop Layout with Sidebar & Dense Grid -->
-    <div class="w-full flex-grow flex flex-col md:flex-row max-w-[1700px] mx-auto px-4 md:px-8 bg-[#28211c]">
+    <div class="w-full flex-grow flex flex-col md:flex-row max-w-[1700px] mx-auto px-4 md:px-8 bg-[#f9fafb]">
         
         <!-- Left Sidebar (Filters) -->
         <aside class="w-full md:w-64 lg:w-72 shrink-0 pr-0 md:pr-8 mb-8 md:mb-0">
-            <div class="sticky top-28 max-h-[calc(100vh-120px)] overflow-y-auto custom-scrollbar pr-2 pb-10">
-                <h2 class="text-lg font-black uppercase tracking-widest text-white mb-8 border-b border-[#3b2e26] pb-4">Filters</h2>
+            <div class="sticky top-28 max-h-[calc(100vh-120px)] overflow-y-auto custom-scrollbar pr-2 pb-10 bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+                <h2 class="text-lg font-black uppercase tracking-widest text-gray-900 mb-8 border-b border-gray-200 pb-4">Filters</h2>
                 
                 <!-- Brand Filter -->
                 <div class="mb-8">
-                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-500 mb-4">Brand</h3>
+                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-600 mb-4">Brand</h3>
                     <div class="space-y-3">
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-brand" value="Garrett">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Garrett</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Garrett</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-brand" value="Minelab">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Minelab</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Minelab</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-brand" value="Nokta">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Nokta</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Nokta</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-brand" value="XP">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">XP</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">XP</span>
                         </label>
                     </div>
                 </div>
 
                 <!-- Category Filter -->
                 <div class="mb-8">
-                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-500 mb-4">Category</h3>
+                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-600 mb-4">Category</h3>
                     <div class="space-y-3">
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-category" value="detectors">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Detectors</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Metal Detectors</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" class="filter-checkbox filter-category" value="pinpointers">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Pinpointers</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-category" value="coils">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Coils</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Searchcoils</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" class="filter-checkbox filter-category" value="audio">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Audio &amp; Headphones</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" class="filter-checkbox filter-category" value="digging">
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Digging Tools &amp; Pans</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-category" value="accessories">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Accessories</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Accessories &amp; Gear</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-category" value="parts">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Cables & Parts</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Shafts, Cables &amp; Parts</span>
                         </label>
                     </div>
                 </div>
 
                 <!-- Price Filter -->
                 <div class="mb-8">
-                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-500 mb-4">Price Range</h3>
+                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-600 mb-4">Price Range</h3>
                     <div class="space-y-3">
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-price" value="under-500">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Under $500</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Under $500</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-price" value="500-1000">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">$500 - $1,000</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">$500 - $1,000</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-price" value="over-1000">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">Over $1,000</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Over $1,000</span>
                         </label>
                     </div>
                 </div>
 
                 <!-- Stock Filter -->
                 <div class="mb-8">
-                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-500 mb-4">Availability</h3>
+                    <h3 class="text-[11px] font-bold uppercase tracking-widest text-amber-600 mb-4">Availability</h3>
                     <div class="space-y-3">
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="checkbox" class="filter-checkbox filter-stock" value="in-stock">
-                            <span class="text-sm font-semibold text-stone-300 group-hover:text-white transition-colors">In Stock Only</span>
+                            <span class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">In Stock Only</span>
                         </label>
                     </div>
                 </div>
 
                 <!-- Clear Filters -->
-                <button id="clear-filters" class="w-full py-3 bg-[#1e1814] text-stone-300 font-bold uppercase tracking-widest text-[10px] hover:bg-amber-600 hover:text-white border border-[#3b2e26] transition-colors rounded-sm">
+                <button id="clear-filters" class="w-full py-3 bg-gray-100 text-gray-700 font-bold uppercase tracking-widest text-[10px] hover:bg-amber-600 hover:text-white border border-gray-300 transition-colors rounded-sm shadow-sm">
                     Clear All Filters
                 </button>
             </div>
@@ -271,15 +285,15 @@
         <!-- Right Content & Dense Grid -->
         <main class="w-full flex-grow pb-32">
             
-            <div class="flex items-center justify-between mb-6 pb-4 border-b border-[#3b2e26]">
-                <h2 class="text-2xl font-bold font-serif text-white tracking-tight" style="font-family: Georgia, serif;">Product List</h2>
-                <p id="product-count" class="text-sm font-bold text-amber-500 tracking-widest uppercase">Loading...</p>
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-200">
+                <h2 class="text-2xl font-bold font-serif text-gray-900 tracking-tight" style="font-family: Georgia, serif;">Product List</h2>
+                <p id="product-count" class="text-sm font-bold text-amber-600 tracking-widest uppercase">Loading...</p>
             </div>
 
             <!-- Loading State -->
             <div id="loading" class="w-full py-32 flex flex-col justify-center items-center">
-                <div class="w-8 h-8 rounded-full border-2 border-dashed border-amber-500 animate-spin mb-4"></div>
-                <p class="text-xs font-bold uppercase tracking-widest text-stone-400">Syncing Inventory...</p>
+                <div class="w-8 h-8 rounded-full border-2 border-dashed border-amber-600 animate-spin mb-4"></div>
+                <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Syncing Inventory...</p>
             </div>
 
             <!-- 5-Column Grid -->
@@ -287,46 +301,54 @@
                 <!-- Javascript will inject product cards here -->
             </div>
 
-            <div id="no-results" class="hidden w-full py-32 flex flex-col items-center justify-center border border-dashed border-[#3b2e26]">
-                <p class="text-lg font-bold text-stone-400 tracking-tight mb-2">No products match your filters.</p>
-                <button onclick="document.getElementById('clear-filters').click()" class="text-sm text-amber-500 underline font-semibold hover:text-amber-400">Clear Filters</button>
+            <div id="no-results" class="hidden w-full py-32 flex flex-col items-center justify-center border border-dashed border-gray-300 bg-white rounded-lg shadow-sm">
+                <p class="text-lg font-bold text-gray-700 tracking-tight mb-2">No products match your filters.</p>
+                <button onclick="document.getElementById('clear-filters').click()" class="text-sm text-amber-600 underline font-semibold hover:text-amber-700">Clear Filters</button>
             </div>
 
         </main>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-[#15100d] border-t border-[#332822] text-white pt-24 pb-16 w-full mt-auto">
+    <footer class="bg-white border-t border-gray-200 text-gray-800 pt-24 pb-16 w-full mt-auto">
         <div class="max-w-[1280px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-4 gap-12">
             <div class="col-span-1 md:col-span-2 md:pr-16">
                 <a href="../index.html" class="flex items-center gap-3 group transition cursor-pointer mb-6">
                     <img src="../assets/images/gateway_medallion.png" alt="Gateway Medallion" class="h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
                     <div class="flex flex-col justify-center">
-                        <span class="text-2xl font-black tracking-[0.16em] uppercase text-white leading-tight group-hover:text-amber-400 transition-colors">GATEWAY</span>
-                        <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-500/90">Metal Detectors</span>
+                        <span class="text-2xl font-black tracking-[0.16em] uppercase text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">GATEWAY</span>
+                        <span class="text-[0.58rem] tracking-[0.28em] font-bold uppercase text-amber-600">Metal Detectors</span>
                     </div>
                 </a>
-                <p class="text-xs text-stone-400 font-semibold leading-relaxed mb-8">
-                    <span class="text-white font-bold">ABOUT US:</span> Hamilton's dedicated treasure hunting hub.
+                <p class="text-xs text-gray-600 font-semibold leading-relaxed mb-8">
+                    <span class="text-gray-900 font-bold">ABOUT US:</span> Gateway Metal Detectors is Hamilton's dedicated treasure hunting hub, founded on a lifelong passion for discovery. We carry professional-grade equipment from the world's leading brands — Nokta, Minelab, XP, and Garrett. Whether you're a first-time hobbyist or a seasoned detectorist, we have the gear and the knowledge to back it up. Serving Southern Ontario and shipping across Canada and worldwide.
                 </p>
-                <p class="text-[10px] text-stone-500 font-semibold">&copy; 2026 Metal Detectors Legacy.</p>
+                <p class="text-[10px] text-gray-500 font-semibold">&copy; 2026 Gateway Metal Detectors. All Rights Reserved.</p>
             </div>
             <div>
-                <ul class="space-y-3 pt-1 text-xs font-semibold text-stone-400 uppercase tracking-widest flex flex-col items-start">
-                    <li><a href="../index.html" class="hover:text-white transition cursor-pointer inline-block">Home</a></li>
-                    <li><a href="shop.html" class="hover:text-white transition cursor-pointer inline-block">Shop</a></li>
-                    <li><a href="about.html" class="hover:text-white transition cursor-pointer inline-block">About Us</a></li>
-                    <li><a href="events.html" class="hover:text-white transition cursor-pointer inline-block">Events</a></li>
-                    <li><a href="community-map.html" class="hover:text-white transition cursor-pointer inline-block">Maps</a></li>
-                    <li><a href="gallery.html" class="hover:text-white transition cursor-pointer inline-block">Gallery</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition cursor-pointer inline-block">Contact</a></li>
+                <ul class="space-y-3 pt-1 text-xs font-semibold text-gray-600 uppercase tracking-widest flex flex-col items-start">
+                    <li><a href="../index.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Home</a></li>
+                    <li><a href="shop.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Shop</a></li>
+                    <li><a href="about.html" class="hover:text-gray-900 transition cursor-pointer inline-block">About Us</a></li>
+                    <li><a href="events.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Events</a></li>
+                    <li><a href="community-map.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Maps</a></li>
+                    <li><a href="gallery.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-900 transition cursor-pointer inline-block">Contact</a></li>
                 </ul>
             </div>
-            <div class="text-[13px] font-semibold text-stone-400 flex flex-col">
-                <h4 class="text-white font-bold mb-5 tracking-wider">Contact info</h4>
-                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-500">📞</span> +1(905)870-8689</p>
-                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-500">📍</span> Hamilton, Ontario, Canada.</p>
-                <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-500">✉️</span> gatewaydetecting@hotmail.com</p>
+            <div class="text-[13px] font-semibold text-gray-600 flex flex-col">
+                <h4 class="text-gray-900 font-bold mb-5 tracking-wider uppercase text-xs text-amber-600">Contact info</h4>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📞</span> +1(905)870-8689</p>
+                <p class="mb-3 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">📍</span> Hamilton, Ontario, Canada.</p>
+                <p class="mb-8 flex items-start"><span class="w-5 shrink-0 inline-block text-amber-600">✉️</span> gatewaydetecting@hotmail.com</p>
+            </div>
+        </div>
+    
+        <!-- Regional Service Area (Low Profile SEO Block) -->
+        <div class="max-w-[1280px] mx-auto px-6 pt-12 mt-12 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-[11px] text-gray-500 font-medium">
+            <span class="text-gray-700 font-bold uppercase tracking-wider text-[10px] text-amber-600">Proudly Serving Southern Ontario:</span>
+            <div class="flex flex-wrap gap-x-2 gap-y-1 text-gray-500">
+                <span>Hamilton</span> • <span>Stoney Creek</span> • <span>Ancaster</span> • <span>Burlington</span> • <span>Oakville</span> • <span>Mississauga</span> • <span>Toronto</span>
             </div>
         </div>
     </footer>
@@ -347,21 +369,26 @@
             return bundleKeywords.some(kw => name.includes(kw) || url.includes(kw));
         }
 
+        const CATEGORY_PRIORITY = { 'detectors': 1, 'pinpointers': 2, 'coils': 3, 'audio': 4, 'digging': 5, 'accessories': 6, 'parts': 7 };
+        const CATEGORY_LABELS = { 'detectors': 'Metal Detector', 'pinpointers': 'Pinpointer', 'coils': 'Searchcoil', 'audio': 'Audio', 'digging': 'Digging Tool', 'accessories': 'Accessory', 'parts': 'Part / Cable' };
+
         function getCategory(item) {
             const name = (item.name || '').toLowerCase();
             const url  = (item.url  || '').toLowerCase();
             const text = name + ' ' + url;
 
+            if (text.includes('pinpointer') || text.includes('pro-pointer') || text.includes('pro pointer') || text.includes('pro-find') || text.includes('pro find') || text.includes('accupoint') || text.includes('pulseive') || text.includes('mi-4') || text.includes('mi-6') || (text.includes('pointer') && !text.includes('coil'))) {
+                return 'pinpointers';
+            }
             if (text.includes('coil') || text.includes('searchcoil')) return 'coils';
-            if (text.includes('metal detector') || text.includes('treasure detector') ||
-                text.includes('gold detector') || /\b(simplex|legend|score|findx|hoard|vortex|axiom|ace |ace-|apex|atpro|atmax|at pro|at max|at gold|goldmaster|equinox|manticore|vanquish|ctx|gpx|gpz|sdc|gold monster|x-terra|deus)\b/i.test(name))
-                return 'detectors';
 
-            if (text.includes('cable') || text.includes('shaft') || text.includes('charger') ||
-                text.includes('replacement') || text.includes('mounting') || text.includes('battery') ||
-                text.includes('cover') || text.includes('upgrade code') || text.includes('cuff') ||
-                text.includes('armrest') || text.includes('bolt') || text.includes('hardware'))
-                return 'parts';
+            const isDetectorKeyword = /(metal detector|treasure detector|gold detector|underwater detector|all-terrain detector|simplex|legend|score|findx|hoard|1st swing|vortex|axiom|ace 200|ace 300|ace 400|ace-|apex|at pro|at max|at gold|sea hunter|goldmaster|equinox|manticore|vanquish|ctx 3030|gpx|gpz|sdc 2300|gold monster|x-terra|go-find|deus|orx|ws6 master)/i.test(text);
+            const isNonDetectorAcc = text.includes('bag') || text.includes('cover') || text.includes('strap') || text.includes('stand') || text.includes('mount') || text.includes('cap') || text.includes('case');
+            if (isDetectorKeyword && !isNonDetectorAcc) return 'detectors';
+
+            if (text.includes('headphone') || text.includes('wireless') || text.includes('z-lynk') || text.includes('audio') || text.includes('speaker') || text.includes('module')) return 'audio';
+            if (text.includes('shovel') || text.includes('digger') || text.includes('trowel') || text.includes('scoop') || text.includes('pouch') || text.includes('gold pan') || text.includes('sifter') || text.includes('classifier') || text.includes('finds box') || text.includes('sand scoop')) return 'digging';
+            if (text.includes('cable') || text.includes('shaft') || text.includes('stem') || text.includes('lower rod') || text.includes('middle rod') || text.includes('charger') || text.includes('battery') || text.includes('replacement') || text.includes('bolt') || text.includes('hardware') || text.includes('armrest') || text.includes('cuff') || text.includes('adapter') || text.includes('upgrade code')) return 'parts';
 
             return 'accessories';
         }
@@ -413,20 +440,26 @@
                 const slug = getProductSlug(item);
                 const isOutOfStock = item.stock && (item.stock.toLowerCase().includes('out') || item.stock.toLowerCase().includes('sold'));
                 const stockDot = isOutOfStock ? 'bg-red-500' : 'bg-green-500';
-                const stockText = isOutOfStock ? 'text-red-500' : 'text-green-500';
+                const stockText = isOutOfStock ? 'text-red-500' : 'text-green-600';
+                const catLabel = CATEGORY_LABELS[item.category] || 'Equipment';
+                const isDetector = item.category === 'detectors';
                 
                 return `
-                <a href="product.html?id=${slug}" class="product-card">
-                    <div class="img-container border-b border-[#3b2e26]">
-                        ${item.image ? `<img src="${item.image}" alt="${name}" loading="lazy">` : `<div class="text-stone-500 font-bold uppercase tracking-widest text-[10px] w-full h-full flex items-center justify-center bg-[#140e0b]">${item.brand || 'Product'}</div>`}
+                <a href="product.html?id=${slug}" class="product-card group ${isDetector ? 'border-amber-200/90 shadow-sm' : ''}">
+                    <div class="img-container border-b border-gray-100 relative">
+                        ${isDetector ? `<span class="absolute top-2 left-2 bg-amber-600 text-white text-[8px] font-black uppercase tracking-wider px-2 py-0.5 rounded shadow-sm">Detector</span>` : ''}
+                        ${item.image ? `<img src="${item.image}" alt="${name}" loading="lazy">` : `<div class="text-gray-400 font-bold uppercase tracking-widest text-[10px] w-full h-full flex items-center justify-center bg-gray-100">${item.brand || 'Product'}</div>`}
                     </div>
                     <div class="textContainer gap-1">
-                        <p class="text-[9px] font-black uppercase tracking-widest text-amber-500 mb-0.5">${item.brand || 'Gateway'}</p>
-                        <h3 class="text-sm font-bold text-white leading-snug mb-2 flex-grow">${name}</h3>
+                        <div class="flex items-center justify-between gap-1 mb-0.5">
+                            <p class="text-[9px] font-black uppercase tracking-widest text-amber-600">${item.brand || 'Gateway'}</p>
+                            <span class="text-[8px] font-bold text-gray-600 uppercase tracking-tight">${catLabel}</span>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 leading-snug mb-2 flex-grow group-hover:text-amber-600 transition-colors">${name}</h3>
                         
-                        <div class="flex items-center justify-between mt-auto pt-3">
-                            <span class="text-lg font-black tracking-tight text-white">${item.price || 'Inquire'}</span>
-                            <div class="flex items-center gap-1.5" title="${item.stock}">
+                        <div class="flex items-center justify-between mt-auto pt-3 border-t border-gray-100">
+                            <span class="text-lg font-black tracking-tight text-amber-700">${item.price || 'Inquire'}</span>
+                            <div class="flex items-center gap-1.5" title="${item.stock || 'In Stock'}">
                                 <div class="w-1.5 h-1.5 rounded-none ${stockDot}"></div>
                                 <span class="text-[9px] font-bold uppercase ${stockText} hidden sm:inline-block truncate max-w-[50px]">${isOutOfStock?'OUT':'IN'}</span>
                             </div>
@@ -443,7 +476,7 @@
             const selectedPrices = Array.from(document.querySelectorAll('.filter-price:checked')).map(cb => cb.value);
             const inStockOnly = document.querySelector('.filter-stock:checked') !== null;
 
-            let filtered = allProducts;
+            let filtered = [...allProducts];
 
             if (selectedBrands.length > 0) {
                 filtered = filtered.filter(p => {
@@ -475,6 +508,14 @@
                     });
                 });
             }
+
+            // Always prioritize Metal Detectors at the top, sorted by price descending
+            filtered.sort((a, b) => {
+                const priorityA = CATEGORY_PRIORITY[a.category] || 99;
+                const priorityB = CATEGORY_PRIORITY[b.category] || 99;
+                if (priorityA !== priorityB) return priorityA - priorityB;
+                return (b.priceNum || 0) - (a.priceNum || 0);
+            });
 
             renderGrid(filtered);
         }
